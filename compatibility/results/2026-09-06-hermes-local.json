@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-06T14:10:34.067510+00:00",
+  "environment": "local",
+  "os": "Darwin",
+  "machine": "arm64",
+  "auth_source": "hermes",
+  "upstreams": {
+    "schema_version": 1,
+    "python": "3.11.16",
+    "uv_tested": "0.12.7",
+    "hermes": {
+      "repository": "https://github.com/NousResearch/hermes-agent.git",
+      "revision": "7166071fcaadb36df26f6d753dda97da6b5d699e",
+      "version": "0.21.0",
+      "dependencies": "uv.lock from the pinned revision"
+    },
+    "codex_asr": {
+      "repository": "https://github.com/Wangnov/codex-asr.git",
+      "revision": "479f6a7a3db81fe2a23d4755b0ccbeb4400317d4",
+      "image": "ghcr.io/wangnov/codex-asr@sha256:8fd68262922d4b8348be4f71ed7638b03577842d8b06d323d28b564e68860808"
+    },
+    "model": "gpt-5.6-sol",
+    "note": "Pins identify candidates under test. See the evidence report for actual compatibility results."
+  },
+  "model": "gpt-5.6-sol",
+  "synthetic_inputs_only": true,
+  "checks": {
+    "native_credential_refresh_live": {
+      "status": "passed",
+      "detail": {
+        "native_refresh_completed": true
+      },
+      "duration_ms": 1633
+    },
+    "chat": {
+      "status": "passed",
+      "detail": {
+        "sentinel_matched": true,
+        "api_calls": 1
+      },
+      "duration_ms": 6399
+    },
+    "detector": {
+      "status": "passed",
+      "detail": {
+        "planted_literal_matched": true,
+        "clean_text_matches": 0
+      },
+      "duration_ms": 6140
+    },
+    "transcription": {
+      "status": "passed",
+      "detail": {
+        "content_matched": true,
+        "characters": 111,
+        "codec": "opus",
+        "duration_seconds": 7.246167,
+        "audio_sha256": "cecf31e5a40208eed6847d1ac1cab4887f890a14363f1fb9b9488800116f6977"
+      },
+      "duration_ms": 5913
+    },
+    "vps_verification": {
+      "status": "pending",
+      "reason": "Full probe must run on the target VPS"
+    }
+  },
+  "phase1_live_ready": false
+}
