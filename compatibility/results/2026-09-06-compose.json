@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-09-06T14:46:07.778591+00:00",
+  "environment": "local-compose",
+  "os": "Linux",
+  "machine": "aarch64",
+  "synthetic_inputs_only": true,
+  "checks": {
+    "refresh": {
+      "status": "passed",
+      "duration_ms": 2668
+    },
+    "chat": {
+      "status": "passed",
+      "duration_ms": 30455
+    },
+    "detector": {
+      "status": "passed",
+      "duration_ms": 2849
+    },
+    "transcription": {
+      "status": "passed",
+      "duration_ms": 6018
+    }
+  }
+}
