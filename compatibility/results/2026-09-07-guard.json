@@ -1,0 +1,58 @@
+{
+  "recorded_at": "2026-09-06T22:56:52.150951+00:00",
+  "environment": "local-compose",
+  "synthetic_inputs_only": true,
+  "guard_mode": "on",
+  "detector_fixture_results": [
+    {
+      "fixture": 0,
+      "exact_expected_mask": true,
+      "guarded": true,
+      "masked_spans": 1,
+      "duration_ms": 38
+    },
+    {
+      "fixture": 1,
+      "exact_expected_mask": true,
+      "guarded": true,
+      "masked_spans": 0,
+      "duration_ms": 5
+    },
+    {
+      "fixture": 2,
+      "exact_expected_mask": true,
+      "guarded": true,
+      "masked_spans": 1,
+      "duration_ms": 7
+    }
+  ],
+  "exact_fixture_matches": 3,
+  "fixture_count": 3,
+  "guarded_native_chat": {
+    "status": "passed",
+    "required_boundary_attempts": 1,
+    "guard_failure_codes": [],
+    "duration_ms": 28175
+  },
+  "note": "Small synthetic quality sample, not a guarantee of complete secret detection. No requests sent to protected.invalid.",
+  "earlier_failures": [
+    {
+      "check": "initial_native_guarded_chat",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "duration_ms": 19148
+    },
+    {
+      "check": "manual_diagnostic_request",
+      "status": "timeout"
+    },
+    {
+      "check": "repeat_native_guarded_chat",
+      "status": "failed",
+      "error_code": "hermes_unavailable",
+      "duration_ms": 80275,
+      "protected_model_request_sent": false
+    }
+  ],
+  "failure_note": "Earlier live attempts failed or timed out; no root cause was established for the transient detector failure. Failure was visible and the protected attempt was blocked. The final repeat passed; this is not an availability guarantee."
+}
