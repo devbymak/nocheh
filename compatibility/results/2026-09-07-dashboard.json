@@ -1,0 +1,51 @@
+{
+  "target": "local Docker Compose",
+  "phases": [
+    "D1",
+    "D2",
+    "D3",
+    "D4"
+  ],
+  "regression": {
+    "typescript": {
+      "passed": 17,
+      "skipped": 0
+    },
+    "pinned_hermes_python": {
+      "passed": 43
+    },
+    "honcho_cli_network_disabled_fixture": {
+      "passed": 3
+    },
+    "final_download_http_tests": {
+      "passed": 2
+    }
+  },
+  "ui": [
+    "settings redaction",
+    "native memory and preferences",
+    "Honcho unavailable state",
+    "graph node to original source",
+    "diagnostic job",
+    "backup and inactive restore jobs",
+    "portable ZIP export",
+    "authenticated browser-native ZIP download"
+  ],
+  "backup_restore": {
+    "tables_verified": 8,
+    "state_files_verified": 89,
+    "telegram_enabled": false,
+    "subscription_login_activated": false,
+    "validation_restore_stopped": true
+  },
+  "export": {
+    "records": 65,
+    "files": 0,
+    "zip_integrity": "passed",
+    "manifest_counts": "passed"
+  },
+  "pending": [
+    "Optional live Honcho server compatibility requires separate experiment credentials",
+    "Existing production Telegram release gates are tracked independently in TASK.md"
+  ]
+}
