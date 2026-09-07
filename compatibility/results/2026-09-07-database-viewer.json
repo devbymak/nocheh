@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-07",
+  "status": "passed",
+  "pgweb_version": "0.16.2",
+  "http_query_role": "nocheh_viewer",
+  "events_visible": 51,
+  "all_archive_tables_readable": true,
+  "write_privileges_absent": true,
+  "write_attempt_denied_even_after_disabling_transaction_read_only": true,
+  "ui_messages_verified": true
+}
