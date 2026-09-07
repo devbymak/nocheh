@@ -1,0 +1,17 @@
+{
+  "bot_valid": true,
+  "group_accessible": true,
+  "group_type": "group",
+  "migrated_to": null,
+  "error_code": null,
+  "bot_status": "member",
+  "privacy_disabled": false,
+  "can_send_messages": true,
+  "full_message_visibility": false,
+  "recorded_at": "2026-09-07T12:05:55.339488+00:00",
+  "environment": "local-compose",
+  "group_membership_updates_archived": true,
+  "group_conversation_acceptance": "pending",
+  "messages_sent_by_this_check": 0,
+  "private_message_content_included": false
+}
