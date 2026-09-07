@@ -1,0 +1,25 @@
+{
+  "scope": "Owner dashboard navigation, guidance and settings organization",
+  "result": "passed",
+  "automated": {
+    "javascript_syntax": "passed",
+    "application_build": "passed",
+    "owner_management_http_regression": {"passed": 2, "failed": 0},
+    "graphify": "AST-only refresh completed"
+  },
+  "browser": {
+    "desktop": "Grouped navigation, page descriptions and overview source distinctions rendered",
+    "mobile": "390 by 844 viewport; grouped page picker navigates to Import chats and Settings",
+    "imports": "All three stages visible before upload; maintenance jobs excluded from import history",
+    "memory": "General memory, user profile notes and conversation history shown separately",
+    "preferences": "Existing native preference value saved successfully through the relocated form; no behavior value changed",
+    "credentials": "Review masks replacement value; keyboard-clearing draft disables Review and removes pending credential change",
+    "maintenance": "Read-only diagnostics completed; service health, existing export and inactive restore summaries rendered",
+    "honcho": "Stopped experiment, missing separate credentials and disabled data browsing shown explicitly"
+  },
+  "limits": [
+    "No new chat history was imported for this UI pass; importer HTTP regression covers fixture import and resume",
+    "No settings apply, backup, restore or service restart was requested during this UI pass",
+    "Optional Honcho live compatibility remains pending separate experiment credentials"
+  ]
+}
