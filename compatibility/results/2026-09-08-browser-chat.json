@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-08",
+  "phase": "runtime-platform-P4",
+  "hermes_revision": "7166071fcaadb36df26f6d753dda97da6b5d699e",
+  "typescript": {
+    "passed": 33,
+    "failed": 0,
+    "skipped": 0
+  },
+  "python": {
+    "passed": 64,
+    "failed": 0
+  },
+  "host_http_websocket_tests": 2,
+  "live": {
+    "synthetic_owner_private_subscription_chat": "passed",
+    "original_and_assistant_saved_in_native_session": true,
+    "original_and_separate_result_in_owned_archive": true,
+    "disconnect_reconnect_duplicate_runs": 0,
+    "explicit_cross_profile_resume": "denied",
+    "profile_switch_clears_previous_resume": true,
+    "owner_private_context_restored": true,
+    "native_assets_and_terminal": "passed",
+    "running_code_matches_tested_sources": true,
+    "compose_services_healthy": 5,
+    "native_presentation_healthy": true,
+    "telegram_messages_sent_by_this_check": 0
+  },
+  "failure_contracts": [
+    "capture outage preserves composer",
+    "exact bytes and literal NUL preserved",
+    "attachment scope and symlink denial",
+    "one claim per input",
+    "cancellation and early cancellation",
+    "profile writer exclusion",
+    "lease expiration and late evidence",
+    "fsynced receipt reconciliation",
+    "guard retry/redirect enforcement",
+    "quota and refresh failure handling",
+    "unmanaged agent and sidecar prompt denial"
+  ],
+  "remaining_release_gates": [
+    "real Telegram intentional silence and scope isolation",
+    "real voice persistence",
+    "real owner-approved delivery",
+    "production reconnect and cutover"
+  ],
+  "notes": "Synthetic browser proof only. Existing Telegram production release gates remain pending; this phase does not release or merge main."
+}
