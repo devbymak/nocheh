@@ -1,0 +1,23 @@
+{
+  "phase": "P2",
+  "status": "passed",
+  "checks": {
+    "compose_js_ts_tests": 32,
+    "pinned_python_tests": 44,
+    "http_ws_auth_graph_checks": 13,
+    "standalone_root": true,
+    "legacy_bookmark_redirect": true,
+    "native_prefix_and_return_link": true,
+    "mobile_import_navigation_390px": true,
+    "live_runtime_status": true,
+    "graph_local_assets": true,
+    "native_down_nocheh_up": true,
+    "csrf_and_origin_denial": true,
+    "websocket_ticket_expiry_replay_scope": true
+  },
+  "notes": [
+    "Native runtime administration and agent routes remain restricted until P3-P6 acceptance.",
+    "A skipped navigation transition was observed after native return navigation; rendering and controls remained functional.",
+    "No model calls or Telegram test messages were sent by these dashboard checks."
+  ]
+}
