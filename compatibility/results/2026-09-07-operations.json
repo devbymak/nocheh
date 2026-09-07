@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-09-07T10:33:57.712622+00:00",
+  "environment": "local-compose-orbstack-arm64",
+  "status": "operations_verified_release_pending_telegram",
+  "checks": {
+    "typescript_postgresql": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "python_native_and_operations": {
+      "passed": 24,
+      "failed": 0
+    },
+    "backup": "passed_writers_quiesced_and_resumed",
+    "restore_fresh_project": "passed",
+    "table_fingerprints_matched": [
+      "events",
+      "artifacts",
+      "derived_artifacts",
+      "dispatches",
+      "spool_failures",
+      "guarded_cache",
+      "transcription_jobs",
+      "action_requests"
+    ],
+    "state_files_verified": 42,
+    "source_services_healthy": 5,
+    "restored_services_healthy": 5,
+    "restored_login_active": false,
+    "restored_telegram_active": false,
+    "source_login_present": true,
+    "source_telegram_active": false
+  },
+  "initial_restore_startup": "A connection timeout occurred during a concurrent bridge build. The copied tables had already matched. A corrected TCP PostgreSQL health check and a fresh-project retry passed; the first failure is retained in local reports.",
+  "release_pending": [
+    "real Telegram DM/group/voice/approval/reconnect acceptance",
+    "activate and verify the intended bot",
+    "final release commit and merge only after those gates pass"
+  ],
+  "subscription_transcription_evidence": "2026-09-06-compose.json (live Ogg/Opus previously passed); not rerun by this backup rehearsal",
+  "paid_model_calls_in_operations": 0
+}
