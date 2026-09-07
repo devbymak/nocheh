@@ -1,0 +1,72 @@
+{
+  "recorded_at": "2026-09-07T11:03:46.101787+00:00",
+  "environment": "local-compose",
+  "os": "Linux",
+  "machine": "aarch64",
+  "synthetic_inputs_only": true,
+  "checks": {
+    "refresh": {
+      "status": "passed",
+      "duration_ms": 2379
+    },
+    "chat": {
+      "status": "passed",
+      "duration_ms": 18430
+    },
+    "detector": {
+      "status": "passed",
+      "duration_ms": 3587
+    },
+    "transcription": {
+      "status": "passed",
+      "duration_ms": 7476
+    }
+  },
+  "checkpoint": "archive-processing-and-env-cleanup",
+  "typescript_postgresql_tests": 14,
+  "python_integration_tests": 30,
+  "subscription_contract_tests": 21,
+  "telegram_live": "pending bot token and owner/group configuration",
+  "main_merged": false,
+  "honcho_contract_tests": 5,
+  "required_guard_recheck": {
+    "recorded_at": "2026-09-07T11:08:09.098985+00:00",
+    "environment": "local-compose",
+    "synthetic_inputs_only": true,
+    "guard_mode": "on",
+    "detector_fixture_results": [
+      {
+        "fixture": 0,
+        "exact_expected_mask": true,
+        "guarded": true,
+        "masked_spans": 1,
+        "duration_ms": 9
+      },
+      {
+        "fixture": 1,
+        "exact_expected_mask": true,
+        "guarded": true,
+        "masked_spans": 0,
+        "duration_ms": 2
+      },
+      {
+        "fixture": 2,
+        "exact_expected_mask": true,
+        "guarded": true,
+        "masked_spans": 1,
+        "duration_ms": 1
+      }
+    ],
+    "exact_fixture_matches": 3,
+    "fixture_count": 3,
+    "guarded_native_chat": {
+      "status": "passed",
+      "required_boundary_attempts": 1,
+      "guard_failure_codes": [],
+      "duration_ms": 22220
+    },
+    "note": "Small synthetic quality sample, not a guarantee of complete secret detection. No requests sent to protected.invalid.",
+    "cache_note": "Synthetic fixtures may reuse the existing versioned guard cache; this rechecks the request path, not fresh detector recall."
+  },
+  "saved_guard_mode_restored": "auto"
+}
