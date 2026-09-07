@@ -1,0 +1,9 @@
+{
+  "phase": "P3",
+  "date": "2026-09-07",
+  "target": "local-compose",
+  "runtime": "Hermes 0.21.0 / 7166071fcaadb36df26f6d753dda97da6b5d699e",
+  "tests": {"js_ts": 32, "python": 52, "host_http_ws": 3, "skipped": 0},
+  "verified": ["actual profile and session state", "CLI reads and live native unchanged preference save", "native form revision handshake", "global changes invalidate stale profile writes", "inherited value provenance", "credentials redacted", "unknown configuration retained", "workspace traversal and symlink containment", "managed profile bindings retained", "removed private profiles retained for recovery", "no session bootstrap or automatic archival on inspection"],
+  "notes": ["SQLite read-only connections may create locking sidecars", "Job overrides are stored but execution is P6", "Broader tool and action policy controls are P5", "No model calls or test Telegram messages were sent", "Remaining production release gates are unchanged"]
+}
