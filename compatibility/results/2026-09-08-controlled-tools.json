@@ -1,0 +1,39 @@
+{
+  "phase": "P5",
+  "date": "2026-09-08",
+  "runtime": "7166071fcaadb36df26f6d753dda97da6b5d699e",
+  "checks": {
+    "typescript_tests": 39,
+    "python_full_suite": 78,
+    "python_followup_targeted": 16,
+    "new_audience_preference_test": true,
+    "real_shell_sandbox": {
+      "workspace_write": true,
+      "network_denied": true,
+      "root_read_only": true,
+      "credentials_absent": true,
+      "runtime_state_absent": true,
+      "docker_socket_absent": true
+    },
+    "offline_chromium": {
+      "rendered": true,
+      "page_scripts_removed": true,
+      "links_retained": true,
+      "transient_attempt": "One sandbox attempt failed during concurrent builds; fresh offline acceptance passed after the build. No automatic production retry."
+    },
+    "dashboard_approval_to_worker_result": true,
+    "cli_reads_same_result": true,
+    "dashboard_permission_cli_revocation": true,
+    "model_calls": 0,
+    "telegram_sends": 0
+  },
+  "synthetic_acceptance": {
+    "id": "dad9c632ad95cb3e67aaadc49ff58777c5e129dd99336f802abc2e89aa5810d5",
+    "event_id": "27caeda92d0c0f385cd11561b1f51296a806e463ba342c8111832d2ae1298bbd"
+  },
+  "limitations": [
+    "Browser inspects an inert offline document, without interactive actions or logins.",
+    "MCP supports public HTTPS JSON responses, protocol 2025-11-25; no SSE, local processes or inherited authentication.",
+    "External Telegram delivery acceptance remains a separate pending release gate."
+  ]
+}
