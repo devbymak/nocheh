@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-09-09T16:31:58.709013+00:00",
+  "provider": "openai",
+  "model": "text-embedding-3-small",
+  "synthetic_only": true,
+  "status": "provider_rejected",
+  "error_type": "RuntimeError",
+  "budget": {
+    "mode": "pilot",
+    "limit_usd": 5,
+    "reserved_usd": 0.01,
+    "lifetime_reserved_usd": 0.01
+  },
+  "http_status": 429,
+  "note": "One synthetic request through the capped meter; no automatic retry. The reservation is not an invoice. API key presence is verified locally, but provider acceptance remains pending."
+}
