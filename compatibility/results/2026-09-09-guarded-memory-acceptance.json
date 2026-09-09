@@ -1,0 +1,80 @@
+{
+  "recorded_at": "2026-09-09T16:23:43.068566+00:00",
+  "environment": "local-compose",
+  "status": "partially_verified",
+  "branch": "codex/hermes-rebuild",
+  "checks": {
+    "guarded_live_workflow": "passed",
+    "dashboard_original_guarded_edit_history": "passed",
+    "guarded_backfill": "passed",
+    "restart_originals_and_owner_edits": "passed",
+    "fixture_import_learning_consent_unchanged": "passed",
+    "fixture_on_off_isolation_and_invalidation": "passed",
+    "fixture_guarded_export_restore": "passed",
+    "honcho_provider_acceptance": "credentials_pending",
+    "honcho_scoped_live_pilot": "pending",
+    "opted_in_history_pilot": "pending"
+  },
+  "backfill": {
+    "events_ready": 161,
+    "derived_artifacts_ready": 278,
+    "pending": 0,
+    "failed": 0,
+    "note": "Readiness means prepared, not guaranteed secret-free."
+  },
+  "runtime": {
+    "guard_mode": "on",
+    "honcho_attached": false,
+    "honcho_verified": false,
+    "all_compose_services_healthy": true,
+    "hermes_reasoning": "native ChatGPT subscription; not moved to CLIProxyAPI"
+  },
+  "fixture_after_restart": {
+    "original_unchanged": true,
+    "guarded_edit_preserved": true,
+    "learning_consents": 0
+  },
+  "regression": {
+    "javascript_typescript": {
+      "passed": 47,
+      "failed": 0,
+      "skipped": 0
+    },
+    "pinned_hermes_python": {
+      "passed": 94,
+      "failed": 0,
+      "skipped": 0
+    },
+    "pinned_honcho_python": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "graphify": {
+    "files": 156,
+    "nodes": 1116,
+    "edges": 3450,
+    "model_calls": 0
+  },
+  "budget": {
+    "mode": "pilot",
+    "limit_usd": 5,
+    "reserved_usd": 0,
+    "paid_requests": 0,
+    "monthly_cap_usd": 5,
+    "monthly_enabled": false
+  },
+  "credential_checks": {
+    "dedicated_embedding_key_present": false,
+    "separate_bridge_login_present": false,
+    "last_device_login": "expired"
+  },
+  "evidence": "2026-09-09-guarded-copies.json",
+  "limits": [
+    "Honcho real ingestion, reasoning, recall, embedding, restart and provider-failure gates remain pending.",
+    "The isolated provider runner and scoped runtime attachment require separate live verification.",
+    "Existing Telegram isolation, silence, voice, approval and reconnect release gates remain required.",
+    "No release or merge to main."
+  ]
+}
