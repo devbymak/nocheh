@@ -1,0 +1,423 @@
+{
+  "synthetic_only": true,
+  "status": "passed",
+  "checks": {
+    "no_approval_for_context": true,
+    "provider_receipts": true,
+    "credentials_absent_from_logs": true
+  },
+  "quality": [
+    {
+      "case": "recall",
+      "placement": "legacy",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 39.65,
+      "correct_fields": [
+        "project_code",
+        "owner",
+        "backup_owner"
+      ],
+      "answer": "{\"project_code\":\"amber-71\",\"owner\":\"Mina\",\"backup_owner\":\"Jules\"}"
+    },
+    {
+      "case": "grounding",
+      "placement": "legacy",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 41.44,
+      "correct_fields": [
+        "current_budget",
+        "previous_budget",
+        "launch_date",
+        "source"
+      ],
+      "answer": "{\"current_budget\":420,\"previous_budget\":300,\"launch_date\":\"18 October\",\"source\":\"nocheh:event:0b50c69779ea08486b360544478d2a7aaf7354bea4ed64bbf69f9200c36986d0\"}"
+    },
+    {
+      "case": "reasoning",
+      "placement": "legacy",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 61.76,
+      "correct_fields": [
+        "owner",
+        "project_code",
+        "budget_increase",
+        "source"
+      ],
+      "answer": "{\"owner\":\"Mina\",\"project_code\":\"amber-71\",\"budget_increase\":120,\"source\":\"nocheh:event:0b50c69779ea08486b360544478d2a7aaf7354bea4ed64bbf69f9200c36986d0\"}"
+    },
+    {
+      "case": "recall",
+      "placement": "evidence",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 37.16,
+      "correct_fields": [
+        "project_code",
+        "owner",
+        "backup_owner"
+      ],
+      "answer": "{\"project_code\":\"amber-71\",\"owner\":\"Mina\",\"backup_owner\":\"Jules\"}"
+    },
+    {
+      "case": "grounding",
+      "placement": "evidence",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 83.82,
+      "correct_fields": [
+        "current_budget",
+        "previous_budget",
+        "launch_date",
+        "source"
+      ],
+      "answer": "{\"current_budget\":420,\"previous_budget\":300,\"launch_date\":\"18 October\",\"source\":\"nocheh:event:0b50c69779ea08486b360544478d2a7aaf7354bea4ed64bbf69f9200c36986d0\"}"
+    },
+    {
+      "case": "reasoning",
+      "placement": "evidence",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 73.27,
+      "correct_fields": [
+        "owner",
+        "project_code",
+        "budget_increase",
+        "source"
+      ],
+      "answer": "{\"owner\":\"Mina\",\"project_code\":\"amber-71\",\"budget_increase\":120,\"source\":\"nocheh:event:0b50c69779ea08486b360544478d2a7aaf7354bea4ed64bbf69f9200c36986d0\"}"
+    },
+    {
+      "case": "recall",
+      "placement": "legacy",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 34.41,
+      "correct_fields": [
+        "project_code",
+        "owner",
+        "backup_owner"
+      ],
+      "answer": "{\"project_code\":\"amber-71\",\"owner\":\"Mina\",\"backup_owner\":\"Jules\"}"
+    },
+    {
+      "case": "grounding",
+      "placement": "legacy",
+      "repetition": 1,
+      "passed": false,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 42.98,
+      "correct_fields": [
+        "source"
+      ],
+      "answer": "{\"current\":420,\"earlier\":300,\"launch\":\"18 October\",\"source\":\"nocheh:event:0b50c69779ea08486b360544478d2a7aaf7354bea4ed64bbf69f9200c36986d0\"}"
+    },
+    {
+      "case": "reasoning",
+      "placement": "legacy",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 68.51,
+      "correct_fields": [
+        "owner",
+        "project_code",
+        "budget_increase",
+        "source"
+      ],
+      "answer": "{\"owner\":\"Mina\",\"project_code\":\"amber-71\",\"budget_increase\":120,\"source\":\"nocheh:event:0b50c69779ea08486b360544478d2a7aaf7354bea4ed64bbf69f9200c36986d0\"}"
+    },
+    {
+      "case": "recall",
+      "placement": "evidence",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 44.81,
+      "correct_fields": [
+        "project_code",
+        "owner",
+        "backup_owner"
+      ],
+      "answer": "{\"project_code\":\"amber-71\",\"owner\":\"Mina\",\"backup_owner\":\"Jules\"}"
+    },
+    {
+      "case": "grounding",
+      "placement": "evidence",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 41.31,
+      "correct_fields": [
+        "current_budget",
+        "previous_budget",
+        "launch_date",
+        "source"
+      ],
+      "answer": "{\"current_budget\":420,\"previous_budget\":300,\"launch_date\":\"18 October\",\"source\":\"nocheh:event:0b50c69779ea08486b360544478d2a7aaf7354bea4ed64bbf69f9200c36986d0\"}"
+    },
+    {
+      "case": "reasoning",
+      "placement": "evidence",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 64.03,
+      "correct_fields": [
+        "owner",
+        "project_code",
+        "budget_increase",
+        "source"
+      ],
+      "answer": "{\"owner\":\"Mina\",\"project_code\":\"amber-71\",\"budget_increase\":120,\"source\":\"nocheh:event:0b50c69779ea08486b360544478d2a7aaf7354bea4ed64bbf69f9200c36986d0\"}"
+    }
+  ],
+  "active_runtime_changed": false,
+  "model": "gpt-5.6-sol",
+  "model_context_length": 272000,
+  "images": {
+    "nocheh-hermes": "sha256:54164a5da66f183c000672f08a14a22d915f775d164dcc91a2c95c636932c970",
+    "nocheh-services": "sha256:4b28d94a0e07870ae28f9c58e7ac39c31a3564f405753cc94f36828c6cdf7378"
+  },
+  "effect_evidence": {
+    "observed_events": 200,
+    "states": {
+      "memory.read:proposed": 15,
+      "memory.read:allowed": 15,
+      "memory.read:completed": 15,
+      "model.request:proposed": 22,
+      "model.request:allowed": 22,
+      "model.request:started": 22,
+      "model.request:completed": 22,
+      "archive.read:proposed": 23,
+      "archive.read:allowed": 22,
+      "archive.read:completed": 22
+    },
+    "sample": [
+      {
+        "id": "189",
+        "effect_id": "c74f3adc-62db-4775-aca8-db5778eda556",
+        "state": "completed",
+        "kind": "archive.read",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.060Z"
+      },
+      {
+        "id": "190",
+        "effect_id": "1b9a7d84-3c2f-4859-b615-3f22a0f73485",
+        "state": "proposed",
+        "kind": "memory.read",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.072Z"
+      },
+      {
+        "id": "191",
+        "effect_id": "1b9a7d84-3c2f-4859-b615-3f22a0f73485",
+        "state": "allowed",
+        "kind": "memory.read",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.073Z"
+      },
+      {
+        "id": "192",
+        "effect_id": "1b9a7d84-3c2f-4859-b615-3f22a0f73485",
+        "state": "completed",
+        "kind": "memory.read",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.080Z"
+      },
+      {
+        "id": "193",
+        "effect_id": "f460a186-7a5f-4f79-9dfc-905ee3ffcd6d",
+        "state": "proposed",
+        "kind": "memory.read",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.081Z"
+      },
+      {
+        "id": "194",
+        "effect_id": "f460a186-7a5f-4f79-9dfc-905ee3ffcd6d",
+        "state": "allowed",
+        "kind": "memory.read",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.084Z"
+      },
+      {
+        "id": "195",
+        "effect_id": "f460a186-7a5f-4f79-9dfc-905ee3ffcd6d",
+        "state": "completed",
+        "kind": "memory.read",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.092Z"
+      },
+      {
+        "id": "196",
+        "effect_id": "6fa11a5c-03b4-4941-b66a-26cf9836148f",
+        "state": "proposed",
+        "kind": "model.request",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.112Z"
+      },
+      {
+        "id": "197",
+        "effect_id": "6fa11a5c-03b4-4941-b66a-26cf9836148f",
+        "state": "allowed",
+        "kind": "model.request",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.116Z"
+      },
+      {
+        "id": "198",
+        "effect_id": "6fa11a5c-03b4-4941-b66a-26cf9836148f",
+        "state": "started",
+        "kind": "model.request",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:23:58.124Z"
+      },
+      {
+        "id": "199",
+        "effect_id": "6fa11a5c-03b4-4941-b66a-26cf9836148f",
+        "state": "completed",
+        "kind": "model.request",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:24:02.075Z"
+      },
+      {
+        "id": "200",
+        "effect_id": "47178a51-3c9b-49f4-8c5f-4dc83ca5e96f",
+        "state": "proposed",
+        "kind": "archive.read",
+        "scope": "1",
+        "profile": "nocheh-7feec4751ae79acc58978243",
+        "source_event_id": "c59eefa81cecb81254066fa367caeffe55e0a428c25f8a19313191583dd77942",
+        "policy_revision": "1",
+        "origin": "default",
+        "rule": "authorized_context",
+        "permission_id": null,
+        "created_at": "2026-09-10T18:24:02.086Z"
+      }
+    ],
+    "receipt_semantics": "allowed records authority; completed records an observed result; missing outcomes remain ambiguous"
+  },
+  "quality_gate": {
+    "cases_per_placement": 6,
+    "strict_passes": {
+      "legacy": 5,
+      "evidence": 6
+    },
+    "passed": true,
+    "limit": "Small synthetic corpus; this is observed parity, not a universal accuracy guarantee."
+  },
+  "assessment_note": "The baseline returned correct factual values under different JSON field names in one case. Its strict failure is retained; the candidate passed all six exact checks."
+}

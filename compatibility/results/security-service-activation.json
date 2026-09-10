@@ -1,0 +1,48 @@
+{
+  "environment": "local-compose",
+  "status": "passed",
+  "telegram_messages_sent": 0,
+  "profile_conversion": {
+    "profiles": [
+      {
+        "profile": "nocheh-4d9be05d2383debec2d39b71",
+        "moved": true,
+        "preserved": true,
+        "sha256": "4778b41f5b49030173c6e8d62ae968cd20df0a848b489c8544847503d6d45988"
+      },
+      {
+        "profile": "nocheh-99c98e38f9d067dfb6330538",
+        "moved": true,
+        "preserved": true,
+        "sha256": "55efc87fa54216b284b8838de9730b4b1e53e9d1c1a10cea4130bf510d3a2642"
+      },
+      {
+        "profile": "nocheh-df1248eec6621ef1cf355c00",
+        "moved": true,
+        "preserved": true,
+        "sha256": "c6bb57b61d8626707a6e6b053c150803e2603ed1198d16dbdd4d35190de24475"
+      },
+      {
+        "profile": "nocheh-ee2769dde25be0b9668a6f25",
+        "moved": true,
+        "preserved": true,
+        "sha256": "85ed84c7ca9511230cf67cfab526d7e6958b7d9cab0dcdc3e1bc5c28256d205d"
+      }
+    ]
+  },
+  "images": {
+    "nocheh-hermes": {
+      "before": "sha256:564c909889667b6f0c8810479894b50e74236cb28092494f262b41e76d96281b",
+      "active": "sha256:4a4d54c8612b795daae76ae8aa5df4bde77d058606b02867441e9a82fb9905be"
+    },
+    "nocheh-services": {
+      "before": "sha256:e72c477def1f89055e216e3b74351a5ce492f23fa89a16de48c94660cbe3f146",
+      "active": "sha256:eb71e8656d09fcbe7f4c6035d697b3aae4393ce8f42920f055d4dc44d4e32275"
+    }
+  },
+  "security_runtime": "isolated",
+  "memory_context": "evidence",
+  "tool_executor_restarted": true,
+  "live_acceptance": "security-service-active.json",
+  "completed_at": "2026-09-10T18:56:11.189422+00:00"
+}

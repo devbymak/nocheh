@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-09-10T18:54:23.384244+00:00",
+  "synthetic_only": true,
+  "telegram_messages_sent": 0,
+  "checks": [
+    {
+      "name": "isolated_mode",
+      "passed": true
+    },
+    {
+      "name": "complete_memory_evidence",
+      "passed": true
+    },
+    {
+      "name": "saved_owner_copy_exact",
+      "passed": true
+    },
+    {
+      "name": "provider_context_preserved",
+      "passed": true
+    },
+    {
+      "name": "active_isolated_archive_recall",
+      "passed": true
+    },
+    {
+      "name": "native_history_persisted",
+      "passed": true
+    },
+    {
+      "name": "active_provider_receipt",
+      "passed": true
+    },
+    {
+      "name": "routine_work_without_approval",
+      "passed": true
+    }
+  ],
+  "detector_changed_synthetic_text": true,
+  "model": "gpt-5.6-sol",
+  "model_context_length": 272000,
+  "existing_memory_limitation_notice": true,
+  "source": "96787e17500a631b6a69c9d0728d47f99ae36b5398922542512cb13e6fb2dbbc",
+  "status": "passed"
+}

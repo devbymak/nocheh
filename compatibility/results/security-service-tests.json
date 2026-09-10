@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-09-10T18:54:14.202737+00:00",
+  "services": {
+    "passed": 55,
+    "failed": 0,
+    "skipped": 0,
+    "database": "isolated PostgreSQL 17"
+  },
+  "pinned_hermes": {
+    "run": 123,
+    "passed": 121,
+    "failed": 0,
+    "optional_skipped": 2
+  },
+  "real_docker_confinement": {
+    "passed": true,
+    "separately_exercised": true
+  },
+  "coverage": [
+    "exact guarded revisions",
+    "audience and guard epoch revocation",
+    "owner-only policy and optimistic conflicts",
+    "deny overrides prior approval",
+    "bounded grant reuse across turns",
+    "revocation between claim and start",
+    "no replay after uncertain effects",
+    "hosted provider tools and opaque context denied even with masking off",
+    "stream revoked before stale output delivery",
+    "complete memory evidence and context accounting",
+    "native startup, history conversion and portable export",
+    "browser isolation flag propagation",
+    "real isolated filesystem and network"
+  ]
+}
