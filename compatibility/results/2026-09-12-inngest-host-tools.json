@@ -1,0 +1,41 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I5 host controlled tools",
+  "environment": "isolated Compose PostgreSQL and pinned Hermes without network",
+  "services": {
+    "passed": 67,
+    "failed": 0,
+    "skipped": 0
+  },
+  "hermes": {
+    "passed": 138,
+    "failed": 0,
+    "skipped": 1,
+    "skip": "optional Docker security fixture"
+  },
+  "build": "passed",
+  "verified": [
+    "transactional workflow requests for tool proposals and permissions",
+    "targeted host claims require current workflow lease and ownership epoch",
+    "Inngest host preserves one active controlled executor",
+    "already claimed tool drains after admission pauses",
+    "revoked approval and changed guard revision deny execution",
+    "expired tool claim remains ambiguous without replacement execution",
+    "actual tool receipt linked to workflow registry",
+    "lost finish acknowledgment reconciles the same receipt",
+    "bounded batch admission leaves time for executor cleanup"
+  ],
+  "graph": {
+    "files": 229,
+    "nodes": 1473,
+    "edges": 4965,
+    "model_calls": 0
+  },
+  "pending": [
+    "browser and schedule workflows",
+    "owner monitoring API/CLI and detailed UI",
+    "fresh image build",
+    "local cutover and real Telegram acceptance"
+  ],
+  "active_local_cutover": "not performed"
+}
