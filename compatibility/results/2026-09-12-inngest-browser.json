@@ -1,0 +1,43 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I5 browser durable admission and native async runs",
+  "environment": "isolated local Compose, real Inngest Connect, synthetic runtime and pinned Hermes fixtures",
+  "services": {
+    "passed": 68,
+    "failed": 0,
+    "skipped": 0
+  },
+  "hermes": {
+    "passed": 143,
+    "failed": 0,
+    "skipped": 1,
+    "skip": "optional Docker security fixture"
+  },
+  "build": "passed",
+  "fixture_image": "sha256:b9873494494eeab2a375e3a9746daf1ae89cc6d379bfa8ac6cb5f0cc9f11c73c",
+  "verified": [
+    "browser submission and workflow request commit together; source capture alone does not admit a turn",
+    "same native session and permanently stable execution identity across lost acknowledgments",
+    "protected native stream journal reconnect and cancellation",
+    "current audience and guard revision before exposing streamed or final content",
+    "unknown runtime receipt after a domain claim closes ambiguous without a replacement run",
+    "native receipt saved before archive finish; lost finish response reconciles once",
+    "legacy claim rejected after ownership switch",
+    "fresh image host Connect imports 103 records in 3 batches, 0 replies, 0 unapproved learning",
+    "real pipeline Connect: download attempts 2, transcription 1, Telegram start 1/resume 1, browser start 1/resume 2",
+    "no browser content canaries in any public Inngest database table"
+  ],
+  "graph": {
+    "files": 233,
+    "nodes": 1508,
+    "edges": 5141,
+    "model_calls": 0
+  },
+  "pending": [
+    "schedule migration and native scheduler execution-loop retirement",
+    "owner monitoring API/CLI and detailed UI",
+    "local cutover and live browser behavior",
+    "real Telegram acceptance"
+  ],
+  "active_local_cutover": "not performed"
+}
