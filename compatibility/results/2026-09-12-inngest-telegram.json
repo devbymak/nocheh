@@ -1,0 +1,30 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I3 Connect source preparation, asynchronous Telegram and receipt reconciliation",
+  "environment": "isolated local Compose; synthetic runtime and source data",
+  "tests": {
+    "services": {"passed": 62, "failed": 0, "skipped": 0},
+    "hermes": {"passed": 133, "failed": 0, "skipped": 1},
+    "hermes_skip": "optional isolated Docker security fixture",
+    "recovery": {"passed": 9, "failed": 0},
+    "build": "passed",
+    "updated_fixture_image": "built"
+  },
+  "real_inngest_pipeline": {
+    "workflows_completed": ["preparation", "telegram"],
+    "download_calls": 2,
+    "injected_download_failures": 1,
+    "transcription_calls": 1,
+    "runtime_start_calls": 1,
+    "injected_lost_start_responses": 1,
+    "runtime_resume_calls": 1,
+    "native_receipt_state": "done",
+    "completed_identity_replay": "no replacement effect",
+    "source_canary_matches_in_events_history_finishes_spans_traces": 0
+  },
+  "native_fixtures": ["queued request survives pre-execution crash", "restart reconciles an existing native receipt", "unknown or uncertain execution cannot create a replacement", "same request and attempt across reconnect", "cancellation", "intentional silence", "separate assistant and delivery progress"],
+  "real_worker_health": {"connected": "HTTP 200", "inngest_stopped": "HTTP 503 reconnecting", "inngest_restarted": "HTTP 200 on same worker", "fixture_worker_cleanup": "stopped after checks"},
+  "graph": {"files": 212, "nodes": 1401, "edges": 4573, "model_calls": 0},
+  "pending": ["host Connect worker and remaining workflow families", "owner API and unified UI", "cutover and rollback acceptance", "real owner text/voice, group silence, isolation, approval and restart gates"],
+  "active_local_cutover": "not performed"
+}
