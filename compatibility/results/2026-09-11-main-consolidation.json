@@ -1,0 +1,36 @@
+{
+  "recorded_on": "2026-09-11",
+  "environment": "local-compose",
+  "status": "pre_merge_verification_passed",
+  "source_branch": "codex/hermes-rebuild",
+  "previous_source_commit": "b3669c0d6b2b08733675546266c223e05fe57e27",
+  "target_branch": "main",
+  "preserved_legacy_commit": "9dd0b58",
+  "included_memory_branches": {
+    "codex/memory-space-policies": "4b6cf2f",
+    "codex/integrate-space-memory": "e4442a6"
+  },
+  "superseded_draft_stash": "f4e3bcee95a9ddbd907906ef69740d8efcbca08e",
+  "retired_worktrees": {
+    "nocheh-memory-integration": {
+      "all_entries_verified": 400,
+      "complete_archive_sha256": "f64a3a3c6c7bd60de204912da67f7e9330ccd9503f4a72f5b55ae869fda2d1ea"
+    },
+    "nocheh-memory-space-policies": {
+      "all_entries_verified": 642,
+      "complete_archive_sha256": "032b977009abf984106002306bf7ffee82c80c3efc2bb659a9cafee61b607d5c"
+    }
+  },
+  "tests": {
+    "services": {"passed": 57, "failed": 0, "skipped": 0},
+    "hermes": {"passed": 125, "failed": 0, "skipped": 1},
+    "hermes_skip_reason": "explicit isolated Docker security fixture required",
+    "initial_service_failure": "memory review was suppressed by another schema's database-wide advisory lock",
+    "resolution": "schema-scoped review lock; verified same-schema exclusion and independence from other schemas"
+  },
+  "graph": {"files": 195, "nodes": 1355, "edges": 4224, "model_calls": 0},
+  "provider": {"login_count": 0, "reasoning_route": "native", "shared_cutover": "pending"},
+  "release_acceptance": "remaining live gates pending",
+  "remote_fetch": "unavailable: local GitHub HTTPS authentication missing",
+  "remote_push": "not_performed"
+}
