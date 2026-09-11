@@ -1,0 +1,37 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I1 infrastructure, Connect compatibility and recovery",
+  "environment": "isolated local Compose with synthetic credentials",
+  "versions": {"sdk": "4.20.0", "server": "1.44.0", "redis": "7.4.11"},
+  "tests": {
+    "services": {"passed": 58, "failed": 0, "skipped": 0},
+    "hermes_discovery": {"passed": 127, "failed": 0, "skipped": 2},
+    "hermes_deployment_source_rerun": {"passed": 1, "failed": 0, "skipped": 0},
+    "hermes_skips": ["deployment-source check rerun separately with source mounted", "optional isolated Docker security fixture"],
+    "focused_recovery_configuration": {"passed": 17, "failed": 0},
+    "build": "passed",
+    "fixture_image_build": "passed"
+  },
+  "connect": {
+    "apps": ["nocheh-pipeline", "nocheh-host"],
+    "real_registration": "passed",
+    "postgres_redis_inngest_restart": "passed",
+    "durable_sleep_resume": "passed",
+    "completed_steps": 4,
+    "calls_per_step": 1,
+    "archive_access_for_inngest_role": "denied"
+  },
+  "recovery": {
+    "inngest_stopped_during_snapshot": true,
+    "postgres_tables_verified": 14,
+    "redis_snapshot_bytes": 3434,
+    "separate_project_restore": "passed",
+    "redis_rdb_to_aof_conversion": "passed",
+    "redis_keys_after_normal_restart": 30,
+    "restored_coordinator_and_workers": "inactive"
+  },
+  "graph": {"files": 201, "nodes": 1315, "edges": 4225, "model_calls": 0},
+  "active_installation": "not activated",
+  "pending": ["product function registration and worker health", "I2-I7 implementation and acceptance", "real owner Telegram acceptance", "provider and Honcho separate gates"],
+  "remote_synchronization": "GitHub HTTPS authentication unavailable at preceding increment"
+}
