@@ -1,0 +1,51 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I4 transactional memory requests and native/Honcho operations",
+  "environment": "isolated local Compose; synthetic data and runtimes",
+  "tests": {
+    "services": {
+      "passed": 63,
+      "failed": 0,
+      "skipped": 0
+    },
+    "recovery": {
+      "passed": 9,
+      "failed": 0
+    },
+    "build": "passed"
+  },
+  "verified": [
+    "SQL and TypeScript permanent identity equality including Unicode",
+    "source, consent, guard and memory revisions publish in the archive transaction",
+    "rolled-back consent has no workflow request",
+    "historical sources never create Telegram replies",
+    "native review retries preserve existing job identity",
+    "owner edits supersede old review work",
+    "missing consent denies review and synchronization",
+    "detached Honcho makes no remote call",
+    "uncertain Honcho writes reconcile through read-only remote receipt lookup without resending"
+  ],
+  "real_connect_pipeline": {
+    "result": "passed",
+    "download_calls": 2,
+    "transcription_calls": 1,
+    "start_calls": 1,
+    "resume_calls": 1,
+    "receipt": "done",
+    "fixture_correction": "unique source per invocation avoids earlier-run event deduplication; duplicate replay remains tested within a run"
+  },
+  "graph": {
+    "files": 215,
+    "nodes": 1410,
+    "edges": 4640,
+    "model_calls": 0
+  },
+  "pending": [
+    "bounded imports and host worker",
+    "remaining native workflow families",
+    "owner monitoring and controls",
+    "local cutover and real Telegram acceptance"
+  ],
+  "active_local_cutover": "not performed",
+  "honcho_activation": "not performed"
+}
