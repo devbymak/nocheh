@@ -1,0 +1,55 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I5 native schedule controllers and asynchronous occurrences",
+  "environment": "isolated PostgreSQL, real local Inngest Connect, pinned Hermes with synthetic runtime",
+  "services": {
+    "passed": 69,
+    "failed": 0,
+    "skipped": 0
+  },
+  "hermes": {
+    "passed": 145,
+    "failed": 0,
+    "skipped": 1,
+    "skip": "optional Docker security fixture"
+  },
+  "followup_verification": {
+    "service_schedule_tests": 2,
+    "native_schedule_and_async_tests": 12,
+    "purpose": "ordered native publications reject delayed older checkpoints and same-sequence conflicts"
+  },
+  "build": "passed",
+  "verified": [
+    "Inngest durable wait and zero failed attempts while waiting for native cadence",
+    "native loop admits no execution after family ownership changes",
+    "native definitions and occurrence accounting retain stable identities",
+    "missed slots, explicit catch-up, changed definitions, final repeat and restart",
+    "profile overlap and four scheduled-run capacity limit at durable admission",
+    "asynchronous scheduler start/resume/events/cancel preserve native session identity",
+    "lost start response reconciles one native execution",
+    "native receipt persists before archive result and native completion accounting",
+    "publication sequence prevents stale delayed definition writes",
+    "restored scheduler hold blocks asynchronous admission",
+    "backup table manifest includes workflow_schedules",
+    "no plaintext, hex or base64 schedule canary matches in Inngest public tables"
+  ],
+  "real_connect": {
+    "schedule_advance": 2,
+    "schedule_start": 1,
+    "schedule_resume": 2,
+    "native_effects": 1,
+    "completed_receipt": true
+  },
+  "graph": {
+    "files": 235,
+    "nodes": 1533,
+    "edges": 5282,
+    "model_calls": 0
+  },
+  "pending": [
+    "owner monitoring API/CLI and inspection UI",
+    "local cutover, rollback and active-family acceptance",
+    "real Telegram text/voice/group/isolation/approval/restart acceptance"
+  ],
+  "active_local_cutover": "not performed"
+}
