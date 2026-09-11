@@ -1,0 +1,77 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I4 bounded imports and host Connect worker",
+  "environment": "isolated local Compose; synthetic upload files and credentials; compiled worktree mounted into verified fixture image",
+  "tests": {
+    "services_full": {
+      "passed": 65,
+      "failed": 0,
+      "skipped": 0
+    },
+    "hermes_full": {
+      "passed": 134,
+      "failed": 0,
+      "skipped": 1
+    },
+    "hermes_skip": "optional isolated Docker security fixture",
+    "additional_host_supervisor_tests": {
+      "passed": 2
+    },
+    "recovery_after_host_drain_change": {
+      "passed": 9,
+      "failed": 0
+    },
+    "build": "passed"
+  },
+  "real_host_connect": {
+    "app": "nocheh-host",
+    "app_version": "host-1",
+    "imported_messages": 103,
+    "batches": 3,
+    "archive_events_including_manifest": 104,
+    "reply_executions": 0,
+    "learning_sources_without_consent": 0,
+    "duplicates": 0,
+    "injected_lost_checkpoint_responses": 1,
+    "result": "completed"
+  },
+  "real_pipeline_connect": {
+    "app": "nocheh-pipeline",
+    "app_version": "pipeline-1",
+    "result": "passed",
+    "download_calls": 2,
+    "transcription_calls": 1,
+    "runtime_start_calls": 1,
+    "runtime_resume_calls": 1
+  },
+  "verified": [
+    "no additional host listener or PostgreSQL port",
+    "SDK HTTP authentication and rejection of browser-origin requests",
+    "no event-ingestion endpoint or exposed Inngest UI",
+    "per-write legacy and Inngest ownership fences",
+    "batch lease expiry and cancellation close writes",
+    "lost checkpoint acknowledgment returns saved receipt",
+    "explicit resume keeps immutable consent, mapping and source IDs",
+    "legacy checkpoint seeds exactly once",
+    "changed inputs terminate without automatic retry",
+    "publication waits for fresh compatible worker registration",
+    "host OS lock excludes duplicate supervisors",
+    "inactive restore never launches host worker",
+    "backup drains and resumes the previously running host worker"
+  ],
+  "inngest_private_import_canary_matches": 0,
+  "graph": {
+    "files": 225,
+    "nodes": 1460,
+    "edges": 4858,
+    "model_calls": 0
+  },
+  "fresh_fixture_image_build": "pending: stopped after it stalled resolving pinned Node base-image metadata from Docker Hub; not reported as passed",
+  "pending": [
+    "remaining approved action, browser and schedule migration",
+    "owner workflow API/CLI and inspection UI",
+    "cutover, rollback and real Telegram acceptance",
+    "fresh image build"
+  ],
+  "active_local_cutover": "not performed"
+}
