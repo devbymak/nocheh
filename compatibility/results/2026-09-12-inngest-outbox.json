@@ -1,0 +1,30 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I2 transactional handoff, registry and fencing primitives",
+  "environment": "isolated local Compose with synthetic credentials",
+  "tests": {
+    "services": {"passed": 60, "failed": 0, "skipped": 0},
+    "focused_final_rerun": {"passed": 2, "failed": 0, "skipped": 0},
+    "recovery": {"passed": 9, "failed": 0},
+    "build": "passed"
+  },
+  "verified": [
+    "capture and outbox roll back together",
+    "duplicate source requests preserve the same registry and event identities",
+    "lost publication acknowledgment republishes the same event ID",
+    "expired publisher leases recover; concurrent publishers exclude each other",
+    "legacy ownership prevents publication",
+    "pause and drain precede atomic ownership changes",
+    "stale epochs and active family holders prevent execution or cutover",
+    "receipt gaps block replacement effects, including a different attempt number",
+    "conflicting receipts are rejected",
+    "closed workflow identities remain closed beyond 24 hours and through ownership rollback",
+    "Connect step checkpoints resume under strict metadata middleware",
+    "real history rejects protected step outputs and exception causes"
+  ],
+  "privacy_probe": {"rejected_executions": 2, "history_rows_scanned": 209, "protected_canary_matches": 0},
+  "graph": {"files": 205, "nodes": 1347, "edges": 4299, "model_calls": 0},
+  "pending": ["bind existing job operations and runners to family fences", "product Connect functions and worker health", "remaining family migrations and local cutover"],
+  "active_family_ownership": "legacy; no cutover",
+  "remote_synchronization": "GitHub HTTPS authentication unavailable"
+}
