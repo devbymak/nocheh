@@ -1,0 +1,53 @@
+{
+  "phase": "P7 tooling",
+  "date": "2026-09-08",
+  "hermes_revision": "7166071fcaadb36df26f6d753dda97da6b5d699e",
+  "release_acceptance_complete": false,
+  "verification": {
+    "typescript_tests": 41,
+    "python_tests": 91,
+    "host_management_tests": 2,
+    "candidate_runtime_build": true,
+    "candidate_native_contract_tests_no_network_or_live_mounts": true,
+    "candidate_dashboard_build": true,
+    "candidate_activated": false,
+    "saved_pin_consistent": true,
+    "ui_export_job": "37015156-cf77-42b7-813c-ce79d0af9ca6",
+    "cli_export": true,
+    "authenticated_zip_download": true,
+    "zip_hashes_and_crc": true,
+    "operational_credential_files_excluded": true,
+    "ast_only_graph_refreshed": true,
+    "telegram_messages_sent": 0
+  },
+  "recovery": {
+    "tables_verified": 18,
+    "state_files_verified": 175,
+    "fingerprints_unchanged_after_start": true,
+    "fingerprints_unchanged_after_restart": true,
+    "worker_tool_scheduler_holds": true,
+    "telegram_disabled": true,
+    "copied_oauth_inactive": true,
+    "rehearsal_stopped": true,
+    "upstream_revision_changed": false
+  },
+  "portable_export": {
+    "events": 135,
+    "original_files": 0,
+    "native_profiles": 2,
+    "session_databases_verified": 2,
+    "export_files": 5,
+    "native_notes_checked": 0,
+    "zip_sha256": "85f44b9d69babf55b6d69837b5435de60c96367a493258a3bae0a9ee926e0acb"
+  },
+  "failure_paths_observed": [
+    "The first backup rejected a native uv cache symlink and resumed the original services. The cache is now explicitly excluded; unknown links still fail.",
+    "The first portable export could not read a closed WAL-mode SQLite database on macOS and remained incomplete. Locked private snapshots fix that path; CLI and dashboard retry passed."
+  ],
+  "limitations": [
+    "The live archive had no original attachment files or native note files at export time; exact bytes and WAL behavior are covered by synthetic tests.",
+    "Portable archive/profile reads are separate snapshots. Full backup is required for one recovery point and operational/policy state.",
+    "This is recovery at the current pin, not approval of a future Hermes revision or an activated rollback.",
+    "Real Telegram intentional silence, private/group isolation, voice persistence, exact approved delivery and reconnect remain pending owner-supplied traffic. No main merge or cutover occurred."
+  ]
+}

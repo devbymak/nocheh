@@ -1,0 +1,24 @@
+{
+  "phase": "G4",
+  "status": "live_pending",
+  "pins": {
+    "honcho": "be54355545b64ddb10203829d323861f52423685",
+    "cliproxy": "c76dfd4e0edabab9000628b1560ab8ab379eadb8"
+  },
+  "checks": {
+    "pinned_images_build": "passed",
+    "isolated_compose_startup": "passed",
+    "scoped_boundary_and_budget_tests": 9,
+    "real_ingestion": "pending",
+    "real_retrieval": "pending",
+    "subscription_reasoning": "pending",
+    "restart_with_memory": "pending",
+    "provider_failure_recovery": "pending"
+  },
+  "missing": [
+    "dedicated_embeddings_key",
+    "separate_cliproxy_login"
+  ],
+  "model_requests": 0,
+  "paid_requests": 0
+}

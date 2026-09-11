@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-07",
+  "checkpoint": "single-env-configuration",
+  "typescript_postgresql_tests": 12,
+  "python_tests": 28,
+  "runtime_services_healthy": 5,
+  "backup_format": 2,
+  "restore": {
+    "status": "restored_inactive",
+    "project": "nocheh-env-restore",
+    "port": 8796,
+    "verified_tables": [
+      "events",
+      "artifacts",
+      "derived_artifacts",
+      "dispatches",
+      "spool_failures",
+      "guarded_cache",
+      "transcription_jobs",
+      "action_requests"
+    ],
+    "verified_state_files": 38,
+    "telegram_enabled": false,
+    "subscription_login_activated": false
+  },
+  "telegram_live": "pending owner configuration",
+  "provider_keys_imported": false
+}

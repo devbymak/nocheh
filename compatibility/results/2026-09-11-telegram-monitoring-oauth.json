@@ -1,0 +1,58 @@
+{
+  "recorded_at": "2026-09-11T16:14:03.766678+00:00",
+  "environment": "local-compose",
+  "incident": {
+    "code": "telegram_network_error",
+    "upstream_at": "2026-09-11T07:04:41.049668+00:00"
+  },
+  "recovery": {
+    "event_id": "930de0345176d500eda886f3965002420192381968f5a84d3165e8426a1c6c9b",
+    "dispatch_state": "done",
+    "attempts": 1,
+    "received_at": "2026-09-11T16:05:36.518067+00:00",
+    "completed_at": "2026-09-11T16:06:41.248566+00:00",
+    "delivery_states": [
+      "delivered",
+      "delivered"
+    ],
+    "delivery_methods": [
+      "sendChatAction",
+      "sendMessage"
+    ]
+  },
+  "current_telegram": {
+    "last_poll_at": "2026-09-11T16:13:54.299989+00:00",
+    "last_update_at": null,
+    "error_code": null,
+    "state": "connected"
+  },
+  "monitoring": {
+    "workflows": 12,
+    "owner_only": true,
+    "browser_render": "passed"
+  },
+  "oauth": {
+    "synthetic_callback_tests": "passed",
+    "real_start": "passed",
+    "openai_login_page": "reached",
+    "invalid_state_http_status": 400,
+    "owner_sign_in": "pending",
+    "shared_cutover": "pending"
+  },
+  "tests": {
+    "services": {
+      "passed": 57,
+      "failed": 0,
+      "skipped": 0
+    },
+    "hermes": {
+      "passed": 124,
+      "failed": 0,
+      "skipped": 2,
+      "skip_reasons": [
+        "deployment source absent from runtime image",
+        "opt-in isolated Docker security fixture"
+      ]
+    }
+  }
+}

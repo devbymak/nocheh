@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-09-07T10:29:16.074106+00:00",
+  "environment": "local-compose-orbstack-arm64",
+  "synthetic_only": true,
+  "status": "harness_verified_live_comparison_pending",
+  "checks": {
+    "budget_and_scoring_tests": {
+      "passed": 5
+    },
+    "compose_boot": "passed",
+    "native_hermes_baseline_tool_configuration": "passed_without_inference",
+    "honcho_reasoning_routes_through_meter": 9,
+    "embedding_route_through_meter": true,
+    "tokenizer_without_runtime_network": "passed",
+    "missing_temporary_key_blocks_before_egress": "passed",
+    "paid_reservations_usd": 0,
+    "model_attempts": 0
+  },
+  "live_pending": [
+    "separate CLIProxyAPI device login and native tool-call compatibility",
+    "explicit temporary embedding API key",
+    "Honcho derivation and comparative recall/attribution/latency/usage"
+  ],
+  "resolved_findings": [
+    "Honcho tokenizer assets must be cached at build time on an internal network.",
+    "OrbStack internal-network HTTP is accessed through Compose exec, not published host ports.",
+    "Public builds were retried with separate anonymous Docker configuration after a local Keychain failure and a TLS timeout.",
+    "Bridge compiler concurrency is limited to two."
+  ]
+}

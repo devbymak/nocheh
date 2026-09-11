@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-09-07T20:30:39.058796+00:00",
+  "environment": "isolated worktree; local PostgreSQL Compose; native Hermes container; host owner API",
+  "branch": "codex/memory-space-policies",
+  "base_revision": "cbe302277e8c8a054315da834b491168db9c294e",
+  "status": "fixture_acceptance_passed_live_and_approval_gates_pending",
+  "synthetic_only": true,
+  "production_state_modified": false,
+  "telegram_messages_sent": 0,
+  "model_provider_requests": 0,
+  "checks": {
+    "typescript_postgresql_http_and_graph": {
+      "passed": 34,
+      "failed": 0,
+      "skipped": 0
+    },
+    "native_python_and_operations": {
+      "passed": 51,
+      "failed": 0,
+      "network": "disabled"
+    },
+    "backup_restore": {
+      "passed": true,
+      "tables_verified": 15,
+      "state_files_verified": 7,
+      "method": "Real pg_dump/pg_restore and operations.restore into a new synthetic PostgreSQL-only Compose project; no ingress/worker services in this rehearsal.",
+      "native_state_hashes_match": true,
+      "restored_telegram_active": false,
+      "restored_login_active": false,
+      "import_approval_backup": "Covered separately by backup byte-check unit test and real HTTP import/restart test"
+    },
+    "browser": {
+      "topic_preview": "passed: only selected topic original appears",
+      "exact_sharing": "passed: synthetic text saved",
+      "owner_recall": "passed: private/group native notes and archive originals appear together",
+      "graph": "passed: 12 nodes and 14 links, including native notes and all source spaces",
+      "import_review_default": "passed: unchecked at confirmation",
+      "mobile_layout": "passed: 375px viewport, document width 375px, no overflowing controls; viewport restored",
+      "policy_save": "blocked twice by automatic approval review, including after verifying synthetic-only fixture"
+    },
+    "cli": "actual private recall and policy reads passed; mutation/review argument contracts covered by fixtures",
+    "graphify": {
+      "method": "AST-only full rebuild, no clustering or model calls",
+      "nodes": 728,
+      "edges": 2437
+    }
+  },
+  "hermes_pin": "7166071fcaadb36df26f6d753dda97da6b5d699e",
+  "native_entrypoints_match_public_pinned_source": {
+    "agent/background_review.py": "d79277796dbeb17a334a22a5a9838b9943d8311b37ed6ba8a1387ed72744c22f",
+    "hermes_state.py": "9353e4fa0a8353b3e50b1945a87a898cf88b647ef726a4bab8ce5f65dffec431",
+    "run_agent.py": "9f789a3cd61821e8894882b6a035b6885d749a35ab045d9b16928bb4155b049c",
+    "tools/transcription_tools.py": "33e7352921d4480032a32a64ce1b960c8f4d98cf0f78d95e790503b45e7ac735"
+  },
+  "pending": [
+    "Automatic approval review requires explicit authorization before implementing optional native-note/STT-transcript filtering through https://chatgpt.com/backend-api/codex. This extension remains absent.",
+    "Automatic approval review requires explicit authorization for changing synthetic topic -20/topic/1 to isolated in the browser fixture.",
+    "Live native memory review and semantic filtering with subscription authentication; no live model quality claim is made.",
+    "Real Telegram/group/topic/voice and policy-revocation delivery acceptance; native transport uses synthetic fixtures here.",
+    "Integration with the concurrently edited runtime-platform branch; no merge or deployment performed."
+  ],
+  "initial_failures_resolved": [
+    "Synthetic runtime spool path was unwritable; restarted fixture with a temporary writable spool.",
+    "Graph tests assumed one-scope default and incomplete profile metadata; updated to the owner-wide view and actual native contract.",
+    "Import test raced manager cleanup; restart now also verifies persisted approved choice.",
+    "Runtime git metadata is stripped; compared four actual entrypoint hashes with public upstream files at the pinned revision instead."
+  ]
+}

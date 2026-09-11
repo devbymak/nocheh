@@ -1,0 +1,221 @@
+{
+  "synthetic_only": true,
+  "status": "passed",
+  "checks": {
+    "no_approval_for_context": true,
+    "provider_receipts": true,
+    "credentials_absent_from_logs": true
+  },
+  "quality": [
+    {
+      "case": "recall",
+      "placement": "legacy",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 35.1,
+      "required_facts_present": [
+        "amber-71",
+        "Mina",
+        "Jules"
+      ]
+    },
+    {
+      "case": "grounding",
+      "placement": "legacy",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 48.45,
+      "required_facts_present": [
+        "420",
+        "18",
+        "October",
+        "300",
+        "nocheh:"
+      ]
+    },
+    {
+      "case": "reasoning",
+      "placement": "legacy",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 59.17,
+      "required_facts_present": [
+        "Mina",
+        "amber-71",
+        "120",
+        "nocheh:"
+      ]
+    },
+    {
+      "case": "recall",
+      "placement": "evidence",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 33.86,
+      "required_facts_present": [
+        "amber-71",
+        "Mina",
+        "Jules"
+      ]
+    },
+    {
+      "case": "grounding",
+      "placement": "evidence",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 45.79,
+      "required_facts_present": [
+        "420",
+        "18",
+        "October",
+        "300",
+        "nocheh:"
+      ]
+    },
+    {
+      "case": "reasoning",
+      "placement": "evidence",
+      "repetition": 0,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 61.22,
+      "required_facts_present": [
+        "Mina",
+        "amber-71",
+        "120",
+        "nocheh:"
+      ]
+    },
+    {
+      "case": "recall",
+      "placement": "legacy",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 42.11,
+      "required_facts_present": [
+        "amber-71",
+        "Mina",
+        "Jules"
+      ]
+    },
+    {
+      "case": "grounding",
+      "placement": "legacy",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 58.74,
+      "required_facts_present": [
+        "420",
+        "18",
+        "October",
+        "300",
+        "nocheh:"
+      ]
+    },
+    {
+      "case": "reasoning",
+      "placement": "legacy",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 65.54,
+      "required_facts_present": [
+        "Mina",
+        "amber-71",
+        "120",
+        "nocheh:"
+      ]
+    },
+    {
+      "case": "recall",
+      "placement": "evidence",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 40.55,
+      "required_facts_present": [
+        "amber-71",
+        "Mina",
+        "Jules"
+      ]
+    },
+    {
+      "case": "grounding",
+      "placement": "evidence",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 48.14,
+      "required_facts_present": [
+        "420",
+        "18",
+        "October",
+        "300",
+        "nocheh:"
+      ]
+    },
+    {
+      "case": "reasoning",
+      "placement": "evidence",
+      "repetition": 1,
+      "passed": true,
+      "state": "done",
+      "error_type": null,
+      "error_code": null,
+      "error_stage": null,
+      "seconds": 62.49,
+      "required_facts_present": [
+        "Mina",
+        "amber-71",
+        "120",
+        "nocheh:"
+      ]
+    }
+  ],
+  "active_runtime_changed": false,
+  "model": "gpt-5.6-sol",
+  "images": {
+    "nocheh-hermes": "sha256:85c44ee7be43bee7eac67cbb79cb53fd6ab9b55f2b486f976e5ab5ed25e812df",
+    "nocheh-services": "sha256:b9d1a87a348469eaf2a9f96f9a3a58ec5cf095d8f608eedb4e32246c9ebc078c"
+  }
+}

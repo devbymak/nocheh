@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-09-06T23:40:15.466287+00:00",
+  "environment": "local-compose",
+  "synthetic_only": true,
+  "telegram_messages_sent": 0,
+  "checks": [
+    {
+      "name": "store",
+      "status": "passed",
+      "state": "done",
+      "error_code": null,
+      "error_type": null,
+      "duration_ms": 60064
+    },
+    {
+      "name": "recall",
+      "status": "passed",
+      "state": "done",
+      "error_code": null,
+      "error_type": null,
+      "duration_ms": 152054
+    },
+    {
+      "name": "other-group",
+      "status": "passed",
+      "state": "done",
+      "error_code": null,
+      "error_type": null,
+      "duration_ms": 22710
+    }
+  ],
+  "note": "Native per-profile memory rehearsal; live Telegram, groups and approval delivery still require bot credentials.",
+  "native_memory_file_verification": {
+    "status": "passed",
+    "method": "Separate filesystem check after the store turn; native MEMORY.md contains the synthetic label."
+  }
+}

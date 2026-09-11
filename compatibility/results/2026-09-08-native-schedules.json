@@ -1,0 +1,33 @@
+{
+  "phase": "P6",
+  "date": "2026-09-08",
+  "hermes_revision": "7166071fcaadb36df26f6d753dda97da6b5d699e",
+  "verification": {
+    "typescript_tests": 40,
+    "python_tests": 86,
+    "native_ui_build": true,
+    "native_trigger_real_subscription": true,
+    "native_editor_cli_roundtrip": true,
+    "restart_single_fire_preserved": true,
+    "default_delivery_local": true,
+    "definition_original_and_result_separate": true,
+    "one_supervisor": true,
+    "missed_explicit_catchup": true,
+    "overlap_and_cancellation": true,
+    "capture_outage_and_claim_uncertainty": true,
+    "receipt_recovery_without_rerun": true,
+    "job_preferences_ephemeral": true,
+    "synthetic_job_retired": true,
+    "telegram_messages_sent": 0
+  },
+  "synthetic_run": {
+    "job_id": "e68ae402224b",
+    "event_id": "c724536af80ab4bafdfceb85c5b53310beaf91a0697882df18e39c12bba1675a",
+    "native_session": "cron_e68ae402224b_c724536af80ab4bafdfceb85",
+    "state": "done"
+  },
+  "limitations": [
+    "Topic schedules, custom scripts/skills and alternate model providers are not enabled.",
+    "Real Telegram delivery remains a pending release gate."
+  ]
+}

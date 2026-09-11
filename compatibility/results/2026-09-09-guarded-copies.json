@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-09-09T16:10:25.512012+00:00",
+  "environment": "local-compose",
+  "synthetic_only": true,
+  "telegram_messages_sent": 0,
+  "checks": [
+    {
+      "name": "original_capture",
+      "status": "passed"
+    },
+    {
+      "name": "import_prepared",
+      "status": "passed"
+    },
+    {
+      "name": "original_unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "scoped_owner_wording_exact",
+      "status": "passed"
+    },
+    {
+      "name": "saved_copy_reused",
+      "status": "passed"
+    },
+    {
+      "name": "native_archive_recall",
+      "status": "passed",
+      "duration_ms": 58394
+    }
+  ],
+  "honcho_live": "pending",
+  "note": "Subscription archive recall; Honcho ingestion/embeddings are separate live gates. Fixture imports do not grant learning consent."
+}

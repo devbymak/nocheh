@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-09-10T18:50:44.372575+00:00",
+  "synthetic_only": true,
+  "telegram_messages_sent": 0,
+  "checks": [
+    {
+      "name": "isolated_mode",
+      "passed": true
+    },
+    {
+      "name": "complete_memory_evidence",
+      "passed": true
+    },
+    {
+      "name": "provider_context_preserved",
+      "passed": true
+    },
+    {
+      "name": "active_isolated_archive_recall",
+      "passed": false
+    },
+    {
+      "name": "native_history_persisted",
+      "passed": false
+    },
+    {
+      "name": "active_provider_receipt",
+      "passed": true
+    },
+    {
+      "name": "routine_work_without_approval",
+      "passed": true
+    }
+  ],
+  "model": "gpt-5.6-sol",
+  "model_context_length": 272000,
+  "existing_memory_limitation_notice": true,
+  "source": "9090de599dcbd8978bf993f6f84488914c37bf4a38fe994bc1a6d9d55a9fbaa5",
+  "status": "pending",
+  "diagnosis": "The existing secret detector masked the synthetic colour word. Persisted native history contained the correctly guarded answer. The next check uses an explicit synthetic owner revision to verify exact-copy transport independently of detector quality."
+}

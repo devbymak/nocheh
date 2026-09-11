@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-09-07T11:31:03.618138+00:00",
+  "environment": "local-compose",
+  "real_telegram": true,
+  "owner_start_captured": true,
+  "owner_start_dispatch_state": "done",
+  "telegram_confirmed_dm_replies": 1,
+  "telegram_enabled": true,
+  "subscription_checks": {
+    "refresh": {
+      "status": "passed",
+      "duration_ms": 2165
+    },
+    "chat": {
+      "status": "passed",
+      "duration_ms": 20713
+    },
+    "detector": {
+      "status": "passed",
+      "duration_ms": 4071
+    },
+    "transcription": {
+      "status": "passed",
+      "duration_ms": 5801
+    }
+  },
+  "pending": [
+    "selected-group access and end-to-end checks",
+    "live voice transcript persistence",
+    "live external-action approval and delivery",
+    "live reconnect/restart acceptance"
+  ],
+  "private_message_content_included": false,
+  "main_merged": false
+}
