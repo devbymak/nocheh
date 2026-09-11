@@ -1,0 +1,9 @@
+{
+  "recorded_on": "2026-09-12",
+  "increment": "I2 existing worker operations and family fences",
+  "tests": {"services": {"passed": 61, "failed": 0, "skipped": 0}, "build": "passed"},
+  "verified": ["existing service regressions", "targeted attachment/transcript/guard/dispatch operations leave other sources pending", "completed transcripts are reused", "legacy and stale ownership cannot execute migrated preparation or Telegram jobs", "existing global and profile concurrency controls retained"],
+  "graph": {"files": 206, "nodes": 1351, "edges": 4379, "model_calls": 0},
+  "pending": ["Connect product execution and worker health", "native browser/scheduler and host tool/import fencing", "remaining migration acceptance and local cutover"],
+  "active_installation": "legacy ownership; not switched"
+}
