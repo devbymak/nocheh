@@ -1,0 +1,25 @@
+{
+  "recorded_on": "2026-09-14",
+  "environment": "active local nocheh Compose project",
+  "family": "honcho",
+  "owner": "inngest",
+  "epoch": 2,
+  "backup": {
+    "format": 4,
+    "archive_tables": 44,
+    "inngest_tables": 14,
+    "protected_files": 415,
+    "checksums": "validated"
+  },
+  "acceptance": {
+    "detached_workflow": "waiting",
+    "waiting_reason": "prerequisite",
+    "attempts": 0,
+    "attachment": false,
+    "verified": false,
+    "provider_receipts_added": 0
+  },
+  "pending": [
+    "Honcho provider, embedding, learning and attachment acceptance retain their separate gates"
+  ]
+}
