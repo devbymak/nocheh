@@ -1,0 +1,36 @@
+{
+  "recorded_on": "2026-09-14",
+  "environment": "active local nocheh Compose project",
+  "family": "tools",
+  "owner": "inngest",
+  "epoch": 2,
+  "backup": {
+    "format": 4,
+    "archive_tables": 44,
+    "inngest_tables": 14,
+    "protected_files": 400,
+    "checksums": "validated"
+  },
+  "handoff": {
+    "both_host_executors_drained": true,
+    "pending_receipts": 0,
+    "unresolved_receipts": 0
+  },
+  "acceptance": {
+    "approval_wait": true,
+    "legacy_claim_denied": true,
+    "sandbox_exit": 0,
+    "synthetic_output_matched": true,
+    "receipts": 1,
+    "closed_reapproval_rejected": true,
+    "canary_shell_disabled_after_check": true
+  },
+  "setup_failure": {
+    "first_canary": "ambiguous",
+    "cause": "local sandbox image absent",
+    "effect_not_restarted": true,
+    "original_closed": true,
+    "repeat_used_distinct_synthetic_identity": true
+  },
+  "tools_image": "sha256:551a7a4f4dd5da1ff4cc5bf8e6db58ae6de4259deddff54cccf9738222f1409d"
+}
