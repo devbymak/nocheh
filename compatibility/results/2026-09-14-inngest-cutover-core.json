@@ -1,0 +1,45 @@
+{
+  "recorded_on": "2026-09-14",
+  "increment": "I7 atomic cutover core and native receipt observation",
+  "environment": "isolated synthetic Compose PostgreSQL and pinned offline Hermes",
+  "services": {
+    "passed": 73,
+    "failed": 0,
+    "skipped": 0
+  },
+  "hermes": {
+    "passed": 147,
+    "failed": 0,
+    "skipped": 1,
+    "skip": "optional Docker security fixture"
+  },
+  "verified": [
+    "all nine families switch forward and roll back with compatible identities",
+    "pause and switch receipts survive lost acknowledgements",
+    "publication failure rolls back ownership, dispatch and migration changes",
+    "source capture commits while workflow admission is paused",
+    "shared family holders, active leases and stale registrations block cutover",
+    "closed outcomes remain closed and obsolete dispatches cannot claim",
+    "native observation does not launch queued work or require a new provider login",
+    "missing native receipts cannot authorize replacement execution",
+    "native completed receipts reconcile existing archive and workflow identities",
+    "rollback rejects a closed registry outcome whose domain still appears eligible",
+    "abort restores admission without changing the owner epoch",
+    "backup table manifest includes durable workflow_migrations"
+  ],
+  "build": "passed",
+  "pending": [
+    "host import-job adoption and host receipt flushing",
+    "fresh full candidate image and updated fault/recovery rehearsal",
+    "active local per-family cutover and rollback acceptance",
+    "real Telegram owner text/voice/selected-group silence/isolation/approval/restart acceptance",
+    "remote synchronization requires GitHub HTTPS authentication"
+  ],
+  "active_local_cutover": "not performed",
+  "graph": {
+    "files": 246,
+    "nodes": 1587,
+    "edges": 5504,
+    "model_calls": 0
+  }
+}
