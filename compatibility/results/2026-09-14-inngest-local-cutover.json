@@ -1,0 +1,29 @@
+{
+  "history_rows_scanned": 2521,
+  "protected_canaries_found": 0,
+  "internal_credentials_checked": 5,
+  "family_ownership": {
+    "actions": "inngest",
+    "browser": "inngest",
+    "honcho": "inngest",
+    "imports": "inngest",
+    "memory_review": "inngest",
+    "preparation": "legacy",
+    "schedules": "inngest",
+    "telegram": "legacy",
+    "tools": "inngest"
+  },
+  "connected_registrations": 9,
+  "fresh_services": true,
+  "outbox_admitted": 0,
+  "honcho_attached": false,
+  "shared_provider_login_files": 0,
+  "recorded_on": "2026-09-14",
+  "owner_history_ui": "active owner-session view loaded with inspection-only banner",
+  "pending": [
+    "subscription speech login and successful transcription",
+    "preparation and Telegram ownership cutover",
+    "real owner Telegram text/voice, group silence, isolation, exact approval and restart acceptance",
+    "GitHub authentication for origin/main push"
+  ]
+}

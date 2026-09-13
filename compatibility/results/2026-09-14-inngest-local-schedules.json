@@ -1,0 +1,31 @@
+{
+  "recorded_on": "2026-09-14",
+  "environment": "active local nocheh Compose project",
+  "family": "schedules",
+  "owner": "inngest",
+  "epoch": 2,
+  "backup": {
+    "format": 4,
+    "archive_tables": 44,
+    "inngest_tables": 14,
+    "protected_files": 430,
+    "checksums": "validated"
+  },
+  "acceptance": {
+    "durable_wait": true,
+    "edited_controller_superseded": true,
+    "superseded_controllers": 4,
+    "pause_resume": true,
+    "synthetic_phrase_matched": true,
+    "occurrences": 1,
+    "receipts": 1,
+    "native_repeat_completed": 1,
+    "native_enabled_after_completion": false,
+    "delivery": "local",
+    "external_proposals": 0
+  },
+  "test_harness_corrections": [
+    "Detail response is flat; observing the existing canary completed verification without another occurrence.",
+    "Escaped a literal SQL pattern in the read-only count query."
+  ]
+}
