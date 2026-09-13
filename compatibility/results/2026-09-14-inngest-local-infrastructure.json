@@ -1,0 +1,53 @@
+{
+  "recorded_on": "2026-09-14",
+  "increment": "Local orchestration infrastructure before family ownership switches",
+  "environment": "active local nocheh Compose project",
+  "pre_cutover_backup": {
+    "tables": 32,
+    "protected_files": 381,
+    "checksums": "validated",
+    "writers_quiesced": true
+  },
+  "services_candidate": "sha256:bf765fab99d48656a1f54f8f6a2e629fe9fd378713b2c9e99a77c0bc4a598878",
+  "hermes_candidate": "sha256:224e50ee334c0ef03df84df4a1466aca3e6fd72e754dac84fd43f67f0689a519",
+  "local_checks": {
+    "compose_services": "healthy",
+    "owner_dashboard": "healthy",
+    "connect_apps": [
+      "pipeline",
+      "host"
+    ],
+    "connected_family_registrations": 9,
+    "family_owner": "legacy",
+    "family_epoch": 1,
+    "outbox_admitted": 0,
+    "inngest_archive_connection": "denied",
+    "reasoning_route": "native",
+    "security_runtime": "isolated",
+    "memory_context": "evidence",
+    "honcho_attached": false
+  },
+  "subscription_transcription": {
+    "status": "failed",
+    "synthetic_repository_audio": true,
+    "phrase_matched": false,
+    "speech_login_present": false,
+    "dependent_cutover": "preparation and Telegram held"
+  },
+  "setup_corrections": {
+    "pipeline_heartbeat_query": "fresh/stale fixture passed; candidate update pending",
+    "new_database_viewer": "post-bootstrap archive read passed, writes denied"
+  },
+  "graph": {
+    "files": 250,
+    "nodes": 1611,
+    "edges": 5665,
+    "model_calls": 0
+  },
+  "pending": [
+    "family ownership switches and local behavior checks",
+    "provider login and successful subscription transcription",
+    "real owner Telegram acceptance",
+    "GitHub HTTPS authentication for remote push"
+  ]
+}
