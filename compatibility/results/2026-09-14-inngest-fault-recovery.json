@@ -1,0 +1,69 @@
+{
+  "recorded_on": "2026-09-14",
+  "increment": "I7 fresh candidate faults, compatible rollback and inactive recovery",
+  "environment": "separate local Compose projects, internal networks, no published ports, synthetic credentials and runtime",
+  "images": {
+    "fresh_regression": "sha256:8c76ea4a2dd7b7471546e62d42c995e709f617fd3b3d66340f2ebf911c479a33",
+    "fault_fixture": "sha256:9e007cf3cdbed3484155c99944af00c5d3cc96ba8cb033e30d8ac1259dc6b874",
+    "services_candidate_uid_501": "sha256:bf765fab99d48656a1f54f8f6a2e629fe9fd378713b2c9e99a77c0bc4a598878",
+    "hermes_candidate_uid_501": "sha256:224e50ee334c0ef03df84df4a1466aca3e6fd72e754dac84fd43f67f0689a519"
+  },
+  "fresh_image_regression": {
+    "service_tests_passed": 73,
+    "hermes_tests_passed": 152,
+    "hermes_tests_skipped": 1,
+    "skip": "optional Docker security fixture",
+    "active_uid_hermes_regression_repeated": true,
+    "active_uid_service_smoke": {"passed": 2, "skipped": 1, "skip": "database-dependent inspection fixture; passed in full service regression"},
+    "npm_audit_vulnerabilities": 0
+  },
+  "real_connect": {
+    "pipeline_browser_schedule_probe": "passed; one native start per execution and same-identity resume after lost responses",
+    "host_import_probe": {"messages": 103, "batches": 3, "events": 104, "duplicates": 0, "replies": 0, "learning": 0, "lost_completion_acknowledgements": 1},
+    "checkpoint_restart": {"postgres_redis_inngest_restarted": true, "apps": 2, "steps": 4, "calls_per_step": 1, "archive_role_access": "denied"}
+  },
+  "faults": {
+    "inngest": "capture committed while stopped; recovered",
+    "redis": "capture committed while stopped; recovered with automatic Inngest restart",
+    "postgres": "capture retained in fsynced spool while stopped; drained after restart",
+    "worker": "capture continued independently; recovered after restart",
+    "publisher": "capture retained in spool; drained after restart",
+    "runtime": "durable retryable preparation failure observed; recovered",
+    "effect_response_gap": "runtime exited after its ninth fsynced effect receipt, before HTTP acknowledgment; worker was killed; same execution reconciled",
+    "after_effect_recovery": {"sources": 9, "receipts": 9, "maximum_dispatch_attempts": 1},
+    "rollback": "switched to legacy, processed a new source through existing scanners, switched to Inngest; ten sources and ten receipts, completed work stayed closed"
+  },
+  "privacy": {
+    "rejected_private_error_or_output_executions": 2,
+    "negative_probe_history_rows_scanned": 3450,
+    "fault_history_rows_scanned": 1320,
+    "private_transcript_or_synthetic_credentials_found": false
+  },
+  "recovery": {
+    "execution_and_inngest_quiesced": true,
+    "archive_tables": 45,
+    "inngest_tables": 14,
+    "protected_files": 12,
+    "redis_snapshot_bytes": 15976,
+    "redis_keys": 186,
+    "archive_and_inngest_fingerprints_after_restart": "matched",
+    "protected_file_hashes": "matched",
+    "pending_capture_preserved": true,
+    "source_fixture_after_resuming_publisher": {"sources": 11, "receipts": 11, "pending_spool": 0},
+    "restored_running_services": ["postgres", "workflow-redis"],
+    "restored_execution": "inactive"
+  },
+  "rehearsal_corrections": [
+    "Docker Keychain helper stalled a public image lookup; a temporary anonymous Docker configuration completed the pinned builds",
+    "fixture restart policies initially differed from production; aligned them and repeated the Redis outage successfully",
+    "superseded three-source assertion was stopped; the repeated four-source Redis recovery passed",
+    "completion checks follow each source's latest preparation generation because source preparation can create superseded generations"
+  ],
+  "graph": {"files": 250, "nodes": 1611, "edges": 5665, "model_calls": 0},
+  "active_local_cutover": "not performed",
+  "pending": [
+    "active local per-family cutover and behavior acceptance",
+    "real Telegram owner text/voice/selected-group silence/isolation/approval/restart acceptance",
+    "remote push requires GitHub HTTPS authentication"
+  ]
+}
