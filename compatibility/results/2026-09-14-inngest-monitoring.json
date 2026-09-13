@@ -1,0 +1,69 @@
+{
+  "recorded_on": "2026-09-14",
+  "increment": "I6 owner controls and unified monitoring",
+  "environment": "isolated synthetic Compose fixture and owner dashboard on dedicated loopback ports",
+  "build": "passed",
+  "service_regression": {
+    "passed": 72,
+    "failed": 0,
+    "skipped": 0
+  },
+  "hermes_regression": {
+    "passed": 145,
+    "failed": 0,
+    "skipped": 1,
+    "skip": "optional Docker security fixture"
+  },
+  "followup_verification": {
+    "owner_import_inspection_checks": 6,
+    "pinned_ui_inspection_checks": 2,
+    "purpose": "explicit review resume preserves closed generation; both native code viewers render locally"
+  },
+  "verified": [
+    "precise timestamp pagination, family/status filters and bounded metadata-only list/detail",
+    "domain receipts determine observations; canary content and private leases excluded",
+    "revision controls are idempotent after lost acknowledgement and reject stale or active effects",
+    "cancelled review resumes only through an explicit new generation",
+    "obsolete outbox dispatches are never published",
+    "owner session, Origin, Sec-Fetch-Site and CSRF protections",
+    "native GraphQL mutations, subscriptions, debugger and ingress routes denied",
+    "host workflow CLI reads existing identities independently of Inngest UI",
+    "worker freshness, unpublished backlog, waiting age and maintenance links",
+    "backup table manifest contains workflow_controls"
+  ],
+  "browser": {
+    "surface": "shared in-app browser",
+    "viewports": [
+      "desktop",
+      "375x812"
+    ],
+    "checks": [
+      "family filtering",
+      "execution inspector focus",
+      "retry preserves identity and attempt count",
+      "cancel closes controls",
+      "source inspection",
+      "ten-second observed refresh",
+      "no horizontal document overflow at 375px",
+      "native history list and direct run navigation",
+      "native trace durable waits",
+      "local readable event input and completed output",
+      "native execution buttons absent"
+    ],
+    "native_history_runs_observed": 74,
+    "limitation": "pinned native UI recovers from React hydration warnings after route/owner decoration; functional navigation and data rendering passed; no external editor is loaded"
+  },
+  "graph": {
+    "files": 243,
+    "nodes": 1570,
+    "edges": 5425,
+    "model_calls": 0
+  },
+  "active_local_cutover": "not performed",
+  "pending": [
+    "I7 cutover and rollback tooling/fault rehearsal",
+    "active local family acceptance",
+    "real Telegram text/voice/group/isolation/approval/restart acceptance",
+    "GitHub HTTPS authentication for remote synchronization"
+  ]
+}
