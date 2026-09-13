@@ -1,0 +1,32 @@
+{
+  "recorded_on": "2026-09-14",
+  "increment": "I7 host import adoption, controlled-tool receipt handoff and import rollback",
+  "environment": "isolated synthetic Compose PostgreSQL and pinned offline Hermes",
+  "verified": [
+    "import and tool ownership switches require a paused host handoff receipt",
+    "host import adoption preserves job IDs, source hashes, mapping, consent and checkpoints",
+    "unconfirmed, completed and cancelled imports are not admitted by handoff",
+    "an occupied owner dashboard port or active import lock prevents host adoption",
+    "lost tool receipt acknowledgements retain the receipt without claiming another action",
+    "legacy import admission pause preserves an interrupted, explicitly resumable job",
+    "lost legacy import completion acknowledgement is reconciled without importing again",
+    "rollback exposes the original import identity and archive checkpoint through Resume import",
+    "a tool worker crash before its execution claim can be reconciled without reopening an effect receipt"
+  ],
+  "focused_checks": {
+    "service_checks_passed": 6,
+    "migration_checks_repeated_after_preclaim_reconciliation": 1,
+    "management_checks_repeated_after_rollback_resume_coverage": 2,
+    "python_host_import_tools_recovery_checks_passed": 22,
+    "build": "passed"
+  },
+  "prior_full_regression": "2026-09-14-inngest-cutover-core.json; not repeated as part of this increment",
+  "graph": {"files": 248, "nodes": 1603, "edges": 5597, "model_calls": 0},
+  "active_local_cutover": "not performed",
+  "pending": [
+    "fresh full candidate image and updated fault/recovery rehearsal",
+    "active local per-family cutover and rollback acceptance",
+    "real Telegram owner text/voice/selected-group silence/isolation/approval/restart acceptance",
+    "remote synchronization requires GitHub HTTPS authentication"
+  ]
+}
