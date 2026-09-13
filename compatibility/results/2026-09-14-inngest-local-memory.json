@@ -1,0 +1,25 @@
+{
+  "recorded_on": "2026-09-14",
+  "environment": "active local nocheh Compose project",
+  "family": "memory_review",
+  "owner": "inngest",
+  "epoch": 2,
+  "backup": {
+    "format": 4,
+    "archive_tables": 44,
+    "inngest_tables": 14,
+    "protected_files": 411,
+    "checksums": "validated"
+  },
+  "acceptance": {
+    "memory_tables_match_pre_switch_fingerprints": true,
+    "existing_retryable_failures": 4,
+    "existing_ambiguous_closed": 1,
+    "states_attempts_deadlines_preserved": true,
+    "missing_import_consent": "denied",
+    "consent_added": 0
+  },
+  "pending": [
+    "existing review_unavailable retries retain their deadlines; successful native review quality is not claimed by this cutover check"
+  ]
+}
