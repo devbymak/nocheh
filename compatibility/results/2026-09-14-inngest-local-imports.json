@@ -1,0 +1,37 @@
+{
+  "recorded_on": "2026-09-14",
+  "environment": "active local nocheh Compose project",
+  "family": "imports",
+  "owner": "inngest",
+  "epoch": 2,
+  "admission": true,
+  "migration": "paused, host drained, protected records reconciled, switched atomically",
+  "backup": {
+    "format": 4,
+    "archive_tables": 44,
+    "inngest_tables": 14,
+    "protected_files": 385,
+    "checksums": "validated",
+    "quiesced": true
+  },
+  "acceptance": {
+    "synthetic_sources": 2,
+    "completed": 2,
+    "duplicates": 0,
+    "conversation_replies": 0,
+    "learning_sources": 0,
+    "review_approved": false,
+    "completed_restart_http": 409,
+    "owner_monitoring": "completed import, connected host and pipeline, current heartbeats"
+  },
+  "native_checks": {
+    "chat": "passed",
+    "guard_detector": "passed"
+  },
+  "services_candidate": "sha256:e7a0a774d28adea36edcfe3f76ae9f5a3a6d9bd55038f13e3866696a3f1dc38e",
+  "pending": [
+    "other family cutovers",
+    "subscription transcription and real Telegram acceptance",
+    "GitHub authentication for push"
+  ]
+}
