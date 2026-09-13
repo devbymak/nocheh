@@ -1,0 +1,29 @@
+{
+  "recorded_on": "2026-09-14",
+  "environment": "active local nocheh Compose project",
+  "family": "actions",
+  "owner": "inngest",
+  "epoch": 2,
+  "backup": {
+    "format": 4,
+    "archive_tables": 44,
+    "inngest_tables": 14,
+    "protected_files": 407,
+    "checksums": "validated"
+  },
+  "handoff": {
+    "running": 0,
+    "active_steps": 0,
+    "unresolved_receipts": 0
+  },
+  "acceptance": {
+    "approval_wait": true,
+    "denial_closed": true,
+    "closed_reapproval_rejected": true,
+    "external_sends": 0,
+    "execution_receipts": 0
+  },
+  "pending": [
+    "real owner-approved Telegram delivery remains part of the Telegram release gate"
+  ]
+}
