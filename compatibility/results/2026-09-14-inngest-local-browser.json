@@ -1,0 +1,32 @@
+{
+  "recorded_on": "2026-09-14",
+  "environment": "active local nocheh Compose project",
+  "family": "browser",
+  "owner": "inngest",
+  "epoch": 2,
+  "backup": {
+    "format": 4,
+    "archive_tables": 44,
+    "inngest_tables": 14,
+    "protected_files": 419,
+    "checksums": "validated"
+  },
+  "acceptance": {
+    "native_turn": "done",
+    "guarded_synthetic_marker_matched": true,
+    "stream_events": 1,
+    "reconnect_replay_matched": true,
+    "cursor_drained": true,
+    "duplicate_submission_preserved": true,
+    "resume_same_execution": true,
+    "receipts": 1,
+    "cancellation": "passed",
+    "new_native_memory_review": "done on first attempt",
+    "active_effects_after_check": 0
+  },
+  "expectation_correction": {
+    "raw_identifier_marker_match": "failed because guard masked it",
+    "guarded_input_match": "passed against same completed execution",
+    "replacement_execution": false
+  }
+}
