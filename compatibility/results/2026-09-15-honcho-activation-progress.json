@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-09-14T20:45:36.034078+00:00",
+  "local_date": "2026-09-15",
+  "environment": "local-compose",
+  "status": "incomplete",
+  "synthetic_inputs_only": true,
+  "owner_authorized_activation": true,
+  "backup": {"validated": true, "version": 4, "archive_tables": 44, "inngest_tables": 14, "protected_files": 524},
+  "connection": {"attached": true, "verified": true, "include_history": false, "catch_up": false},
+  "production_restart_policy": {"database": "unless-stopped", "redis": "unless-stopped", "honcho": "unless-stopped", "deriver": "unless-stopped", "meter": "unless-stopped"},
+  "checks": {
+    "production_startup": "passed",
+    "production_gateway_credential": "passed",
+    "missing_workspace_rejected_403": "passed",
+    "unknown_workspace_rejected_403": "passed",
+    "invalid_credential_rejected_401": "passed",
+    "consented_ingestion": "passed",
+    "derivation": "passed",
+    "unconsented_source_excluded": "passed",
+    "import_reply_suppression": "passed",
+    "scoped_owner_recall": "failed",
+    "native_tool_recall": "pending",
+    "group_isolation": "pending",
+    "production_restart": "pending"
+  },
+  "synthetic_receipts": {"completed": 1, "attempts": 1},
+  "budget": {"mode": "pilot", "reserved_usd": 0.10, "limit_usd": 5, "reservations_are_not_an_invoice": true},
+  "fix_validation": {"host_build": "passed", "host_slow_recall_test": "passed", "focused_python_tests_passed": 23, "full_container_regressions": "incomplete", "recall_fix_applied": false},
+  "blocker": "OrbStack container execution stalled; Docker could not stop the isolated test container because no exit event was received. Restart affects other project containers and awaits owner approval.",
+  "runtime_observation": {"archive_http_status": 200, "telegram": "connected", "last_poll_at": "2026-09-14T20:45:05.679861+00:00", "reasoning_route": "shared"},
+  "limitations": [
+    "Accepted isolated verification does not establish production recall acceptance.",
+    "The first probe observed the normal in-flight uncertain receipt too early; it subsequently completed once, and observation resumed using the same identity.",
+    "The recall timeout correction remains uncommitted in the session worktree pending full verification.",
+    "No real owner Telegram acceptance, historical learning consent, monthly budget activation, or remote synchronization is claimed.",
+    "No source conversations, credentials, vectors or provider response bodies are included."
+  ]
+}
