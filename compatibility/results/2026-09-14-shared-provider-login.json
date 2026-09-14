@@ -1,0 +1,172 @@
+{
+  "recorded_at": "2026-09-14T17:48:01.858167+00:00",
+  "environment": "active-local-compose",
+  "synthetic_inputs_only": true,
+  "status": "login_verified_activation_pending",
+  "login": {
+    "login_present": true,
+    "login_count": 1,
+    "login_files": 1,
+    "invalid_login_files": 0
+  },
+  "live_checks": {
+    "hermes_shared_reasoning": {
+      "status": "passed",
+      "duration_ms": 7555
+    },
+    "honcho_shared_reasoning": {
+      "status": "passed",
+      "duration_ms": 6454
+    },
+    "preparation_shared_reasoning": {
+      "status": "passed",
+      "duration_ms": 4588
+    },
+    "transcription": {
+      "status": "passed",
+      "duration_ms": 13807
+    },
+    "shared_literal_detection": {
+      "status": "passed",
+      "duration_ms": 10725
+    },
+    "shared_streaming": {
+      "status": "passed",
+      "duration_ms": 3661
+    },
+    "shared_tool_call_protocol": {
+      "status": "passed",
+      "duration_ms": 8967
+    },
+    "honcho_meter_reasoning": {
+      "status": "passed",
+      "http_status": 200,
+      "duration_ms": 4957
+    },
+    "embedding": {
+      "status": "failed",
+      "http_status": 429,
+      "duration_ms": 7775
+    },
+    "owner_session_required": {
+      "status": "passed",
+      "http_status": 401
+    },
+    "provider_history_owner_required": {
+      "status": "passed",
+      "http_status": 401
+    },
+    "cross_site_rejected": {
+      "status": "passed",
+      "http_status": 403
+    }
+  },
+  "provider_monitor": {
+    "collector": "running",
+    "events_before_protocol_checks": 3,
+    "events_after_protocol_checks": 6
+  },
+  "runtime": {
+    "reasoning_route": "native",
+    "refresh_owner": "hermes",
+    "telegram": "connected",
+    "telegram_details": {
+      "last_poll_at": "2026-09-14T17:47:47.379073+00:00",
+      "last_update_at": null,
+      "error_code": null,
+      "state": "connected"
+    },
+    "managed_runs": 0,
+    "scheduler": "workflow_owned"
+  },
+  "workflows": {
+    "connected_families": 9,
+    "families": 9,
+    "inngest_owned": 7,
+    "outbox": {
+      "pending": 103,
+      "admitted": 0,
+      "oldest": "2026-09-13T22:26:20.380Z"
+    },
+    "fresh_services": true
+  },
+  "honcho": {
+    "attached": false,
+    "verified": false,
+    "budget": {
+      "mode": "pilot",
+      "limit_usd": 5,
+      "reserved_usd": 0.02,
+      "lifetime_reserved_usd": 0.02
+    }
+  },
+  "changes": {
+    "honcho_login_status": "uses the one shared CPA login instead of retired bridge-auth files",
+    "owner_label": "Shared ChatGPT login",
+    "internal_key_aliases": [
+      "Hermes - Assistant replies",
+      "Honcho - Long-term memory",
+      "Preparation - Content privacy checks"
+    ]
+  },
+  "validation": {
+    "hermes_regression": {
+      "run": 153,
+      "passed": 151,
+      "skipped": 2,
+      "skip_reasons": [
+        "Docker isolation fixture requires its optional image and socket",
+        "Proxy Dockerfile pin check is outside the runtime image"
+      ]
+    },
+    "focused_host_tests": {
+      "run": 10,
+      "passed": 10
+    },
+    "build": "passed",
+    "graphify": {
+      "files": 251,
+      "nodes": 1617,
+      "edges": 5672,
+      "model_calls": 0
+    },
+    "preview": {
+      "url": "http://127.0.0.1:18783/#honcho",
+      "terminal_session": "51188",
+      "shared_login_label": "verified in in-app browser",
+      "limitation": "The existing synthetic preview lacks the primary-memory API; that panel reports HTTPError. No live credentials were used."
+    },
+    "owner_oauth_workflow_tests": {
+      "run": 7,
+      "passed": 6,
+      "skipped": 1,
+      "skip_reason": "Live pinned Inngest UI test requires its explicit fixture environment; not rerun in this targeted unit invocation."
+    }
+  },
+  "pending": [
+    "Persistent shared-provider switch and its restart/monitoring-outage acceptance require explicit owner approval after automatic review rejection.",
+    "The latest embedding request returned HTTP 429. Honcho ingestion, retrieval, restart, attachment and monthly activation remain pending.",
+    "Real owner Telegram text/voice, selected-group silence, private/group isolation, exact approved delivery and reconnect/restart acceptance."
+  ],
+  "recovery_and_scope": {
+    "persistent_provider_route_changed": false,
+    "native_login_retired": false,
+    "honcho_attached": false,
+    "embedding_requests_this_run": 1,
+    "embedding_requests_automatically_retried": 0,
+    "test_meter_stopped_after_probe": true,
+    "messages_sent_on_owners_behalf": false,
+    "real_controlled_tools_executed": false
+  },
+  "harness_notes": [
+    "Initial concurrent health observations timed out; subsequent direct and ordinary localhost checks passed with no configured system proxy. No transport code was changed.",
+    "Pinned meter image pull hit TLS handshake timeout; a second fetch obtained the exact digest before any embedding call.",
+    "Initial offline suite omitted its synthetic SERVICE_TOKEN and placed the host-only status test in the runtime suite. The corrected runtime suite and separate host suite pass.",
+    "Graphify used its installed Python 3.12 interpreter after the worktree default interpreter lacked the package."
+  ],
+  "approval_review": {
+    "action": "backup and active provider cutover",
+    "outcome": "rejected before command execution",
+    "reason": "Testing authorization did not include the separate persistent provider-route change, restarts, and native OAuth retirement."
+  }
+}
