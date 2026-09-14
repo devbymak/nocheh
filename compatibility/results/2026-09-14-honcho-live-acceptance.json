@@ -1,0 +1,225 @@
+{
+  "recorded_at": "2026-09-14T18:39:40.289894+00:00",
+  "environment": "local-compose",
+  "status": "passed",
+  "synthetic_inputs_only": true,
+  "scope": "Replacement embedding key, isolated live Honcho acceptance, live Hermes provider checks, and offline service/Hermes/Honcho regressions.",
+  "honcho": {
+    "format": "nocheh-honcho-live-v1",
+    "recorded_at": "2026-09-14T18:31:32.191664+00:00",
+    "status": "passed",
+    "checks": {
+      "subscription_reasoning": "passed",
+      "ingestion": "passed",
+      "retrieval": "passed",
+      "embedding_guarded": "passed",
+      "restart": "passed",
+      "provider_failure": "passed"
+    }
+  },
+  "hermes": {
+    "reasoning_route": "shared",
+    "checks": {
+      "refresh": {
+        "status": "passed",
+        "duration_ms": 13
+      },
+      "chat": {
+        "status": "passed",
+        "duration_ms": 7997
+      },
+      "detector": {
+        "status": "passed",
+        "duration_ms": 3548
+      },
+      "transcription": {
+        "status": "passed",
+        "duration_ms": 2904
+      }
+    }
+  },
+  "regressions": {
+    "services": {
+      "run": 73,
+      "passed": 73,
+      "failed": 0,
+      "skipped": 0
+    },
+    "hermes": {
+      "run": 153,
+      "passed": 151,
+      "failed": 0,
+      "skipped": 2,
+      "skip_reasons": [
+        "Explicit isolated Docker security fixture not enabled.",
+        "Deployment source check outside runtime image."
+      ]
+    },
+    "honcho": {
+      "run": 19,
+      "passed": 19,
+      "failed": 0,
+      "skipped": 0
+    },
+    "build": "passed"
+  },
+  "budget": {
+    "mode": "pilot",
+    "limit_usd": 5,
+    "reserved_usd": 0.07,
+    "lifetime_reserved_usd": 0.07,
+    "embedding_route": {
+      "provider": "openai",
+      "model": "text-embedding-3-small",
+      "dimensions": 1536
+    },
+    "note": "Reservations are conservative, not a provider invoice; unfinished calls remain reserved."
+  },
+  "ledger_route_status_counts": [
+    {
+      "route": "/v1/chat/completions",
+      "http_status": 200,
+      "count": 7
+    },
+    {
+      "route": "/v1/chat/completions",
+      "http_status": 502,
+      "count": 1
+    },
+    {
+      "route": "/v1/embeddings",
+      "http_status": 200,
+      "count": 5
+    },
+    {
+      "route": "/v1/embeddings",
+      "http_status": 429,
+      "count": 2
+    }
+  ],
+  "active_state": {
+    "honcho": {
+      "attached": false,
+      "verified": true
+    },
+    "provider_login_count": 1,
+    "runtime": {
+      "ok": true,
+      "reasoning_route": "shared",
+      "refresh_owner": "cliproxy",
+      "login_present": true,
+      "telegram": "connected",
+      "telegram_details": {
+        "last_poll_at": "2026-09-14T18:39:34.061415+00:00",
+        "last_update_at": null,
+        "error_code": null,
+        "state": "connected"
+      },
+      "managed_runs": 0,
+      "scheduler": "workflow_owned"
+    },
+    "containers": [
+      {
+        "service": "archive",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "cliproxy",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "dashboard",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "db-viewer",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "guard",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "hermes",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "inngest",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "postgres",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "provider-monitor",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "security",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "security-launcher",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "speech",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "worker",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "workflow-redis",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "workflow-worker",
+        "state": "running",
+        "health": "healthy"
+      }
+    ],
+    "workflows": {
+      "families": 9,
+      "connected_families": 9,
+      "inngest_owned": 7,
+      "outbox": {
+        "pending": 117,
+        "admitted": 0,
+        "oldest": "2026-09-13T22:26:20.380Z"
+      },
+      "fresh_services": true
+    }
+  },
+  "honcho_image": "sha256:5ef891e879b7e65d49b598dcef4d79fe29c750723623beb9de8ccbd3093162e5",
+  "honcho_revision": "be54355545b64ddb10203829d323861f52423685",
+  "cleanup": "Honcho synthetic services and the isolated regression fixture stopped; state and spending ledger preserved.",
+  "test_setup_corrections": [
+    "Used the repository-pinned Honcho dependencies in a temporary environment after the host lacked httpx and Honcho CLI.",
+    "Added writable temporary dashboard build output to the isolated test container after the initial read-only mount failed."
+  ],
+  "limits": [
+    "Production Honcho attachment, scoped production ingestion/recall, opted-in history pilot, and monthly cap activation remain pending.",
+    "Real owner Telegram text/voice, group silence, isolation, approvals, and restart acceptance remain pending; preparation and Telegram ownership remain legacy.",
+    "Backup/restore and full shared-provider monitor-outage gates were not repeated in this run; their prior evidence remains separate.",
+    "Refresh check verifies delegation to CPA; no forced OAuth expiry was performed.",
+    "Ledger counts include earlier rejected embedding requests and the intentional provider-outage response. Reservations are not billed cost.",
+    "No source content, credentials, vectors, or provider response bodies are included."
+  ]
+}
