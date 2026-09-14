@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-09-14T22:26:21.831141+00:00",
+  "environment": "local-compose-isolated-fixture",
+  "status": "passed",
+  "synthetic_only": true,
+  "changes": [
+    "Honcho recall upstream deadline 480 seconds; ordinary calls 120 seconds",
+    "Scoped broker recall deadline 600 seconds; other routes 120 seconds with cancellation retained",
+    "Native Honcho tool deadline 615 seconds; ordinary archive reads 15 seconds"
+  ],
+  "tests": {
+    "services": {
+      "passed": 74,
+      "failed": 0,
+      "skipped": 0
+    },
+    "hermes": {
+      "passed": 152,
+      "failed": 0,
+      "skipped": 2,
+      "skip_reasons": [
+        "Optional Docker security fixture not enabled",
+        "Deployment source check outside the runtime image"
+      ]
+    },
+    "focused_python_prior_run": {
+      "passed": 23
+    },
+    "host_build": "passed",
+    "candidate_images": "passed",
+    "graphify": "AST-only refreshed; no model calls"
+  },
+  "engine_recovery": {
+    "owner_approved": true,
+    "graceful_stop": "passed",
+    "start": "passed",
+    "force_used": false
+  },
+  "candidate_images": {
+    "services": "sha256:3b040e00f9fe221225762b33f808f511e619e574323ac21ccea2570b4b376fb4",
+    "hermes": "sha256:7f5b15c8dafee34c9899c4439195fc76be71e7e5946b7c281bd55f3a8e0ff7d4"
+  },
+  "limitations": [
+    "Production installation and live scoped recall are separate pending checks.",
+    "First prebuilt test invocation omitted generated dashboard assets: 72 passed, 2 failed; the normal full build and 74-test suite passed.",
+    "No credentials, source conversations, or provider responses are included."
+  ]
+}
