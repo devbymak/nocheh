@@ -1,0 +1,220 @@
+{
+  "recorded_at": "2026-09-14T17:59:32.670173+00:00",
+  "environment": "local-compose",
+  "status": "passed",
+  "synthetic_inputs_only": true,
+  "checks": {
+    "initial": {
+      "refresh": "passed",
+      "chat": "passed",
+      "detector": "passed",
+      "transcription": "passed"
+    },
+    "honcho_reasoning": "passed",
+    "monitor_initial": {
+      "events": 19,
+      "inserted": 12,
+      "collector": "running"
+    },
+    "monitor_outage_reasoning": {
+      "chat": "passed"
+    },
+    "monitor_recovery": {
+      "events": 21,
+      "inserted": 1,
+      "collector": "running"
+    },
+    "restart": {
+      "refresh": "passed",
+      "chat": "passed",
+      "transcription": "passed"
+    },
+    "monitor_after_restart": {
+      "events": 24,
+      "inserted": 3,
+      "collector": "running"
+    }
+  },
+  "honcho_memory_gate": "pending separate embedding acceptance",
+  "provider": {
+    "revision": "c76dfd4e0edabab9000628b1560ab8ab379eadb8",
+    "login_count": 1,
+    "monitor_revision": "1ae656c82990c480f3f104326a08c6e0001eeb4c"
+  },
+  "native_login": "retired",
+  "reasoning_route": "shared",
+  "completed_at": "2026-09-14T18:03:42.646439+00:00",
+  "owner_authorization": "do it, and tell me how can active embeding model step by step. can I add openai api key in CPA or should add in env file?",
+  "backup": {
+    "validated": true,
+    "version": 4,
+    "archive_tables": 44,
+    "inngest_tables": 14,
+    "protected_files": 494,
+    "restored_in_this_run": false
+  },
+  "active_state": {
+    "recorded_at": "2026-09-14T18:03:42.646439+00:00",
+    "saved_reasoning_route": "shared",
+    "provider_login_count": 1,
+    "runtime": {
+      "reasoning_route": "shared",
+      "refresh_owner": "cliproxy",
+      "login_present": true,
+      "telegram": "connected",
+      "telegram_details": {
+        "last_poll_at": "2026-09-14T18:03:32.421386+00:00",
+        "last_update_at": null,
+        "error_code": null,
+        "state": "connected"
+      },
+      "managed_runs": 0,
+      "scheduler": "workflow_owned"
+    },
+    "native_login_present": false,
+    "native_login_retired": true,
+    "containers": [
+      {
+        "service": "archive",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "cliproxy",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "dashboard",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "db-viewer",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "guard",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "hermes",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "inngest",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "postgres",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "provider-monitor",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "security",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "security-launcher",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "speech",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "worker",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "workflow-redis",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "workflow-worker",
+        "state": "running",
+        "health": "healthy"
+      }
+    ],
+    "workflows": {
+      "connected_families": 9,
+      "families": 9,
+      "inngest_owned": 7,
+      "outbox": {
+        "pending": 115,
+        "admitted": 0,
+        "oldest": "2026-09-13T22:26:20.380Z"
+      },
+      "fresh_services": true
+    },
+    "honcho": {
+      "attached": false,
+      "verified": false
+    },
+    "monitor": {
+      "events": 26,
+      "inserted": 5,
+      "collector": "running"
+    }
+  },
+  "timing": {
+    "initial": {
+      "refresh": {
+        "status": "passed",
+        "duration_ms": 4
+      },
+      "chat": {
+        "status": "passed",
+        "duration_ms": 110084
+      },
+      "detector": {
+        "status": "passed",
+        "duration_ms": 6133
+      },
+      "transcription": {
+        "status": "passed",
+        "duration_ms": 4444
+      }
+    },
+    "monitor-outage": {
+      "chat": {
+        "status": "passed",
+        "duration_ms": 8303
+      }
+    },
+    "restart": {
+      "refresh": {
+        "status": "passed",
+        "duration_ms": 4
+      },
+      "chat": {
+        "status": "passed",
+        "duration_ms": 7303
+      },
+      "transcription": {
+        "status": "passed",
+        "duration_ms": 7290
+      }
+    }
+  },
+  "limits": [
+    "Synthetic acceptance does not replace real owner Telegram text/voice, selected-group silence, private/group isolation, exact approval and reconnect/restart acceptance.",
+    "Refresh checks confirm Hermes delegates refresh authority to CPA; this run did not force expiration of the OAuth credential.",
+    "Honcho remains detached; the last metered embedding attempt returned HTTP 429. No further embedding request was made during provider cutover.",
+    "No source conversations, credentials or provider response bodies are included in this report."
+  ]
+}
