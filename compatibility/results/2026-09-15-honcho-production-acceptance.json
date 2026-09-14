@@ -1,0 +1,268 @@
+{
+  "recorded_at": "2026-09-14T22:42:31.031878+00:00",
+  "local_date": "2026-09-15",
+  "environment": "local-compose-production",
+  "status": "passed",
+  "synthetic_inputs_only": true,
+  "owner_authorized_activation": true,
+  "code_commit": "087d8e0e621da94a955398f57d939c0e22991b6a",
+  "connection": {
+    "attached": true,
+    "verified": true,
+    "attached_at": "2026-09-14T20:17:12.659Z",
+    "include_history": false
+  },
+  "checks": {
+    "attached_and_verified": "passed",
+    "history_not_enabled": "passed",
+    "ingestion_receipt": "passed",
+    "derivation_ready": "passed",
+    "unconsented_source_excluded": "passed",
+    "historical_inputs_send_no_reply": "passed",
+    "scoped_owner_recall": "passed",
+    "private_memory_hidden_from_group": "passed",
+    "inngest_execution": "passed",
+    "single_ingestion_attempt": "passed",
+    "native_tool_recall": "passed",
+    "outage_limited_memory": "passed",
+    "restart_recall": "passed",
+    "receipt_identity_preserved": "passed",
+    "gateway_denials": "passed",
+    "shared_engine_load_recall": "passed"
+  },
+  "native_tool": {
+    "native_memory_tool": "passed",
+    "primary_sources": 1,
+    "limited_memory": false,
+    "duration_ms": 11163,
+    "safe_error": null
+  },
+  "native_tool_with_other_project_running": {
+    "native_memory_tool": "passed",
+    "primary_sources": 1,
+    "limited_memory": false,
+    "duration_ms": 19129,
+    "safe_error": null
+  },
+  "gateway": {
+    "status": "passed",
+    "http_statuses": {
+      "missing_workspace": 403,
+      "unknown_workspace": 403,
+      "invalid_credential": 401
+    },
+    "no_provider_reservation": true
+  },
+  "receipt": {
+    "event_id": "e20962b6cc20e7ba57e428f7ed266226f1511ea64435eca0c2634acd2ef3c8ea",
+    "receipt_id": "767154c31d70d227c2cd9e54cc87c141a7fd37c5e26d370de4d95e91b0d83228",
+    "generation_id": "a830667e8da7803f2921a68820ed71b1f97da5022daf5d7b91e491f2016a25c6",
+    "receipt_attempts": 1
+  },
+  "provider": {
+    "reasoning_route": "shared",
+    "checks": {
+      "refresh": {
+        "status": "passed",
+        "duration_ms": 6
+      },
+      "chat": {
+        "status": "passed",
+        "duration_ms": 37775
+      },
+      "detector": {
+        "status": "passed",
+        "duration_ms": 2757
+      },
+      "transcription": {
+        "status": "passed",
+        "duration_ms": 2684
+      }
+    },
+    "login_count": 1
+  },
+  "runtime": {
+    "ok": true,
+    "reasoning_route": "shared",
+    "refresh_owner": "cliproxy",
+    "telegram": "connected",
+    "telegram_details": {
+      "last_poll_at": "2026-09-14T22:42:25.669737+00:00",
+      "last_update_at": null,
+      "error_code": null,
+      "state": "connected"
+    },
+    "managed_runs": 0,
+    "scheduler": "workflow_owned"
+  },
+  "services": {
+    "main": [
+      {
+        "service": "archive",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "cliproxy",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "dashboard",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "db-viewer",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "guard",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "hermes",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "inngest",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "postgres",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "provider-monitor",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "security",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "security-launcher",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "speech",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "worker",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "workflow-redis",
+        "state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "workflow-worker",
+        "state": "running",
+        "health": "healthy"
+      }
+    ],
+    "honcho": [
+      {
+        "service": "deriver",
+        "running": true,
+        "health": null,
+        "restart_policy": "unless-stopped",
+        "started_at": "2026-09-14T22:31:43.092728201Z"
+      },
+      {
+        "service": "honcho",
+        "running": true,
+        "health": "healthy",
+        "restart_policy": "unless-stopped",
+        "started_at": "2026-09-14T22:31:31.893729074Z"
+      },
+      {
+        "service": "meter",
+        "running": true,
+        "health": "healthy",
+        "restart_policy": "unless-stopped",
+        "started_at": "2026-09-14T22:31:26.014092453Z"
+      },
+      {
+        "service": "redis",
+        "running": true,
+        "health": "healthy",
+        "restart_policy": "unless-stopped",
+        "started_at": "2026-09-14T22:31:26.011471993Z"
+      },
+      {
+        "service": "database",
+        "running": true,
+        "health": "healthy",
+        "restart_policy": "unless-stopped",
+        "started_at": "2026-09-14T22:31:26.008074033Z"
+      }
+    ]
+  },
+  "workflows": {
+    "workers": 9,
+    "connected": 9,
+    "inngest_owned": 7,
+    "outbox": {
+      "pending": 156,
+      "admitted": 0,
+      "oldest": "2026-09-13T22:26:20.380Z"
+    },
+    "services": [
+      {
+        "service": "worker",
+        "seen_at": "2026-09-14T22:42:28.598Z",
+        "fresh": true
+      },
+      {
+        "service": "workflow-host",
+        "seen_at": "2026-09-14T22:42:25.743Z",
+        "fresh": true
+      },
+      {
+        "service": "workflow-pipeline",
+        "seen_at": "2026-09-14T22:42:28.866Z",
+        "fresh": true
+      }
+    ]
+  },
+  "budget": {
+    "limit_usd": 5,
+    "mode": "pilot",
+    "reserved_usd": 0.14,
+    "embedding_route": {
+      "provider": "openai",
+      "model": "text-embedding-3-small",
+      "dimensions": 1536
+    },
+    "reservations_are_not_an_invoice": true
+  },
+  "regression_evidence": "2026-09-15-honcho-recall-regression.json",
+  "limitations": [
+    "Real owner Telegram text/voice, selected-group silence/isolation, exact approval and reconnect/restart acceptance remain pending.",
+    "Preparation and Telegram retain legacy ownership; seven of nine workflow families use Inngest.",
+    "History backfill, import-learning consent and monthly budget activation were not enabled.",
+    "The pre-activation recovery snapshot was validated; full backup/restore was not repeated in this recall-fix run.",
+    "Honcho deriver is running with restart supervision but has no standalone healthcheck.",
+    "No credentials, source conversations, vectors or provider response bodies are included."
+  ],
+  "engine_recovery": {
+    "owner_approved": true,
+    "graceful_restart": true,
+    "other_project_containers_restored": 17,
+    "previously_stopped_containers_left_stopped": true,
+    "other_project_config_changed": false
+  }
+}
