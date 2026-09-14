@@ -1,0 +1,59 @@
+{
+  "recorded_at": "2026-09-14T23:02:20.333034+00:00",
+  "environment": "active-local-telegram",
+  "status": "failed",
+  "scope": "Real owner text acceptance and latency diagnosis; no runtime changes or resends",
+  "source_content_included": false,
+  "first_turn": {
+    "event_id": "71047dd5cdb2501610c0269d8f12260fbbe3c7a91c3cc9bc7cd9a77573aa2497",
+    "state": "done",
+    "attempts": 1,
+    "captured_at": "2026-09-14T22:48:39.901Z",
+    "prepared_at": "2026-09-14T22:48:44.849Z",
+    "dispatch_intent_at": "2026-09-14T22:48:55.920237Z",
+    "assistant_result_at": "2026-09-14T22:50:46.660Z",
+    "receipt_at": "2026-09-14T22:50:48.002834Z",
+    "capture_to_receipt_seconds": 128.102,
+    "source_preparation_seconds": 4.948,
+    "honcho_read_seconds": 25.987,
+    "reply_model_calls": 2,
+    "reply_model_seconds": 9.535,
+    "memory_receipt_state": "done",
+    "memory_receipt_attempts": 1,
+    "provider_calls_in_turn_window": 12,
+    "provider_calls_in_turn_window_failed": 0
+  },
+  "follow_up": {
+    "event_id": "fc961ec88029874c93eac912dc65ed1699cfd12e3c47746f1d358d823ec28443",
+    "telegram_message_at": "2026-09-14T22:50:58Z",
+    "captured_at": "2026-09-14T22:55:28.436Z",
+    "capture_delay_seconds": 270.436,
+    "dispatch_intent_at": "2026-09-14T22:55:41.322322Z",
+    "receipt_at": "2026-09-14T22:55:44.927802Z",
+    "state": "ambiguous",
+    "attempts": 1,
+    "error_code": "dispatch_interrupted",
+    "recorded_model_requests": 0,
+    "automatically_retried": false
+  },
+  "findings": [
+    "The first turn completed and its source was ingested once. Its full Telegram latency was not established by the earlier isolated memory-tool acceptance.",
+    "Every non-review turn performs Honcho recall before constructing the native agent. Context preparation, native memory hooks, model guarding and process startup also run before delivery.",
+    "The two scoped reply-model requests took 9.535 seconds combined; most elapsed time occurred outside those requests.",
+    "Shared Docker activity was high during diagnosis, but its contribution to the earlier turn cannot be isolated from that later resource snapshot.",
+    "The follow-up overlapped background native memory review. The launcher rejects busy profiles, but the durable error is generic; contention is a hypothesis, not a confirmed root cause.",
+    "The existing stopped follow-up remains closed. No replacement execution or Telegram send was started."
+  ],
+  "pending": [
+    "Separate cold agent startup, guard preparation, tool-result preparation and lock waiting in timing evidence.",
+    "Resolve delayed ingress and the interrupted follow-up before Telegram cutover.",
+    "Repeat actual owner text/voice, group silence/isolation, approval and reconnect acceptance after fixes."
+  ],
+  "source_references": [
+    "src/prepared-context.ts",
+    "integrations/hermes/assistant_turn.py",
+    "integrations/hermes/prepared_context.py",
+    "integrations/hermes/security_launcher.py",
+    "integrations/hermes/assistant_gateway.py"
+  ]
+}
