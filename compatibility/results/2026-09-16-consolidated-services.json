@@ -43,6 +43,11 @@
         "stale authority cannot prepare",
         "shared reads withhold pending protected text"
       ]
+    },
+    "prerequisite_readiness": {
+      "passed": 4,
+      "skipped": 0,
+      "fix": "Dependent turns recheck readiness instead of sleeping the preparation recovery lease; provider retries remain unchanged."
     }
   },
   "full_stack_outage": {
@@ -208,5 +213,16 @@
       "rejected_executions": 2,
       "history_rows_scanned": 1126
     }
+  },
+  "fault_rehearsal": {
+    "store_outage_capture": "passed",
+    "postgres_redis_engine_restart": "passed",
+    "crash_after_effect_before_ack": "passed",
+    "worker_kill_receipt_reconciliation": "passed",
+    "duplicate_capture_no_repeat_effect": "passed"
+  },
+  "candidate_images": {
+    "application": "sha256:ca34071443d290b43396238e6a66423d937f0f2a58c3cec3a1867d5dbc77cefa",
+    "hermes": "sha256:4f2a8f8b8e5d3dc7f6a67cd6b2710354abdf3d61293928fee9d70e180258c993"
   }
 }
