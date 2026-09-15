@@ -86,8 +86,13 @@
     "native_reference": "https://github.com/NousResearch/hermes-agent/blob/main/plugins/memory/honcho/README.md",
     "requires_guarded_adapter_work": true
   },
-  "installation": "pending",
-  "remote_push": "pending",
+  "installation": {
+    "status": "pending_explicit_approval",
+    "active_services_changed": false,
+    "admission_changed": false,
+    "reason": "Automatic approval review rejected pausing admission across nine workflow families as broad service disruption; explicit approval requested."
+  },
+  "remote_push": "blocked_missing_github_https_authentication",
   "pending": [
     "Fresh real Telegram question and immediate follow-up after installation.",
     "Voice, selected-group silence, isolation, owner-approved action and restart acceptance.",
@@ -106,5 +111,24 @@
     },
     "network": "none",
     "shared_host_load_limits_attribution": true
-  }
+  },
+  "candidate_artifacts": {
+    "base_image": "sha256:4526110542f121ab81f1b2d09cafb2aee74b4a2c2df98d419c4f846dfb8e8364",
+    "images": {
+      "hermes": "sha256:e54552f721eaebf3819c2ca59e1bc874ef3416cab4c06f46b2422cedb63dd244",
+      "services": "sha256:39998ddc1b7c08cf01969a5bef78847f1749fba5d1ff60eebb98cf44dd83540f"
+    },
+    "compiled_module_sha256": "35c230fdcf147af16ff6e78542b5401eaff92edb8a6aee56b5d1b0aa8a827bd7",
+    "artifact_match": true
+  },
+  "candidate_build": {
+    "hermes": "passed",
+    "services_offline_overlay": "passed",
+    "services_full_rebuild": "pending_registry_metadata_resolution",
+    "service_dependencies_changed": false
+  },
+  "local_code_commits": [
+    "f3ba380ec29e7ad26f317f27d2aff49358ef72ea",
+    "0931255e741c6daacb8ceda8a9aa920d569000a0"
+  ]
 }
