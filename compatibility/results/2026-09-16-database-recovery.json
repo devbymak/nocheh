@@ -23,5 +23,14 @@
   "limits": [
     "Root cause of the earlier backend exits remains unproven.",
     "Real Telegram delivery acceptance and preparation/Telegram cutovers are pending."
-  ]
+  ],
+  "installed_image": "sha256:ead8e2d936994a456c775798bbc321b1c3f83e3f00eadc647fa51aca8a576a41",
+  "installed_services": [
+    "archive",
+    "security",
+    "guard",
+    "worker",
+    "workflow-worker"
+  ],
+  "backend_exit_code_2_since_engine_restart": 0
 }

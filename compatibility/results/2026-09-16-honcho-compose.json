@@ -20,7 +20,44 @@
     "Host-wide suite requires native Hermes dependencies; rerun in pinned image.",
     "Container suite requires a synthetic SERVICE_TOKEN; corrected and rerun."
   ],
-  "local_adoption": "pending",
+  "local_adoption": "passed",
   "memory_activation": "unchanged",
-  "budget_activation": "unchanged"
+  "budget_activation": "unchanged",
+  "local_checks": {
+    "database_tables_fingerprinted": 12,
+    "new_storage_matches": true,
+    "old_storage_rollback_matches": true,
+    "resumed_new_storage_matches": true,
+    "archive_memory_records_preserved": true,
+    "protected_configuration_preserved": true,
+    "spending_ledger_preserved": true,
+    "old_containers_removed": 5,
+    "old_private_networks_removed": 2,
+    "volumes_deleted": false,
+    "nocheh_running_services": 20,
+    "nocheh_unhealthy_services": 0,
+    "host_workers_running": 2,
+    "admissions_open": 9,
+    "workflow_workers_connected": 9,
+    "admitted_outbox_backlog": 0,
+    "scoped_context": {
+      "http_status": 200,
+      "duration_ms": 97,
+      "limited_memory": false,
+      "expected_synthetic_fact_present": true,
+      "same_workflow_identity": true,
+      "dispatch": 1
+    }
+  },
+  "operational_reports": "data/local/reports/honcho-compose-20260916 and compose-cleanup-final-20260916.json",
+  "pending": [
+    "Fresh owner Telegram text and voice delivery checks",
+    "Selected-group silence, isolation, approval and restart acceptance",
+    "Final preparation and Telegram Inngest ownership cutovers",
+    "Fresh backup/inactive restore with populated context after this maintenance"
+  ],
+  "synthetic_voice_check": {
+    "captionless_voice": "passed",
+    "real_telegram_delivery": "pending"
+  }
 }
