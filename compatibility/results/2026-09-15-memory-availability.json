@@ -88,10 +88,11 @@
     "architecture": "Honcho-primary long-term memory with small complementary native Hermes notes; the recommendation concerns automatic context plus deeper recall tools, not a change of memory backend."
   },
   "installation": {
-    "status": "pending_explicit_approval",
-    "active_services_changed": false,
-    "admission_changed": false,
-    "reason": "Automatic approval review rejected pausing admission across nine workflow families as broad service disruption; explicit approval requested."
+    "status": "installed_health_confirmed_admission_paused",
+    "active_services_changed": true,
+    "admission_changed": true,
+    "authorization": "Owner: do it fully, following the production maintenance plan.",
+    "reason": "Candidate image replacement completed; Compose health deadline initially expired, but a subsequent fresh inspection found PostgreSQL, archive, worker, Connect worker and Hermes healthy. Admission remains paused pending regression completion and approval-review retry."
   },
   "remote_push": "blocked_missing_github_https_authentication",
   "pending": [

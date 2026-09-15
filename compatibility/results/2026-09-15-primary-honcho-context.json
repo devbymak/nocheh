@@ -1,0 +1,71 @@
+{
+  "recorded_at": "2026-09-15T16:38:51.208371+00:00",
+  "status": "implementation_verified",
+  "scope": "Primary Honcho context, protected generation cache, periodic durable refresh and scoped deeper recall.",
+  "services": {
+    "tests": 75,
+    "passed": 75,
+    "failed": 0,
+    "skipped": 0,
+    "run": "final complete isolated Compose fixture"
+  },
+  "hermes": {
+    "distinct_tests": 159,
+    "passed": 157,
+    "skipped": 2,
+    "pending": [
+      "Optional Docker security fixture and deployment-source check outside the runtime image."
+    ],
+    "setup_correction": "Initial run omitted the synthetic SERVICE_TOKEN required by speech tests; both speech tests passed when repeated with it."
+  },
+  "checks": [
+    "Bounded guarded context without foreground provider call",
+    "Cold concurrent reads preserve one permanent refresh identity",
+    "Durable two-minute refresh retains context after idle periods",
+    "Audience isolation and source-consent withdrawal",
+    "Initial build and expired cache report limited memory",
+    "Usable context survives transient refresh failure and restart",
+    "Owner edit during refresh rejects stale memory",
+    "Workflow metadata excludes source and cached content",
+    "Scoped broker authorization and cancellation deadlines",
+    "Backup table manifest includes protected context cache"
+  ],
+  "fixture_corrections": [
+    "Initial service fixture lacked generated dashboard assets and running Inngest; the final complete run passed all 75 checks.",
+    "Automatic context correctly retains the ordinary short broker timeout; the first test incorrectly expected the deeper-recall deadline."
+  ],
+  "images": {
+    "services": {
+      "image": "sha256:eb6c9ff6fecd9fb4bd65759180d2a274e3264a81b030748696e54ca38f1265b2",
+      "verified_artifacts": 6
+    },
+    "hermes": {
+      "image": "sha256:6eab18a2b24a83cd79de9dc44ff162500fb1f4a75f6b13380f4edc4e33cd5660",
+      "verified_artifacts": 2
+    }
+  },
+  "graphify": {
+    "files": 253,
+    "nodes": 1634,
+    "edges": 5722,
+    "model_calls": 0
+  },
+  "installation": "pending",
+  "production_pending": [
+    "New candidate installation and live context latency check",
+    "Real owner Telegram text/voice, selected-group silence, isolation, approval and restart acceptance",
+    "Fresh backup and inactive restore",
+    "Preparation and Telegram ownership cutover",
+    "Unexplained PostgreSQL backend exit code 2 during host load; last observed at 2026-09-15T16:25:00Z"
+  ],
+  "maintenance": {
+    "repair_images_installed": true,
+    "all_nine_admissions_paused": true,
+    "ownership_changed": false,
+    "unresolved_review_preserved": "ambiguous with original identity, generation 0 and 25 attempts; no native receipt or active isolated turn found",
+    "database_volume_shared": false,
+    "database_oom_killed": false,
+    "other_project_changed": false
+  },
+  "remote_push": "not_attempted_this_increment"
+}
