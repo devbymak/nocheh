@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-15",
+  "status": "candidate_verified_local_installation_pending",
+  "service_suite": {
+    "passed": 74,
+    "failed": 0,
+    "skipped": 0,
+    "execution": "serial_test_files",
+    "initial_parallel_run": "database_timeouts"
+  },
+  "affected_context_suite": {
+    "passed": 21,
+    "failed": 0,
+    "skipped": 0,
+    "fragments": 100,
+    "statements_upper_bound_exclusive": 30,
+    "atomic_rollback": true,
+    "owner_revision_and_isolation": true
+  },
+  "hermes": {
+    "full_run_total": 157,
+    "full_run_passed": 154,
+    "full_run_failed": 1,
+    "skipped": 2,
+    "remaining_check": "native_tui_capture_failure_keeps_composer",
+    "isolated_retest": "passed",
+    "isolated_retest_seconds": 8.06,
+    "distinct_passed": 155
+  },
+  "images": {
+    "hermes": "sha256:28383d80357138989def0336f7fa36a82c4b2c714b06554cab46111fb9c37b62",
+    "services": "sha256:77d8238856b370520a26e0c5d7ecbb34697666bf3cb0af9172acbe830239a1ac"
+  },
+  "source_capture_delay_cause": "not_proven",
+  "real_telegram_retest": "pending",
+  "ambiguous_followup": "closed_not_replayed",
+  "cutover": "preparation_and_telegram_still_legacy",
+  "host_pressure": {
+    "cpu_used_percent": 91.97,
+    "ram_used_gb": 15,
+    "compressed_mb": 6643
+  },
+  "graphify": {
+    "files": 253,
+    "nodes": 1629,
+    "edges": 5700,
+    "model_calls": 0
+  }
+}
