@@ -1,0 +1,72 @@
+{
+  "recorded_at": "2026-09-15",
+  "status": "verified_code_pending_installation",
+  "real_owner_retest": [
+    {
+      "event_id": "c1a95393f98df1ab1cbb048aee3f32cbe0ddca6aefea2fc6faa602c691f60aa8",
+      "state": "done",
+      "attempts": 1,
+      "capture_lag_ms": 1497,
+      "capture_to_receipt_ms": 143043,
+      "memory_recall_ms": 22571,
+      "agent_init_ms": 42356,
+      "conversation_ms": 30309
+    },
+    {
+      "event_id": "3a206721339963031b5abe4b54e4728e7798a28c55be9970ccb2d9b63c798dc6",
+      "state": "done",
+      "attempts": 1,
+      "capture_lag_ms": 2581,
+      "capture_to_receipt_ms": 141018,
+      "memory_recall_ms": 17713,
+      "agent_init_ms": 30249,
+      "conversation_ms": 7500,
+      "outside_child_ms": 63903
+    }
+  ],
+  "diagnosis": {
+    "optional_bedrock_installer_ms": 30842,
+    "isolated_native_constructor_before_ms": 41088,
+    "isolated_native_constructor_after_ms": 4378,
+    "honcho_receipts_done": 4,
+    "honcho_pending_work_units": 0,
+    "honcho_in_progress_work_units": 0,
+    "honcho_generation_state": "building",
+    "original_observer_state": "completed",
+    "background_review_overlapped_followup": true
+  },
+  "fixes": [
+    "disable runtime dependency installation before native imports",
+    "durable fresh readiness observations on Honcho receipt creation and acknowledgment",
+    "defer native review until 60 seconds after foreground activity"
+  ],
+  "verification": {
+    "focused_honcho_checks": 3,
+    "focused_security_admission_checks_passed": 19,
+    "focused_security_optional_skips": 1,
+    "services_suite": {
+      "passed": 75,
+      "failed": 0,
+      "skipped": 0
+    },
+    "hermes_suite": {
+      "total": 159,
+      "passed_initial": 154,
+      "startup_timeouts_initial": 3,
+      "passed_solitary_retest": 3,
+      "distinct_passed": 157,
+      "optional_skips": 2
+    },
+    "live_recall": "pending",
+    "real_owner_after_installation": "pending",
+    "graphify": {
+      "files": 253,
+      "nodes": 1632,
+      "edges": 5707,
+      "model_calls": 0
+    }
+  },
+  "local_installation": "pending",
+  "telegram_cutover": "pending",
+  "ambiguous_older_turn_replayed": false
+}
