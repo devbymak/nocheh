@@ -1,7 +1,7 @@
 {
   "date": "2026-09-16",
-  "scope": "isolated consolidated topology; active local cutover pending",
-  "production_activated": false,
+  "scope": "Consolidated local installation and Inngest-only retirement",
+  "production_activated": true,
   "dependencies_upgraded": false,
   "node_major": 24,
   "topology": {
@@ -16,16 +16,18 @@
   },
   "checks": {
     "typescript_postgres": {
-      "passed": 78,
-      "skipped": 0
+      "passed": 79,
+      "skipped": 0,
+      "method": "78 passed in the full 79-test run; the corrected browser case and four affected tests passed on the final code."
     },
     "hermes_native": {
-      "passed": 169,
-      "skipped": 2,
-      "skipped_checks": "Resolved Compose and Docker isolation ran separately on the host"
+      "passed": 168,
+      "skipped": 3,
+      "method": "167 passed in full 171-test run; terminal startup timeout passed separately after reducing fixture load.",
+      "skipped_checks": "Deployment-source, Compose, and Docker-isolation checks passed separately on the host."
     },
     "focused_host": {
-      "passed": 17
+      "passed": 28
     },
     "agent_container_isolation": "passed",
     "production_app_build": "passed",
@@ -48,6 +50,22 @@
       "passed": 4,
       "skipped": 0,
       "fix": "Dependent turns recheck readiness instead of sleeping the preparation recovery lease; provider retries remain unchanged."
+    },
+    "optional_host": {
+      "passed": 11
+    },
+    "graph": {
+      "files": 267,
+      "nodes": 1699,
+      "edges": 5990,
+      "model_calls": 0,
+      "removed_legacy_entrypoints": 2
+    },
+    "postcutover_subscription": {
+      "refresh": "passed",
+      "chat": "passed",
+      "literal_detection": "passed",
+      "ogg_opus_transcription": "passed"
     }
   },
   "full_stack_outage": {
@@ -76,10 +94,9 @@
     }
   },
   "pending": [
-    "local format-5 backup and service replacement",
-    "preparation and Telegram local migration",
-    "remaining legacy execution removal",
-    "fresh live Telegram release acceptance"
+    "final local image installation",
+    "exact approval and restart live acceptance",
+    "retirement fresh backup/restore and fault rehearsal completion"
   ],
   "connect_probes": {
     "pipeline_probe": {
@@ -222,7 +239,126 @@
     "duplicate_capture_no_repeat_effect": "passed"
   },
   "candidate_images": {
+    "application": "sha256:3a0409a153ba4832ea838e8cede379a7221514a740e004e2f841f5851fb7bae3",
+    "hermes": "sha256:8faa08af407f9c0828da9405daed4cdf54541f87ba71aab0fe71d25d9ed94a06"
+  },
+  "release_accepted": false,
+  "previous_candidate_images": {
     "application": "sha256:ca34071443d290b43396238e6a66423d937f0f2a58c3cec3a1867d5dbc77cefa",
     "hermes": "sha256:4f2a8f8b8e5d3dc7f6a67cd6b2710354abdf3d61293928fee9d70e180258c993"
+  },
+  "fresh_installation": {
+    "running_healthy": 15,
+    "init_completed": true,
+    "owners": "9 Inngest at epoch 1",
+    "engine_disable_flag": false,
+    "outage": {
+      "api_capture_during_engine_outage": "passed",
+      "restart_while_engine_down": "passed",
+      "automatic_reconnection": "passed",
+      "preserved_request_received": "passed",
+      "duplicate_capture": "passed",
+      "owner_dashboard_independent": "passed",
+      "families_using_inngest": 9
+    }
+  },
+  "live_telegram": {
+    "text": {
+      "event_id": "62abc52c8ebfc1c912900dc8cc74869ea8c9a444600dab885e46cde6070890e7",
+      "state": "done",
+      "attempts": 1,
+      "reply_intents": 1,
+      "private_marker_in_reply": false,
+      "native_receipt_state": "done",
+      "receipt_sha256": "f5ef287c07f5953502bf7b2c9739e6d359c9703fe8fb3012c3e0e824c35c3483"
+    },
+    "voice": {
+      "event_id": "f6a10fa6fece47731347cbe294e53df4d8463eac09e8f472a704723a5980e328",
+      "state": "done",
+      "attempts": 1,
+      "reply_intents": 1,
+      "private_marker_in_reply": false,
+      "native_receipt_state": "done",
+      "receipt_sha256": "7093ffabf944c8aa0a6c6acffe6895d59a2e61a33cafd0b7a420e01047991213"
+    },
+    "silence": {
+      "event_id": "030e2d42c8d9f21003c1948195f0c3d1b8ea2e4e753dde40d0c674a31b7af18d",
+      "state": "suppressed",
+      "attempts": 1,
+      "reply_intents": 0,
+      "private_marker_in_reply": false,
+      "native_receipt_state": "suppressed",
+      "receipt_sha256": "70e3124f810a903ff70d0d0a216504fc5f21d3addaf5135a68d4654c4be22194"
+    },
+    "private": {
+      "event_id": "8a2d810ab8f25c8397f4df4633db4e9dc079b4d9790994caded6b872a8ebf4ed",
+      "state": "done",
+      "attempts": 1,
+      "reply_intents": 1,
+      "private_marker_in_reply": false,
+      "native_receipt_state": "done",
+      "receipt_sha256": "ec0f8810b0935777b0efe4e8805ac3f67421bace9013f8f2fdf265d34cc14376"
+    },
+    "group": {
+      "event_id": "f45920ab900f18c19308464406dea2b843ca85b4f51130c8a09963b87c65e916",
+      "state": "done",
+      "attempts": 1,
+      "reply_intents": 1,
+      "private_marker_in_reply": false,
+      "native_receipt_state": "done",
+      "receipt_sha256": "676c5da9210a5704d5dce18b0cc0f74b3aacc9ce1d8e5347aa98e3772b97f402"
+    },
+    "proposal": {
+      "event_id": "8f28d071961fd1125cd99e1605752a32b54b233cdac9ece8274d0672aed29521",
+      "state": "done",
+      "attempts": 1,
+      "reply_intents": 1,
+      "private_marker_in_reply": false,
+      "native_receipt_state": "done",
+      "receipt_sha256": "f35a3220b216e208317c4232310ebad7d7ce673d9f1b36a690f90a4bbe0f6e87",
+      "result": "No action created; current-chat destination fix awaiting live retest"
+    },
+    "voice_artifact": {
+      "artifact_id": "2a6db684c343a7d7c0674c5a6d7b4b227d4a00a7a0d2f3c2ae376b2109e64df1",
+      "state": "ready",
+      "file_hash": "742e9b55855989966b5e365e027a147d4564562da6a22abeafc6f803d423f666",
+      "bytes": 18346,
+      "transcripts": 1,
+      "provenance": [
+        {
+          "version": "codex-asr:479f6a7a3db81fe2a23d4755b0ccbeb4400317d4",
+          "provider": "nocheh-subscription",
+          "input_sha256": "742e9b55855989966b5e365e027a147d4564562da6a22abeafc6f803d423f666"
+        }
+      ],
+      "expected_transcript": true,
+      "file_integrity": "passed"
+    },
+    "isolation": {
+      "group_event_id": "f45920ab900f18c19308464406dea2b843ca85b4f51130c8a09963b87c65e916",
+      "private_event_id": "8a2d810ab8f25c8397f4df4633db4e9dc079b4d9790994caded6b872a8ebf4ed",
+      "live_group_credential": true,
+      "group_source_read": 200,
+      "private_source_denied": 404
+    }
+  },
+  "local_migrations": {
+    "preparation": {
+      "id": "77d21eaa58e95f588cc4bb2f90911bca8335ae7e2f3b52b9964b263649fdd48b",
+      "from": "legacy epoch 1",
+      "to": "Inngest epoch 2",
+      "reconciled": 268,
+      "redispatched": 4
+    },
+    "telegram": {
+      "id": "d0399fee965841d06b2126ff57c3b6c11ca481ab34d2dfe3b31ca2e050296483",
+      "from": "legacy epoch 1",
+      "to": "Inngest epoch 2",
+      "reconciled": 9,
+      "redispatched": 0
+    },
+    "live_leases_at_handoff": 0,
+    "unresolved_receipts_at_handoff": 0,
+    "application_data_reset": false
   }
 }
