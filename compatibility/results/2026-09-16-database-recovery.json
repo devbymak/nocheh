@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-16",
+  "scope": "checked-out PostgreSQL disconnect and guard connection cleanup",
+  "service_tests": {
+    "passed": 76,
+    "failed": 0,
+    "skipped": 0,
+    "fixture": "isolated synthetic Compose, serial Node test execution",
+    "log": "private local report"
+  },
+  "failure_semantics": "Disconnected work rejects and releases the client; existing receipts remain authoritative. No blind effect retry.",
+  "privacy": "Connection errors log only an allowlisted event code.",
+  "orbstack_restart": {
+    "graceful_stop": "passed",
+    "start": "passed",
+    "previous_running_containers": 38,
+    "restored_running_containers": 38,
+    "admissions_reopened": 9,
+    "host_workers_restored": 2,
+    "forced_stop": false,
+    "volumes_deleted": false
+  },
+  "limits": [
+    "Root cause of the earlier backend exits remains unproven.",
+    "Real Telegram delivery acceptance and preparation/Telegram cutovers are pending."
+  ]
+}
