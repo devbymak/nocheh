@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-09-15T16:54:35Z",
+  "status": "backup_and_inactive_restore_verified",
+  "scope": "Host recovery of the active local installation after primary Honcho context installation.",
+  "backup": {
+    "format": 4,
+    "archive_tables": 45,
+    "inngest_tables": 14,
+    "protected_files": 676,
+    "checksums": "passed",
+    "quiesced_recovery_point": true,
+    "context_cache_table_included": true,
+    "context_cache_populated": false
+  },
+  "restore": {
+    "archive_and_inngest_fingerprints": "passed",
+    "redis_rdb_checksum_and_aof_conversion": "passed",
+    "protected_files_verified": 676,
+    "inactive_hold_files_verified": true,
+    "only_postgres_and_redis_started_for_verification": true,
+    "executors_active": false,
+    "telegram_enabled": false,
+    "subscription_login_activated": false,
+    "honcho_attached": false,
+    "both_restore_projects_stopped_after_check": true
+  },
+  "correction": {
+    "initial_failure": "Temporary Redis daemon was not listening when AOF configuration began.",
+    "fix": "Wait for PONG after RDB loading, require an OK AOF-configuration response, then verify rewrite completion before shutdown.",
+    "focused_host_tests_passed": 11,
+    "new_failure_paths": [
+      "Redis reports LOADING before becoming ready",
+      "redis-cli returns error text with a zero exit status"
+    ],
+    "fresh_isolated_restore_after_fix": "passed"
+  },
+  "graphify": {"files": 253, "nodes": 1638, "edges": 5728, "model_calls": 0},
+  "live_state": {
+    "healthy_dependencies": 11,
+    "all_nine_admissions_paused": true,
+    "ownership_changed": false,
+    "backend_code_2_exits_between_1626_and_1654_utc": 0,
+    "postgres_connection_diagnostics": "removed; log_connections verified off",
+    "database_incident_cause": "unresolved"
+  },
+  "limits": [
+    "Cache table is included but empty; populated cache recovery is not established by this snapshot.",
+    "Automatic approval review rejected restoring live admissions despite passing health and regression checks; explicit approval is pending.",
+    "Live context warming, Telegram acceptance and final preparation/Telegram cutovers remain pending.",
+    "The stable observation window does not establish that the PostgreSQL backend failure is fixed."
+  ]
+}
