@@ -1,6 +1,6 @@
 {
   "recorded_at": "2026-09-15",
-  "status": "verified_code_pending_installation",
+  "status": "installed_live_recall_passed_telegram_retest_pending",
   "real_owner_retest": [
     {
       "event_id": "c1a95393f98df1ab1cbb048aee3f32cbe0ddca6aefea2fc6faa602c691f60aa8",
@@ -57,16 +57,49 @@
       "distinct_passed": 157,
       "optional_skips": 2
     },
-    "live_recall": "pending",
+    "live_recall": {
+      "status": "passed",
+      "duration_ms": 34544,
+      "limited_memory": false,
+      "source_count": 1,
+      "expected_recall": true
+    },
     "real_owner_after_installation": "pending",
     "graphify": {
       "files": 253,
       "nodes": 1632,
       "edges": 5707,
       "model_calls": 0
+    },
+    "native_polling": "connected",
+    "replaced_services_healthy": 8,
+    "all_family_admission_restored": true,
+    "honcho_observer_generation": 2,
+    "honcho_observer_state": "completed",
+    "honcho_receipts": {
+      "done": 4,
+      "attempts_each": 1
+    },
+    "embedding_reserved_usd": 0.24,
+    "embedding_limit_usd": 5,
+    "hermes_startup_retest_seconds": 45.465
+  },
+  "local_installation": "passed",
+  "telegram_cutover": "pending",
+  "ambiguous_older_turn_replayed": false,
+  "installed_at": "2026-09-15T12:02:17.815760+00:00",
+  "code_commit": "9ea9fc2d67f23b7c5dbfb1d46816d7a6d1b37984",
+  "images": {
+    "hermes": {
+      "before": "sha256:28383d80357138989def0336f7fa36a82c4b2c714b06554cab46111fb9c37b62",
+      "candidate": "sha256:74f87ba14f7061543d1729852d7388a7a8bfeab742805ab4d95a7d0c921cefbc",
+      "rollback_tag": "nocheh-hermes:before-followup-20260915"
+    },
+    "services": {
+      "before": "sha256:77d8238856b370520a26e0c5d7ecbb34697666bf3cb0af9172acbe830239a1ac",
+      "candidate": "sha256:4526110542f121ab81f1b2d09cafb2aee74b4a2c2df98d419c4f846dfb8e8364",
+      "rollback_tag": "nocheh-services:before-followup-20260915"
     }
   },
-  "local_installation": "pending",
-  "telegram_cutover": "pending",
-  "ambiguous_older_turn_replayed": false
+  "remote_push": "blocked_github_https_authentication"
 }
