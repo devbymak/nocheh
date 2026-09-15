@@ -1,6 +1,6 @@
 {
   "date": "2026-09-15",
-  "status": "candidate_verified_local_installation_pending",
+  "status": "installed_live_synthetic_checks_passed_real_telegram_pending",
   "service_suite": {
     "passed": 74,
     "failed": 0,
@@ -45,5 +45,55 @@
     "nodes": 1629,
     "edges": 5700,
     "model_calls": 0
-  }
+  },
+  "live_checks": {
+    "refresh": {
+      "status": "passed",
+      "duration_ms": 18
+    },
+    "chat": {
+      "status": "passed",
+      "duration_ms": 58079
+    },
+    "detector": {
+      "status": "passed",
+      "duration_ms": 2851
+    },
+    "transcription": {
+      "status": "passed",
+      "duration_ms": 3670
+    }
+  },
+  "warm_chat_probe": {
+    "check": "chat",
+    "status": "passed",
+    "duration_ms": 4285
+  },
+  "polling": {
+    "ok": true,
+    "login_present": true,
+    "reasoning_route": "shared",
+    "telegram": "connected",
+    "telegram_details": {
+      "last_poll_at": "2026-09-15T11:04:17.815996+00:00",
+      "last_update_at": null,
+      "error_code": null,
+      "network_ms": 12140,
+      "capture_ms": 6,
+      "state": "connected"
+    },
+    "managed_runs": 0
+  },
+  "admission_restored": true,
+  "ownership_changed": false,
+  "rollback_tags": [
+    "nocheh-hermes:before-response-20260915",
+    "nocheh-services:before-response-20260915"
+  ],
+  "limitations": [
+    "Real owner Telegram reply and follow-up latency remain pending.",
+    "Cold startup text probe took 58.079 seconds; warm probe 4.285 seconds is not end-to-end Telegram timing.",
+    "No automatic replay of the ambiguous saved follow-up.",
+    "Full release and preparation/Telegram ownership cutover remain pending the existing acceptance gates."
+  ]
 }
