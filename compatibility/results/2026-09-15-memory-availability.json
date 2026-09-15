@@ -1,0 +1,110 @@
+{
+  "format": "nocheh-memory-availability-v1",
+  "recorded_date": "2026-09-15",
+  "real_owner_retest": [
+    {
+      "event_id": "2d2d81cb9de029c63b3b361436dabda5978b90aa42dd89ad337c2108f85b91fc",
+      "state": "done",
+      "attempts": 1,
+      "capture_lag_ms": 731,
+      "capture_to_receipt_ms": 89028,
+      "bootstrap_ms": 8343,
+      "memory_recall_ms": 27340,
+      "agent_init_ms": 2332,
+      "conversation_ms": 15533,
+      "reply_provider_ms": 4911
+    },
+    {
+      "event_id": "22d5f1217eb546d515907013c7a3a37c4ca87bc22e6deefc3825743ead91401d",
+      "state": "done",
+      "attempts": 1,
+      "capture_lag_ms": 1461,
+      "capture_to_receipt_ms": 82829,
+      "bootstrap_ms": 9706,
+      "memory_recall_ms": 47481,
+      "agent_init_ms": 1589,
+      "conversation_ms": 12242,
+      "reply_provider_ms": 4608
+    }
+  ],
+  "diagnosis": {
+    "incremental_sync_reported_as_limited_memory": true,
+    "previously_ready_generation": true,
+    "receipts_done": 6,
+    "readiness_completed_after_second_recall_seconds": 6,
+    "unconditional_foreground_reasoning_call": true
+  },
+  "changes": [
+    "Separate readiness history from incremental synchronization for the current authorized generation.",
+    "Retain limited-memory disclosure for initial builds, retired generations and failed recall.",
+    "Keep execution provenance out of the semantic memory query while preserving it in the native agent prompt.",
+    "Precompile pinned native Python modules in the image."
+  ],
+  "checks": {
+    "services_full": {
+      "passed": 75,
+      "failed": 0,
+      "skipped": 0
+    },
+    "services_focused": {
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0
+    },
+    "final_retired_state_regression": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    "hermes_full": {
+      "passed": 156,
+      "failed": 1,
+      "skipped": 2
+    },
+    "hermes_retest": {
+      "passed": 1,
+      "failed": 0,
+      "test": "test_actual_native_tui_capture_failure_keeps_composer"
+    },
+    "hermes_distinct_passed": 157,
+    "graphify": {
+      "files": 253,
+      "nodes": 1632,
+      "edges": 5708,
+      "model_calls": 0
+    }
+  },
+  "host_observation": {
+    "load_average_1m": 104.5,
+    "synthetic_benchmark_stopped": true,
+    "active_services_with_observed_restarts": 3,
+    "oom_killed_at_inspection": false,
+    "unrelated_services_stopped": false
+  },
+  "hybrid_retrieval": {
+    "status": "recommended_not_implemented",
+    "native_reference": "https://github.com/NousResearch/hermes-agent/blob/main/plugins/memory/honcho/README.md",
+    "requires_guarded_adapter_work": true
+  },
+  "installation": "pending",
+  "remote_push": "pending",
+  "pending": [
+    "Fresh real Telegram question and immediate follow-up after installation.",
+    "Voice, selected-group silence, isolation, owner-approved action and restart acceptance.",
+    "Full hybrid retrieval implementation and latency acceptance."
+  ],
+  "startup_comparison": {
+    "before": {
+      "bootstrap_ms": 35192,
+      "agent_init_ms": 9429,
+      "total_ms": 44621
+    },
+    "after": {
+      "bootstrap_ms": 11507,
+      "agent_init_ms": 6149,
+      "total_ms": 17656
+    },
+    "network": "none",
+    "shared_host_load_limits_attribution": true
+  }
+}
