@@ -84,7 +84,8 @@
   "hybrid_retrieval": {
     "status": "recommended_not_implemented",
     "native_reference": "https://github.com/NousResearch/hermes-agent/blob/main/plugins/memory/honcho/README.md",
-    "requires_guarded_adapter_work": true
+    "requires_guarded_adapter_work": true,
+    "architecture": "Honcho-primary long-term memory with small complementary native Hermes notes; the recommendation concerns automatic context plus deeper recall tools, not a change of memory backend."
   },
   "installation": {
     "status": "pending_explicit_approval",
