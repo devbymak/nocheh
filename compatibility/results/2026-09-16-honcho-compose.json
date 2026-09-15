@@ -1,0 +1,26 @@
+{
+  "scope": "production Honcho in installation Compose project",
+  "host_checks": {
+    "passed": 20,
+    "failed": 0,
+    "includes": [
+      "resolved Compose network isolation",
+      "external database and Redis volumes",
+      "inactive restore storage rebinding",
+      "legacy writer and existing-data activation rejection"
+    ]
+  },
+  "hermes_checks": {
+    "passed": 161,
+    "skipped": 3,
+    "failed": 0,
+    "environment": "pinned Hermes image, synthetic service token, no network"
+  },
+  "harness_corrections": [
+    "Host-wide suite requires native Hermes dependencies; rerun in pinned image.",
+    "Container suite requires a synthetic SERVICE_TOKEN; corrected and rerun."
+  ],
+  "local_adoption": "pending",
+  "memory_activation": "unchanged",
+  "budget_activation": "unchanged"
+}
