@@ -33,7 +33,17 @@
     "owner_and_native_dashboard": "passed",
     "owner_diagnostics_with_containers_stopped": "passed",
     "inactive_restore": "passed",
-    "precutover_live_subscription_transcription": "passed"
+    "precutover_live_subscription_transcription": "passed",
+    "preparation_admission": {
+      "passed": 8,
+      "skipped": 0,
+      "covers": [
+        "duplicate requests preserve closed identities",
+        "guard re-enable queues a new preparation generation",
+        "stale authority cannot prepare",
+        "shared reads withhold pending protected text"
+      ]
+    }
   },
   "full_stack_outage": {
     "api_capture_during_engine_outage": "passed",
