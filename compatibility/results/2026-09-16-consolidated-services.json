@@ -1,0 +1,202 @@
+{
+  "date": "2026-09-16",
+  "scope": "isolated consolidated topology; active local cutover pending",
+  "production_activated": false,
+  "dependencies_upgraded": false,
+  "node_major": 24,
+  "topology": {
+    "running_containers": 15,
+    "completed_jobs": [
+      "inngest-db-init"
+    ],
+    "host_services": [
+      "nocheh-dashboard",
+      "nocheh-host-executor"
+    ]
+  },
+  "checks": {
+    "typescript_postgres": {
+      "passed": 78,
+      "skipped": 0
+    },
+    "hermes_native": {
+      "passed": 169,
+      "skipped": 2,
+      "skipped_checks": "Resolved Compose and Docker isolation ran separately on the host"
+    },
+    "focused_host": {
+      "passed": 17
+    },
+    "agent_container_isolation": "passed",
+    "production_app_build": "passed",
+    "merged_hermes_build": "passed",
+    "owner_and_native_dashboard": "passed",
+    "owner_diagnostics_with_containers_stopped": "passed",
+    "inactive_restore": "passed",
+    "precutover_live_subscription_transcription": "passed"
+  },
+  "full_stack_outage": {
+    "api_capture_during_engine_outage": "passed",
+    "restart_while_engine_down": "passed",
+    "automatic_reconnection": "passed",
+    "preserved_request_received": "passed",
+    "duplicate_capture": "passed",
+    "owner_dashboard_independent": "passed",
+    "families_using_inngest": 9
+  },
+  "restore": {
+    "health": {
+      "ok": true,
+      "service": "nocheh-app",
+      "database": "ready",
+      "workflows": "inactive",
+      "capture": {
+        "capture": "inactive",
+        "outbox": "inactive"
+      }
+    },
+    "inactive_markers": {
+      "workflows/inactive": true,
+      "spool/.restore-inactive": true
+    }
+  },
+  "pending": [
+    "local format-5 backup and service replacement",
+    "preparation and Telegram local migration",
+    "remaining legacy execution removal",
+    "fresh live Telegram release acceptance"
+  ],
+  "connect_probes": {
+    "pipeline_probe": {
+      "pipeline_probe": "passed",
+      "calls": {
+        "download": 2,
+        "transcribe": 1,
+        "start": 1,
+        "resume": 1,
+        "browserStart": 1,
+        "browserResume": 2,
+        "scheduleAdvance": 2,
+        "scheduleStart": 1,
+        "scheduleResume": 2
+      },
+      "workflows": [
+        {
+          "family": "browser",
+          "state": "completed",
+          "stage": "assistant",
+          "attempts": 1
+        },
+        {
+          "family": "preparation",
+          "state": "completed",
+          "stage": "preparation",
+          "attempts": 0
+        },
+        {
+          "family": "preparation",
+          "state": "completed",
+          "stage": "preparation",
+          "attempts": 0
+        },
+        {
+          "family": "preparation",
+          "state": "skipped",
+          "stage": "attachments",
+          "attempts": 1
+        },
+        {
+          "family": "preparation",
+          "state": "completed",
+          "stage": "preparation",
+          "attempts": 0
+        },
+        {
+          "family": "preparation",
+          "state": "completed",
+          "stage": "preparation",
+          "attempts": 0
+        },
+        {
+          "family": "preparation",
+          "state": "completed",
+          "stage": "preparation",
+          "attempts": 0
+        },
+        {
+          "family": "preparation",
+          "state": "skipped",
+          "stage": "admission",
+          "attempts": 0
+        },
+        {
+          "family": "preparation",
+          "state": "skipped",
+          "stage": "admission",
+          "attempts": 0
+        },
+        {
+          "family": "preparation",
+          "state": "completed",
+          "stage": "preparation",
+          "attempts": 0
+        },
+        {
+          "family": "schedules",
+          "state": "completed",
+          "stage": "assistant",
+          "attempts": 1
+        },
+        {
+          "family": "schedules",
+          "state": "completed",
+          "stage": "schedule",
+          "attempts": 0
+        },
+        {
+          "family": "telegram",
+          "state": "completed",
+          "stage": "delivery",
+          "attempts": 1
+        }
+      ],
+      "receipts": [
+        {
+          "step": "browser",
+          "attempt": 1,
+          "state": "done"
+        },
+        {
+          "step": "schedules",
+          "attempt": 1,
+          "state": "done"
+        },
+        {
+          "step": "telegram",
+          "attempt": 1,
+          "state": "done"
+        }
+      ]
+    },
+    "host_probe": {
+      "host_probe": "passed",
+      "job": {
+        "state": "completed",
+        "completed": 103,
+        "duplicates": 0
+      },
+      "counts": {
+        "events": 104,
+        "replies": 0,
+        "learning": 0,
+        "batches": 3
+      },
+      "injected_lost_receipt_responses": 1
+    },
+    "privacy_probe": {
+      "privacy_probe": "passed",
+      "rejected_executions": 2,
+      "history_rows_scanned": 1126
+    }
+  }
+}
