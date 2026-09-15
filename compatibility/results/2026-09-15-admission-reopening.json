@@ -1,0 +1,74 @@
+{
+  "recorded_at": "2026-09-15T19:45:24Z",
+  "status": "admissions_reopened_production_verification_blocked",
+  "authorization": "Owner explicitly approved reopening all nine workflow admissions.",
+  "transition": {
+    "first_attempt": "Could not connect while PostgreSQL was recovering; no transaction began.",
+    "retry": "Committed after database and execution service health checks passed.",
+    "open_families": 9,
+    "legacy_epoch_1": ["preparation", "telegram"],
+    "inngest_epoch_2": ["actions", "browser", "honcho", "imports", "memory_review", "schedules", "tools"],
+    "ownership_changed": false,
+    "honcho_attachment_changed": false,
+    "previous_ambiguous_review": {"state": "ambiguous", "generation": 0, "attempts": 25}
+  },
+  "primary_context": {
+    "normal_inngest_refresh": "passed",
+    "http_status": 200,
+    "duration_ms": 429,
+    "limited_memory": false,
+    "source_count": 1,
+    "expected_synthetic_fact_present": true,
+    "refreshed_at": "2026-09-15T19:33:17.331Z",
+    "workflow_state": "waiting",
+    "waiting_reason": "refresh_interval",
+    "attempts": 0
+  },
+  "real_owner_telegram": {
+    "text": {
+      "event_id": "d57c147ce8be426ceaf689afc85a868a691e888c25c54c7f29964693ec4c115c",
+      "captured_and_spooled": true,
+      "attempts": 1,
+      "receipt_state": "ambiguous",
+      "error_code": "dispatch_interrupted",
+      "acceptance": "failed; closed receipt retained"
+    },
+    "voice": {
+      "event_id": "af0df24f9769b8e9717585d91e763b84fc99aa1aecfa8f699e768e9ba4df27cd",
+      "captured_and_spooled": true,
+      "transcript_expected_phrase": true,
+      "attempts": 1,
+      "receipt_state": "suppressed",
+      "error_code": "unsupported_message",
+      "acceptance": "transcription passed; delivery failed; closed receipt retained"
+    }
+  },
+  "runtime_incidents": {
+    "postgres_backend_code_2": ["2026-09-15T19:20:12Z", "2026-09-15T19:22:54Z"],
+    "root_cause": "unresolved",
+    "coopr_temporary_stop": "Owner approved; Docker reported missing exit events and one zombie process.",
+    "coopr_original_containers_restored": 17,
+    "coopr_restoration_verified_at": "2026-09-15T19:40:14Z",
+    "orbctl_list": "start VM: timed out waiting for VM to start",
+    "final_postgres_connection_check": "failed",
+    "graceful_engine_restart": "approval requested; not executed",
+    "force_stop": "not authorized or executed"
+  },
+  "candidate_recovery_fix": {
+    "installed": false,
+    "changes": "Handle checked-out PostgreSQL client errors and release failed guarded-context sessions; make the deadline fixture deterministic.",
+    "typescript_build": "passed",
+    "focused_database_and_guard_checks_passed": 5,
+    "controlled_deadline_check_passed": 1,
+    "broader_service_run": "Interrupted after three reported failures during host instability; not passed.",
+    "graphify": {"files": 254, "nodes": 1639, "edges": 5742, "model_calls": 0},
+    "source_location": "Session worktree; wider verification pending"
+  },
+  "pending": [
+    "Graceful engine recovery and healthy stable operation",
+    "Complete candidate regression, integration and installation",
+    "Fresh real owner text/voice delivery acceptance after recovery",
+    "Selected-group silence, isolation, exact approval and restart acceptance",
+    "Preparation and Telegram Inngest ownership cutover"
+  ]
+}
