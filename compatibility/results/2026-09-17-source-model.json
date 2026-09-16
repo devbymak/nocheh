@@ -150,5 +150,17 @@
     "container_removed": true,
     "private_network_removed": true,
     "synthetic_volume_removed": true
+  },
+  "integration": {
+    "concurrent_main": "699edf976209d65ed0fdf7aecbfebec658bf666a",
+    "node": "24.13.0",
+    "combined_build": "passed",
+    "dashboard_auth_boundary_graph_tests": 11,
+    "failed": 0,
+    "executor_operations_python_checks": 17,
+    "adr_collision_resolution": "New source decision renumbered to ADR-0051; accepted dashboard ADR-0050 preserved.",
+    "ast_graph_refresh": "passed; AST-only workflow",
+    "package_lock_sha256": "433a152f5aa7ea58a25cc5c2c8ad8165d89b4e3a5864bc0740da487188e722c9",
+    "backend_dependency_pins_unchanged": true
   }
 }
