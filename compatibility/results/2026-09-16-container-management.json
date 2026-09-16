@@ -33,7 +33,11 @@
     },
     "owner_and_native_browser_pages": "passed",
     "documentation_links_and_diff": "passed",
-    "ast_graph": "rebuilt_without_model_calls"
+    "ast_graph": "rebuilt_without_model_calls",
+    "focused_management_python_followup": {
+      "host_passed": 28,
+      "management_image_passed": 28
+    }
   },
   "status": "passed",
   "snapshot": {
@@ -68,13 +72,16 @@
     "full_upstream_recompile": "Rust_and_Go_download_attempts_cancelled_after_stalling"
   },
   "integration": {
-    "code_commit": "283ab389013445abcbe4f5ba1b9c085618961d99",
+    "code_commit": "26febe11e36c88aafca87968abccb7850500d828",
     "local_main_merged": true,
-    "push": "blocked_GitHub_HTTPS_authentication"
+    "push": "blocked_GitHub_HTTPS_authentication",
+    "original_code_commit": "283ab389013445abcbe4f5ba1b9c085618961d99"
   },
   "live_cutover": {
-    "executed": false,
-    "status": "explicit_live_cutover_approval_requested_after_automatic_review_rejection",
-    "current_healthy_containers": 15
+    "executed": true,
+    "status": "passed",
+    "owner_explicitly_approved": true,
+    "healthy_containers": 17,
+    "evidence": "2026-09-16-container-management-live.json"
   }
 }

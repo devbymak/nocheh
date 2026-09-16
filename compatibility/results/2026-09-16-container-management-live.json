@@ -1,0 +1,143 @@
+{
+  "environment": "authorized-local-installation",
+  "checks": {
+    "host_executor_drained": "passed",
+    "host_cli_docker_lifecycle": "passed",
+    "database_identities_preserved": "passed",
+    "archive_record_count_preserved": "passed",
+    "single_subscription_login": "passed",
+    "all_17_services_healthy": "passed",
+    "all_9_workflow_workers": "passed",
+    "container_dashboard": "passed",
+    "subscription": {
+      "refresh": {
+        "status": "passed",
+        "duration_ms": 75
+      },
+      "chat": {
+        "status": "passed",
+        "duration_ms": 64741
+      },
+      "detector": {
+        "status": "passed",
+        "duration_ms": 2760
+      },
+      "transcription": {
+        "status": "passed",
+        "duration_ms": 2814
+      }
+    },
+    "other_project_container_ids_preserved": "passed",
+    "live_browser_monitoring": "passed"
+  },
+  "images": {
+    "nocheh-services:local": "sha256:a25b393c1c6e3cbcd07703455d64a7a619002fa1a8ecabc9dadc1b38ce4baf8b",
+    "nocheh-management:local": "sha256:f3119469a1953e9ebc66918d1aeb875602713ab65302aa50b3d6951d6540ceb5",
+    "nocheh-hermes:local": "sha256:440d4fc1cbe2f19fc02cf9f3cf9644a1d69354ad9ad5c67ecdd42a576fbc6802"
+  },
+  "status": "passed",
+  "snapshot": {
+    "path": "/Users/mak/Develop/Personal/nocheh/data/local/admin/backups/management-migration-20260916",
+    "version": 5,
+    "archive_tables": 45,
+    "workflow_tables": 14,
+    "honcho_tables": 12,
+    "files": 919,
+    "validated": true
+  },
+  "services": [
+    {
+      "service": "nocheh-dashboard",
+      "healthy": true
+    },
+    {
+      "service": "nocheh-host-executor",
+      "healthy": true
+    },
+    {
+      "service": "hermes-runtime",
+      "healthy": true
+    },
+    {
+      "service": "hermes-agent-launcher",
+      "healthy": true
+    },
+    {
+      "service": "nocheh-security",
+      "healthy": true
+    },
+    {
+      "service": "inngest-server",
+      "healthy": true
+    },
+    {
+      "service": "honcho-deriver",
+      "healthy": true
+    },
+    {
+      "service": "nocheh-app",
+      "healthy": true
+    },
+    {
+      "service": "honcho-api",
+      "healthy": true
+    },
+    {
+      "service": "cliproxy-monitor",
+      "healthy": true
+    },
+    {
+      "service": "chatgpt-speech",
+      "healthy": true
+    },
+    {
+      "service": "cliproxy-api",
+      "healthy": true
+    },
+    {
+      "service": "honcho-redis",
+      "healthy": true
+    },
+    {
+      "service": "inngest-redis",
+      "healthy": true
+    },
+    {
+      "service": "honcho-postgres",
+      "healthy": true
+    },
+    {
+      "service": "honcho-provider-gateway",
+      "healthy": true
+    },
+    {
+      "service": "nocheh-postgres",
+      "healthy": true
+    }
+  ],
+  "archive_counts": {
+    "before": 661,
+    "after": 665
+  },
+  "cleanup": {
+    "obsolete_dashboard_image_removed": true,
+    "test_resources_removed": true,
+    "data_volumes_deleted": false,
+    "rollback_images_retained": true,
+    "broad_prune_used": false
+  },
+  "other_project_containers_preserved": 18,
+  "initial_findings": [
+    {
+      "finding": "temporary_PostgreSQL_recovery_after_simultaneous_restart",
+      "resolution": "final_database_identities_counts_workers_and_all_service_health_pass"
+    },
+    {
+      "finding": "host_cannot_observe_Linux_VM_file_lock",
+      "resolution": "Compose_lifecycle_check_verified_on_host_and_in_management_image"
+    }
+  ],
+  "owner_live_cutover_approved": true,
+  "code_commit": "26febe11e36c88aafca87968abccb7850500d828",
+  "recorded_at": "2026-09-16T19:01:24.729046+00:00"
+}
