@@ -16,9 +16,9 @@
   },
   "checks": {
     "typescript_postgres": {
-      "passed": 79,
+      "passed": 80,
       "skipped": 0,
-      "method": "78 passed in the full 79-test run; the corrected browser case and four affected tests passed on the final code."
+      "method": "79 distinct service checks passed across the previous full run and affected-case retests; all three outbox tests, including the new handoff case, passed on this increment."
     },
     "hermes_native": {
       "passed": 168,
@@ -66,6 +66,18 @@
       "chat": "passed",
       "literal_detection": "passed",
       "ogg_opus_transcription": "passed"
+    },
+    "event_handoff": {
+      "passed": 3,
+      "skipped": 0,
+      "acknowledged_unreceived_event_recovered": true,
+      "same_event_identity": true
+    },
+    "final_image_subscription": {
+      "refresh": "passed",
+      "chat": "passed",
+      "literal_detection": "passed",
+      "ogg_opus_transcription": "passed"
     }
   },
   "full_stack_outage": {
@@ -94,9 +106,9 @@
     }
   },
   "pending": [
-    "final local image installation",
+    "event-handoff image local installation",
     "exact approval and restart live acceptance",
-    "retirement fresh backup/restore and fault rehearsal completion"
+    "obsolete container removal after acceptance"
   ],
   "connect_probes": {
     "pipeline_probe": {
@@ -236,7 +248,8 @@
     "postgres_redis_engine_restart": "passed",
     "crash_after_effect_before_ack": "passed",
     "worker_kill_receipt_reconciliation": "passed",
-    "duplicate_capture_no_repeat_effect": "passed"
+    "duplicate_capture_no_repeat_effect": "passed",
+    "accepted_event_without_subscriber": "Recovered from the preserved outbox with the same identity after the handoff fix; no source reset."
   },
   "candidate_images": {
     "application": "sha256:3a0409a153ba4832ea838e8cede379a7221514a740e004e2f841f5851fb7bae3",
@@ -260,6 +273,25 @@
       "duplicate_capture": "passed",
       "owner_dashboard_independent": "passed",
       "families_using_inngest": 9
+    },
+    "restore": {
+      "status": "restored_inactive",
+      "archive_tables_verified": 45,
+      "workflow_tables_verified": 14,
+      "protected_files": 23,
+      "honcho_snapshot_restored": true,
+      "health": {
+        "ok": true,
+        "service": "nocheh-app",
+        "database": "ready",
+        "workflows": "inactive",
+        "capture": {
+          "capture": "inactive",
+          "outbox": "inactive"
+        }
+      },
+      "execution_holds": true,
+      "resume_reason": "Docker subnet capacity; removed only this session completed fixtures"
     }
   },
   "live_telegram": {
@@ -340,6 +372,14 @@
       "live_group_credential": true,
       "group_source_read": 200,
       "private_source_denied": 404
+    },
+    "current_destination": {
+      "event_id": "c377b5c270a326516f3ea426b27deb396def7546d990cde69638485b9e94325f",
+      "action_id": "7147f8fa5a9d0290ad0efd350ca2455740cb9cca1325e9cdb0f474b33656c5e5",
+      "state": "proposed",
+      "destination_matches_source": true,
+      "exact_text": false,
+      "reason": "Privacy guard masked the synthetic identifier before the assistant; plain-language retest requested. No action approved or delivered."
     }
   },
   "local_migrations": {
@@ -360,5 +400,6 @@
     "live_leases_at_handoff": 0,
     "unresolved_receipts_at_handoff": 0,
     "application_data_reset": false
-  }
+  },
+  "installed_retirement_commit": "8b4688ad3acfecdd32583be8e3fd0f06d2ec2a27"
 }
