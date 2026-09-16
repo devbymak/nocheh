@@ -66,5 +66,15 @@
     "hermes": "changed_integration_rebuilt_offline_over_verified_pinned_runtime_7166071fcaadb36df26f6d753dda97da6b5d699e",
     "unchanged_support_images": "existing_pinned_images_retained",
     "full_upstream_recompile": "Rust_and_Go_download_attempts_cancelled_after_stalling"
+  },
+  "integration": {
+    "code_commit": "283ab389013445abcbe4f5ba1b9c085618961d99",
+    "local_main_merged": true,
+    "push": "blocked_GitHub_HTTPS_authentication"
+  },
+  "live_cutover": {
+    "executed": false,
+    "status": "explicit_live_cutover_approval_requested_after_automatic_review_rejection",
+    "current_healthy_containers": 15
   }
 }
