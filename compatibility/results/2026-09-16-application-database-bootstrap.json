@@ -32,5 +32,87 @@
     "edges": 5968,
     "model_calls": 0
   },
-  "runtime_activation": "pending"
+  "runtime_activation": {
+    "image": "sha256:5c888060a215b4220ff93eb196eae3580fe509f1f545cbec19fcb31ca0e709ac",
+    "database_identities_preserved": true,
+    "old_init_container_removed": true,
+    "application_health": {
+      "ok": true,
+      "service": "nocheh-app",
+      "database": "ready",
+      "workflows": "connected",
+      "capture": {
+        "capture": "ready",
+        "outbox": "ready"
+      }
+    },
+    "containers": [
+      {
+        "name": "nocheh-nocheh-app-1",
+        "status": "Up 8 seconds (healthy)"
+      },
+      {
+        "name": "nocheh-nocheh-security-1",
+        "status": "Up 17 hours (healthy)"
+      },
+      {
+        "name": "nocheh-hermes-runtime-1",
+        "status": "Up 2 hours (healthy)"
+      },
+      {
+        "name": "nocheh-hermes-agent-launcher-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-chatgpt-speech-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-honcho-deriver-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-inngest-server-1",
+        "status": "Up 6 hours (healthy)"
+      },
+      {
+        "name": "nocheh-honcho-api-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-cliproxy-monitor-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-cliproxy-api-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-inngest-redis-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-nocheh-postgres-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-honcho-provider-gateway-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-honcho-postgres-1",
+        "status": "Up 18 hours (healthy)"
+      },
+      {
+        "name": "nocheh-honcho-redis-1",
+        "status": "Up 18 hours (healthy)"
+      }
+    ],
+    "source_commit": "9bb3d14fda8bc5490eb2083589a7d1979d905cb4"
+  },
+  "git": {
+    "local_main": "9bb3d14fda8bc5490eb2083589a7d1979d905cb4",
+    "remote_synchronized": false,
+    "blocker": "GitHub HTTPS authentication unavailable: could not read Username; terminal prompts disabled"
+  }
 }
