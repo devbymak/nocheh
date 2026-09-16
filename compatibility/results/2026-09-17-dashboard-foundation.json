@@ -1,0 +1,42 @@
+{
+  "increment": "component-foundation",
+  "date": "2026-09-17",
+  "production_build": "pass: Node 24.13.0 npm run build",
+  "tests": {
+    "dashboard_auth_and_boundary": 2,
+    "graph": 9,
+    "failed": 0
+  },
+  "browser": [
+    "system/dark theme",
+    "light theme",
+    "375px navigation drawer",
+    "Escape restores focus",
+    "manual refresh preserves unsaved model field",
+    "no horizontal main-content overflow at 375px"
+  ],
+  "graphify": {
+    "files": 276,
+    "nodes": 1701,
+    "edges": 6002,
+    "model_calls": 0
+  },
+  "fixture": {
+    "project": "nocheh-dashboard-ui-20260916",
+    "port": 18848,
+    "terminal": "49234",
+    "synthetic_only": true,
+    "external_effect_executors": false
+  },
+  "setup_retries": [
+    "Docker npm ci stalled; cancelled; cached pinned runtime plus compiled asset image succeeded",
+    "Docker internal-only network did not publish port; separate dedicated localhost HTTP bridge added",
+    "Slow initial database bootstrap exceeded health window; retried preview after database became healthy"
+  ],
+  "pending": [
+    "full route and responsive acceptance",
+    "clean registry-backed container build",
+    "metrics API and remaining page refactor"
+  ],
+  "deployment": false
+}
