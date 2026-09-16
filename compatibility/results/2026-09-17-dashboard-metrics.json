@@ -1,0 +1,53 @@
+{
+  "increment": "metrics-and-monitoring",
+  "date": "2026-09-17",
+  "build": "Node 24 production build passed",
+  "tests": {
+    "workflow_metrics_and_owner": {
+      "pass": 2,
+      "fail": 0,
+      "skip": 0
+    },
+    "owner_management": {
+      "pass": 2,
+      "fail": 0,
+      "skip": 0
+    }
+  },
+  "covered": [
+    "24h and 7d inclusive/exclusive UTC boundaries",
+    "partial and aligned buckets",
+    "family filters",
+    "duplicate identities",
+    "terminal versus retryable failures",
+    "confirmed versus domain completion",
+    "empty samples and zero counts",
+    "duration includes four-day wait and retry history",
+    "invalid negative duration",
+    "metadata canaries excluded",
+    "owner authentication and legacy alias",
+    "import consent and resume regression"
+  ],
+  "browser": [
+    "chart filters independent of summary",
+    "history pagination",
+    "receipt drawer and focus restoration",
+    "retry increments receipt revision without closing drawer",
+    "manual refresh retains selections",
+    "injected outage retains chart and summary observations with explicit stale warnings"
+  ],
+  "graphify": {
+    "nodes": 1701,
+    "edges": 6017,
+    "model_calls": 0
+  },
+  "pending": [
+    "remaining pages",
+    "full responsive acceptance",
+    "clean registry-backed container build"
+  ],
+  "setup_retries": [
+    "Host owner HTTP tests initially blocked by sandbox EPERM on loopback; rerun with authorized localhost test listeners passed"
+  ],
+  "deployment": false
+}
