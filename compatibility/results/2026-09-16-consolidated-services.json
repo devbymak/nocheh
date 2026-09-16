@@ -106,8 +106,7 @@
     }
   },
   "pending": [
-    "event-handoff image local installation",
-    "exact approval and restart live acceptance",
+    "exact owner approval and completed-receipt restart live acceptance",
     "obsolete container removal after acceptance"
   ],
   "connect_probes": {
@@ -252,7 +251,7 @@
     "accepted_event_without_subscriber": "Recovered from the preserved outbox with the same identity after the handoff fix; no source reset."
   },
   "candidate_images": {
-    "application": "sha256:3a0409a153ba4832ea838e8cede379a7221514a740e004e2f841f5851fb7bae3",
+    "application": "sha256:cd8debd36fb83292d9ee2176fda30adb7ce393d71fc4f627ac4dade56bafc102",
     "hermes": "sha256:8faa08af407f9c0828da9405daed4cdf54541f87ba71aab0fe71d25d9ed94a06"
   },
   "release_accepted": false,
@@ -380,6 +379,27 @@
       "destination_matches_source": true,
       "exact_text": false,
       "reason": "Privacy guard masked the synthetic identifier before the assistant; plain-language retest requested. No action approved or delivered."
+    },
+    "pending_action_restart": {
+      "commit": "57fbab606ab917583a1e4a1e8e23d5a69dba6676",
+      "application_image": "sha256:cd8debd36fb83292d9ee2176fda30adb7ce393d71fc4f627ac4dade56bafc102",
+      "pending_before": {
+        "id": "6bff161149e8271040491d8acd6a8d804657c77fd0800605548efa568326a066",
+        "state": "proposed",
+        "exact_text": true,
+        "destination_matches_source": true,
+        "decision_recorded": false
+      },
+      "pending_after": {
+        "id": "6bff161149e8271040491d8acd6a8d804657c77fd0800605548efa568326a066",
+        "state": "proposed",
+        "exact_text": true,
+        "destination_matches_source": true,
+        "decision_recorded": false
+      },
+      "owner_dashboard_during_restart": "passed",
+      "connected_families": 9,
+      "proposal_turn_receipt_unchanged": true
     }
   },
   "local_migrations": {
@@ -401,5 +421,23 @@
     "unresolved_receipts_at_handoff": 0,
     "application_data_reset": false
   },
-  "installed_retirement_commit": "8b4688ad3acfecdd32583be8e3fd0f06d2ec2a27"
+  "installed_retirement_commit": "8b4688ad3acfecdd32583be8e3fd0f06d2ec2a27",
+  "installed_commit": "57fbab606ab917583a1e4a1e8e23d5a69dba6676",
+  "final_health": {
+    "application": {
+      "ok": true,
+      "service": "nocheh-app",
+      "database": "ready",
+      "workflows": "connected",
+      "capture": {
+        "capture": "ready",
+        "outbox": "ready"
+      }
+    },
+    "owner_dashboard": {
+      "ok": true
+    },
+    "running_containers": 15,
+    "all_have_healthy_status": true
+  }
 }
