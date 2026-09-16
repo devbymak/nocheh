@@ -105,10 +105,7 @@
       "spool/.restore-inactive": true
     }
   },
-  "pending": [
-    "exact owner approval and completed-receipt restart live acceptance",
-    "obsolete container removal after acceptance"
-  ],
+  "pending": [],
   "connect_probes": {
     "pipeline_probe": {
       "pipeline_probe": "passed",
@@ -254,7 +251,7 @@
     "application": "sha256:cd8debd36fb83292d9ee2176fda30adb7ce393d71fc4f627ac4dade56bafc102",
     "hermes": "sha256:8faa08af407f9c0828da9405daed4cdf54541f87ba71aab0fe71d25d9ed94a06"
   },
-  "release_accepted": false,
+  "release_accepted": true,
   "previous_candidate_images": {
     "application": "sha256:ca34071443d290b43396238e6a66423d937f0f2a58c3cec3a1867d5dbc77cefa",
     "hermes": "sha256:4f2a8f8b8e5d3dc7f6a67cd6b2710354abdf3d61293928fee9d70e180258c993"
@@ -378,7 +375,8 @@
       "state": "proposed",
       "destination_matches_source": true,
       "exact_text": false,
-      "reason": "Privacy guard masked the synthetic identifier before the assistant; plain-language retest requested. No action approved or delivered."
+      "reason": "Privacy guard masked the synthetic identifier before the assistant; plain-language retest requested. No action approved or delivered.",
+      "final_state": "rejected by a genuine owner Telegram command; no delivery"
     },
     "pending_action_restart": {
       "commit": "57fbab606ab917583a1e4a1e8e23d5a69dba6676",
@@ -400,7 +398,80 @@
       "owner_dashboard_during_restart": "passed",
       "connected_families": 9,
       "proposal_turn_receipt_unchanged": true
-    }
+    },
+    "exact_owner_approval": {
+      "action_id": "6bff161149e8271040491d8acd6a8d804657c77fd0800605548efa568326a066",
+      "source_event_id": "81c71fa8a64a959e874989eb26ba422f650b947e46ac8c15564523e254cda2b0",
+      "decision_event_id": "4d298717fe020dc9ae14b000a40580415fd3b2db75dbc8737bd043aae305953b",
+      "state": "done",
+      "exact_text": true,
+      "destination_matches_source": true,
+      "decision_is_live_owner_command": true,
+      "intents": 1,
+      "delivered_results": 1,
+      "telegram_confirmed_exact_text": true,
+      "native_receipt_sha256": "414dc96abeb5a87dbec57391eb1cf881aecf766497e6240f8f50f8319bed8e0e",
+      "outbound_receipt_sha256": "2117018c8a4cdea35fd0219d48d4cb37881f383a7e08ff1a6e8e2d7acd3f9e10"
+    },
+    "completed_action_restart": {
+      "result": "passed",
+      "one_confirmed_send": true,
+      "native_receipt_unchanged": true,
+      "outbound_receipt_unchanged": true,
+      "runtime": "hermes-runtime",
+      "after": {
+        "action_id": "6bff161149e8271040491d8acd6a8d804657c77fd0800605548efa568326a066",
+        "source_event_id": "81c71fa8a64a959e874989eb26ba422f650b947e46ac8c15564523e254cda2b0",
+        "decision_event_id": "4d298717fe020dc9ae14b000a40580415fd3b2db75dbc8737bd043aae305953b",
+        "state": "done",
+        "exact_text": true,
+        "destination_matches_source": true,
+        "decision_is_live_owner_command": true,
+        "intents": 1,
+        "delivered_results": 1,
+        "telegram_confirmed_exact_text": true,
+        "native_receipt_sha256": "414dc96abeb5a87dbec57391eb1cf881aecf766497e6240f8f50f8319bed8e0e",
+        "outbound_receipt_sha256": "2117018c8a4cdea35fd0219d48d4cb37881f383a7e08ff1a6e8e2d7acd3f9e10"
+      }
+    },
+    "closed_turns_after_restart": [
+      {
+        "name": "text",
+        "event_id": "62abc52c8ebfc1c912900dc8cc74869ea8c9a444600dab885e46cde6070890e7",
+        "reply_count_unchanged": true,
+        "receipt_hash_unchanged": true
+      },
+      {
+        "name": "voice",
+        "event_id": "f6a10fa6fece47731347cbe294e53df4d8463eac09e8f472a704723a5980e328",
+        "reply_count_unchanged": true,
+        "receipt_hash_unchanged": true
+      },
+      {
+        "name": "silence",
+        "event_id": "030e2d42c8d9f21003c1948195f0c3d1b8ea2e4e753dde40d0c674a31b7af18d",
+        "reply_count_unchanged": true,
+        "receipt_hash_unchanged": true
+      },
+      {
+        "name": "private",
+        "event_id": "8a2d810ab8f25c8397f4df4633db4e9dc079b4d9790994caded6b872a8ebf4ed",
+        "reply_count_unchanged": true,
+        "receipt_hash_unchanged": true
+      },
+      {
+        "name": "group",
+        "event_id": "f45920ab900f18c19308464406dea2b843ca85b4f51130c8a09963b87c65e916",
+        "reply_count_unchanged": true,
+        "receipt_hash_unchanged": true
+      },
+      {
+        "name": "proposal",
+        "event_id": "8f28d071961fd1125cd99e1605752a32b54b233cdac9ece8274d0672aed29521",
+        "reply_count_unchanged": true,
+        "receipt_hash_unchanged": true
+      }
+    ]
   },
   "local_migrations": {
     "preparation": {
@@ -431,13 +502,282 @@
       "workflows": "connected",
       "capture": {
         "capture": "ready",
-        "outbox": "ready"
+        "outbox": "ready",
+        "recovery": "unavailable"
       }
     },
-    "owner_dashboard": {
-      "ok": true
-    },
+    "owner_dashboard": "healthy",
+    "services": [
+      {
+        "service": "nocheh-dashboard",
+        "tool": "Nocheh",
+        "purpose": "Owner dashboard, configuration, backup and recovery",
+        "location": "host",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "nocheh-host-executor",
+        "tool": "Nocheh + Inngest",
+        "purpose": "Host workflows and durable receipt recovery",
+        "location": "host",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "nocheh-app",
+        "tool": "Nocheh + Inngest SDK",
+        "purpose": "API, capture, event publication and ordinary workflows",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "nocheh-postgres",
+        "tool": "PostgreSQL",
+        "purpose": "Separate Nocheh and Inngest databases and roles",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "nocheh-security",
+        "tool": "Nocheh",
+        "purpose": "Security broker, guard and exact authorization checks",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "hermes-runtime",
+        "tool": "Hermes",
+        "purpose": "Managed reasoning runtime and native dashboard",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "hermes-agent-launcher",
+        "tool": "Hermes",
+        "purpose": "Launch isolated agent containers",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "chatgpt-speech",
+        "tool": "codex-asr",
+        "purpose": "Subscription transcription with read-only provider login",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "cliproxy-api",
+        "tool": "CLIProxyAPI",
+        "purpose": "Shared model provider and sole login refresh authority",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "cliproxy-monitor",
+        "tool": "CPA Manager Plus",
+        "purpose": "Persistent provider history, usage and analytics",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "inngest-server",
+        "tool": "Inngest",
+        "purpose": "Workflow scheduling, retries, waits and inspection UI",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "inngest-redis",
+        "tool": "Redis",
+        "purpose": "Durable workflow queue and run state",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "inngest-db-init",
+        "tool": "Inngest / PostgreSQL",
+        "purpose": "Create the dedicated Inngest database and exit",
+        "location": "docker",
+        "expected_state": "completed",
+        "state": "completed",
+        "process_state": "exited",
+        "health": ""
+      },
+      {
+        "service": "honcho-api",
+        "tool": "Honcho",
+        "purpose": "Memory API",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "honcho-deriver",
+        "tool": "Honcho",
+        "purpose": "Internal memory derivation; metrics probe checks process availability",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "honcho-postgres",
+        "tool": "PostgreSQL + pgvector",
+        "purpose": "Memory, vectors and derivation jobs",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "honcho-redis",
+        "tool": "Redis",
+        "purpose": "Honcho memory cache",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "honcho-provider-gateway",
+        "tool": "Honcho / Nocheh",
+        "purpose": "Controlled provider access and embedding spending records",
+        "location": "docker",
+        "expected_state": "running",
+        "state": "running",
+        "process_state": "running",
+        "health": "healthy"
+      },
+      {
+        "service": "pgweb-archive",
+        "tool": "pgweb",
+        "purpose": "Optional read-only archive inspection",
+        "location": "docker",
+        "expected_state": "optional-stopped",
+        "state": "optional-stopped",
+        "process_state": "stopped",
+        "health": null
+      },
+      {
+        "service": "honcho-cli",
+        "tool": "Honcho CLI",
+        "purpose": "Optional one-shot memory inspection",
+        "location": "docker",
+        "expected_state": "optional-stopped",
+        "state": "optional-stopped",
+        "process_state": "stopped",
+        "health": null
+      }
+    ],
     "running_containers": 15,
-    "all_have_healthy_status": true
+    "host_services": 2,
+    "init_state": "completed",
+    "runtime_available": true,
+    "application_data_reset": false,
+    "runtime": {
+      "ok": true,
+      "telegram": "connected",
+      "administration": "running",
+      "scheduler": "workflow_owned",
+      "reasoning_route": "shared",
+      "refresh_owner": "cliproxy",
+      "login_present": true,
+      "poll_error_code": null
+    }
+  },
+  "accepted_at": "2026-09-16T10:55:10.452404+00:00",
+  "acceptance_scope": "Owner-approved local consolidation and Inngest migration; optional memory experiments and VPS work remain separate.",
+  "cleanup": {
+    "removed_containers": [
+      "nocheh-workflow-database-1",
+      "nocheh-worker-1",
+      "nocheh-workflow-worker-1",
+      "nocheh-deriver-1",
+      "nocheh-honcho-1",
+      "nocheh-meter-1",
+      "nocheh-guard-1",
+      "nocheh-security-1",
+      "nocheh-archive-1",
+      "nocheh-database-1",
+      "nocheh-redis-1",
+      "nocheh-hermes-1",
+      "nocheh-security-launcher-1",
+      "nocheh-speech-1",
+      "nocheh-inngest-1",
+      "nocheh-workflow-redis-1",
+      "nocheh-postgres-1",
+      "nocheh-db-viewer-1",
+      "nocheh-provider-monitor-1",
+      "nocheh-dashboard-1",
+      "nocheh-cliproxy-1"
+    ],
+    "count": 21,
+    "volumes_removed": 0,
+    "unrelated_projects_changed": false
+  },
+  "fixture_cleanup": [
+    {
+      "project": "nocheh-inngest-fault-01a0a683",
+      "containers_removed": 11,
+      "empty_networks_removed": 1,
+      "volumes_removed": 0
+    },
+    {
+      "project": "nocheh-retirement-01a0a683",
+      "containers_removed": 16,
+      "empty_networks_removed": 6,
+      "volumes_removed": 0
+    },
+    {
+      "project": "nocheh-retirement-restored-01a0a683",
+      "containers_removed": 12,
+      "empty_networks_removed": 5,
+      "volumes_removed": 0
+    }
+  ],
+  "integration": {
+    "local_main": "integrated through 3c282b6 before this final evidence commit",
+    "remote": "pending GitHub HTTPS authentication",
+    "error": "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
   }
 }
