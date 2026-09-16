@@ -1,0 +1,58 @@
+{
+  "recorded_on": "2026-09-16",
+  "change": "Compact Monitoring summary and expandable details",
+  "environment": "Dedicated worktree; synthetic Docker Compose project nocheh-monitoring-compact-20260916; generated fixture credentials; no active-installation state or OAuth",
+  "build": {
+    "node_24_pinned_image": "passed",
+    "typescript": "passed",
+    "dashboard_bundle": "passed"
+  },
+  "tests": {
+    "focused_workflow_owner_dashboard_auth_boundary_and_native_inspection": {
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0
+    },
+    "existing_dashboard_graph": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "browser": {
+    "surface": "shared in-app browser",
+    "viewports": [
+      "1280x720",
+      "375x812"
+    ],
+    "verified": [
+      "Five summary metrics across all workflow families",
+      "All five details sections collapsed by default",
+      "Family filter leaves global summary intact",
+      "Execution inspector receives focus",
+      "Retry then cancel preserves the synthetic workflow identity and closes its receipt",
+      "Enter collapses workflow details",
+      "Ten-second summary refresh updates counts after controls",
+      "No horizontal overflow at 375 pixels",
+      "Open Inngest reaches owner-authenticated native history with inspection-only banner",
+      "Unavailable workflow data shows dashes instead of zeros",
+      "Failed refresh retains previous metrics with explicit stale-data warning"
+    ]
+  },
+  "setup_recovery": [
+    "Initial fixture startup raced its image build; retried after build completion",
+    "Generated Inngest database password initially had 48 hex characters; regenerated to required 64-character format",
+    "Native inspection check initially failed while fixture Inngest was unavailable; all five focused tests passed after corrected fixture startup"
+  ],
+  "graph": {
+    "files": 271,
+    "nodes": 1696,
+    "edges": 5977,
+    "model_calls": 0
+  },
+  "active_installation_deployment": "not performed; changes verified in isolated preview",
+  "preview": {
+    "url": "http://127.0.0.1:18837/#monitoring",
+    "persistent_terminal_session": "47655"
+  }
+}
