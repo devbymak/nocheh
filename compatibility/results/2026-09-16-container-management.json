@@ -1,0 +1,70 @@
+{
+  "environment": "isolated-local-compose",
+  "production_credentials_copied": false,
+  "docker_socket_owner_authorized": true,
+  "checks": {
+    "compose_start": "passed",
+    "socket_and_isolated_tool": "passed",
+    "executor_registration_restart": "passed",
+    "engine_outage_recovery": "passed",
+    "typescript_suite": {
+      "passed": 83,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 1,
+      "test_concurrency": 1,
+      "container_routing_test_separately_passed": true
+    },
+    "container_backup": "passed",
+    "container_inactive_restore": "passed",
+    "diagnose_restart": "passed",
+    "dashboard_during_app_outage": "passed",
+    "focused_management_python": {
+      "passed": 25
+    },
+    "native_python": {
+      "total": 175,
+      "suite_passed": 171,
+      "suite_timing_failure": 1,
+      "suite_skipped": 3,
+      "timing_regressions_rerun_passed": 2,
+      "source_and_compose_checks_separately_passed": 2,
+      "actual_agent_isolation_separately_passed": true
+    },
+    "owner_and_native_browser_pages": "passed",
+    "documentation_links_and_diff": "passed",
+    "ast_graph": "rebuilt_without_model_calls"
+  },
+  "status": "passed",
+  "snapshot": {
+    "version": 4,
+    "archive_tables": 45,
+    "workflow_tables": 14,
+    "files": 15
+  },
+  "fixture_resources_removed": true,
+  "initial_failures": [
+    {
+      "check": "concurrent_typescript_suite",
+      "result": "owner_dashboard_and_native_boundary_timeouts",
+      "resolution": "serialized_full_suite_passed_with_temporary_state_in_tmpfs"
+    },
+    {
+      "check": "native_python_suite",
+      "result": "native_import_timeout_and_TUI_startup_timing_failure_under_duplicate_fixture_load",
+      "resolution": "both_unchanged_tests_passed_after_fixture_cleanup"
+    },
+    {
+      "check": "container_diagnose",
+      "result": "subprocess_failed_during_duplicate_restore_fixture_load",
+      "resolution": "diagnose_and_restart_passed_in_single_fixture"
+    }
+  ],
+  "builds": {
+    "management": "built_from_pinned_Dockerfile",
+    "application": "built_from_pinned_Dockerfile",
+    "hermes": "changed_integration_rebuilt_offline_over_verified_pinned_runtime_7166071fcaadb36df26f6d753dda97da6b5d699e",
+    "unchanged_support_images": "existing_pinned_images_retained",
+    "full_upstream_recompile": "Rust_and_Go_download_attempts_cancelled_after_stalling"
+  }
+}

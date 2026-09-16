@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-16",
+  "status": "candidate_verified_administration_permission_pending",
+  "base_commit": "7a705fa",
+  "image": "nocheh-management:container-migration-20260916",
+  "checks": {
+    "management_image_build": "passed",
+    "typescript_build": "passed",
+    "focused_python_tests": {
+      "passed": 25
+    },
+    "dashboard_and_transport_tests": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0
+    },
+    "compose_configuration": "passed",
+    "documentation_links_and_structure": "passed",
+    "ast_graph": "rebuilt_without_model_calls",
+    "compose_fixture": {
+      "production_state_mounted": false,
+      "docker_socket_mounted": false,
+      "services": {
+        "nocheh-dashboard": {
+          "state": "running",
+          "health": "healthy"
+        },
+        "nocheh-host-executor": {
+          "state": "running",
+          "health": "healthy"
+        }
+      },
+      "dashboard_without_app": "passed",
+      "inactive_executor": "passed",
+      "inactive_executor_restart": "passed",
+      "result": "passed"
+    }
+  },
+  "initial_failures": [
+    {
+      "check": "local_python_suite",
+      "reason": "sandbox_port_bind_denied_and_optional_native_PyYAML_unavailable",
+      "resolution": "the_25_applicable_stdlib_checks_passed_with_fixture_port_access"
+    },
+    {
+      "check": "container_dashboard_host_header",
+      "reason": "fetch_did_not_send_the_overridden_host_header",
+      "resolution": "explicit_http_request_verified_invalid_host_rejection"
+    }
+  ],
+  "pending": [
+    "explicit_authorization_for_management_Docker_socket_access",
+    "backup_restart_monitoring_and_approved_tool_acceptance",
+    "production_snapshot_and_host_process_drain",
+    "installation_rebuild_and_cutover",
+    "live_subscription_transcription",
+    "scoped_obsolete_Nocheh_resource_cleanup",
+    "commit_main_integration_and_push"
+  ],
+  "production_changed": false,
+  "production_credentials_copied": false,
+  "fixture_resources_removed": true
+}
