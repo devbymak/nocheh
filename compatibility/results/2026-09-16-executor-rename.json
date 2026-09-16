@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-09-16T19:28:25.861600+00:00",
+  "status": "passed",
+  "code_commit": "e9004a921f56985a3d3f9388b6b8138f9911b7ea",
+  "renamed_from": "nocheh-host-executor",
+  "service": "nocheh-executor",
+  "management_image": "sha256:b0f342b885e92b0aff6cd9f7ac7c3806bd229706e06702e16bab5e25e3519721",
+  "checks": {
+    "focused_host_tests": 28,
+    "focused_image_tests": 28,
+    "synthetic_compose": "passed",
+    "old_executor_drained": "passed",
+    "single_executor": "passed",
+    "all_17_services_healthy": "passed",
+    "all_9_workflow_registrations_fresh": "passed",
+    "host_cli_detection": "passed",
+    "dashboard_container_detection": "passed",
+    "dashboard_monitoring_service_name": "passed",
+    "unrelated_container_ids_preserved": "passed",
+    "browser_service_name": "passed"
+  },
+  "data_volumes_deleted": false,
+  "durable_workflow_identities_changed": false,
+  "provider_checks": "Not repeated for the service-name change; prior cutover evidence remains in 2026-09-16-container-management-live.json.",
+  "observations": [
+    {
+      "finding": "dashboard_graceful_shutdown_stalled",
+      "resolution": "Authenticated shutdown allowed maintenance stop; persisted maintenance jobs were complete. The old dashboard process was terminated, then the replacement started healthy. The executor drained normally."
+    },
+    {
+      "finding": "monitoring_workflow_and_archive_summary_unavailable_after_restart",
+      "scope": "The browser showed the new executor running and API/capture/Inngest connected; all nine worker registrations were freshly checked in PostgreSQL. The aggregate workflow/archive summaries separately reported unavailable."
+    }
+  ]
+}
