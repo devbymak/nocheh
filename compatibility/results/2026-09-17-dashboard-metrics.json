@@ -49,5 +49,19 @@
   "setup_retries": [
     "Host owner HTTP tests initially blocked by sandbox EPERM on loopback; rerun with authorized localhost test listeners passed"
   ],
-  "deployment": false
+  "deployment": false,
+  "concurrent_main_reconciliation": {
+    "main": "b1a4a3d",
+    "build": "pass",
+    "postgres_affected_tests": {
+      "pass": 8,
+      "fail": 0,
+      "skip": 0
+    },
+    "dashboard_tests": {
+      "pass": 11,
+      "fail": 0,
+      "skip": 0
+    }
+  }
 }

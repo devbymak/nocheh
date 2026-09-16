@@ -1,0 +1,166 @@
+{
+  "date": "2026-09-17",
+  "implementation_started": "2026-09-16",
+  "status": "passed",
+  "scope": "platform-independent source-model foundation; isolated synthetic acceptance",
+  "runtime": {
+    "node": "24.20.0",
+    "postgres": "postgres:17-bookworm@sha256:051f7b7b3abdd564d5d1bd1e8c4b9c1b6e77087d1dd22020ede611c096a272e0",
+    "test_image": "nocheh-development:management-20260916",
+    "package_lock_sha256": "1526ce883063d11457a1227633b8dc15af65a67b8e5eb86c060f5946e67274cb",
+    "test_source": "read-only mounts of compiled worktree output into verified cached Node 24 development image"
+  },
+  "build": {
+    "local_pinned_typescript_and_dashboard": "passed",
+    "local_node": "22.21.1",
+    "typescript": "5.9.3",
+    "extra_node24_no_emit_check": "stopped after prolonged execution; not a pass",
+    "candidate_image_build": "stopped after stalling; no candidate image deployed"
+  },
+  "tests": {
+    "initial_full_node_suite": {
+      "passed": 82,
+      "failed": 4,
+      "skipped": 3,
+      "total": 89
+    },
+    "affected_regression_rerun": {
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0
+    },
+    "final_source_model_and_connection_recovery": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    "distinct_node_tests_passing_across_suite_and_followups": 86,
+    "python_archive_import_jobs_operations": {
+      "passed": 14,
+      "failed": 0
+    },
+    "external_fixture_checks_skipped": [
+      "container dashboard internal routing",
+      "concurrent Inngest database bootstrap",
+      "pinned native Inngest UI inspection"
+    ]
+  },
+  "coverage": [
+    "legacy event IDs, hashes, payload and wire bytes remain unchanged",
+    "legacy owner edits, dispatch receipts, artifacts and learning consent survive migration",
+    "repeated and concurrent initialization",
+    "keyset backfill crosses the 200-record batch boundary",
+    "long UTF-8 revision labels do not overflow PostgreSQL index keys",
+    "opaque IDs preserve large Discord-style snowflakes and Slack-style timestamps",
+    "namespace/platform/kind identity collisions remain distinct",
+    "simultaneous retries insert one immutable observation",
+    "live and export observations share source identity without overwriting each other",
+    "unknown metadata and non-message source objects",
+    "partial updates, deletion observations and out-of-order relationships",
+    "scope denial, no inherited audience grants and no guarded metadata bypass",
+    "portable originals, descriptor/provenance, uploaded bytes and missing-file states survive round trip",
+    "historical replay and new-platform live records do not dispatch Telegram effects",
+    "missing external files cannot invoke the Telegram downloader",
+    "connection loss releases failed clients and permits recovery"
+  ],
+  "recovery": {
+    "status": "passed",
+    "isolated_project": "nocheh-source-model-20260916",
+    "database_image": "postgres:17-bookworm",
+    "tables": {
+      "events": {
+        "sha256": "8b897437e9263e6042a805905200afe90b493321d9f58ff8d4a1c721a9704163",
+        "rows": 1
+      },
+      "artifacts": {
+        "sha256": "182f388fb30e545e93fdb10320a33b6b7ea42bdb5c91a5789cc42a405ac1d68d",
+        "rows": 1
+      },
+      "derived_artifacts": {
+        "sha256": "5f4b93eff0f830669586669427c8815d24bfc0f9c94ce96ffda7c39fc31a7f76",
+        "rows": 1
+      },
+      "guard_revisions": {
+        "sha256": "e2c20b4242f6cee1a0b68a7c868f941de8addae122e91880924c437810df26e9",
+        "rows": 1
+      },
+      "memory_learning_sources": {
+        "sha256": "9e3962cf0f330595860ef9ae6a5cb7c703a1a52cd2721fa93982767211290b9e",
+        "rows": 1
+      },
+      "dispatches": {
+        "sha256": "9adcfbe348fabeba44b09ddc4ebaabacb8a9034decd8e349a1fc3df8fcd68dc5",
+        "rows": 1
+      },
+      "source_model_migrations": {
+        "sha256": "00dd6229fe3bc5a8137ba836a2854920493e4a62c044b473b882e8063f5f77b7",
+        "rows": 1
+      },
+      "source_objects": {
+        "sha256": "98f1fb09019d7c97fd82b60c214368c138f1b5669a8e4bbe7ee6a44cc3f72e4e",
+        "rows": 2
+      },
+      "source_revisions": {
+        "sha256": "e48283f892129a84d643cd8b220a3644bc26a5d335bc872759a0a8c25eec853b",
+        "rows": 1
+      },
+      "source_observations": {
+        "sha256": "22f6f8baa904fe6737ad3a0d3fb08db352cdfc28d36983f0fbc32235224cdda6",
+        "rows": 1
+      },
+      "source_relations": {
+        "sha256": "bee36d1fb81d0ce42913872a0901bdc3c42819721bd9fc321a32aa7e9d95a84b",
+        "rows": 1
+      }
+    },
+    "dump_sha256": "47e900562a2f1656f9fdb6c4a9340fac178e8402d2cc61f82cc3832259a6c425",
+    "checks": {
+      "dump_restore": true,
+      "restart": true,
+      "old_event_ids": true,
+      "owner_edits": true,
+      "consent": true,
+      "unresolved_relations": true
+    },
+    "production_access": false,
+    "execution_services_started": false,
+    "provider_calls": 0
+  },
+  "resolved_failures": [
+    "Initial focused fixture failures included PostgreSQL recovery/unavailability and a test seed missing guard_revisions.search_text; corrected fixture and successful later runs retained.",
+    "An over-broad ingestion validation rejected an existing scheduler-generated envelope. Validation now enforces the new source contract without rewriting or rejecting legacy internal identity metadata; scheduler regression passes.",
+    "The broad suite approval setup saw PostgreSQL 57P03 and the dashboard child was temporarily unreachable. Both passed their targeted rerun.",
+    "The disconnection test required the explicit NOCHEH_WORKFLOW_FIXTURE=1 opt-in. Its isolated rerun passed.",
+    "A later final run did not start because fixture PostgreSQL was unhealthy, with backend exit code 2 and repeated recovery. Only this fixture was restarted; all six final tests and dump/restore/restart passed. Root cause of the transient fixture exits is unproven."
+  ],
+  "boundaries": {
+    "production_migration": false,
+    "deployment": false,
+    "live_slack_discord_connectors": false,
+    "provider_calls": 0,
+    "other_installation_state_accessed": false
+  },
+  "limits": [
+    "Slack/Discord export parsers and source-specific polling/ACL mapping are separate adapter work.",
+    "The three skipped workflow/routing/native-UI checks require separate runtime fixtures.",
+    "No production-volume performance or live installation migration is claimed.",
+    "Full Node 24 candidate-image build remains an activation prerequisite; runtime database tests used verified Node 24 with the pinned dependency lock."
+  ],
+  "fixture_cleanup": {
+    "container_removed": true,
+    "private_network_removed": true,
+    "synthetic_volume_removed": true
+  },
+  "integration": {
+    "concurrent_main": "699edf976209d65ed0fdf7aecbfebec658bf666a",
+    "node": "24.13.0",
+    "combined_build": "passed",
+    "dashboard_auth_boundary_graph_tests": 11,
+    "failed": 0,
+    "executor_operations_python_checks": 17,
+    "adr_collision_resolution": "New source decision renumbered to ADR-0051; accepted dashboard ADR-0050 preserved.",
+    "ast_graph_refresh": "passed; AST-only workflow",
+    "package_lock_sha256": "433a152f5aa7ea58a25cc5c2c8ad8165d89b4e3a5864bc0740da487188e722c9",
+    "backend_dependency_pins_unchanged": true
+  }
+}
