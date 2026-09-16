@@ -1,0 +1,36 @@
+{
+  "fresh_start_without_init_service": true,
+  "node_tests": 4,
+  "engine_outage_restart_preserves_data": true,
+  "failed_bootstrap_blocks_startup": true,
+  "restore": {
+    "database_verified": true,
+    "redis_verified": true,
+    "active": false,
+    "archive_tables": 1,
+    "workflow_tables": 15,
+    "protected_files": 4,
+    "redis_keys": 7,
+    "archive_dump_sha256": "d323251cb4659b6f003b11541a4f97643806138408dbb93bc257e1c1654bfd45",
+    "redis_snapshot_bytes": 1115,
+    "restart_verified": true
+  },
+  "python_tests": 6,
+  "change": "Inngest database setup in application startup",
+  "candidate_image": "sha256:5c888060a215b4220ff93eb196eae3580fe509f1f545cbec19fcb31ca0e709ac",
+  "build": {
+    "method": "locked host build outputs layered on existing pinned Node 24 Nocheh runtime",
+    "base_image": "sha256:cd8debd36fb83292d9ee2176fda30adb7ce393d71fc4f627ac4dade56bafc102",
+    "registry_build": "stalled metadata lookup; cancelled",
+    "dependencies_changed": false
+  },
+  "fixture_signing_keys": "initial omission fixed; repeated fresh-start checks passed",
+  "synthetic_resources_removed": true,
+  "graph_refresh": {
+    "files": 271,
+    "nodes": 1691,
+    "edges": 5968,
+    "model_calls": 0
+  },
+  "runtime_activation": "pending"
+}
