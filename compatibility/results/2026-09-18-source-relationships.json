@@ -1,0 +1,32 @@
+{
+  "increment": "original reply and reaction relationships",
+  "fixture_project": "nocheh-stores-20260918",
+  "typescript_compilation": "passed",
+  "typescript_tests": {
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0
+  },
+  "python_capture_tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "graphify": {
+    "files": 317,
+    "nodes": 1943,
+    "edges": 7014,
+    "model_calls": 0
+  },
+  "reference": "https://core.telegram.org/bots/api#messagereactionupdated",
+  "verified": [
+    "original reaction timing and fields",
+    "actor and anonymous count distinctions",
+    "additions and removals without fixed semantics",
+    "out-of-order target lookup independent of graph paging",
+    "unknown and contradictory topic fail closed",
+    "cross-chat targets do not broaden access",
+    "legacy projection and portable-source compatibility"
+  ],
+  "production_store_routing": false,
+  "live_reaction_acceptance": false
+}
