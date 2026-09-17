@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-17",
+  "scope": "Workflow summary metric value colors and label icons",
+  "changes": {
+    "Running": "active blue",
+    "Waiting": "warning amber",
+    "Failed": "danger red",
+    "Last success": "confirmed success green; neutral when missing",
+    "Backlog": "warning amber; neutral when missing",
+    "unavailable": "neutral em dashes with explicit unavailable message"
+  },
+  "checks": {
+    "production_browser_and_service_build": "passed in pinned Node 24 Docker development image",
+    "dashboard_tests": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "browser": {
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "widths": [
+        375,
+        1440
+      ],
+      "colored_values_and_icons": true,
+      "horizontal_overflow": false,
+      "unavailable_values_neutral": true
+    },
+    "contrast_on_panel": {
+      "light": {
+        "active": 6.39,
+        "warning": 5.73,
+        "danger": 6.05,
+        "success": 6.33,
+        "muted": 5.5
+      },
+      "dark": {
+        "active": 8.7,
+        "warning": 10.07,
+        "danger": 8.47,
+        "success": 9.64,
+        "muted": 7.94
+      }
+    },
+    "ast_graph": {
+      "files": 300,
+      "nodes": 1946,
+      "edges": 6800,
+      "model_calls": 0
+    },
+    "diff_and_document_structure": "passed"
+  },
+  "preview": {
+    "project": "nocheh-dashboard-ui-20260916",
+    "url": "http://127.0.0.1:18848/#monitoring",
+    "terminal": "86398",
+    "image": "sha256:832ccf8ceb0266269102401420ce293d98097f5b92ac1a1d9cdae2bf777eb1e9",
+    "synthetic_only": true
+  },
+  "management_image": "sha256:b1121204c55dc02b18d61a746f3f59be162978c9a048ab4318ff44d0ed3a768a",
+  "local_activation": {
+    "service": "nocheh-dashboard",
+    "healthy": true,
+    "other_containers_unchanged": true,
+    "url": "http://localhost:8783/#monitoring",
+    "five_live_metric_values_colored": true,
+    "open_monitoring_tabs_refreshed": true,
+    "observation_note": "The first live workflow observation was unavailable; subsequent polling recovered and all five semantic colors were verified."
+  }
+}
