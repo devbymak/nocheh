@@ -1,0 +1,29 @@
+{
+  "increment": "project management and explicit sharing policy",
+  "fixture_project": "nocheh-stores-20260918",
+  "compilation": "passed",
+  "affected_tests": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0
+  },
+  "graphify": {
+    "files": 321,
+    "nodes": 1969,
+    "edges": 7114,
+    "model_calls": 0
+  },
+  "verified": [
+    "owner authorization",
+    "revision checks and idempotent retry",
+    "one effective project per chat/topic",
+    "topic inheritance and explicit exclusion",
+    "archived project state",
+    "membership grants no sharing policy",
+    "selected sources and exact destination",
+    "revocation invalidates old bindings"
+  ],
+  "production_activation": false,
+  "sharing_content_projection": "pending",
+  "owner_interfaces": "pending"
+}
