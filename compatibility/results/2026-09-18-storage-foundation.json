@@ -1,0 +1,37 @@
+{
+  "increment": "original-only archive storage foundation",
+  "fixture_project": "nocheh-stores-20260918",
+  "runtime": "Node 24",
+  "storage_tests": {"passed": 2, "failed": 0, "skipped": 0},
+  "regression_initial": {"passed": 92, "failed": 2, "skipped": 1},
+  "initial_limitations": [
+    "Inngest bootstrap role was not initialized for the native startup test",
+    "Native Inngest inspection service was absent",
+    "Container boundary check requires synthetic loopback aliases"
+  ],
+  "followup_with_fixture_dependencies": {"passed": 8, "failed": 0, "skipped": 0},
+  "distinct_checks_covered": 95,
+  "verified": [
+    "separate database credentials and denied cross-store connections",
+    "runtime roles cannot create tables or rewrite original evidence",
+    "immutable file manifests and derivative bodies",
+    "source capture continues during control outage and retains spool originals",
+    "idempotent capture and Inngest registry/outbox handoff",
+    "reconciliation after source commit and before spool retirement",
+    "concurrent bounded reconciliation with sequence wraparound",
+    "two engine versions retain source revision, hashes, producer and configuration",
+    "repeated bootstrap preserves installation generation and data"
+  ],
+  "isolation": {
+    "published_ports": [],
+    "live_credentials": false,
+    "live_state": false,
+    "poller": false,
+    "scheduler": false,
+    "oauth_refresh": false
+  },
+  "graphify": {"files": 306, "nodes": 1873, "edges": 6743, "model_calls": 0},
+  "production_path": "legacy; not switched",
+  "reset_performed": false,
+  "live_acceptance": "pending"
+}
