@@ -1,0 +1,33 @@
+{
+  "increment": "versioned learned memory and owner correction",
+  "fixture_project": "nocheh-stores-20260918",
+  "compilation": "passed",
+  "affected_tests": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0
+  },
+  "preceding_run": "one history join failure, corrected and rerun",
+  "graphify": {
+    "files": 330,
+    "nodes": 2012,
+    "edges": 7297,
+    "model_calls": 0
+  },
+  "verified": [
+    "quoted evidence validation",
+    "unambiguous project convention scope",
+    "explicit precedence and visible conflicts",
+    "administrative fields rejected",
+    "immutable learned revisions and guarded outputs",
+    "owner correction authority and idempotence",
+    "retirement and publication recovery",
+    "evidence authorization and scope",
+    "input changes invalidate inference reuse",
+    "initial preparation avoids unrelated epoch churn"
+  ],
+  "production_activation": false,
+  "automatic_learning": "pending",
+  "owner_interfaces": "pending",
+  "live_provider_calls": 0
+}
