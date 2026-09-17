@@ -1,0 +1,193 @@
+{
+  "increment": "remaining-pages-and-final-acceptance",
+  "date": "2026-09-17",
+  "implementation": [
+    "Page modules and shared controls replace the dashboard monolith",
+    "Overview health, archive metrics, attention items, shortcuts and activity",
+    "Archive and memory list/detail workspaces; original, guarded and generated evidence labels",
+    "Approval, permission and run-history tabs with exact-operation drawers",
+    "Separate Honcho connection, memory availability, synchronization and compatibility",
+    "Import steps, known progress, stable per-job consent and resume mapping",
+    "Settings drafts retain their editing revision across refresh and inactive tabs",
+    "Maintenance review dialogs restore focus; graph preserves selection and source access",
+    "Shared subscriptions deduplicate, cancel obsolete requests and survive page handoff"
+  ],
+  "build": {
+    "host_node24": "pass",
+    "clean_development_container": "pass",
+    "clean_image": "sha256:6eaef79b9c8a06d4fc4411dbab3a137d3be763b8d2ae6721f4dbc641958219c0",
+    "npm_ci_audit_vulnerabilities": 0,
+    "runtime_container": "pass",
+    "runtime_image": "sha256:776935aae9bf0231c6eb7b9d3ab5a68d64c4d0956b2672fbfeee522dd0be5fc3",
+    "final_browser_checks": "Production browser build and 12 graph/resource tests passed after final badge refinements",
+    "final_preview_image": "sha256:075ecef93e84013824241e437bd28153ad3d36c2824637f6121afe64e784cc9d",
+    "final_preview_packaging": "Final verified browser assets layered on the clean locked-dependency development image"
+  },
+  "automated": {
+    "image_suite": {
+      "total": 93,
+      "pass": 92,
+      "fail": 0,
+      "skip": 1,
+      "skipped": "container-dashboard runs separately with loopback aliases"
+    },
+    "container_boundary": {
+      "pass": 1,
+      "fail": 0,
+      "skip": 0,
+      "network": "none; synthetic loopback aliases"
+    },
+    "browser_resource_and_graph_tests": {
+      "pass": 12,
+      "fail": 0,
+      "skip": 0
+    },
+    "coverage": [
+      "metrics boundaries and both ranges",
+      "family filtering and deduplication",
+      "confirmed versus domain completion",
+      "wait/retry-inclusive percentiles and sample counts",
+      "terminal failures, empty activity and invalid durations",
+      "owner auth, legacy API alias and CSRF",
+      "workflow metadata/privacy boundary",
+      "guarded revision conflicts and immutable originals",
+      "import consent, resume, upload and stable identities",
+      "native Inngest read-only inspection",
+      "concurrent database bootstrap and archive isolation",
+      "request handoff, stale observation retention and obsolete response cancellation"
+    ],
+    "combined_unique_tests": {
+      "pass": 93,
+      "fail": 0,
+      "unrun": 0
+    }
+  },
+  "browser": {
+    "surface": "Codex in-app browser",
+    "viewport_widths": [
+      375,
+      768,
+      1024,
+      1440
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "route_theme_width_smoke_checks": 96,
+    "page_horizontal_overflow": false,
+    "flows": [
+      "chart periods and family filters leave global totals independent",
+      "history pagination and receipt drawer controls",
+      "workflow retry retains open drawer and updates revision receipt",
+      "chart keyboard tooltip, legends, interval data table and browser timezone",
+      "observed zero activity and unavailable duration samples are explicit",
+      "API outage retains successful current/historical observations with stale warnings",
+      "guarded draft survives refresh; stale save rejected; original preserved after save",
+      "settings revision conflict preserves draft; inactive tabs preserve edits",
+      "import mapping and opt-in learning survive refresh; resume retains consent; another job does not inherit draft consent",
+      "exact approval, bounded permission and revocation; run-source drawer",
+      "native memory session selection persists across loading and refresh",
+      "memory access tabs preserve sharing draft; recall and audience preview",
+      "backup, restart and inactive-restore reviews; Escape returns launch focus",
+      "graph navigation/source inspection and manual-refresh selection",
+      "injected unavailable graphics preserves node browser and original inspection",
+      "mobile navigation Escape restores focus",
+      "no new console errors after shared-subscription fix"
+    ],
+    "reduced_motion": "Loaded CSS disables animation/transitions under prefers-reduced-motion; Recharts animations disabled; graph redraw is interaction-driven",
+    "final_packaged_preview": "Overview chart rendered, no horizontal overflow, no console errors; viewport override reset and preview retained"
+  },
+  "contrast": {
+    "light": {
+      "text/bg": 14.16,
+      "muted/panel": 5.5,
+      "success/success_bg": 5.61,
+      "active/active_bg": 5.57,
+      "warning/warning_bg": 5.17,
+      "danger/danger_bg": 5.27,
+      "accent/bg": 4.96
+    },
+    "dark": {
+      "text/bg": 15.49,
+      "muted/panel": 7.94,
+      "success/success_bg": 7.24,
+      "active/active_bg": 6.72,
+      "warning/warning_bg": 7.51,
+      "danger/danger_bg": 6.82,
+      "accent/bg": 9.62
+    }
+  },
+  "bundles": [
+    {
+      "path": "web/dist/app.js",
+      "bytes": 280570,
+      "entry": "web/app.tsx",
+      "contains_recharts": false,
+      "contains_three": false,
+      "dynamic_imports": [
+        "web/dist/chunks/workflow-charts-NSUCFGS5.js",
+        "/assets/graph-3d.js",
+        "web/dist/chunks/access-controls-J2CLWT23.js"
+      ]
+    },
+    {
+      "path": "web/dist/chunks/workflow-charts-NSUCFGS5.js",
+      "bytes": 415279,
+      "entry": "web/components/workflow-charts.tsx",
+      "contains_recharts": true,
+      "contains_three": false,
+      "dynamic_imports": []
+    },
+    {
+      "path": "web/dist/chunks/access-controls-J2CLWT23.js",
+      "bytes": 8992,
+      "entry": "web/pages/access-controls.js",
+      "contains_recharts": false,
+      "contains_three": false,
+      "dynamic_imports": []
+    },
+    {
+      "path": "web/dist/chunks/chunk-XKAQL76Y.js",
+      "bytes": 1402,
+      "entry": null,
+      "contains_recharts": false,
+      "contains_three": false,
+      "dynamic_imports": []
+    },
+    {
+      "path": "web/dist/chunks/chunk-R5NZNR4V.js",
+      "bytes": 150902,
+      "entry": null,
+      "contains_recharts": false,
+      "contains_three": false,
+      "dynamic_imports": []
+    }
+  ],
+  "graphify": {
+    "files": 300,
+    "nodes": 1832,
+    "edges": 6634,
+    "model_calls": 0
+  },
+  "fixture": {
+    "project": "nocheh-dashboard-ui-20260916",
+    "port": 18848,
+    "terminal": "5513",
+    "synthetic_only": true,
+    "provider_login": false,
+    "poller": false,
+    "external_effect_executor": false,
+    "optional_native_checks": "Completed; native test services stopped. No registered runtime workers or public ports.",
+    "image": "nocheh-dashboard-ui-final:20260917"
+  },
+  "setup_retries": [
+    "Earlier registry access stalled; clean npm ci and production frontend compile later passed",
+    "Cached fixture Python proxy lacked new metrics route; current-source owner tests passed",
+    "Concurrent host rebuild invalidated a bind-mounted dist directory; acceptance rerun passed from immutable image",
+    "Initial container-boundary invocation used incorrect service aliases; actual Compose aliases passed",
+    "Host suspension stopped fixture containers; ownership checked and same isolated fixture restarted"
+  ],
+  "pending": [],
+  "active_installation_deployment": false
+}
