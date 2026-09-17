@@ -1,0 +1,39 @@
+{
+  "increment": "bounded Honcho provenance reader",
+  "fixture_project": "nocheh-stores-20260918",
+  "compilation": "passed",
+  "typescript_checks": {
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0
+  },
+  "python_checks": {
+    "passed": 3,
+    "failed": 0
+  },
+  "native_route_registration": {
+    "image": "nocheh-honcho-experiment:be543555",
+    "result": "passed",
+    "network": "none",
+    "credential_mounts": false,
+    "state_mounts": false
+  },
+  "graphify": {
+    "files": 326,
+    "nodes": 1986,
+    "edges": 7168,
+    "model_calls": 0
+  },
+  "verified": [
+    "bounded depth/nodes/queue/messages",
+    "cycle detection",
+    "missing evidence limitations",
+    "confirmed ingestion receipt mapping",
+    "workspace/audience/generation authorization",
+    "revocation during read",
+    "ancestry never claims exact citations"
+  ],
+  "native_database_traversal": "pending",
+  "live_provider_calls": 0,
+  "production_activation": false
+}
