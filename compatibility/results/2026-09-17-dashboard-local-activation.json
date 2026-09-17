@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-17",
+  "source_commit": "e0d866619190461d39b5a1f422e0a7ae46484e6e",
+  "scope": "Owner-requested local dashboard and metrics API activation",
+  "compose_project": "nocheh",
+  "dashboard_url": "http://localhost:8783/#monitoring",
+  "build": "docker compose build nocheh-app nocheh-dashboard; passed using pinned Dockerfile and cached verified layers",
+  "activation": "docker compose up -d --no-deps --no-build --wait --wait-timeout 180 nocheh-app nocheh-dashboard",
+  "checks": {
+    "/api/nocheh/health": {
+      "http_status": 200
+    },
+    "/api/nocheh/workflows/metrics?range=24h": {
+      "http_status": 200,
+      "bounded_aggregate_shape": true
+    },
+    "/api/nocheh/workflows/metrics?range=7d": {
+      "http_status": 200,
+      "bounded_aggregate_shape": true
+    },
+    "/api/plugins/nocheh/workflows/metrics?range=24h": {
+      "http_status": 200,
+      "bounded_aggregate_shape": true
+    },
+    "unauthenticated_metrics": {
+      "http_status": 401
+    },
+    "recreated_services": [
+      "/nocheh-nocheh-dashboard-1",
+      "/nocheh-nocheh-app-1"
+    ],
+    "services": [
+      {
+        "name": "/nocheh-nocheh-dashboard-1",
+        "image": "sha256:77363ae86d434d1ccb3429a97543bdd20a9bc885dc106fc4c250f4bdb14fe157",
+        "health": "healthy"
+      },
+      {
+        "name": "/nocheh-nocheh-app-1",
+        "image": "sha256:a8afe7dfb498b45965f8d9d09148b3ab20872a28e102e0b17362533ba3f05ed4",
+        "health": "healthy"
+      }
+    ],
+    "other_installation_containers_unchanged": true
+  },
+  "browser": {
+    "new_monitoring_ui": true,
+    "four_charts_rendered": true,
+    "status_badges": true,
+    "period_and_family_controls": true,
+    "chart_data_disclosure": true
+  },
+  "persistent_terminal": "58831",
+  "full_suite": "Not repeated for activation; prior feature acceptance is recorded separately."
+}
