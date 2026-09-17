@@ -1,0 +1,35 @@
+{
+  "increment": "derived guard revisions and recoverable control publication",
+  "fixture_project": "nocheh-stores-20260918",
+  "fixture_cluster_marker": "nocheh-stores-fixture",
+  "runtime": "Node 24",
+  "compilation": "passed",
+  "affected_tests": {"passed": 3, "failed": 0, "cancelled": 0, "skipped": 0},
+  "previous_run": {
+    "passed": 2,
+    "cancelled": 1,
+    "reason": "storage test exceeded 60-second bound; observed PostgreSQL WALWrite wait",
+    "counted_as_pass": false
+  },
+  "test_timeout_ms": 300000,
+  "durability_relaxed": false,
+  "verified": [
+    "all guard inputs, fragments, revisions and activations live in derived storage",
+    "mode, epoch, invalidations and publication receipts live in control storage",
+    "revocation precedes active-pointer publication",
+    "interruption before publication fails closed and reconciles",
+    "lost completion after publication reconciles even after a newer owner edit",
+    "stale edits fail compare-and-swap and exact operation retries are idempotent",
+    "runtime role cannot rewrite or delete owner revision content",
+    "late automatic detection cannot replace owner edits",
+    "explicit restore creates a new revision",
+    "off mode retains explicit original selection and epoch checks",
+    "repeat bootstrap and fresh connections preserve guarded history",
+    "incorrect installation generation invalidates context"
+  ],
+  "fixture_cleanup": "dedicated cluster identity checked before destructive cleanup; guard test does not drop databases",
+  "graphify": {"files": 309, "nodes": 1895, "edges": 6824, "model_calls": 0},
+  "production_activation": false,
+  "installation_reset": false,
+  "remaining": "production repository migration, derivative activation/reprocessing, learning/projects/UI, portability and live acceptance"
+}
