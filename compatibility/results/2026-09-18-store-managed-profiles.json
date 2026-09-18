@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-18",
+  "scope": "managed profile capability and context isolation in synthetic Compose",
+  "repository_checks": {"passed": 5, "failed": 0, "files": ["store-security-broker.test", "store-prepared-context.test", "store-controlled-actions.test", "store-telegram-dispatch.test"]},
+  "regression_checks": {"passed": 5, "failed": 0, "files": ["store-security-broker.test", "retrieval.test", "security-broker.test"], "overlap": "The separated broker check also appears in the repository batch."},
+  "native_checks": {"passed": 12, "failed": 0, "files": ["integrations.hermes.test_prepared_context", "integrations.hermes.test_scopes", "integrations.hermes.test_gateway", "integrations.hermes.test_profile_config"], "network": "none"},
+  "verified": ["signed logical profile matches durable admission", "missing and substituted profiles rejected", "TypeScript/Python native identity agreement", "named profile state and prepared fragments isolated", "default owner profile and reviews still share native notes", "named preferences survive generation preparation", "old notes are not silently copied", "legacy token and broker compatibility"],
+  "typescript": "pass after fixing a test-only exact optional-property type",
+  "graphify": {"files": 413, "nodes": 2504, "edges": 10009, "model_calls": 0},
+  "pending": ["native administration mapping", "managed browser and scheduler repositories", "full installation rehearsal", "reset and live acceptance"]
+}
