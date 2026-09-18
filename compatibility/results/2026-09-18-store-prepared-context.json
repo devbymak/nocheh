@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-20260918",
+  "checks": {"typescript": "pass", "postgres_and_context": {"passed": 8, "failed": 0, "skipped": 0}},
+  "coverage": ["runtime content outside archive", "typed scheduled-operation roots", "atomic detector checkpoints", "lost completion recovery from another authorized turn", "prepared passage reuse", "concurrent requests", "purpose separation", "generation and epoch rejection", "guard-off audience enforcement", "internal-result selection rejection"],
+  "earlier_run": {"passed": 7, "failed": 1, "reason": "incorrect expected error code for invalid detector output; corrected assertion"},
+  "pending": ["runtime broker and production wiring", "complete isolated rehearsal", "reset and fresh live gates"],
+  "live_data_changed": false
+}
