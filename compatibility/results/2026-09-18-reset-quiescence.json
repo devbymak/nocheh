@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-18",
+  "scope": "installation reset owner shutdown and recovery",
+  "offline_checks": {"passed": 31, "failed": 0, "skipped": 0},
+  "compose": {
+    "project": "nocheh-reset-stop-fd0c032c146b",
+    "reviewed_containers": 9,
+    "synthetic_writers_stopped": 8,
+    "real_postgresql_maintenance_exclusion": true,
+    "remaining_service_before_teardown": "nocheh-postgres",
+    "interrupted_shutdown_recovered": true,
+    "late_foreign_writer_blocks_completion": true,
+    "original_restart_settings_preserved": true,
+    "restart_suppressed": true,
+    "inactive_fences_retained": true,
+    "separate_sentinel_unchanged_by_shutdown": true,
+    "published_ports": 0,
+    "external_network": false,
+    "fixture_containers_and_volume_removed": true,
+    "writer_image": "nocheh-original-only-reset-management:20260918",
+    "writer_image_digest": "sha256:cf839f7c58baa2531067ac78a91db0810553146071cde414c1bebc8ca4589105",
+    "coordinator": "candidate Python source on host",
+    "purpose": "real Compose lifecycle with synthetic heartbeat writers, not full native/provider behavior"
+  },
+  "verified": [
+    "verified acceptance and live maintenance exclusion precede owner mutations",
+    "configuration, container, image, mount and volume identity changes block shutdown",
+    "saved restart policies remain immutable through partial shutdown and retry",
+    "native capture and scheduling stop before host executors and remaining writers",
+    "provider-refresh and learning owners are included in shutdown",
+    "database/cache servers remain available only for subsequent reconciliation",
+    "four inactive fences survive shutdown and interrupted owned marker writes recover",
+    "foreign/restored markers and symlinks remain conflicts",
+    "lost maintenance and changed shutdown receipts block further mutations",
+    "stuck owners and newly appearing foreign writers block completion",
+    "failed shutdown never resumes services automatically"
+  ],
+  "graphify": {"files": 462, "nodes": 2949, "edges": 11612, "model_calls": 0},
+  "provider_calls": 0,
+  "live_state_changed": false,
+  "live_owners_stopped": false,
+  "effects_settled": false,
+  "pending": [
+    "effect settlement and exact preservation/erasure coordination",
+    "restoration and external archive ownership review",
+    "combined full application/native/browser rehearsal",
+    "installation reset, empty baseline and fresh live acceptance"
+  ]
+}
