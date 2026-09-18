@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-18",
+  "scope": "fresh reset infrastructure, setup restoration, and complete empty-baseline proof",
+  "candidate_image": "sha256:f17373e413fd04698f0889e41a6c4ec80be39f60c10a731d6e941a447883c4cd",
+  "checks": {
+    "focused_initialization_and_baseline": 3,
+    "full_reset_python": 89,
+    "fresh_postgresql_setup_and_baseline": 2,
+    "candidate_build": 1,
+    "complete_synthetic_lifecycle": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "rehearsal": {
+    "project": "nocheh-reset-fresh-9b8c57767daa",
+    "phase": "empty_baseline",
+    "network": "internal only",
+    "old_containers_removed": 4,
+    "old_volumes_removed": 3,
+    "fresh_services": 4,
+    "fresh_volumes": 3,
+    "archive_rows": 0,
+    "derived_rows": 0,
+    "inngest_postgres_relations": 0,
+    "inngest_redis_keys": 0,
+    "honcho_postgres_relations": 0,
+    "honcho_redis_keys": 0,
+    "private_reset_artifacts_retired": true,
+    "inactive_fences_retained": true,
+    "credentials_login_and_spending_retained": true,
+    "runtime_activated": false,
+    "provider_calls": 0,
+    "live_state_changed": false
+  },
+  "properties": [
+    "fresh PostgreSQL, workflow Redis, Honcho PostgreSQL, and Honcho Redis resources use identities distinct from every erased container and volume",
+    "only database and cache services are created and started; restart ownership remains disabled and capture, scheduling, execution, learning, provider refresh, and agents remain fenced",
+    "the journal's new installation generation and current setup are restored through reset-only services before native preferences are written",
+    "archive and derivative schemas contain zero rows; control contains only exact current setup and deterministic new-generation profile refresh requests",
+    "Inngest PostgreSQL, workflow Redis, Honcho PostgreSQL, and Honcho Redis contain no user content or keys",
+    "original files and spool content are empty while saved provider login, external credentials, native presentation preferences, and spending accounting remain",
+    "detailed private reset artifacts are retired only after a durable retirement intent and complete baseline verification",
+    "interrupted resource startup retries against the same recorded identities, while stale old resources and post-reset cache content fail closed"
+  ],
+  "limitations": [
+    "No live installation file, database, cache, container, credential, service, provider, or Telegram state was changed.",
+    "The authorized installation reset, one-attempt Telegram backlog boundary, fresh live acceptance, and controlled service resumption remain pending.",
+    "The dedicated Telegram test-group identifier and human participation remain prerequisites for fresh live acceptance."
+  ]
+}
