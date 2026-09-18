@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-18",
+  "scope": "initial guarded publication preserves unrelated authorized contexts",
+  "regression": {
+    "previous_candidate": "failed at injected first-publication interruption with guard_transition_pending",
+    "candidate": {"passed": 18, "failed": 0, "skipped": 0},
+    "covered": ["guard publication and reconciliation", "browser execution and delivery", "controlled actions and execution", "contextual learning", "native memory and review", "runtime configuration and profiles", "schedules", "sharing", "Telegram actions and dispatch", "workflow admission"]
+  },
+  "build": {
+    "target": "management",
+    "image": "nocheh-original-only-installation-candidate:20260918",
+    "digest": "sha256:42c6a1ef659c5d635f654859169f8f6680b8c3bb2258c8459d145cdc1663d86a",
+    "passed": true
+  },
+  "invariants": [
+    "new source reads fail closed before its own durable preparation is ready",
+    "unrelated existing representations keep their authorization binding",
+    "replacement guards, selections and learned publications remain fenced",
+    "reconciliation completes interrupted first publication"
+  ],
+  "combined_installation_rehearsal": {
+    "passed": false,
+    "capture_and_control_recovered_after_outage": true,
+    "failed_gate": "outage_memory_recovered",
+    "observation": "downstream workflow requests remained queued; engine history showed worker-capacity retries",
+    "live_acceptance": false
+  },
+  "live_state_changed": false,
+  "live_owners_stopped": false
+}
