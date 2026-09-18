@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-18",
+  "scope": "synthetic generated capture and control-rooted derivatives",
+  "compose_project": "nocheh-stores-20260918",
+  "cluster_marker": "nocheh-stores-fixture",
+  "checks": {
+    "node_24_typescript": "pass",
+    "generated_capture_guard_reprocessing": {"passed": 4, "failed": 0, "skipped": 0},
+    "final_generated_capture": {"passed": 2, "failed": 0, "skipped": 0},
+    "ast_graph": {"files": 337, "nodes": 2051, "edges": 7572, "model_calls": 0}
+  },
+  "coverage": [
+    "confirmed message bodies only; ambiguous/rejected/boolean/MessageId-only results never reconstruct drafts",
+    "delivered evidence and incoming sources commit despite control outage",
+    "generated content and journal output remain in derivatives with typed control-operation references",
+    "operation references require the current installation generation and exact input hash",
+    "retry after lost effect completion preserves spool and reuses immutable derivative",
+    "guarded operation-rooted content needs no archive source; source activation rejects it"
+  ],
+  "pending": ["production routing", "complete isolated acceptance", "reset", "fresh live acceptance"],
+  "live_data_changed": false
+}
