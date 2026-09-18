@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-18",
+  "scope": "restart-safe transition from confirmed reset boundary into fresh acceptance mode",
+  "candidate_image": "sha256:75faf4f9e2ed1970f2af60f8c983c56141d5fcb518c91b37f65ff1abac6028de",
+  "checks": {
+    "focused_acceptance_mode": 2,
+    "full_reset_python": 92,
+    "python_compile": 3,
+    "internal_only_compose_lifecycle": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "rehearsal": {
+    "project": "nocheh-reset-fresh-1c40d6140693",
+    "phase": "acceptance_mode_fixture",
+    "network": "internal only",
+    "old_containers_removed": 4,
+    "old_volumes_removed": 3,
+    "fresh_services": 4,
+    "fresh_volumes": 3,
+    "archive_rows": 0,
+    "derived_rows": 0,
+    "inngest_postgres_relations": 0,
+    "inngest_redis_keys": 0,
+    "honcho_postgres_relations": 0,
+    "honcho_redis_keys": 0,
+    "private_reset_artifacts_retired": true,
+    "post_retirement_state_revalidated": true,
+    "fixture_boundary_calls": 1,
+    "inactive_fences_released": true,
+    "restart_ownership": false,
+    "fresh_acceptance": false,
+    "runtime_activated": false,
+    "provider_calls": 0,
+    "live_telegram_requests": 0,
+    "live_state_changed": false
+  },
+  "properties": [
+    "the enabled service set and saved restart policies come only from the immutable pre-reset quiescence receipt",
+    "the current Compose dependency closure is recorded before fresh runtime containers are created",
+    "old or replaced container identities and changed recorded plans fail closed",
+    "every fresh container has restart policy no before any reset fence is released",
+    "dependencies start in order and honor healthy or successful-completion conditions",
+    "interrupted activation retries from the same identities without completing fresh acceptance or restoring restart ownership"
+  ],
+  "limitations": [
+    "The lifecycle uses an in-process fixture backlog transport and starts only isolated infrastructure services.",
+    "The live installation reset and one-attempt Telegram boundary have not run.",
+    "Fresh owner-DM, dedicated-group, human-reaction, subscription transcription, learned recall/correction, isolation, silence, exact approval, restart and Honcho evidence remain pending.",
+    "Saved restart policies remain intentionally disabled until a separate fresh-evidence gate and controlled resumption pass."
+  ]
+}
