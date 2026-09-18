@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "format": 6,
+  "source_project": "nocheh-recovery-46fb9a5d2eea-source",
+  "restore_project": "nocheh-recovery-46fb9a5d2eea-target",
+  "databases": {
+    "archive": 7,
+    "derived": 14,
+    "control": 53
+  },
+  "native_memory_tables": 12,
+  "workflow_tables": 14,
+  "state_files": 23,
+  "guarded_owner_edits_preserved": true,
+  "original_files_exact": true,
+  "native_sessions_and_notes_exact": true,
+  "workflow_redis_recovered": true,
+  "spending_ledger_preserved": true,
+  "runtime_roles_no_login": true,
+  "provider_logins_inactive": true,
+  "only_restored_database_running": true,
+  "provider_calls": 0,
+  "live_state_changed": false,
+  "date": "2026-09-18",
+  "scope": "production CLI backup/restore orchestration in synthetic Compose installations",
+  "python_checks": {
+    "passed": 18,
+    "failed": 0
+  },
+  "earlier_failures": [
+    "Synthetic detector fixture returned the runtime wrapper instead of the literal-list contract; corrected before the passing rehearsal."
+  ],
+  "fixed": "Original-only workflow restore provisions through the setup-only service; runtime application credentials have no administrator authority.",
+  "cleanup": "Both fixture projects, networks, and database volumes removed after verification.",
+  "graphify": {
+    "files": 442,
+    "nodes": 2743,
+    "edges": 11114,
+    "model_calls": 0
+  },
+  "pending": [
+    "Dashboard-started coordinator must survive its own writer shutdown and enforce maintenance exclusion.",
+    "Complete native/application/UI rehearsal, including browser reconnect and media generation changes.",
+    "Saved native preference migration, installation reset and fresh live gates."
+  ]
+}
