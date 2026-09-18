@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-18",
+  "scope": "host import repository migration in isolated synthetic fixtures",
+  "repository_checks": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "files": [
+      "store-imports.test",
+      "store-source-portability.test",
+      "store-workflow-owner.test",
+      "store-server.test",
+      "workflow-imports.test"
+    ]
+  },
+  "native_checks": {
+    "passed": 11,
+    "failed": 0,
+    "network": "none",
+    "files": [
+      "test_import_jobs",
+      "test_workflow_worker"
+    ]
+  },
+  "verified": [
+    "original source and file preservation",
+    "lost archive acknowledgment and idempotent replay",
+    "no imported-history Telegram dispatch",
+    "explicit owner learning consent",
+    "cross-job file and review denial",
+    "review replay preserves later owner revocation",
+    "lease expiry and cancellation serialize with source writes",
+    "old generation leases rejected after resume",
+    "retained completion receipts",
+    "control-only workflow progress and owner retry/cancel",
+    "TypeScript compilation",
+    "AST-only graph refresh",
+    "diff hygiene"
+  ],
+  "earlier_failures": [
+    "new fixture workflow run ID contained a forbidden colon; corrected",
+    "new fixture expected HTTP 500 for injected outage; corrected to the documented 503 response"
+  ],
+  "graphify": {
+    "files": 428,
+    "nodes": 2648,
+    "edges": 10766,
+    "model_calls": 0
+  },
+  "pending": [
+    "complete portable bundle and legacy conversion",
+    "native memory transfer and full backup coordination",
+    "combined Compose/Inngest/native/UI rehearsal",
+    "confirmed browser delivery evidence",
+    "reset and fresh live gates"
+  ]
+}
