@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-18",
+  "scope": "inactive native memory portable row restore in synthetic PostgreSQL fixtures",
+  "postgresql_rehearsal": {
+    "passed": true,
+    "tables": 8,
+    "consistent_concurrent_snapshot": true,
+    "round_trip": true,
+    "late_failure_atomic": true,
+    "active_work_rejected": true,
+    "schema_mismatch_rejected": true,
+    "idempotent_replay": true,
+    "destination_conflict_preserved": true,
+    "identity_sequence_advanced": true,
+    "provider_calls": 0
+  },
+  "offline_native_checks": {
+    "passed": 26,
+    "failed": 0,
+    "network": "none"
+  },
+  "verified": [
+    "inactive installation marker precedes any database or service operation",
+    "pinned producer and exact column compatibility",
+    "rows supplied only as encoded data; no bundle SQL executes",
+    "native queue/webhook state excluded and destination work rejected",
+    "no service startup, native attachment, credentials, or spending change",
+    "Python compilation",
+    "documentation links",
+    "diff hygiene"
+  ],
+  "graphify": {
+    "files": 432,
+    "nodes": 2689,
+    "edges": 10923,
+    "model_calls": 0
+  },
+  "pending": [
+    "full pinned Honcho service restore rehearsal",
+    "legacy bundle conversion",
+    "coordinated full backup/recovery",
+    "combined Compose/Inngest/native/UI rehearsal",
+    "confirmed browser delivery evidence",
+    "reset and fresh live gates"
+  ]
+}
