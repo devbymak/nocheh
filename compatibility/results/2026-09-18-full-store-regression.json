@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-18",
+  "scope": "complete TypeScript and dashboard regression suite",
+  "passed": 140,
+  "failed": 0,
+  "skipped": 0,
+  "test_concurrency": 1,
+  "fixture_project": "nocheh-stores-20260918",
+  "enabled_gates": [
+    "NOCHEH_STORES_FIXTURE",
+    "NOCHEH_CONTAINER_TEST",
+    "NOCHEH_WORKFLOW_FIXTURE"
+  ],
+  "services_image": "sha256:ad0e3d30f24796b2eed40864069172e2529241f8b636b4151459c4198603906b",
+  "compiled_worktree_dist_mounted": true,
+  "provider_calls": 0,
+  "live_state_changed": false,
+  "first_run": {
+    "passed": 139,
+    "failed": 1,
+    "cause": "The store-bootstrap fixture rotated the shared synthetic Inngest role password; a later workflow bootstrap test could not authenticate."
+  },
+  "fix": "Preserve the configured fixture workflow password while testing repeat setup.",
+  "pending": [
+    "Complete running application/native/UI rehearsal",
+    "Dashboard-started backup coordinator",
+    "Saved native preference migration",
+    "Installation reset and fresh live acceptance"
+  ]
+}
