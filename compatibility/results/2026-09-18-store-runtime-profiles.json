@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-18",
+  "scope": "native profile configuration repository and owner HTTP resolution in isolated synthetic Compose",
+  "checks": {"passed": 3, "failed": 0, "skipped": 0, "files": ["store-runtime-profiles.test", "store-server.test"]},
+  "verified": ["configuration stays in control", "stable preference identity across rename", "generation-bound native directory identity", "atomic revocation on mutation", "idempotent commands and revision checks", "retired identity cannot reactivate", "reused names get new identities", "owner and topic scope checks", "owner-only HTTP lookup"],
+  "earlier_failures": ["readonly Reader property assignment corrected before successful compilation", "reserved-name validation rejected the test display name; narrowed to actual internal identifiers and repeated the repository test"],
+  "typescript": "pass",
+  "graphify": {"files": 419, "nodes": 2562, "edges": 10329, "model_calls": 0},
+  "pending": ["native administration integration", "catalog enforcement in browser admission", "saved native preference migration", "browser media preparation ordering", "full installation rehearsal and live acceptance"]
+}
