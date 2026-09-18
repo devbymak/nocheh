@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-18",
+  "scope": "managed scheduled execution and exact delivery proposals in isolated synthetic fixtures",
+  "repository_checks": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "files": [
+      "store-scheduled-runs.test",
+      "store-browser-runs.test",
+      "store-schedules.test",
+      "store-telegram-actions.test",
+      "store-server.test",
+      "store-workflow-owner.test",
+      "store-browser-capture.test"
+    ]
+  },
+  "native_checks": {
+    "passed": 37,
+    "failed": 0,
+    "files": [
+      "test_scheduler",
+      "test_managed_async",
+      "test_browser_gateway",
+      "test_runtime_profiles"
+    ],
+    "network": "none"
+  },
+  "verified": [
+    "shared browser/scheduler lease and receipt lifecycle",
+    "scheduler root is a control operation",
+    "agent prompt uses current guarded derivative",
+    "exclusive native claim and job-bound capability",
+    "completed turn credentials cannot be reused",
+    "result persisted before workflow completion",
+    "control completion recovered without a native rerun",
+    "missing native receipt after claim remains ambiguous",
+    "revocation and cancellation",
+    "exact Telegram proposal from verified local result",
+    "delivery staging does not send or reopen execution",
+    "local/off-mode results",
+    "monotonic schedule workflow dispatch",
+    "owner workflow cancellation and no generated archive link",
+    "native cadence and repeat behavior in both profile layouts",
+    "TypeScript compilation",
+    "diff hygiene"
+  ],
+  "earlier_failures": [
+    "refactor typing corrected before final compilation",
+    "native test fixture environment restoration leaked a deleted temporary home; cleanup fixed and all 37 native checks repeated successfully"
+  ],
+  "graphify": {
+    "files": 426,
+    "nodes": 2640,
+    "edges": 10702,
+    "model_calls": 0
+  },
+  "pending": [
+    "combined Inngest/Compose/native/UI rehearsal",
+    "saved native preference migration",
+    "confirmed browser delivery evidence",
+    "host imports and complete portable bundles",
+    "full backup coordination",
+    "authorized reset and fresh live gates"
+  ]
+}
