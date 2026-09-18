@@ -1,0 +1,15 @@
+{
+  "candidate": "original-only-v1",
+  "status": "derivative-transfer-component",
+  "environment": "Synthetic isolated Compose PostgreSQL; empty destination namespaces in each of the three databases, using domain runtime roles",
+  "checks": {
+    "typescript": "pass",
+    "node_postgresql": {"passed": 11, "failed": 0, "skipped": 0, "files": ["store-derivative-portability", "store-source-portability", "store-owner-api", "store-guards", "store-reprocessing", "store-learned", "store-learning-engine", "store-prepared-context", "store-native-memory", "store-native-review"]},
+    "python": {"passed": 15, "modules": ["test_derivative_transfer", "test_source_portability", "test_archive", "test_portable"]},
+    "round_trip": ["original binary bytes", "two transcript versions and engine provenance", "owner-edited guarded history", "selection and learned correction history", "generated operation roots and parent lineage", "inert imports even with equal generation/epoch and guard-off", "prepared caches retained without active insertion", "explicit owner restoration, activation, and correction", "duplicate imports preserve later destination decisions"],
+    "failure_paths": ["record hash corruption", "fixed type/field rejection", "missing or cyclic parents", "package count/checksum validation", "historical operation cannot authorize execution"],
+    "graphify": {"files": 378, "nodes": 2354, "edges": 9069, "model_calls": 0}
+  },
+  "pending": ["consistent top-level source/derivative/native bundle coordinator", "native Honcho transfer", "legacy portable conversion", "production three-store entrypoints", "complete isolated Compose and native restore rehearsal", "authorized reset and fresh live gates"],
+  "live_data_changed": false
+}
