@@ -1,0 +1,14 @@
+{
+  "candidate": "original-only-v1",
+  "status": "runtime-configuration-increment",
+  "checks": {
+    "typescript": "pass",
+    "postgresql_service_and_workflows": {"passed": 6, "failed": 0, "skipped": 0, "modules": ["store-runtime-configuration", "store-server", "store-workflows", "store-security-broker"]},
+    "focused_configuration_repeat": "pass after final TypeScript build",
+    "behaviors": ["equivalent concurrent setup is idempotent", "allowlist change revokes old capabilities", "stale service configuration denied", "old policy restoration creates new authority", "policy/epoch/refresh rollback together on handoff failure"],
+    "graphify": {"files": 398, "nodes": 2416, "edges": 9401, "model_calls": 0}
+  },
+  "live_layout_changed": false,
+  "reset_performed": false,
+  "fresh_live_acceptance": "pending"
+}
