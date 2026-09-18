@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-20260918",
+  "checks": {"typescript": "pass", "http_postgres_management": {"passed": 6, "failed": 0, "skipped": 0}, "python_cli": {"passed": 5, "failed": 0}},
+  "coverage": ["owner authorization before body parsing", "stable original file hash on reprocessing", "idempotent submission and activation", "stale revision denial", "derivative and guard provenance/history", "owner corrections and retirement", "project inheritance and archival", "explicit sharing policies", "CLI requires revision and operation identity", "owner proxy path allowlist"],
+  "pending": ["production API mounting", "sharing content preview/release", "dashboard UI", "complete isolated rehearsal", "reset and fresh live gates"],
+  "live_data_changed": false
+}
