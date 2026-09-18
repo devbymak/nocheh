@@ -1,0 +1,16 @@
+{
+  "candidate": "original-only-v1",
+  "status": "preparation-and-memory-workflow-increment",
+  "checks": {
+    "typescript": "pass",
+    "postgresql_engine_and_processes": {"passed": 9, "failed": 0, "skipped": 0, "modules": ["store-workflows", "store-native-memory", "store-native-review", "store-learning-engine", "store-server", "store-reprocessing", "store-preparation"]},
+    "workflow_behaviors": ["bounded admission before database acquisition", "metadata-only engine results", "delayed reaction waits for original target", "silent native review and contextual learning", "lost native write response reconciles without duplicate send", "durable reprocessing result reused", "new native work schedules fresh observation", "concurrent input prevents stale ready state", "bounded refresh checkpoints", "retired contexts skipped", "interrupted selection publication repaired by worker"],
+    "native_adapters": "deterministic synthetic fixtures",
+    "live_provider_calls": 0,
+    "full_inngest_installation_rehearsal": "pending",
+    "graphify": {"files": 396, "nodes": 2408, "edges": 9361, "model_calls": 0}
+  },
+  "pending": ["Telegram dispatch migration", "actions and managed runtimes", "owner workflow controls", "complete portable/native coordination", "full isolated Compose rehearsal", "authorized reset and fresh live gates"],
+  "live_layout_changed": false,
+  "reset_performed": false
+}
