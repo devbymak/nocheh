@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-20260918",
+  "checks": {"typescript": "pass", "postgres_review_broker_memory": {"passed": 3, "failed": 0, "skipped": 0}, "final_purpose_boundaries": {"passed": 2, "failed": 0, "skipped": 0}, "offline_native": {"passed": 21, "failed": 0}},
+  "coverage": ["derived review input/result and control receipts", "profile wait without attempt loss", "native quiet interval", "uncertain identity reconciliation", "no blind retry", "completed result recovery", "revision-checked pause/resume", "generation-separated profiles and recall", "shared owner review/foreground notes", "filter profile isolation", "verified review-only capabilities", "ordinary turns denied cross-conversation review exception"],
+  "hermes_revision": "7166071fcaadb36df26f6d753dda97da6b5d699e",
+  "hermes_image": "sha256:56cde8cf89a4dea4bf256b9689261181ec03e16cfcadb5f8eb26cee367f5d1ec",
+  "initial_fixture_failure": "invalid temporary-filesystem mount syntax; container did not start; corrected before offline tests",
+  "ast": {"files": 357, "nodes": 2178, "edges": 8347, "model_calls": 0},
+  "pending": ["native management and managed turns", "workflow and production routing", "complete isolated rehearsal", "reset and fresh live gates"],
+  "live_data_changed": false
+}
