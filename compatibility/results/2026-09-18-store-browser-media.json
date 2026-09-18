@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-18",
+  "scope": "browser media preparation ordering and stable logical profiles in synthetic Compose",
+  "repository_checks": {"passed": 5, "failed": 0, "skipped": 0, "files": ["store-browser-runs.test", "store-runtime-profiles.test", "store-security-broker.test", "store-server.test"]},
+  "native_checks": {"passed": 13, "failed": 0, "files": ["integrations.hermes.test_scopes", "integrations.hermes.test_managed_async", "integrations.hermes.test_prepared_context"], "network": "none"},
+  "verified": ["original audio bytes reach the deterministic fixture engine intact", "initial transcript selection does not cancel an unstarted submission", "current prepared binding saved before the first native request", "guard revocation after a queued native request still cancels", "same-identity execution recovery retained", "TypeScript/Python default profile identity agreement", "stable logical identity and isolated native generations"],
+  "earlier_failures": ["the new audio case reproduced cancellation after initial transcript activation; fixed and repeated successfully"],
+  "typescript": "pass",
+  "graphify": {"files": 419, "nodes": 2564, "edges": 10337, "model_calls": 0},
+  "pending": ["native profile administration and catalog admission integration", "full installation rehearsal", "subscription transcription live acceptance", "reset and remaining fresh live gates"]
+}
