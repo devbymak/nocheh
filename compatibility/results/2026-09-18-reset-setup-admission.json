@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-18",
+  "scope": "fresh-store setup admission and generation invalidation",
+  "candidate_image": "sha256:6fbd64cf3860762f35e6b7d6b1f7cd21d172e3ab73e07f3a5c2f8a7b0c00a088",
+  "checks": {
+    "fresh_postgresql": 2,
+    "affected_python": 24,
+    "reset_python": 86,
+    "failed": 0,
+    "skipped": 0
+  },
+  "properties": [
+    "the pre-reset installation generation is captured as setup evidence but cannot be reused",
+    "the reset journal generation replaces the fresh bootstrap generation before runtime activation",
+    "only the current security policy, guard mode, assistant allowlist, projects, assignments, sharing rules and active profile identities are restored",
+    "custom native profile identities are admitted through the existing control repository with deterministic idempotent operations",
+    "profile admission revokes earlier fresh-generation contexts and produces only new setup workflow requests",
+    "old policy history, sources, derivatives, learned state, approvals, schedules, effect receipts and workflow history are not copied",
+    "exact replay returns the same generation, setup and profile admissions; conflicts fail closed"
+  ],
+  "rehearsal": {
+    "network": "internal only",
+    "provider_calls": 0,
+    "live_state_changed": false
+  },
+  "limitations": [
+    "This verifies setup admission into fresh stores; Docker lifecycle orchestration, native preference restoration and the complete empty-baseline proof remain pending.",
+    "No live installation data, credentials, services or Telegram state were changed."
+  ]
+}
