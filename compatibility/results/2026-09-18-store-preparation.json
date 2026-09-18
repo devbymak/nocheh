@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-20260918",
+  "cluster_marker": "nocheh-stores-fixture",
+  "checks": {"typescript": "pass", "affected_tests": {"passed": 4, "failed": 0, "skipped": 0}},
+  "coverage": ["original bytes and immutable manifests before control completion", "download retries and backoff only in control", "recovery without redownloading committed bytes", "import waits for upload", "workflow ownership fence", "versioned transcript and UTF-8 extraction", "unsupported binary retains exact bytes", "owner guards preserved on repeated preparation"],
+  "live_data_changed": false,
+  "pending": ["production workflow wiring", "subscription live gate", "complete isolated rehearsal", "reset"]
+}
