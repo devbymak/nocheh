@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-18",
+  "scope": "browser client receipt capture with original-only archive",
+  "postgresql_http": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0
+  },
+  "filesystem_browser_client": {
+    "passed": 2,
+    "failed": 0
+  },
+  "offline_native": {
+    "passed": 28,
+    "failed": 0,
+    "network": "none"
+  },
+  "verified": [
+    "exact received text and reply relation",
+    "generated completion remains outside archive until client receipt",
+    "authenticated receipt capture during archive/control outages",
+    "idempotent replay and restart",
+    "invalid hash, tampered offer, wrong secret and missing-offer rejection",
+    "generation-separated offers and stale reset receipt expiration",
+    "browser outbox contains only opaque IDs/hashes",
+    "native dashboard TypeScript and production assets",
+    "TypeScript/Python compilation"
+  ],
+  "graphify": {
+    "files": 438,
+    "nodes": 2726,
+    "edges": 11081,
+    "model_calls": 0
+  },
+  "pending": [
+    "combined native browser receipt/reconnect and media-generation rehearsal",
+    "coordinated full recovery",
+    "complete Compose/native/UI rehearsal",
+    "reset and fresh live gates"
+  ],
+  "provider_calls": 0,
+  "live_data_changed": false,
+  "candidate_image": {
+    "name": "nocheh-original-only-candidate:20260918",
+    "id": "sha256:4220dc61be671e12caa8d4a2c1cd5b719625696a2ade2eb72ca1984e1326bac7",
+    "build": "pass",
+    "live_state_mounted": false
+  },
+  "full_offline_native_suite": {
+    "run": 232,
+    "passed": 230,
+    "failed": 0,
+    "skipped": [
+      "host Compose rendering",
+      "explicit Docker isolation fixture"
+    ],
+    "fixture": "network none, read-only root, executable /tmp, read-only deploy sources"
+  },
+  "earlier_failures": [
+    "Two Redis startup test helpers could not execute on the first noexec temporary mount; the complete suite passes after correcting fixture mount options.",
+    "The isolated Docker test initially lacked its empty worktree data parent; creating that fixture directory allowed the unchanged test to pass."
+  ],
+  "host_only_native_checks": {
+    "passed": 2,
+    "failed": 0,
+    "checks": [
+      "Compose memory isolation rendering",
+      "actual isolated native container denies secrets, sibling state, network and ambient credentials"
+    ]
+  },
+  "distinct_native_checks_verified": 232
+}
