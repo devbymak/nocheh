@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-18",
+  "scope": "owner source-consent API and CLI in synthetic isolated storage",
+  "database_checks": {"passed": 2, "failed": 0, "skipped": 0, "files": ["store-owner-api.test", "store-source-portability.test"]},
+  "cli_checks": {"passed": 5, "failed": 0, "module": "integrations.hermes.test_knowledge_cli"},
+  "verified": ["owner authority before body parsing", "effective versus explicit consent", "revision conflicts", "idempotent duplicate", "revocation invalidates previous guard binding", "import alone grants no learning or live dispatch"],
+  "typescript": "pass",
+  "graphify": "AST-only; zero model calls",
+  "live_activation": false
+}
