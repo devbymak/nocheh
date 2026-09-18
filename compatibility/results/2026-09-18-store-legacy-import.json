@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-18",
+  "scope": "legacy mixed record and portable-v1 imports into separated stores",
+  "postgresql_http": {
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0
+  },
+  "offline_native": {
+    "passed": 27,
+    "failed": 0,
+    "network": "none"
+  },
+  "verified": [
+    "exact original identifiers and bytes",
+    "generated contexts/files excluded from archive",
+    "legacy bigint string sizes normalized; exact incoming document retained",
+    "guarded owner edits and conflicting incoming history retained",
+    "pending imported guards; checkpoint authority remains inert",
+    "duplicate import preserves later destination edits",
+    "legacy delivered Message evidence imported without new delivery",
+    "portable-v1 native history staged inactive",
+    "TypeScript and Python compilation",
+    "documentation links and diff hygiene"
+  ],
+  "graphify": {
+    "files": 434,
+    "nodes": 2703,
+    "edges": 11011,
+    "model_calls": 0
+  },
+  "pending": [
+    "complete Compose/Inngest/native/UI rehearsal",
+    "coordinated full recovery",
+    "confirmed browser delivery",
+    "reset and fresh live gates"
+  ],
+  "live_data_changed": false,
+  "provider_calls": 0
+}
