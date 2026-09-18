@@ -1,0 +1,16 @@
+{
+  "candidate": "original-only-v1",
+  "status": "service-entrypoint-increment",
+  "checks": {
+    "typescript": "pass",
+    "postgresql_http_and_processes": {"passed": 7, "failed": 0, "skipped": 0, "modules": ["store-server", "store-security-broker", "store-generated-capture", "store-owner-api", "store-preparation"]},
+    "capture": ["filesystem admission through archive/control outages", "archive commit before control handoff", "retained spool until deterministic downstream requests", "duplicate observation preserved once", "changed duplicate rejected"],
+    "authorization": ["actual entrypoint startup with domain credentials only", "inactive restore refusal in application and broker", "configured guard-mode barrier", "stale generation/epoch refusal", "native recall receives current generation"],
+    "compose": {"status": "pass", "services_started": 0, "credentials": "temporary synthetic", "security_restore_marker_read_only": true},
+    "graphify": {"files": 392, "nodes": 2396, "edges": 9282, "model_calls": 0}
+  },
+  "resolved_failure": "Generated-capture fixture assumed a previous test left guarding enabled. It now explicitly reconciles and selects guard-on before its privacy assertion; the affected suite was repeated successfully.",
+  "pending": ["workflow execution integration", "action and managed-runtime endpoints", "action security preview", "complete portable/native coordination", "full isolated Compose rehearsal", "authorized reset and fresh live gates"],
+  "live_layout_changed": false,
+  "reset_performed": false
+}
