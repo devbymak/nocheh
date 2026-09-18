@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-18",
+  "scope": "read-only installation reset preflight",
+  "offline_checks": {"passed": 7, "failed": 0, "skipped": 0},
+  "installation_inspection": {
+    "containers": 17,
+    "volumes": 3,
+    "path_dispositions": 63,
+    "ownership_conflicts": 0,
+    "executable": false,
+    "preflight_sha256": "c17068ccf1764bf7a0c2821aa093343f336efcc072bddb8239ecfc719c22c151",
+    "configuration_values_or_content_copied": false,
+    "live_state_changed": false
+  },
+  "verified": [
+    "explicit configuration and current mount identities establish volume scope",
+    "running and stopped foreign container references block shared ownership",
+    "changed Compose origins and mounts require review",
+    "unknown paths and external volume options require review",
+    "symlinked anchors/preservation paths and overlapping memory roots are rejected",
+    "native preferences, provider credentials and spending have explicit dispositions",
+    "restorations and external archives remain subject to per-item ownership review",
+    "private manifest creation refuses overwrite and exposes no credential values"
+  ],
+  "provider_calls": 0,
+  "services_stopped": false,
+  "data_deleted": false,
+  "pending": [
+    "review restoration and external archive ownership",
+    "complete isolated installation acceptance",
+    "quiescence and external effect settlement",
+    "frozen preservation data and reset executor",
+    "new installation generation and one-time Telegram backlog boundary",
+    "empty baseline and fresh live acceptance"
+  ]
+}
