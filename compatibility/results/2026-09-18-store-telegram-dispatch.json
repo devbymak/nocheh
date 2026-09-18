@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-18",
+  "scope": "synthetic original-only dispatch; no live Telegram or provider requests",
+  "storage_checks": {"passed": 7, "failed": 0, "skipped": 0, "files": ["store-telegram-dispatch.test", "store-workflows.test", "store-telegram-actions.test", "store-server.test"]},
+  "native_checks": {"passed": 11, "failed": 0, "files": ["integrations.hermes.test_gateway", "integrations.hermes.test_async_runs", "integrations.hermes.test_scopes"], "network": "none", "image": "sha256:56cde8cf89a4dea4bf256b9689261181ec03e16cfcadb5f8eb26cee367f5d1ec"},
+  "verified": ["immutable prepared inputs and terminal results in derived storage", "control-only execution metadata", "original routing survives guarded edits", "selected guarded voice transcript with exact original bytes", "no repeated native media downloads", "lost acknowledgment observes original execution", "explicit absence retains the same attempt", "revoked queued run cancels without restart", "durable result repairs control interruption", "terminal silence/failure/ambiguity cannot auto-restart", "imported and reaction observations never dispatch old replies", "owner-DM approval command dispatch", "native minimal prepared payload with generation-bound capability"],
+  "earlier_failure": "First database fixture run used an invalid workflow run identifier; corrected and both focused and combined runs passed.",
+  "typescript": "pass",
+  "graphify": {"files": 403, "nodes": 2455, "edges": 9665, "model_calls": 0},
+  "pending": ["complete running Inngest/native rehearsal", "broader controlled tools and managed execution", "complete portability", "installation reset", "fresh live acceptance"]
+}
