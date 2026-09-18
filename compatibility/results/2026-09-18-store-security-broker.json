@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-20260918",
+  "checks": {"typescript": "pass", "broker_action_policy": {"passed": 6, "failed": 0, "skipped": 0}, "preceding_broker_context": {"passed": 4, "failed": 0, "skipped": 0}},
+  "coverage": ["control-only security state", "typed original and scheduled references", "managed admission and closure", "exact conversation scope", "generation and purpose isolation", "per-attempt and streaming revocation", "guard-off audience checks", "administrative context outside archive", "existing exact approvals and policy denial"],
+  "initial_fixture_failure": "attachment metadata was not prepared; fail-closed behavior retained and fixture corrected",
+  "ast": {"files": 353, "nodes": 2133, "edges": 8096, "model_calls": 0},
+  "pending": ["production service cutover", "complete isolated rehearsal", "reset and fresh live gates"],
+  "live_data_changed": false
+}
