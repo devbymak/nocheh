@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-18",
+  "scope": "separated browser execution and inactive imported checkpoints in synthetic Compose",
+  "final_serial_checks": {
+    "passed": 10, "failed": 0, "skipped": 0,
+    "files": ["store-browser-runs.test", "store-prepared-context.test", "store-security-broker.test", "store-retrieval.test", "store-native-review.test", "store-sharing.test", "store-learning-engine.test", "store-server.test", "store-workflow-owner.test"]
+  },
+  "additional_passed_checks": {
+    "passed": 7,
+    "files": ["store-controlled-execution.test", "store-derivative-portability.test", "store-native-memory.test", "store-reprocessing.test", "store-telegram-actions.test", "store-telegram-dispatch.test"],
+    "count_note": "Telegram dispatch has two checks; six files contain seven additional checks."
+  },
+  "native_checks": {"passed": 18, "failed": 0, "files": ["integrations.hermes.test_managed_async", "integrations.hermes.test_scopes", "integrations.hermes.test_browser_gateway"], "network": "none"},
+  "verified": ["fsynced submission handoff before admission", "source/conversation/profile binding", "single claim and exact immutable receipts", "derived result before workflow completion", "lost completion recovery without native call", "native observation before same-identity continuation", "missing claimed receipt stays uncertain", "cancellation and lease expiry revoke capabilities", "guard and topic isolation", "background review remains independent of closed browser runs", "source-processing purposes cannot authorize actions", "imported artifacts cannot settle live work", "imported guard edits survive explicit owner adoption", "owner HTTP and workflow controls"],
+  "earlier_failures": ["session contention fixture reused the original submission ID; corrected to a distinct submission", "overlapping synthetic batches changed shared guard state and caused guard_transition_pending; affected checks repeated serially"],
+  "typescript": "pass",
+  "graphify": {"files": 417, "nodes": 2551, "edges": 10264, "model_calls": 0},
+  "pending": ["native profile administration mapping", "confirmed browser delivery capture", "scheduler migration", "full installation rehearsal", "reset and fresh live acceptance"]
+}
