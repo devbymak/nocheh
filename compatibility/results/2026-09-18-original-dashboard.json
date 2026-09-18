@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-18",
+  "scope": "original-only owner dashboard preview",
+  "candidate_image": "sha256:a2cc9e473cee61bf907129b8b2f5a42e5e035e59c045fa5f379e131f2ea4ae84",
+  "build_passed": true,
+  "checks": {
+    "python_owner_operations": 3,
+    "graph_layout_and_components": 10,
+    "failed": 0,
+    "skipped": 0
+  },
+  "preview": {
+    "project": "nocheh-installation-ba5fa887c35e",
+    "url": "http://127.0.0.1:18993",
+    "data": "synthetic only",
+    "browser": "isolated Playwright Chrome profile",
+    "widths": [
+      375,
+      1440
+    ],
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "verified": [
+      "learned state correction and retained history",
+      "learned state retirement",
+      "Escape restores focus",
+      "project create, edit, archive and topic inheritance",
+      "sharing preview, approval, revocation and rule disable/mode change",
+      "reprocessing from original bytes",
+      "activate second immutable derivative without copying earlier owner edit",
+      "earlier owner edit remains accessible",
+      "downloaded original bytes exact",
+      "original-only graph proxy independent of native notes",
+      "10 graph nodes and 13 recorded links",
+      "original observation type filtering and six-observation count",
+      "3D graph enabled and no horizontal overflow at 375px",
+      "graph selection opens source details"
+    ],
+    "screenshots": "retained in private synthetic fixture directory"
+  },
+  "limitations": [
+    "Retained C fixture had an interrupted combined run; fresh full-pipeline evidence is the separate G recovery report.",
+    "Preview C background workflows are paused after UI data preparation.",
+    "A host UI build lacked dependencies; the complete pinned Docker candidate build passes.",
+    "UI reprocessing used the same extraction engine twice; distinct-engine replacement has separate focused evidence.",
+    "Fixture sharing and learning do not establish real model quality.",
+    "No live reset, provider calls, Telegram interactions or live state changes."
+  ],
+  "live_acceptance": false
+}
