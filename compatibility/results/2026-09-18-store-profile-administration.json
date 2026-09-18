@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-18",
+  "scope": "control-owned native profile administration and browser admission in isolated fixtures",
+  "repository_checks": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "files": [
+      "store-browser-runs.test",
+      "store-runtime-profiles.test",
+      "store-server.test"
+    ]
+  },
+  "native_checks": {
+    "passed": 35,
+    "failed": 0,
+    "files": [
+      "test_runtime_profiles",
+      "test_native_admin",
+      "test_browser_gateway",
+      "test_scopes",
+      "test_managed_async"
+    ],
+    "network": "none",
+    "hermes_pin": "7166071fcaadb36df26f6d753dda97da6b5d699e"
+  },
+  "verified": [
+    "control catalog is native profile authority",
+    "old directory aliases and forged filesystem owner markers rejected",
+    "topic lookup and symlink confinement",
+    "stable preferences survive rename/retirement",
+    "preferences refresh for existing native generations",
+    "old notes not copied",
+    "browser transport uses stable logical identity",
+    "queued retired profile cannot reach native execution",
+    "TypeScript compilation",
+    "diff hygiene"
+  ],
+  "earlier_failures": [
+    "test expected profile_not_found for an unknown profile with explicit space; existing response is profile_scope_denied; corrected assertion and repeated all four database checks"
+  ],
+  "graphify": {
+    "files": 421,
+    "nodes": 2590,
+    "edges": 10427,
+    "model_calls": 0
+  },
+  "pending": [
+    "saved preference migration",
+    "confirmed browser delivery",
+    "combined native UI and media/reconnect rehearsal",
+    "scheduler migration",
+    "full installation rehearsal",
+    "authorized reset and fresh live gates"
+  ]
+}
