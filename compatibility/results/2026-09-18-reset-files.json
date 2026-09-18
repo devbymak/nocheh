@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-18",
+  "scope": "metadata-bound installation file erasure primitive",
+  "tests": {
+    "host": 9,
+    "packaged_compose": 9,
+    "failed": 0,
+    "skipped": 0
+  },
+  "image": "sha256:d0259997a0ed4cd2c0a48a4cbc6e1aa3491e639b32f1e769743ecb49e2fe45c2",
+  "build_passed": true,
+  "isolation": {
+    "network": "none",
+    "read_only_container": true,
+    "synthetic_files": "temporary container filesystem",
+    "host_source_mounts": false,
+    "fixture_removed": true
+  },
+  "checks": [
+    "frozen device/inode metadata and descriptor-relative traversal",
+    "source contents never copied",
+    "inactive markers and protected subtrees retained",
+    "saved setup and unrelated sentinel retained",
+    "symlink removed without following its target",
+    "hardlinks and special files require review",
+    "new, modified, replaced files and replaced ancestors rejected",
+    "all remaining targets validated before first deletion",
+    "barrier rechecked before each mutation",
+    "interrupted deletion resumes from the same manifest",
+    "retained directories cannot be selected through child paths"
+  ],
+  "limitations": [
+    "Internal primitive only; no standalone destructive command.",
+    "Caller must bind manifest hash into durable preservation evidence and verify all phase barriers.",
+    "Volume/container erasure, complete reset orchestration, external backup/restore ownership review, and live acceptance remain pending."
+  ],
+  "live_state_changed": false,
+  "live_owners_stopped": false
+}
