@@ -40,6 +40,32 @@
     ],
     "screenshots": "retained in private synthetic fixture directory"
   },
+  "compatibility_followup": {
+    "candidate_image": "sha256:f5a92ad12f242e0bffe9dfea137a17378fbefca12c417bbcd65f0fa096382f25",
+    "focused_storage_tests": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    "preview": {
+      "image": "sha256:69ef5c5576a52521dc297a828cd7340c536d77fc3cfad3585239c448c4805bbd",
+      "project": "nocheh-dashboard-preview-20260918",
+      "url": "http://127.0.0.1:18994",
+      "data": "synthetic only",
+      "widths": [375, 1440],
+      "themes": ["dark", "light"],
+      "verified": [
+        "overview reads original observation and file-manifest counts from archive storage",
+        "guard mode is visible without legacy status fields",
+        "Memory access routes original-only installations to explicit sharing controls",
+        "project membership is described as granting no cross-conversation access",
+        "legacy memory-space controls are not requested",
+        "no browser console errors",
+        "no horizontal overflow at 375px or 1440px"
+      ]
+    },
+    "live_state_changed": false
+  },
   "limitations": [
     "Retained C fixture had an interrupted combined run; fresh full-pipeline evidence is the separate G recovery report.",
     "Preview C background workflows are paused after UI data preparation.",
