@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-18",
+  "source_commit": "9fa7f51b256c225fe0790122b00fda705c938503",
+  "scope": "content-free installation reset preflight and exact archive ownership classification",
+  "preflight": {
+    "sha256": "a2a83d168609735d4bcd2a4e674b7f511457c2ab45f2d6136e9c63bf74197a81",
+    "storage_layout": "legacy",
+    "executable": false,
+    "containers": 17,
+    "volumes": 3,
+    "paths": 65,
+    "blockers": 0,
+    "content_copied": false,
+    "mode": "0600"
+  },
+  "ownership_review": {
+    "sha256": "2003d1d4016810d0e6d9b6f1b29ccdecf91ae2c2e90d18e2066680e00e87153e",
+    "items": 15,
+    "erase_installation_owned": 12,
+    "preserve_unrelated": 3,
+    "content_copied": false,
+    "mode": "0600"
+  },
+  "verified": [
+    "the preflight is bound to integrated commit 9fa7f51 and the current saved legacy configuration",
+    "every current container, volume and classified installation path has an exact identity",
+    "all immediate restore and external archive entries have a disposition",
+    "installation-owned backups, exports, restores and recovery entries are selected for erasure",
+    "worktree archives and backups remain selected for preservation",
+    "the manifest is inventory only and cannot authorize execution"
+  ],
+  "pending": [
+    "live services are stopped, so the legacy database setup aggregate was not read",
+    "reset execution and the one-attempt Telegram backlog boundary have not run",
+    "the dedicated Telegram test-group identifier and non-owner human participation are still required",
+    "fresh live acceptance and saved restart-policy resumption have not run",
+    "GitHub HTTPS authentication still blocks remote synchronization"
+  ]
+}
