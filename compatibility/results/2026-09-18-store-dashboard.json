@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-ui-20260918",
+  "database_test_project": "nocheh-stores-20260918",
+  "preview": "http://localhost:18859/#learned",
+  "checks": {
+    "build": "pass",
+    "typescript_web": "pass",
+    "postgres_owner_projects_reprocessing": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    "existing_dashboard_checks": {
+      "passed_distinct": 14,
+      "host_passed": 13,
+      "container_boundary_passed": 1
+    },
+    "browser_console": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "diff_hygiene": "pass"
+  },
+  "browser_coverage": [
+    "owner correction, retirement, restoration, evidence and immutable revision history",
+    "conflict filtering",
+    "project create/edit/archive, topic inheritance, explicit exclusion and assignment",
+    "approved exact preview, publication and revocation",
+    "filtered preview and rejected out-of-scope evidence",
+    "original evidence separated from derivatives and guarded representations",
+    "replacement fixture engine from exact original bytes",
+    "activate both transcript versions and retain first-version owner edit",
+    "desktop light and mobile dark/light layout, 375px no horizontal page overflow",
+    "keyboard escape, return focus and long-panel focus containment/visibility"
+  ],
+  "initial_failures_resolved": [
+    "host dashboard boundary socket EPERM; isolated container rerun passes",
+    "internal-only preview network did not publish localhost port; dedicated HTTP network added",
+    "long panel focus wrapping was outside viewport; scroll focused control into panel",
+    "sharing preview closure lost button focus after busy state; retain triggering button before request",
+    "rebuild replaced bind-mounted output directories; restart preview container before final browser checks"
+  ],
+  "pending": [
+    "production entrypoint and workflow routing",
+    "complete isolated Compose/native rehearsal",
+    "portable exports/imports and coordinated backup/restore",
+    "authorized installation reset and fresh live gates"
+  ],
+  "live_data_changed": false,
+  "live_provider_calls": 0,
+  "ast": {
+    "files": 367,
+    "nodes": 2269,
+    "edges": 8715,
+    "model_calls": 0
+  }
+}
