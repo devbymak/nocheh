@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-18",
+  "scope": "provider accounting preservation during content reset",
+  "offline_checks": {"passed": 6, "failed": 0, "skipped": 0},
+  "compose": {
+    "passed": true,
+    "project": "nocheh-reset-accounting-56ff8b21e6a4",
+    "network": "none",
+    "monitor_image": "sha256:ca29c828580be698d5223cae5893d71ea983a125fd8585c1aff0dd66fa4bff3d",
+    "checks_image": "sha256:6b4ed924dced74bb419369495ca7c09973218c91181410f6133596826419bc37",
+    "candidate_python_sources_mounted_read_only": true,
+    "native_writer_lock": "passed",
+    "native_monitor_restart": "passed",
+    "retained_usage_pricing_settings_and_spending": "passed",
+    "content_absent_after_restart": "passed",
+    "owned_containers_removed": true
+  },
+  "schema": {
+    "upstream_revision": "1ae656c82990c480f3f104326a08c6e0001eeb4c",
+    "sha256": "ba6df07f1ea7f4bfdb9fbd451218a4376c7fd629a9223eb49c0ebd78520fb9f6",
+    "fixture_origin": "empty network-disabled pinned monitor; schema only, no installation records"
+  },
+  "verified": [
+    "exact retained accounting/configuration fingerprints",
+    "cache mode, explicit token totals and raw-payload validity survive cleanup",
+    "raw failure/response fields, inspection logs and dead letters erased",
+    "private-content marker absent from SQLite, WAL and full-text index",
+    "unknown schema, active writer and unsafe paths rejected",
+    "mutation interruption and accounting mismatch roll back",
+    "idempotent cleanup and real monitor restart"
+  ],
+  "earlier_failures": [
+    "The initial FTS test used a phrase unsupported by the pinned detail-none trigram index; changed it to a three-character term.",
+    "The first restart fixture matched the retained synthetic accounting identifier; narrowed it to the unique private-content marker and repeated the complete rehearsal."
+  ],
+  "graphify": {"files": 454, "nodes": 2847, "edges": 11373, "model_calls": 0},
+  "provider_calls": 0,
+  "content_backup_created": false,
+  "live_state_changed": false,
+  "pending": ["reset coordinator integration", "complete installation rehearsal", "scoped installation reset and fresh live acceptance"]
+}
