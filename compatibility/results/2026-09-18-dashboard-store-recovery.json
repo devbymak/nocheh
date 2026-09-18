@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "format": 6,
+  "source_project": "nocheh-recovery-405d95aa2961-source",
+  "restore_project": "nocheh-recovery-405d95aa2961-target",
+  "databases": {
+    "archive": 7,
+    "derived": 14,
+    "control": 53
+  },
+  "native_memory_tables": 12,
+  "workflow_tables": 14,
+  "state_files": 24,
+  "guarded_owner_edits_preserved": true,
+  "original_files_exact": true,
+  "native_sessions_and_notes_exact": true,
+  "workflow_redis_recovered": true,
+  "spending_ledger_preserved": true,
+  "runtime_roles_no_login": true,
+  "provider_logins_inactive": true,
+  "only_restored_database_running": true,
+  "dashboard_started": true,
+  "coordinator_survived": true,
+  "writers_resumed": true,
+  "provider_calls": 0,
+  "live_state_changed": false,
+  "date": "2026-09-18",
+  "scope": "real containerized dashboard backup coordinator and inactive restore",
+  "management_image": "sha256:6b4ed924dced74bb419369495ca7c09973218c91181410f6133596826419bc37",
+  "checks": {
+    "typescript_build": "pass",
+    "dashboard_http_and_oauth_distinct": 9,
+    "python_recovery": 20,
+    "failed_final_checks": 0
+  },
+  "graphify": {
+    "files": 447,
+    "nodes": 2770,
+    "edges": 11162,
+    "model_calls": 0
+  },
+  "verified": [
+    "Earlier partial uploads finish before backup readiness.",
+    "New content, native, provider and websocket requests are fenced.",
+    "Active OAuth callback completes before readiness.",
+    "Authenticated progress remains readable during backup.",
+    "Only the exact ready coordinator container is exempt from writer shutdown.",
+    "Changed container identity or operation token fails closed.",
+    "Unrelated writable mounts remain blocked.",
+    "Resume starts exactly the previously running services without dependencies."
+  ],
+  "earlier_failures": [
+    "TypeScript optional field assignment corrected before compilation and successful container tests.",
+    "Host sandbox refused test sockets; all affected checks passed in isolated containers."
+  ],
+  "pending": [
+    "Combined native/application/UI rehearsal, including browser reconnect and guard generation changes.",
+    "Saved native preference migration.",
+    "Scoped installation reset and fresh live acceptance."
+  ],
+  "cleanup": "Both fixture projects, networks and owned database volumes removed after verification."
+}
