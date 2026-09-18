@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-18",
+  "scope": "complete pre-erasure preservation gate",
+  "candidate_image": "sha256:33102fe347a28fafbf4b39cb4868487c6faf5248abe4cedeff77cc58b356d564",
+  "native_image": "sha256:56cde8cf89a4dea4bf256b9689261181ec03e16cfcadb5f8eb26cee367f5d1ec",
+  "checks": {
+    "focused_host": 8,
+    "full_reset_host": 78,
+    "packaged_management": 49,
+    "packaged_native": 6,
+    "real_postgresql_and_sqlite_rehearsal": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "rehearsal": {
+    "project": "nocheh-reset-preservation-f29646dc4609",
+    "network": "internal only",
+    "configuration_records": 4,
+    "preserved_roots": 10,
+    "erasure_targets": 5,
+    "provider_calls": 0,
+    "live_state_changed": false
+  },
+  "properties": [
+    "current database setup and environment policy match before preservation",
+    "native preference snapshot is immutable and source-verified",
+    "provider accounting is sanitized under its native lock while retained accounting survives",
+    "saved credentials, provider login, Honcho setup and spending state are byte-fingerprinted in place",
+    "explicit archive ownership decisions and the exact anchored erasure manifest are bound into durable evidence",
+    "source and derivative canaries are absent from every private preservation artifact",
+    "crashes before accounting and phase receipts resume without widening scope or repeating completed cleanup",
+    "preservation_frozen advances only after a final independent recheck of every input"
+  ],
+  "limitations": [
+    "No live installation state was stopped, sanitized, reviewed or deleted.",
+    "The live archive ownership review and exact reset manifest remain pending.",
+    "Database/cache volume erasure, initialization, empty-baseline proof, Telegram boundary and fresh live acceptance remain pending."
+  ]
+}
