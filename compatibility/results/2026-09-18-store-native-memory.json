@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-20260918",
+  "checks": {"typescript": "pass", "memory_guard_regressions": {"passed": 8, "failed": 0, "skipped": 0}, "final_memory_provenance": {"passed": 2, "failed": 0, "skipped": 0}},
+  "coverage": ["derived ingestion bodies and native results", "control-only receipt metadata", "duplicate queueing", "write-ahead uncertainty", "lost acknowledgment reconciliation", "no resend on missing confirmation", "retired receipt reconciliation", "current guarded embeddings", "opaque embedding rejection", "exact owner-approved passages", "native result checkpoint recovery", "owner correction rebuild", "multi-source bounded ancestry", "explicit citation limitations"],
+  "earlier_runs": [{"passed": 7, "failed": 1, "reason": "synthetic supergroup lacked explicit forum membership"}, {"passed": 6, "failed": 2, "reason": "assertion compared object prototypes and failed fixture left a generation collision"}],
+  "ast": {"files": 355, "nodes": 2162, "edges": 8253, "model_calls": 0},
+  "native_transport": "deterministic fake; no provider or live data",
+  "pending": ["production workflow wiring", "Hermes review and profile integration", "complete isolated rehearsal", "reset and fresh live gates"],
+  "live_data_changed": false
+}
