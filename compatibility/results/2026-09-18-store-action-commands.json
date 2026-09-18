@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-18",
+  "scope": "owner Telegram action commands in isolated synthetic Compose",
+  "checks": {"passed": 5, "failed": 0, "skipped": 0, "files": ["store-controlled-actions.test", "store-controlled-execution.test", "store-telegram-actions.test", "store-telegram-dispatch.test"]},
+  "targeted_followup": "The controlled-action check passed again after adding an editable guarded-text command injection fixture.",
+  "verified": ["combined Telegram and controlled proposal review", "owner-DM approve and deny", "permission listing and revocation", "idempotent original command replay", "typed original decision evidence in control", "group and nonowner rejection", "import and edit rejection", "guarded edits cannot become administrative commands", "large arguments require complete Activity review", "no generated archive decision records"],
+  "typescript": "pass",
+  "graphify": {"files": 412, "nodes": 2499, "edges": 9977, "model_calls": 0},
+  "pending": ["managed native profiles and runs", "full installation rehearsal", "reset and fresh live owner-DM acceptance"]
+}
