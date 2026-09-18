@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "project": "nocheh-installation-97b6574cc665",
+  "images": {
+    "services": "sha256:b52e881324da3d178a77abcdcba5b7d482d509815c758799aca303341bc5fe2d",
+    "native": "sha256:fe92b9dca8d0b34792eebbd3227dfbec8c605c365184f3dd7260951af26b93eb",
+    "honcho": "sha256:92a4f7de971657841f869134442ca5125b9ef3a603b39a7e18615036015020b2"
+  },
+  "provider": "deterministic-fixture",
+  "live_acceptance": false,
+  "external_provider_calls": 0,
+  "live_state_changed": false,
+  "stats": {
+    "detector": 39,
+    "learning": 4,
+    "chat": 18,
+    "embeddings": 24,
+    "raw_canary_outside_detector": 0
+  },
+  "gates": [
+    {
+      "gate": "pipeline_registered",
+      "passed": true,
+      "seconds": 0.667
+    },
+    {
+      "gate": "host_worker_registered",
+      "passed": true,
+      "seconds": 0.304
+    },
+    {
+      "gate": "original_captured",
+      "passed": true,
+      "seconds": 0.177
+    },
+    {
+      "gate": "guard_prepared",
+      "passed": true,
+      "seconds": 2.499
+    },
+    {
+      "gate": "native_memory_ingested",
+      "passed": true,
+      "seconds": 11.638
+    },
+    {
+      "gate": "learned_convention_published",
+      "passed": true,
+      "seconds": 74.457
+    },
+    {
+      "gate": "duplicate_spool_retired",
+      "passed": true,
+      "seconds": 2.004
+    },
+    {
+      "gate": "learning_refresh_settled",
+      "passed": true,
+      "seconds": 0.292
+    },
+    {
+      "gate": "reaction_state_learned",
+      "passed": true,
+      "seconds": 35.426
+    },
+    {
+      "gate": "native_browser_turn_completed",
+      "passed": true,
+      "seconds": 40.903
+    },
+    {
+      "gate": "browser_delivery_archived",
+      "passed": true,
+      "seconds": 2.838
+    },
+    {
+      "gate": "outage_capture_recovered",
+      "passed": true,
+      "seconds": 0.281
+    },
+    {
+      "gate": "outage_handoff_recovered",
+      "passed": true,
+      "seconds": 0.231
+    },
+    {
+      "gate": "outage_memory_recovered",
+      "passed": true,
+      "seconds": 249.077
+    }
+  ],
+  "checks": [
+    "production_composition_started",
+    "three_store_health",
+    "inngest_connected",
+    "host_worker_registered",
+    "original_captured",
+    "guard_prepared",
+    "native_memory_ingested",
+    "learned_convention_published",
+    "edit_learning_silent",
+    "guarded_egress",
+    "duplicate_capture_idempotent",
+    "native_browser_turn_completed",
+    "browser_recovery_and_delivery",
+    "database_and_workflow_outage_capture",
+    "outage_capture_recovered",
+    "outage_handoff_recovered",
+    "outage_memory_recovered",
+    "reaction_state_learned",
+    "reaction_learning_silent"
+  ],
+  "date": "2026-09-18",
+  "scope": "isolated complete installation and workflow outage recovery",
+  "focused_checks": {
+    "passed": 13,
+    "failed": 0,
+    "skipped": 0,
+    "previous_image_regression": "first failed transport publication delayed by prior successful receipt probes"
+  },
+  "limitations": [
+    "Deterministic fixture responses do not measure model quality or semantic recall.",
+    "No live Telegram, subscription transcription, production Honcho acceptance, reset or provider cutover.",
+    "Post-outage memory recovered within the 300 second bound, at 249.077 seconds."
+  ]
+}
