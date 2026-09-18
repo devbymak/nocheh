@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-18",
+  "scope": "portable bundle transfer and native memory snapshots in synthetic fixtures",
+  "repository_checks": {
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "files": [
+      "store-portable-bundle.test",
+      "store-source-portability.test",
+      "store-derivative-portability.test"
+    ],
+    "final_bundle_repeat_passed": true
+  },
+  "native_checks": {
+    "passed": 25,
+    "failed": 0,
+    "network": "none",
+    "files": [
+      "test_portable_bundle",
+      "test_portable",
+      "test_derivative_transfer",
+      "test_import_jobs",
+      "test_dashboard_operations",
+      "test_operations"
+    ]
+  },
+  "honcho_snapshot_probe": {
+    "passed": true,
+    "memory_tables": 8,
+    "concurrent_update_isolated": true,
+    "native_work_queues_exported": false,
+    "provider_calls": 0
+  },
+  "verified": [
+    "original bytes and source identity",
+    "two immutable engine versions and durable owner edits",
+    "inactive imported guards/selections/native history",
+    "full inventory and checksum validation before import writes",
+    "source/derivative reference completeness before atomic complete-manifest publication",
+    "interrupted import resumes idempotently",
+    "changed native destination notes cannot be replaced",
+    "configured native outage leaves incomplete bundle",
+    "TypeScript and Python compilation",
+    "documentation links",
+    "diff hygiene"
+  ],
+  "earlier_failures": [
+    "API fixture lacked native-memory inspection modules; read-only mount added and check repeated successfully",
+    "host-only maintenance test could not bind its restore port; final complete 25-check suite passes in offline container"
+  ],
+  "graphify": {
+    "files": 432,
+    "nodes": 2684,
+    "edges": 10901,
+    "model_calls": 0
+  },
+  "pending": [
+    "legacy bundle conversion",
+    "native Honcho row rehydration into inactive native database",
+    "coordinated full backup/recovery",
+    "combined Compose/Inngest/native/UI rehearsal",
+    "confirmed browser delivery evidence",
+    "reset and fresh live gates"
+  ]
+}
