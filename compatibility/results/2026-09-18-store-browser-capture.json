@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-18",
+  "scope": "original browser capture and recovery in isolated synthetic Compose",
+  "initial_checks": {"passed": 5, "failed": 0, "skipped": 0, "files": ["store-browser-capture.test", "store-server.test", "store-source-portability.test", "store-preparation.test"]},
+  "final_checks": {"passed": 4, "failed": 0, "skipped": 0, "files": ["store-browser-capture.test", "store-server.test", "store-source-portability.test"], "overlap": "All four checks repeat the initial batch after final archive constraints and export assertions."},
+  "verified": ["capture while archive and control unavailable", "exact binary and empty original files", "atomic original and manifest commit", "control outage retains spool", "replay and duplicate handoffs", "profile identity separation", "owner and scope validation", "inactive restore refusal", "owned file verification without provider download", "original manifest hash cannot change", "source-only export manifests", "generated browser and scheduled records rejected"],
+  "typescript": "pass",
+  "graphify": {"files": 415, "nodes": 2512, "edges": 10066, "model_calls": 0},
+  "pending": ["managed browser execution admission", "managed scheduler migration", "full installation rehearsal", "reset and fresh live acceptance"]
+}
