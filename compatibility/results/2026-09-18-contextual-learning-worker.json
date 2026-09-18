@@ -1,0 +1,36 @@
+{
+  "increment": "automatic contextual-learning worker",
+  "fixture_project": "nocheh-stores-20260918",
+  "compilation": "passed",
+  "affected_checks": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0
+  },
+  "targeted_update_batch_check": "passed",
+  "graphify": {
+    "files": 334,
+    "nodes": 2035,
+    "edges": 7488,
+    "model_calls": 0
+  },
+  "verified": [
+    "learning independent of reply dispatch",
+    "scope and learning consent checks",
+    "old target and activity lookup",
+    "unverified embedded reply text excluded",
+    "only guarded evidence sent to fixture reasoning",
+    "reasoning result retained before guard preparation",
+    "multi-projection batch recovery before and after partial publication",
+    "revocation on existing version changes",
+    "no repeated reasoning on preparation or publication retry",
+    "identical authorized context reused across unrelated generations",
+    "owner corrections protected"
+  ],
+  "honcho_reasoning": "deterministic fixture",
+  "external_provider_calls": 0,
+  "telegram_effects": 0,
+  "production_workflow_routing": "pending",
+  "native_ingestion_integration": "pending",
+  "installation_reset": false
+}
