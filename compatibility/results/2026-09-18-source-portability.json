@@ -1,0 +1,16 @@
+{
+  "candidate": "original-only-v1",
+  "status": "source-portability-increment",
+  "environment": "Isolated synthetic PostgreSQL fixture; no live data or provider credentials",
+  "checks": {
+    "typescript": "pass",
+    "isolated_postgresql": {"passed": 5, "failed": 0, "skipped": 0, "files": ["store-source-portability", "store-preparation", "store-generated-capture", "store-owner-api"]},
+    "python": {"passed": 12, "modules": ["test_source_portability", "test_archive", "test_portable"]},
+    "source_import": ["stable identity, original origin, wire and received timestamp", "binary and empty original files", "missing observed manifests recovered from original payload", "conflicting manifests rejected", "no automatic reply or learning", "explicit learning consent", "no historical attachment download", "duplicates preserve live admission"],
+    "recovery": ["control outage prevents import before archive mutation", "source-only export reads archive without control", "crash after archive commit repaired by bounded reconciliation", "crash before control handoff repaired by bounded reconciliation"],
+    "package": ["record checksum, count, and file preflight before any import", "corrupt file and record rejection", "generated/guarded content rejected by source-only format", "owner authorization before request parsing"],
+    "graphify": {"files": 373, "nodes": 2323, "edges": 8927, "model_calls": 0}
+  },
+  "pending": ["complete portable derivative and native-memory round-trip", "legacy portable import routing", "production three-store entrypoints", "complete isolated Compose rehearsal", "authorized installation reset and fresh live gates"],
+  "live_data_changed": false
+}
