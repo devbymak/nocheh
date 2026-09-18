@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-18",
+  "scope": "schedule definition and occurrence storage in isolated synthetic fixtures",
+  "repository_checks": {
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "files": [
+      "store-schedules.test",
+      "store-server.test"
+    ]
+  },
+  "native_checks": {
+    "passed": 14,
+    "failed": 0,
+    "files": [
+      "test_scheduler",
+      "test_runtime_profiles"
+    ],
+    "network": "none"
+  },
+  "verified": [
+    "no generated schedule content enters archive",
+    "typed control/derivative references",
+    "exact original configured prompt retained",
+    "current guarded prompt required with guarding enabled",
+    "derivative outage before prompt commit",
+    "control failure before definition publication and fire admission",
+    "lost fire commit acknowledgement",
+    "idempotent replay and duplicate workflow identity",
+    "monotonic cursor conflict",
+    "same execution version rejects different prompt",
+    "definition edits revoke and cancel queued runs",
+    "clock-only completion preserves an admitted run",
+    "missed and overlapping runs never admitted for execution",
+    "disabled/removed schedules rejected",
+    "explicit guard-off admission without detector",
+    "owner-only HTTP admission",
+    "native stable logical profile routing",
+    "TypeScript compilation",
+    "diff hygiene"
+  ],
+  "earlier_failures": [
+    "definition return type needed explicit indexed fields; fixed before repository tests",
+    "new HTTP test missed canonical import; fixed and all three database checks repeated after successful compilation"
+  ],
+  "graphify": {
+    "files": 423,
+    "nodes": 2607,
+    "edges": 10530,
+    "model_calls": 0
+  },
+  "pending": [
+    "scheduler claim/receipt/delivery migration",
+    "Inngest schedule operation registration",
+    "native scheduled execution and recovery integration",
+    "complete rehearsal",
+    "authorized reset and fresh live gates"
+  ]
+}
