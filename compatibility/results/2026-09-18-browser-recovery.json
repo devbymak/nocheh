@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-18",
+  "scope": "browser completion recovery and media guard-generation handover",
+  "postgresql_and_browser_client": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0
+  },
+  "native": {
+    "passed": 35,
+    "failed": 0,
+    "skipped": 0,
+    "network": "none",
+    "host_python_sources_mounted": false,
+    "image": "sha256:e4f4651bd69d8690f5bb43974b022a05ff0977d83517d4b21d1c97ad4db66bdf"
+  },
+  "candidate": {
+    "name": "nocheh-original-only-browser-candidate:20260918",
+    "id": "sha256:e4f4651bd69d8690f5bb43974b022a05ff0977d83517d4b21d1c97ad4db66bdf",
+    "build": "passed"
+  },
+  "browser_preview": {
+    "url": "http://127.0.0.1:18861",
+    "terminal_session": "81195",
+    "implementation": "real React recovery component and candidate CSS; synthetic HTTP transport",
+    "verified": [
+      "dark and light appearances",
+      "375px layout and long/mixed-language wrapping",
+      "keyboard dismissal focuses the next response",
+      "profile changes clear prior displayed content",
+      "four opaque receipts retained through capture outage",
+      "all four previously received receipts replay after capture recovery",
+      "acknowledged responses stay absent on returning to the original profile"
+    ],
+    "not_a_full_installation_rehearsal": true
+  },
+  "verified": [
+    "bounded four-result cursor pages",
+    "owner-only current profile and source authorization",
+    "revoked results withheld",
+    "reads do not create delivered source observations",
+    "archive capture retires recovery offers",
+    "current native history after media guard revision change",
+    "old notes/history remain in old native storage",
+    "next captured attachments survive context handover",
+    "wrong audience, logical profile, generation and native identity rejected",
+    "application capture outages and inactive restore fences"
+  ],
+  "earlier_failures": [
+    "Initial TypeScript optional logical-profile error fixed before final compilation.",
+    "Host-mounted native test attempts hit startup timeouts. All 25 affected checks pass from the built image without host-mounted Python sources.",
+    "Preview wrapper initially used Hermes transparent foreground token; corrected the synthetic wrapper to its readable midground token.",
+    "Browser keyboard testing found dismissal lost focus; corrected and verified."
+  ],
+  "graphify": {
+    "files": 449,
+    "nodes": 2790,
+    "edges": 11214,
+    "model_calls": 0
+  },
+  "provider_calls": 0,
+  "live_state_changed": false,
+  "pending": [
+    "combined full Compose/native/browser rehearsal",
+    "saved native preference migration",
+    "exact installation reset manifest and empty-baseline execution",
+    "fresh live acceptance with dedicated group and human participation"
+  ]
+}
