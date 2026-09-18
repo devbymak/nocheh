@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-20260918",
+  "checks": {"typescript": "pass", "affected_tests": {"passed": 6, "failed": 0, "skipped": 0}, "final_targeted_tests": {"passed": 1, "failed": 0, "skipped": 0}},
+  "coverage": ["original-only archive search and graph", "active derivatives labeled separately with version links", "old reply targets outside graph pagination", "owner-only graph", "embedded reply snapshots cannot leak through scoped reads or search", "unknown topics fail closed", "project membership grants no source access", "installation generation and guard epoch required even with guarding off"],
+  "pending": ["production routes", "knowledge retrieval composition", "owner UI", "full isolated rehearsal", "reset and live gates"],
+  "live_data_changed": false
+}
