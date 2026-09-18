@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-18",
+  "scope": "portable native memory using pinned Honcho migrations and ORM on pgvector",
+  "passed": true,
+  "native_tables": 8,
+  "embedding_dimensions": 1536,
+  "honcho_revision": "be54355545b64ddb10203829d323861f52423685",
+  "image_id": "sha256:92a4f7de971657841f869134442ca5125b9ef3a603b39a7e18615036015020b2",
+  "verified": [
+    "complete pinned Alembic migration chain",
+    "ORM writes respect actual native foreign keys and constraints",
+    "exact row and column metadata round-trip",
+    "real pgvector embeddings",
+    "source and conclusion citation ancestry",
+    "soft-deleted interpretation history",
+    "idempotent completed replay",
+    "empty destination operational queue and webhooks"
+  ],
+  "isolation": {
+    "project": "nocheh-native-portable-20260918",
+    "network": "internal",
+    "ports": [],
+    "credentials": "synthetic",
+    "provider_calls": 0,
+    "live_state_mounted": false,
+    "created_databases_removed": true,
+    "fixture_removed": true
+  },
+  "pending": [
+    "combined native service behavior",
+    "full coordinated backup/restore",
+    "complete Compose/native/UI rehearsal",
+    "reset and fresh live gates"
+  ],
+  "graphify": {
+    "files": 440,
+    "nodes": 2732,
+    "edges": 11087,
+    "model_calls": 0
+  }
+}
