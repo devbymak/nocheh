@@ -1,0 +1,59 @@
+{
+  "verified_databases": [
+    "archive",
+    "derived",
+    "control"
+  ],
+  "runtime_login_enabled": false,
+  "active": false,
+  "source_project": "nocheh-stores-20260918",
+  "restore_project": "nocheh-stores-20260918-restore",
+  "barrier_blocks_writes": true,
+  "partial_barrier_releases": true,
+  "owner_guarded_revisions": 88,
+  "restart_verified": true,
+  "tables": {
+    "archive": 7,
+    "derived": 13,
+    "control": 34
+  },
+  "live_data_changed": false,
+  "date": "2026-09-18",
+  "checks": {
+    "python_recovery_tests": {
+      "passed": 23,
+      "failed": 0
+    },
+    "postgres_backup_restore": "pass",
+    "diff_hygiene": "pass",
+    "postgres_maintenance_serialization_and_loss": "pass"
+  },
+  "coverage": [
+    "three database checksums, row fingerprints and sequences",
+    "durable original records, derivatives, guarded owner edits and history",
+    "snapshot requires live write barriers on all three databases",
+    "interruption while establishing a barrier releases earlier locks",
+    "restore refuses existing target databases or roles",
+    "corrupted dumps and unsafe metadata rejected before target mutation",
+    "runtime roles restored NOLOGIN and guard epoch incremented",
+    "only isolated database starts; no provider login activation",
+    "backup orchestrator holds barrier across file/native snapshots and releases before resuming services",
+    "orphan writable state mounts block backup without stopping unrelated containers",
+    "maintenance lock serializes coordinators before any service changes",
+    "lost coordination leaves writers stopped",
+    "snapshot output cannot be created inside captured data"
+  ],
+  "pending": [
+    "complete Compose/native/files coordinated rehearsal",
+    "portable source-only and complete import/export",
+    "production three-store configuration and service routing",
+    "installation reset and fresh live gates"
+  ],
+  "live_provider_calls": 0,
+  "ast": {
+    "files": 370,
+    "nodes": 2302,
+    "edges": 8818,
+    "model_calls": 0
+  }
+}
