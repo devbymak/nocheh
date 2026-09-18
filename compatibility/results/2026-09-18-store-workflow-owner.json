@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-18",
+  "scope": "control-only workflow ownership and inspection in isolated synthetic Compose",
+  "checks": {"passed": 8, "failed": 0, "skipped": 1, "files": ["store-workflow-owner.test", "store-server.test", "store-telegram-dispatch.test", "workflow-owner.test", "workflow-metrics.test", "workflow-inspection.test"]},
+  "skip": "Pinned running Inngest UI check requires NOCHEH_WORKFLOW_FIXTURE=1; not enabled in this invocation.",
+  "verified": ["source content absent from workflow inspection", "control-only view dependencies", "owner authority and revision checks", "family lock excludes in-flight changes", "uncertain/completed receipts disable unsafe controls", "same request is idempotent", "pending dispatch cancellation survives capture reconciliation", "retry publishes a new orchestration dispatch without changing effect identity", "legacy owner and metrics regressions", "unmigrated domain controls unavailable"],
+  "typescript": "pass",
+  "graphify": {"files": 405, "nodes": 2460, "edges": 9721, "model_calls": 0},
+  "pending": ["running Inngest UI inspection", "host tools and imports", "managed execution", "full installation rehearsal", "reset and live acceptance"]
+}
