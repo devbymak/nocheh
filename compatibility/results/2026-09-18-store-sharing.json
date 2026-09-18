@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-18",
+  "compose_project": "nocheh-stores-20260918",
+  "checks": {
+    "typescript": "pass",
+    "postgres_sharing_owner_projects": {"passed": 3, "failed": 0, "skipped": 0},
+    "owner_cli": {"passed": 4, "failed": 0},
+    "offline_native_privacy": {"passed": 2, "failed": 0},
+    "diff_hygiene": "pass"
+  },
+  "coverage": [
+    "derived-only preview and released content with control-only receipts",
+    "exact text hash and guard revision approval",
+    "idempotent approval does not revive a revoked release",
+    "source and destination scope isolation, including unknown topics",
+    "private provenance is owner-only",
+    "selected transcript search and engine activation invalidation",
+    "source/output guard changes invalidate affected shares",
+    "filtered result checkpoint before control completion",
+    "sharing policy revocation during filtering",
+    "malformed output, private citations, and administrative fields rejected",
+    "native adapter supplies actual model and provider provenance",
+    "owner API and CLI preview, provenance, approval, listing and revocation"
+  ],
+  "hermes_revision": "7166071fcaadb36df26f6d753dda97da6b5d699e",
+  "ast": {"files": 361, "nodes": 2219, "edges": 8563, "model_calls": 0},
+  "pending": ["dashboard", "production routing", "complete isolated rehearsal", "reset and fresh live gates"],
+  "live_data_changed": false,
+  "live_provider_calls": 0
+}
