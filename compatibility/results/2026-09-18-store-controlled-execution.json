@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-18",
+  "scope": "separated host execution in isolated synthetic Compose and offline native fixture",
+  "checks": {"passed": 7, "failed": 0, "skipped": 0, "files": ["store-controlled-execution.test", "store-controlled-actions.test", "store-server.test", "store-workflow-owner.test", "workflow-host-transport.test", "workflow-tools.test"]},
+  "native_checks": {"passed": 8, "failed": 0, "files": ["integrations.hermes.test_controlled_tools"], "network": "none"},
+  "verified": ["single claim under concurrency", "exact workflow lease and owner epoch", "start before effect with current guard and policy", "bounded permission consumed once", "revocation before start", "immutable derived result before control completion", "lost completion repairs without repeating execution", "uncertain effects never automatically restart", "late retained receipt settles uncertainty", "owner cancellation closes admission", "inactive Connect transport", "control-only workflow metadata"],
+  "initial_failure": "One fixture incorrectly expected an identical owner-command replay to reject. The corrected check verifies replay leaves the ambiguous action unchanged and a new approval is rejected.",
+  "typescript": "pass",
+  "graphify": {"files": 411, "nodes": 2496, "edges": 9954, "model_calls": 0},
+  "pending": ["full running Connect installation rehearsal", "owner-DM tool commands", "host imports", "managed execution", "reset and live acceptance"]
+}
