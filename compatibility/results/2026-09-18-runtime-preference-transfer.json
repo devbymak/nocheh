@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-18",
+  "scope": "configuration-only runtime preference transfer candidate",
+  "native": {
+    "passed": 10,
+    "failed": 0,
+    "skipped": 0,
+    "network": "none",
+    "host_python_sources_mounted": false,
+    "modules": ["integrations.hermes.test_preference_transfer", "integrations.hermes.test_profile_config"]
+  },
+  "candidate": {
+    "name": "nocheh-original-only-preferences-candidate:20260918",
+    "id": "sha256:fe92b9dca8d0b34792eebbd3227dfbec8c605c365184f3dd7260951af26b93eb",
+    "build": "passed"
+  },
+  "verified": [
+    "global defaults remain inherited after restoration",
+    "explicit group and owner-profile preferences survive",
+    "absent topic overrides retain parent inheritance in a new native generation",
+    "control catalog admission is required for custom profiles",
+    "legacy filesystem markers cannot revive retired catalog profiles",
+    "prompts, notes, sessions, credentials and old job overrides are excluded",
+    "source configuration and profile inventory drift fail closed",
+    "symlink paths and ambiguous legacy profile names are rejected",
+    "target native history and conflicting configuration are preserved by refusal",
+    "exact interrupted configuration writes resume idempotently"
+  ],
+  "graphify": {"files": 451, "nodes": 2819, "edges": 11326, "model_calls": 0},
+  "provider_calls": 0,
+  "live_state_changed": false,
+  "pending": [
+    "reset coordinator admission and preference transfer integration",
+    "combined full Compose/native/browser rehearsal",
+    "exact installation reset manifest and empty-baseline execution",
+    "fresh live acceptance with dedicated group and human participation"
+  ]
+}
