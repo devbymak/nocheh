@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-18",
+  "scope": "setup-only database configuration snapshot before reset",
+  "candidate_image": "sha256:69e4bc5ea8c08e8e6b654a453a4ec24ba88922bf6f235130c7892c1e085ec402",
+  "checks": {
+    "host_unit_tests": 8,
+    "packaged_unit_tests": 8,
+    "real_postgresql_layouts": 2,
+    "failed": 0,
+    "skipped": 0
+  },
+  "rehearsal": {
+    "project": "nocheh-reset-configuration-0f58d7b1b848",
+    "layouts": ["legacy", "original-only-v1"],
+    "network": "internal only",
+    "provider_calls": 0,
+    "source_or_derivative_content_copied": false,
+    "live_state_changed": false
+  },
+  "properties": [
+    "one read-only database statement captures a consistent current configuration",
+    "explicit column projections exclude source, derivative, approval, workflow and historical rows",
+    "configuration changes between reads fail before the snapshot is published",
+    "maintenance, journal, quiescence and inactive-fence ownership are rechecked",
+    "the private snapshot is immutable and resumable",
+    "the primitive does not advance the complete-preservation phase"
+  ],
+  "limitations": [
+    "Environment/provider credentials, spending state and native preferences are separate preservation inputs.",
+    "Fresh-store admission and complete reset orchestration remain separate gates.",
+    "No live reset, deletion, provider request or Telegram request occurred."
+  ]
+}
