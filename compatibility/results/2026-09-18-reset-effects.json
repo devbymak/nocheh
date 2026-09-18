@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "project": "nocheh-reset-effects-98835f0bdaf2",
+  "checks": [
+    {
+      "layout": "legacy",
+      "passed": true
+    },
+    {
+      "layout": "original-only-v1",
+      "passed": true
+    }
+  ],
+  "native_transport": "real capture journal with synthetic responses",
+  "network": "internal only",
+  "provider_calls": 0,
+  "live_state_changed": false,
+  "limitations": [
+    "Snapshot/evidence integration only; complete shutdown and reset orchestration are separate gates."
+  ],
+  "date": "2026-09-18",
+  "scope": "offline effect settlement under reset quiescence",
+  "checks_host": {
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0
+  },
+  "packaged_checks": {
+    "passed": 21,
+    "failed": 0,
+    "skipped": 0,
+    "includes": "12 settlement and 9 file-erasure checks",
+    "network": "none"
+  },
+  "candidate_image": "sha256:71a415e7e782333cdf73f3740137ffb96970f2a9b99bf3ab11b650f655695614",
+  "build_passed": true,
+  "verified": [
+    "source reads remain separate from control in original-only layout",
+    "uncertain external receipts block the phase even after a native done record",
+    "all retained outbound attempts are inspected, including orphan effects",
+    "stopped local execution remains explicitly result-unknown",
+    "workflow effects require matching domain evidence",
+    "receipt paths reject symlinks and hardlinks",
+    "private message bodies do not enter settlement reports",
+    "journal phase, maintenance and stopped-owner barriers required",
+    "stable evidence rechecked before publishing",
+    "durable report resumes after interruption without replay or database receipt rewrites"
+  ],
+  "earlier_failures": [
+    "Initial fixture attempted to insert a legacy dispatch already created by capture; corrected synthetic setup and fresh rehearsal passed."
+  ],
+  "pending": [
+    "complete preservation/erasure/bootstrap coordinator",
+    "installation-scoped live settlement and reset",
+    "fresh live acceptance"
+  ]
+}
