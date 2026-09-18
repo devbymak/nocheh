@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-18",
+  "scope": "controlled proposals and owner permissions in isolated synthetic Compose",
+  "checks": {"passed": 6, "failed": 0, "skipped": 0, "files": ["store-controlled-actions.test", "store-server.test", "controlled-actions.test", "security-policy.test"]},
+  "verified": ["immutable derived proposals and guarded owner history", "no argument bytes in control", "archive rejects controlled generated content", "owner-only exact approvals", "bounded grants and idempotent revocation", "current generation and guard binding", "policy preview consumes no permission", "legacy security regression"],
+  "typescript": "pass",
+  "graphify": {"files": 409, "nodes": 2482, "edges": 9854, "model_calls": 0},
+  "pending": ["host claim/start/result execution", "owner-DM tool commands", "managed execution", "full installation rehearsal", "reset and live acceptance"]
+}
