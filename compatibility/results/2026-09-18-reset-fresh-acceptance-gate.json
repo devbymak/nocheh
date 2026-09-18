@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-18",
+  "scope": "fresh live evidence gate and controlled restoration of saved service ownership",
+  "candidate_image": "sha256:be4d1845d88f731462cc7d089296f4e22a7efdc8bc6616b47eae861e95d082b9",
+  "checks": {
+    "focused_python_acceptance_and_resumption": 4,
+    "full_reset_python": 94,
+    "typescript_mock_store": 2,
+    "real_three_store_postgresql": 1,
+    "candidate_build": 1,
+    "compose_configuration": 1,
+    "complete_fixture_boundary_and_acceptance_mode_lifecycle": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "rehearsal": {
+    "project": "nocheh-reset-fresh-a556f28291c0",
+    "phase": "acceptance_mode_fixture",
+    "network": "internal only",
+    "old_containers_removed": 4,
+    "old_volumes_removed": 3,
+    "fresh_services": 4,
+    "fresh_volumes": 3,
+    "archive_rows": 0,
+    "derived_rows": 0,
+    "inngest_postgres_relations": 0,
+    "inngest_redis_keys": 0,
+    "honcho_postgres_relations": 0,
+    "honcho_redis_keys": 0,
+    "fixture_boundary_calls": 1,
+    "inactive_fences_released": true,
+    "restart_ownership": false,
+    "fresh_acceptance": false,
+    "provider_calls": 0,
+    "live_telegram_requests": 0,
+    "live_state_changed": false
+  },
+  "verified": [
+    "closed live request schema bound to reset ID, generation and exact confirmed Telegram boundary timestamp",
+    "post-boundary live owner and allowlisted-group events, normalized reply/reaction relationships and non-owner human actor",
+    "original file plus active subscription transcript provenance",
+    "active learned revision, exact completed Honcho projection receipt and active owner correction",
+    "inspected recall and isolation dispatches, intentional silence, exact approved delivery and one-attempt restart recovery",
+    "fresh Honcho verification, current-generation ready workspace, context snapshot and completed ingestion",
+    "fixture-labelled and historical evidence rejected",
+    "fresh acceptance completes before any restart ownership is restored",
+    "partial restart-policy restoration retries from the same journal and container identities",
+    "only previously running services regain their exact saved policies; dependency-only jobs remain restart-disabled"
+  ],
+  "limitations": [
+    "The real PostgreSQL run used synthetic rows solely to verify the validator's cross-store queries; those rows were correctly ineligible as live installation evidence.",
+    "The complete lifecycle used an in-process fixture backlog transport and made no Telegram or provider request.",
+    "The live installation reset and one-attempt Telegram boundary have not run.",
+    "A dedicated Telegram group identifier and non-owner human participation are still required for fresh live acceptance.",
+    "No saved restart policy has been restored on the live installation."
+  ]
+}
