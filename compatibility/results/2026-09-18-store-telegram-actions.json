@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-18",
+  "scope": "synthetic original-only Telegram actions; no live delivery",
+  "storage_checks": {"passed": 5, "failed": 0, "skipped": 0, "files": ["store-telegram-actions.test", "store-server.test", "store-workflows.test"]},
+  "native_checks": {"passed": 6, "failed": 0, "files": ["integrations.hermes.test_gateway", "integrations.hermes.test_async_runs"], "network": "none", "image": "sha256:56cde8cf89a4dea4bf256b9689261181ec03e16cfcadb5f8eb26cee367f5d1ec"},
+  "verified": ["derived proposals/results and control-only approvals", "exact guarded text and destination fingerprint", "owner-only revision-checked decisions", "captured owner-DM command identity", "lost native acknowledgment observes without resend", "durable completion repairs interrupted control write", "revoked guard and changed security deny before send", "native approval recheck", "existing unconfirmed native intent refuses resend", "archive rejects generated action records"],
+  "earlier_failure": "Native test caught the action-only check in the dispatch block; corrected and all six native checks repeated successfully.",
+  "typescript": "pass",
+  "graphify": "AST-only; zero model calls",
+  "pending": ["Telegram dispatch", "broader tools and managed execution", "full Compose rehearsal", "authorized installation reset", "fresh live acceptance"]
+}
