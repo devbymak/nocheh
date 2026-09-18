@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-18",
+  "scope": "installation-scoped resumable file, container and volume erasure",
+  "candidate_image": "sha256:a80cbfc3407bb0ba702cf8f01d15c0bdff7b502be1bea01b41b65246727143e6",
+  "native_image": "sha256:56cde8cf89a4dea4bf256b9689261181ec03e16cfcadb5f8eb26cee367f5d1ec",
+  "checks": {
+    "focused_host": 8,
+    "full_reset_host": 86,
+    "packaged_management": 57,
+    "packaged_native": 6,
+    "real_file_container_and_volume_rehearsal": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "rehearsal": {
+    "project": "nocheh-reset-erasure-287688a1c212",
+    "network": "internal only",
+    "containers_removed": 3,
+    "volumes_removed": 2,
+    "inngest_postgres_volume_removed": true,
+    "workflow_redis_bind_erased": true,
+    "inactive_fences_retained": true,
+    "credentials_login_and_spending_retained": true,
+    "unrelated_container_and_volume_retained": true,
+    "provider_calls": 0,
+    "live_state_changed": false
+  },
+  "properties": [
+    "an immutable erasure receipt binds the completed preservation evidence, exact container identities, exact volume identities and anchored file manifest",
+    "durable intents precede source-file erasure, database shutdown, container removal and volume removal",
+    "interrupted file deletion, database shutdown and volume removal resume without widening scope or requiring the deleted PostgreSQL maintenance connection",
+    "changed receipts, recreated same-name volumes, replacement containers, foreign volume references and foreign writable state mounts fail closed",
+    "Inngest PostgreSQL data and bind-mounted workflow Redis data are explicit erasure targets",
+    "saved credentials, provider login, spending state and inactive fences are rehashed after every destructive boundary",
+    "only the erased journal phase advances; initialization and empty-baseline proof remain separate"
+  ],
+  "limitations": [
+    "No live installation file, container, database, cache or volume was stopped or deleted.",
+    "The live per-item archive ownership review and exact reset manifest remain pending.",
+    "Fresh initialization, new-generation admission, empty-baseline proof, the one-time Telegram boundary and fresh live acceptance remain pending."
+  ]
+}
