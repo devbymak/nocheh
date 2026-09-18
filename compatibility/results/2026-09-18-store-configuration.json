@@ -1,0 +1,15 @@
+{
+  "candidate": "original-only-v1",
+  "status": "configuration-and-bootstrap-increment",
+  "checks": {
+    "typescript": "pass",
+    "configuration": {"passed": 2, "failed": 0},
+    "postgresql_bootstrap": {"passed": 1, "failed": 0, "checks": ["separate domain roles/databases and native Inngest database", "repeat setup preserves generation and owner edits", "runtime roles cannot create databases", "maintenance lock exclusion", "inactive restore refusal"]},
+    "owner_api_regression": "pass in preceding affected run",
+    "python": {"passed": 24, "modules": ["test_configuration", "test_settings", "test_container_service", "test_dashboard_lifecycle", "test_store_recovery"]},
+    "compose": {"status": "pass", "services_started": 0, "credentials": "temporary synthetic", "runtime_administrator_credentials": false, "hermes_database_credentials": false},
+    "graphify": {"files": 384, "nodes": 2368, "edges": 9145, "model_calls": 0}
+  },
+  "pending": ["production main/security/worker entrypoints", "workflow/action/managed-runtime migration", "complete portable/native coordination", "full isolated Compose rehearsal", "authorized reset and fresh live gates"],
+  "live_layout_changed": false
+}
