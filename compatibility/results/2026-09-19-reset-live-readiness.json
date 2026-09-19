@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-19",
+  "source_commit": "09e6d7ba983c84af8d733c72522ca7e127d39083",
+  "scope": "final content-free installation readiness before destructive reset",
+  "preflight": {
+    "file_sha256": "551136865fcba1e10ff89d175aa70a842919633ad6960994f50943a856cc2aa8",
+    "canonical_sha256": "82550ef013adfd0d3350b0089e37a446bece639dce32a2fe14b180e861d9d227",
+    "containers": 17,
+    "volumes": 3,
+    "paths": 65,
+    "blockers": 0,
+    "mode": "0600"
+  },
+  "ownership_review": {
+    "file_sha256": "c6a73c8fc25f3ce894b747f826cd4c28255bc4fa2c2875699478d8a0349db772",
+    "validated_file_sha256": "11e9ee35494dd4d3e2318b7b9833c312754fa831cd43705caa91fdf2707497df",
+    "items": 15,
+    "erase_installation_owned": 12,
+    "preserve_unrelated": 3,
+    "content_copied": false,
+    "mode": "0600"
+  },
+  "selected_images": {
+    "runtime": "sha256:be4d1845d88f731462cc7d089296f4e22a7efdc8bc6616b47eae861e95d082b9",
+    "management": "sha256:64a788e1b6994aef928939bfc0321bc459083b20cb78c2ae3b1e3be058b30dcc",
+    "hermes": "sha256:56cde8cf89a4dea4bf256b9689261181ec03e16cfcadb5f8eb26cee367f5d1ec"
+  },
+  "telegram_metadata": {
+    "configured_groups": 1,
+    "kind": "group",
+    "member_count": 3,
+    "owner_present": true,
+    "bot_present": true,
+    "bot_can_read_all_group_messages": true,
+    "another_human_present": true,
+    "dedicated_name_signal": false,
+    "content_or_numeric_identity_recorded": false
+  },
+  "verified": [
+    "all 17 installation containers are stopped",
+    "legacy setup fingerprint is stable and external effects settle with zero delivery blockers",
+    "the final preflight and ownership review validate without copying source content",
+    "the configured Telegram group has the participants and bot visibility needed for acceptance"
+  ],
+  "pending": [
+    "owner designation of the configured group as the dedicated acceptance group",
+    "availability of the other human for post-boundary reply and reaction evidence",
+    "destructive reset, Telegram backlog boundary, fresh live acceptance and controlled resumption",
+    "GitHub authentication and remote push"
+  ],
+  "live_state_changed": false
+}
