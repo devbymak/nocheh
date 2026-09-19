@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-19",
+  "scope": "content-free legacy setup and external-effect settlement before reset",
+  "candidate_management_image": "sha256:64a788e1b6994aef928939bfc0321bc459083b20cb78c2ae3b1e3be058b30dcc",
+  "live_audit": {
+    "storage_layout": "legacy",
+    "configuration_records": 1,
+    "configuration_sha256": "12726876b3ea96da88ef6942a83361afaaec35ac99dd9d9a44d3207d0ead08af",
+    "database_effect_rows": 4,
+    "outbound_receipts": 311,
+    "delivered_receipts": 283,
+    "ambiguous_non_dropping_transport_setup": 28,
+    "ambiguous_delivery_receipts": 0,
+    "effect_blockers": 0,
+    "effects_settled": true
+  },
+  "checks": {
+    "focused_effect_tests": 14,
+    "host_reset_tests": 100,
+    "packaged_reset_tests": 100,
+    "graph_files": 498,
+    "graph_nodes": 3317,
+    "graph_edges": 12499,
+    "model_calls": 0
+  },
+  "verified": [
+    "legacy PostgreSQL alone was temporarily started under suppressed restart ownership",
+    "the maintenance lock and foreign-writer check held throughout the audit",
+    "PostgreSQL returned to its saved stopped state and restart policy",
+    "only exact deleteWebhook requests with drop_pending_updates false are transport setup",
+    "ambiguous sends and any dropping webhook request still fail closed",
+    "no external action was replayed and no unknown outcome was marked successful"
+  ],
+  "live_state_changed": false
+}
