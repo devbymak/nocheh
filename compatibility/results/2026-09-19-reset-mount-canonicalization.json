@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-19",
+  "scope": "canonical reset identity across nondeterministic Docker mount ordering",
+  "candidate_management_image": "sha256:c5661b269e69612ea9c96110ff1d2af390747fbec3fe4dde940952821d76e8af",
+  "checks": {
+    "focused_reset_tests": 30,
+    "host_reset_tests": 98,
+    "packaged_reset_tests": 98,
+    "consecutive_live_read_only_inventories": 2,
+    "live_containers": 17,
+    "live_volumes": 3,
+    "live_paths": 65,
+    "live_blockers": 0,
+    "graph_files": 498,
+    "graph_nodes": 3315,
+    "graph_edges": 12497,
+    "model_calls": 0
+  },
+  "verified": [
+    "Docker mount lists are sorted by canonical mount metadata before container identity is bound",
+    "inventory, erasure and initialization use the same normalization boundary",
+    "reordered mount output preserves container identity",
+    "substantive mount metadata changes remain visible",
+    "two consecutive current-installation inspections bind the same identity"
+  ],
+  "live_state_changed": false
+}
