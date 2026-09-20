@@ -1,0 +1,60 @@
+{
+  "candidate": "postgres-owned-original-only-bootstrap",
+  "status": "pass",
+  "checks": {
+    "compose_wiring": {
+      "status": "pass",
+      "standalone_bootstrap_service": false,
+      "runtime_administrator_credentials": false
+    },
+    "database_startup": {
+      "status": "pass",
+      "databases": ["nocheh_archive", "nocheh_control", "nocheh_derived", "nocheh_inngest"],
+      "repeat_preserved_generation": true,
+      "invalid_credential_failed_closed": true,
+      "inactive_restore_roles_stayed_disabled": true
+    },
+    "focused_tests": {
+      "typescript_passed": 4,
+      "typescript_skipped": 1,
+      "python_passed": 10,
+      "build": "pass",
+      "syntax_and_diff": "pass"
+    },
+    "installation_rehearsal": {
+      "status": "pass",
+      "checks": 19,
+      "provider": "deterministic-fixture",
+      "external_provider_calls": 0,
+      "live_state_changed": false,
+      "outage_recovery": ["capture", "handoff", "memory"]
+    },
+    "coordinated_recovery": {
+      "status": "pass",
+      "format": 6,
+      "tables": {"archive": 7, "derived": 14, "control": 53, "workflow": 14, "native_memory": 12},
+      "guarded_owner_edits_preserved": true,
+      "original_files_exact": true,
+      "workflow_redis_recovered": true,
+      "spending_ledger_preserved": true,
+      "runtime_roles_no_login": true,
+      "only_restored_database_running": true,
+      "dashboard_coordinator_survived": true
+    },
+    "visible_preview": {
+      "project": "nocheh-isolated-preview",
+      "healthy_running_containers": 12,
+      "standalone_bootstrap_containers": 0,
+      "telegram_enabled": false
+    },
+    "graphify": {"files": 499, "nodes": 3435, "edges": 12685, "model_calls": 0}
+  },
+  "raw_host_test_note": {
+    "passed": 68,
+    "skipped": 78,
+    "failed_without_fixture_credentials": 5,
+    "acceptance_source": "isolated installation and coordinated recovery rehearsals"
+  },
+  "live_reset_performed": false,
+  "live_acceptance": "pending"
+}
