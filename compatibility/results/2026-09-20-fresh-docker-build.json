@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-20",
+  "scope": "installation-scoped Docker cleanup, full fresh build, isolated tests, and empty-baseline rehearsal",
+  "cleanup": {
+    "removed_containers": 47,
+    "removed_volumes": 40,
+    "removed_networks": 22,
+    "removed_nocheh_image_tags_before_build": 55,
+    "installed_legacy_postgres_and_native_store_volumes_removed": true,
+    "bind_mounted_installation_state_retained": true,
+    "previous_live_reset_preflight_current": false,
+    "remaining_nocheh_containers": 0,
+    "remaining_nocheh_volumes": 0,
+    "remaining_nocheh_networks": 0,
+    "unrelated_compose_projects_preserved": [
+      "coopr"
+    ]
+  },
+  "build": {
+    "full_no_cache_pull_completed": true,
+    "final_refresh_completed": true,
+    "images": {
+      "services": "sha256:f9676af9985c61bd8608c9ce20954d7b4bac22384e7289ea02d00bff7700eda9",
+      "services_dev": "sha256:435ef69d85c7441b85bd5f084d32835f96552859ba60f55cd86065f6e26af913",
+      "management": "sha256:b9a9c28515045d41454db12f3974872f399f9e30553be7201b8f6c2187ff31e5",
+      "hermes": "sha256:e38967f87b67cc79387d1100720bfc3dcf45fff339be991730ccd1718c30bf13",
+      "cliproxy": "sha256:c66121a63454c5eb6cf313316c598ca45db7a1d8728ac4031406263c6323e5fc",
+      "cliproxy_monitor": "sha256:f4b93ac521c8795241cf261ff7171ed57e09e698ca0cfe1e800ead53c6e32fd2",
+      "honcho_experiment": "sha256:363ce2ebf27b00ed98eae1e5143d90460c7739e8384edb52e040fdd30f56e65a"
+    }
+  },
+  "checks": {
+    "service_suite": {
+      "total": 151,
+      "passed": 107,
+      "skipped": 44,
+      "failed": 0
+    },
+    "isolated_database_loss": {
+      "passed": 1,
+      "failed": 0
+    },
+    "hermes_suite": {
+      "total": 346,
+      "passed": 343,
+      "skipped": 3,
+      "failed": 0,
+      "network": "disabled",
+      "root_filesystem": "read only",
+      "installation_credentials_used": false
+    },
+    "management_reset_suite": {
+      "total": 100,
+      "passed": 100,
+      "skipped": 0,
+      "failed": 0,
+      "network": "disabled",
+      "root_filesystem": "read only"
+    },
+    "graphify_ast": {
+      "files": 498,
+      "nodes": 3433,
+      "edges": 12675,
+      "model_calls": 0
+    }
+  },
+  "rehearsal": {
+    "project": "nocheh-reset-fresh-efd93cd2b824",
+    "passed": true,
+    "phase": "acceptance_mode_fixture",
+    "source_layout": "legacy",
+    "target_layout": "original-only-v1",
+    "archive_rows": 0,
+    "derived_rows": 0,
+    "inngest_postgres_relations": 0,
+    "inngest_redis_keys": 0,
+    "honcho_postgres_relations": 0,
+    "honcho_redis_keys": 0,
+    "credentials_login_and_spending_retained": true,
+    "restart_ownership": false,
+    "runtime_activated": false,
+    "provider_calls": 0,
+    "live_state_changed": false
+  },
+  "limitations": [
+    "The test runner uses a temporary Compose project and synthetic credentials but still builds the shared local image tags.",
+    "The stopped installation's prior Docker database and native-store volumes were deleted, while bind-mounted state and saved setup remain; the earlier live reset preflight must be regenerated before any live reset.",
+    "The fresh image build and synthetic reset rehearsal did not execute the authorized live installation reset.",
+    "The dedicated Telegram test-group designation, human participation, one-attempt backlog boundary, and fresh live acceptance remain pending."
+  ]
+}
