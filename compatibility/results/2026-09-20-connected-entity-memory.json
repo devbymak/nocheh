@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-20",
+  "scope": "connected person and project memory in isolated synthetic fixtures",
+  "checks": {
+    "focused_postgresql": {"passed": 4, "failed": 0, "skipped": 0},
+    "dashboard": {"passed": 14, "failed": 0, "skipped": 0},
+    "build": "pass",
+    "diff_check": "pass"
+  },
+  "verified": [
+    "stable exact platform identities and separate same-name people",
+    "confirmed person linking and reversible binding restoration",
+    "direct, reported, and inferred attribution with archive evidence",
+    "Atlas-Beacon contextual recall, useful multi-step traversal, cycle deduplication, bounds, and partial status",
+    "audience filtering without private entity-name or relationship leakage",
+    "actual-speaker Honcho messages, persistent conversation sessions, typed entity observations, and neutral generated projections",
+    "uncertain-write reconciliation and duplicate receipt recovery",
+    "portable canonical identities, decisions, relationships, revisions, and corrections",
+    "owner People and Project memory views with suggestions, evidence, corrections, and history"
+  ],
+  "graphify": {"nodes": 3470, "edges": 15232, "model_calls": 0},
+  "preview": "isolated owner dashboard on loopback port 18861",
+  "incomplete_full_suite": "existing dashboard-boundary check timed out because its external host aliases were unavailable in the test container",
+  "pending": ["live Honcho provider acceptance", "production Honcho activation", "installation resume"]
+}
