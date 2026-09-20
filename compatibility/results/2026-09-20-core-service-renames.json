@@ -1,0 +1,45 @@
+{
+  "candidate": "concise-core-service-names",
+  "status": "pass",
+  "service_names": {
+    "hermes_core": "hermes",
+    "agent_sandbox_launcher": "hermes-agent-sb",
+    "postgresql": "nocheh-db"
+  },
+  "checks": {
+    "compose_configuration": "pass",
+    "store_wiring": "pass",
+    "python_compile": "pass",
+    "focused_python_tests": {
+      "passed": 31,
+      "failed": 0
+    },
+    "containerized_test_entrypoint": {
+      "service_passed": 107,
+      "service_skipped": 44,
+      "service_failed": 0,
+      "database_loss_passed": 1,
+      "hermes_passed": 343,
+      "hermes_skipped": 3,
+      "hermes_failed": 0
+    },
+    "database_rehearsal": {
+      "status": "pass",
+      "databases": ["nocheh_archive", "nocheh_control", "nocheh_derived", "nocheh_inngest"],
+      "repeat_preserved_generation": true,
+      "invalid_credential_failed_closed": true,
+      "inactive_restore_roles_stayed_disabled": true,
+      "standalone_bootstrap_containers": 0
+    },
+    "isolated_runtime": {
+      "project": "nocheh-isolated-preview",
+      "healthy_running_containers": 12,
+      "renamed_services_healthy": ["hermes", "hermes-agent-sb", "nocheh-db"],
+      "telegram_enabled": false,
+      "honcho_enabled": false
+    }
+  },
+  "internal_database_names_changed": false,
+  "live_installation_changed": false,
+  "live_reset_and_telegram_acceptance": "pending"
+}
