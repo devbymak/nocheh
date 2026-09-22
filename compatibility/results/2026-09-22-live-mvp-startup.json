@@ -1,0 +1,28 @@
+{
+  "format": "nocheh-live-mvp-startup-v1",
+  "recorded_at": "2026-09-22T19:46:13Z",
+  "provider_checks_recorded_at": "2026-09-22T19:41:08.724416+00:00",
+  "environment": "local-compose",
+  "synthetic_inputs_only": true,
+  "storage_layout": "legacy",
+  "required_services_healthy": 17,
+  "execution_holds": 0,
+  "telegram_connected": true,
+  "provider_route": "shared",
+  "refresh_owner": "cliproxy",
+  "subscription_checks": {
+    "refresh": "passed",
+    "chat": "passed",
+    "detector": "passed",
+    "transcription": "passed"
+  },
+  "reset_preflight": {
+    "containers": 17,
+    "volumes": 3,
+    "paths": 53,
+    "blockers": 0,
+    "executable": false
+  },
+  "live_telegram_acceptance": "pending_owner_and_group_traffic",
+  "product_reset_acceptance": "pending"
+}
