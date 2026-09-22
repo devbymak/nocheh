@@ -1,0 +1,17 @@
+{
+  "format": "nocheh-group-policy-activation-v1",
+  "environment": "local-compose",
+  "storage_layout": "legacy",
+  "required_services_running": 17,
+  "telegram_connected": true,
+  "selected_groups": 1,
+  "participant_grants": 0,
+  "participant_denies": 0,
+  "app_synthetic_owner_allowed": true,
+  "app_synthetic_ungranted_blocked": true,
+  "hermes_synthetic_owner_allowed": true,
+  "hermes_synthetic_ungranted_blocked": true,
+  "live_owner_group_message": "pending",
+  "live_other_member_message": "pending",
+  "mvp_ready": false
+}
