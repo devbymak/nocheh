@@ -1,0 +1,11 @@
+{
+  "format": "nocheh-live-owner-dm-v1",
+  "environment": "local-compose",
+  "source": "fresh_live_owner_telegram_dm",
+  "workflow_state": "completed",
+  "attempts": 1,
+  "delivery_receipts_done": 1,
+  "live_owner_dm_text": "passed",
+  "live_owner_dm_voice": "pending",
+  "live_selected_group": "pending"
+}
