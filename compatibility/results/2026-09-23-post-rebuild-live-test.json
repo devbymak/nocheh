@@ -75,9 +75,58 @@
     "group_reply_cites_private_dm": false,
     "owner_found_internal_citation_unclear": true
   },
+  "exact_owner_approval_with_internal_tool_named_in_request": {
+    "input_event_id": "ad12d94df2aadaea0791aa18c1fc64b7458652969b85a70135625925cba006ea",
+    "action_id": "444a797318547a2dc9c3d087cd68bdca7a105408aad434534e07641fcf8f7724",
+    "proposed_destination_matches_owner_dm": true,
+    "proposed_text_exact": true,
+    "owner_approved": true,
+    "action_state": "done",
+    "exact_confirmed_telegram_deliveries": 1,
+    "owner_observed_one_delivery": true,
+    "approval_to_delivery_seconds_approximately": 22,
+    "replay_duplicate_check": "pending_executor_replay",
+    "natural_language_without_internal_tool_name": "passed_separate_test"
+  },
+  "natural_language_owner_approval": {
+    "input_event_id": "27ec95c72300b738e240dee20ea7dd4920931a503bc550162694f055e39db7d8",
+    "action_id": "c57602552ada10924f699219b5fe5ecff7dd17bb2c132000a09fbeb40649b3e7",
+    "proposed_destination_matches_owner_dm": true,
+    "proposed_text_exact": true,
+    "owner_approved": true,
+    "action_state": "done",
+    "exact_confirmed_telegram_deliveries": 1,
+    "owner_observed_one_delivery": true,
+    "archive_only_replay_count": 1,
+    "archive_only_replay_telegram_replies": 0,
+    "exact_deliveries_after_archive_only_replay": 1
+  },
+  "restart_recovery": {
+    "input_event_id": "75dbbebb2773cdc19dfeb9fa7b15f415fd22c2100d915ae00f2a87abec66de11",
+    "captured_at_utc": "2026-09-23T17:22:06Z",
+    "dispatch_state_before_restart": "done",
+    "dispatch_attempts": 1,
+    "telegram_delivered_message_id": "c66814b3edf64ee409b0ac406505a7c405557eff4f3993b2e642ce33977167b5",
+    "delivered_at_utc": "2026-09-23T17:22:59Z",
+    "supervised_hermes_restarted_at_utc": "2026-09-23T17:23:16Z",
+    "same_supervised_container_after_restart": true,
+    "supervised_hermes_healthy_after_restart": true,
+    "telegram_connected_after_restart": true,
+    "completed_receipt_preserved": true,
+    "pending_receipt_recovery": "unverified_delivery_completed_before_restart",
+    "confirmed_delivered_messages": 1,
+    "owner_observed_reply": true,
+    "owner_observed_answer_quality": "generic_acknowledgment_with_limited_memory_notice"
+  },
+  "live_honcho_memory_status": {
+    "attached": false,
+    "verified": false,
+    "ready_generations": 0,
+    "limited_memory": true
+  },
   "remaining_live_checks": [
-    "exact_owner_approval",
-    "restart_receipt_recovery",
+    "executor_replay_idempotence",
+    "pending_receipt_recovery",
     "controlled_reset_and_empty_baseline",
     "post_reset_human_group_reply_and_reaction",
     "post_reset_honcho_production_acceptance"
@@ -85,7 +134,8 @@
   "observed_quality_findings": [
     "harmless_voice_marker_masked_by_guarded_projection",
     "group_answer_delivered_after_about_125_seconds",
-    "owner_found_internal_group_citation_unclear"
+    "owner_found_internal_group_citation_unclear",
+    "restart_answer_generic_with_limited_memory_notice"
   ],
   "mvp_release_acceptance": "not_established"
 }
