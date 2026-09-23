@@ -118,6 +118,27 @@
     "owner_observed_reply": true,
     "owner_observed_answer_quality": "generic_acknowledgment_with_limited_memory_notice"
   },
+  "queued_dispatch_restart_recovery": {
+    "input_event_id": "6317002c30ffcdd9e6a7d633a8b4a2730d0b38efb082a25dea7b08b11ae1a818",
+    "captured_at_utc": "2026-09-23T17:40:44Z",
+    "dispatch_state_before_restart": "pending",
+    "dispatch_attempts_before_restart": 0,
+    "supervised_hermes_restarted_at_utc": "2026-09-23T17:40:49Z",
+    "same_supervised_container_after_restart": true,
+    "supervised_hermes_healthy_after_restart": true,
+    "telegram_connected_after_restart": true,
+    "assistant_result_links_input_event": true,
+    "dispatch_state_after_restart": "done",
+    "dispatch_attempts_after_restart": 1,
+    "telegram_delivered_message_id": "e19eee99b7697c6c28e1b97e6ba6ade1d8453a4b9cafa12b8fa02f14c279a8ec",
+    "delivered_at_utc": "2026-09-23T17:42:17Z",
+    "delivered_message_scope_matches_input": true,
+    "send_message_results": 1,
+    "telegram_send_message_status": 200,
+    "confirmed_delivered_messages": 1,
+    "owner_observed_one_appropriate_reply": true,
+    "in_flight_receipt_recovery": "unverified_dispatch_had_not_started_at_restart"
+  },
   "live_honcho_memory_status": {
     "attached": false,
     "verified": false,
@@ -126,7 +147,7 @@
   },
   "remaining_live_checks": [
     "executor_replay_idempotence",
-    "pending_receipt_recovery",
+    "in_flight_receipt_recovery",
     "controlled_reset_and_empty_baseline",
     "post_reset_human_group_reply_and_reaction",
     "post_reset_honcho_production_acceptance"
