@@ -1,0 +1,43 @@
+{
+  "format": "nocheh-mvp-real-test-current-revision-v1",
+  "date": "2026-09-23",
+  "environment": "local-compose",
+  "source_revision": "e4416305cb23040b99cd6bdcfbb7a85790a3afae",
+  "active_installation": {
+    "required_services_running_and_healthy": 17,
+    "execution_holds": 0,
+    "telegram": "connected",
+    "guard_mode": "on",
+    "reasoning_route": "shared",
+    "refresh_owner": "cliproxy"
+  },
+  "live_subscription": {
+    "synthetic_inputs_only": true,
+    "refresh": {"status": "passed", "duration_ms": 8},
+    "chat": {"status": "passed", "duration_ms": 7133},
+    "detector": {"status": "passed", "duration_ms": 3225},
+    "transcription": {"status": "passed", "duration_ms": 4598}
+  },
+  "isolated_compose_test": {
+    "node_dashboard": {"passed": 126, "failed": 0, "skipped": 46},
+    "database_loss_recovery": {"passed": 1, "failed": 0, "skipped": 0},
+    "native_hermes": {"ran": 353, "failed": 0, "skipped": 3},
+    "temporary_project_and_volume_removed": true
+  },
+  "reset_preflight": {
+    "storage_layout": "legacy",
+    "containers": 17,
+    "volumes": 3,
+    "paths": 55,
+    "ownership_blockers": 0,
+    "pending_phases": 10,
+    "executable": false,
+    "path_actions": {"preserve": 20, "erase": 30, "snapshot_preferences_then_erase": 1, "sanitize_accounting": 1, "sqlite_checkpoint": 3},
+    "external_archive_review_roots": 5,
+    "immediate_review_items": 0
+  },
+  "fresh_live_release_checks": "pending_controlled_reset_and_owner_human_telegram_traffic",
+  "honcho_production_after_reset": "pending",
+  "mvp_release_acceptance": "not_established",
+  "active_installation_reset_or_external_delivery_performed": false
+}
