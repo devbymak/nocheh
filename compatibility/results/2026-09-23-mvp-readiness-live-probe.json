@@ -1,0 +1,45 @@
+{
+  "format": "nocheh-mvp-readiness-live-probe-v1",
+  "date": "2026-09-23",
+  "environment": "local-compose",
+  "source_revision": "ba83a9902335e471966155129943180861829558",
+  "live_diagnostic": {
+    "required_services_running": 17,
+    "required_services_total": 17,
+    "execution_holds": 0,
+    "telegram": "connected",
+    "guard_mode": "on",
+    "reasoning_route": "shared",
+    "provider_login_count": 1,
+    "selected_group_count": 1
+  },
+  "live_subscription": {
+    "synthetic_inputs_only": true,
+    "refresh": {"status": "passed", "duration_ms": 11},
+    "chat": {"status": "passed", "duration_ms": 5894},
+    "detector": {"status": "passed", "duration_ms": 4033},
+    "transcription": {"status": "passed", "duration_ms": 5926}
+  },
+  "reset_preflight": {
+    "storage_layout": "legacy",
+    "containers": 17,
+    "volumes": 3,
+    "paths": 55,
+    "ownership_blockers": 0,
+    "review_roots": 5,
+    "immediate_review_items": 16,
+    "pending_phases": 10,
+    "executable": false
+  },
+  "isolated_compose_test": {
+    "source_revision": "e4416305cb23040b99cd6bdcfbb7a85790a3afae",
+    "code_changed_since_test": false,
+    "result": "passed",
+    "evidence": "2026-09-23-mvp-real-test-current-revision.json"
+  },
+  "fresh_live_release_checks": "pending_controlled_reset_and_owner_human_telegram_traffic",
+  "honcho_production_after_reset": "pending",
+  "current_dashboard_activation": "pending",
+  "mvp_release_acceptance": "not_established",
+  "active_installation_reset_or_external_delivery_performed": false
+}
