@@ -1,0 +1,28 @@
+{
+  "format": "nocheh-reset-fenced-inventory-fix-v1",
+  "date": "2026-09-24",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "observed_phase": "isolated_acceptance",
+  "quiescence_complete": false,
+  "effects_settled": false,
+  "preservation_frozen": false,
+  "erasure_started": false,
+  "telegram_boundary_attempted": false,
+  "observed": {
+    "reviewed_containers": 17,
+    "owners_stopped": 13,
+    "database_and_cache_services_running": 4,
+    "all_reviewed_restart_policies_suppressed": true,
+    "inactive_fences_present": 4,
+    "post_shutdown_inventory_blockers": 5,
+    "blocker_cause": "The reset fence removed enabled Honcho from the ordinary Compose profile while read-only inventory still compared its five owned containers against that filtered service list."
+  },
+  "fix": "Read-only reset inventory renders saved enabled Honcho services even when the reset fence suppresses ordinary startup.",
+  "verification": {
+    "focused_inventory_quiescence_effects_tests_passed": 33,
+    "focused_failures": 0,
+    "ast_graph_files": 538,
+    "ast_graph_model_calls": 0,
+    "live_retry": "pending"
+  }
+}
