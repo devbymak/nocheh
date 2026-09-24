@@ -1,0 +1,40 @@
+{
+  "format": "nocheh-reset-empty-baseline-boundary-blocker-v1",
+  "date": "2026-09-25",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "historical_admin_retirement": {
+    "owner_approved": true,
+    "saved_identity_checks_passed": true,
+    "exact_files_removed": 19
+  },
+  "journal_steps": [
+    "isolated_acceptance",
+    "quiesced",
+    "effects_settled",
+    "preservation_frozen",
+    "erased",
+    "initialized",
+    "empty_baseline"
+  ],
+  "empty_baseline": {
+    "phase_complete": true,
+    "archive_rows": 0,
+    "derived_rows": 0,
+    "inngest_postgres_relations": 0,
+    "inngest_redis_keys": 0,
+    "honcho_postgres_relations": 0,
+    "honcho_redis_keys": 0,
+    "native_original_files": 0,
+    "native_content_present": false,
+    "private_artifacts_retired": 9
+  },
+  "inactive_fences": 4,
+  "telegram_backlog_boundary": {
+    "attempted": false,
+    "confirmed": false,
+    "automatic_approval_review": "rejected because approval of the 19 local files did not clearly authorize irreversible deletion of pending Telegram updates and service activation"
+  },
+  "fresh_acceptance_running": false,
+  "honcho_production_acceptance": false,
+  "mvp_release_acceptance": false
+}
