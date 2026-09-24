@@ -1,0 +1,28 @@
+{
+  "scope": "original-only candidate for Telegram source retirement and reaction changes",
+  "date": "2026-09-24",
+  "environment": {
+    "compose_project": "nocheh-retirement-fixture",
+    "database": "synthetic PostgreSQL cluster with marker nocheh-stores-fixture",
+    "network": "fixture-owned internal network; separate preview network and localhost port 18879",
+    "image": "nocheh-retirement-fixture:20260924",
+    "live_installation_touched": false
+  },
+  "checks": [
+    {"name": "candidate build", "result": "pass", "command": "npm run build"},
+    {"name": "isolated store regression", "result": "pass", "count": 10,
+      "files": ["store-source-retirement", "store-relationships", "store-learning-engine", "store-telegram-dispatch", "store-owner-api", "store-server"]},
+    {"name": "pinned Hermes capture tests", "result": "pass", "count": 7,
+      "environment": "offline read-only one-off container from nocheh-hermes:local"},
+    {"name": "Archive unit check", "result": "pass", "count": 1},
+    {"name": "synthetic owner UI", "result": "pass",
+      "observed": ["voice original and transcript visible", "retire confirmation", "retired status and undo", "original and transcript remained visible after retirement"]},
+    {"name": "Graphify AST refresh", "result": "pass", "files": 538, "nodes": 3653, "edges": 13603, "model_calls": 0}
+  ],
+  "pending": [
+    "running installation remains legacy; owner retirement is not active there",
+    "fresh live owner retirement with captured event ID and timestamp",
+    "human old-message reaction change and removal with event IDs and group admin rights",
+    "controlled storage transition, release voice gate, and post-reset acceptance"
+  ]
+}
