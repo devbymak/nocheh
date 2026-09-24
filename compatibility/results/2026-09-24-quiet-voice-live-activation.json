@@ -1,0 +1,27 @@
+{
+  "format": "nocheh-quiet-voice-live-activation-v1",
+  "recorded_at_utc": "2026-09-24T16:51:24Z",
+  "environment": "active-local-compose-legacy-layout",
+  "integrated_code_revision": "e092424b0e772cdbda15cb57a0c7981d05588545",
+  "recreated_services": {
+    "chatgpt-speech": {"started_at_utc": "2026-09-24T16:45:52Z", "health": "healthy"},
+    "nocheh-app": {"started_at_utc": "2026-09-24T16:46:19Z", "health": "healthy"},
+    "hermes": {"started_at_utc": "2026-09-24T16:46:55Z", "health": "healthy"}
+  },
+  "quiet_voice_event_id": "900cc1ca731e5a47ae2ecbb0f2487b8486a62b21a074e20a117daf1212ae2b84",
+  "quiet_voice_original_audio": "ready_5855_bytes",
+  "quiet_voice_transcript": "absent",
+  "quiet_voice_job_at_observation": {
+    "state": "failed",
+    "attempts": 9,
+    "error_code": "transcription_unavailable",
+    "next_attempt_utc": "2026-09-24T17:11:57Z",
+    "last_attempt_relation_to_activation": "before_activation"
+  },
+  "quiet_voice_new_code_live_outcome": "pending_next_scheduled_retry",
+  "owner_exact_phrase_voice_gate": "pending_new_owner_recording",
+  "telegram_message_sent_by_agent": false,
+  "manual_audio_probe": "not_run_auto_review_rejected_transformed_audio_egress",
+  "controlled_reset_performed": false,
+  "mvp_release_acceptance": "not_established"
+}
