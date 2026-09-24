@@ -1,0 +1,47 @@
+{
+  "format": "nocheh-refreshed-reset-preflight-v1",
+  "recorded_at_utc": "2026-09-24T18:30:06Z",
+  "environment": "active-local-compose-legacy-layout",
+  "active_code_revision": "39ac093b192adcb21ead86476354640e72234f93",
+  "private_review_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "private_artifacts_saved_in_installation_reset_directory_mode": "0600",
+  "preflight_sha256": "864d49f345fc0e41c67f1c30fdbb8b828ea59b81f62f1caa611a93d70ac4ff1a",
+  "ownership_review_file_sha256": "72bcfb4771e399f186b16bc2e20959b10c6b272a1f9b178146bc6a6acdfaf5ad",
+  "validated_paths_file_sha256": "4552b85f44ae83c7e9ff461a42595bdc53d46cc305b2ddc2aaca9c9c75d77a33",
+  "review_binding_sha256": "1e63948833f96a694638cfd8533c7b0a262d46542f220ce5e6997051761e697f",
+  "installation": {
+    "storage_layout": "legacy",
+    "owned_containers": 17,
+    "healthy_containers": 17,
+    "owned_volumes": 3,
+    "classified_paths": 57,
+    "ownership_blockers": 0,
+    "executable": false,
+    "configuration_fingerprint_unchanged_from_prior_review": true,
+    "volume_names_unchanged_from_prior_review": true,
+    "classified_path_set_and_actions_unchanged": true,
+    "changed_container_services_since_prior_review": ["chatgpt-speech", "hermes", "nocheh-app", "nocheh-dashboard"],
+    "changed_path_identities_since_prior_review": "two_erase_classified_native_status_files"
+  },
+  "external_ownership_review": {
+    "roots": 5,
+    "immediate_items": 16,
+    "same_paths_and_device_inode_type_as_owner_approved_proposal": true,
+    "erase_installation_owned": 13,
+    "preserve_unrelated": 3,
+    "validated_against_saved_preflight": true,
+    "validated_against_current_installation_after_artifact_save": true
+  },
+  "preservation_classifications": {
+    "saved_configuration": "present_preserve",
+    "provider_login_keys_and_configuration": "present_preserve",
+    "honcho_setup_and_spending_ledger": "present_preserve",
+    "subscription_usage_accounting": "present_sanitize_accounting",
+    "optional_absent_paths": ["state_secrets", "saved_assistant_setup", "native_login"]
+  },
+  "owner_approved_proposal_condition": "met_by_pre_reset_voice_gate",
+  "controlled_reset_performed": false,
+  "next_gate": "quiesce_and_settle_under_reset_coordinator_after_acceptance_evidence",
+  "post_reset_acceptance": "pending",
+  "mvp_release_acceptance": "not_established"
+}
