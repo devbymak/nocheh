@@ -1,0 +1,31 @@
+{
+  "format": "nocheh-reset-stopped-redis-aof-fix-v1",
+  "date": "2026-09-24",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "journal_steps": ["isolated_acceptance", "quiesced", "effects_settled", "preservation_frozen"],
+  "erasure_stage": "prepared",
+  "files_erased": false,
+  "containers_removed": false,
+  "volumes_removed": false,
+  "workflow_redis_stopped_under_reset_locks": true,
+  "frozen_file_entries": 1974,
+  "changed_entries_after_freeze": 1,
+  "change": "The same reviewed workflow Redis append-only file kept its device, inode, kind, and path; only size and timestamps changed before Redis was stopped.",
+  "fix": "Accept only size/time drift for a stopped workflow Redis append-only file at its exact reviewed path. Preserve the original frozen manifest and require exact current metadata from the first erasure verification through unlink. New entries, replacement inodes, running Redis, and other changed files still block.",
+  "verification": {
+    "focused_files_preservation_erasure_initialization_tests_passed": 35,
+    "focused_failures": 0,
+    "synthetic_fresh_baseline_rehearsal_passed": true,
+    "synthetic_old_containers_removed": 4,
+    "synthetic_old_volumes_removed": 3,
+    "synthetic_archive_rows": 0,
+    "synthetic_derived_rows": 0,
+    "synthetic_inngest_and_honcho_store_entries": 0,
+    "synthetic_credentials_login_and_spending_retained": true,
+    "synthetic_provider_calls": 0,
+    "synthetic_live_state_changed": false,
+    "ast_graph_files": 538,
+    "ast_graph_model_calls": 0,
+    "live_erasure_retry": "pending"
+  }
+}
