@@ -1,0 +1,48 @@
+{
+  "format": "nocheh-reset-initialized-baseline-blocker-v1",
+  "date": "2026-09-25",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "journal_steps": [
+    "isolated_acceptance",
+    "quiesced",
+    "effects_settled",
+    "preservation_frozen",
+    "erased",
+    "initialized"
+  ],
+  "source_layout": "legacy",
+  "current_layout": "original-only-v1",
+  "old_resources": {
+    "frozen_file_entries_processed": 1974,
+    "reviewed_containers_removed": 17,
+    "reviewed_volumes_removed": 3,
+    "reviewed_external_erase_items_absent": 13,
+    "reviewed_external_preserve_items_same_identity": 3
+  },
+  "preservation": {
+    "retained_setup_and_credentials_verified": true,
+    "retained_honcho_spending_verified": true,
+    "in_flight_effects_unresolved": 0
+  },
+  "fresh_initialization": {
+    "fresh_database_and_cache_services": 4,
+    "fresh_volumes": 3,
+    "native_content_copied": false,
+    "runtime_activated": false,
+    "inactive_fences": 4
+  },
+  "empty_baseline": {
+    "store_cache_and_native_checks_reached_private_artifact_inventory": true,
+    "phase_complete": false,
+    "blocker": "reset_baseline_private_artifact_unknown",
+    "historical_admin_artifacts": 19,
+    "historical_reset_review_json": 18,
+    "historical_configuration_snapshot": 1,
+    "historical_artifacts_deleted": false,
+    "automatic_approval_review": "rejected expanded irreversible deletion outside the exact 13 erase / 3 preserve review"
+  },
+  "telegram_backlog_boundary_attempted": false,
+  "fresh_live_acceptance": false,
+  "honcho_production_acceptance": false,
+  "mvp_release_acceptance": false
+}
