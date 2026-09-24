@@ -1,0 +1,20 @@
+{
+  "format": "nocheh-quiet-voice-terminal-candidate-v1",
+  "recorded_at_utc": "2026-09-24T16:35:49Z",
+  "environment": "isolated-worktree-and-synthetic-postgres",
+  "source_event_id": "900cc1ca731e5a47ae2ecbb0f2487b8486a62b21a074e20a117daf1212ae2b84",
+  "prior_live_observation": "five failed attempts; direct same-audio probe returned invalid_transcription_response",
+  "candidate_behavior": "nonretryable unusable speech result is terminal; original audio remains; no transcript or assistant dispatch is fabricated",
+  "checks": {
+    "worktree_build": "passed",
+    "offline_speech_gateway": "passed_3_tests",
+    "offline_subscription_contract": "passed_21_tests",
+    "isolated_postgres_transcription_and_storage": "passed_8_tests_no_skips",
+    "ast_only_graph_refresh": "passed_538_files_zero_model_calls"
+  },
+  "transformed_audio_live_probe": "not_run_auto_review_rejected_unapproved_audio_egress",
+  "active_installation_rebuilt": false,
+  "quiet_note_current_live_outcome": "pending",
+  "owner_exact_phrase_voice_gate": "pending",
+  "mvp_release_acceptance": "not_established"
+}
