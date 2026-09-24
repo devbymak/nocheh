@@ -1,0 +1,53 @@
+{
+  "format": "nocheh-main-app-rebuild-v1",
+  "recorded_at_utc": "2026-09-24T12:22:28Z",
+  "environment": "active-local-compose",
+  "code_revision_integrated_before_build": "ab643dc5b721c68f5ddb2fada350f9dee651a574",
+  "main_revision_after_build": "efbbc3ed1d2e3c43b01e94776df4c59bad72d996",
+  "concurrent_main_change": "documentation_only",
+  "pre_restart_inventory_sha256": "dc3fe5c7de976f002e9512875c578386cb004b5accd037310d98838af60d6a81",
+  "ownership_blockers": 0,
+  "recreated_services": {
+    "nocheh-app": {
+      "previous_container_prefix": "280b6ac49229",
+      "running_container_id": "a573a803a4fd411be843a19074abdb25674dd80b871715b1560d2755c2977173",
+      "running_image_id": "sha256:48e455a1fe561035c89d55f2b46620c61d2210d7ab98131aae10e9594a3ba1d7",
+      "health": "healthy"
+    },
+    "hermes": {
+      "previous_container_prefix": "f57cd8c0bf17",
+      "running_container_id": "40f3205f9293616675fdf170b5415c7b5dae6f141375e1628d87a2317c82af54",
+      "running_image_id": "sha256:ebf4e091a56a7726100dff87255c51c3d14e225bd31b4477c53cfd6cdbcf1dbe",
+      "health": "healthy"
+    }
+  },
+  "other_owned_containers_unchanged": 15,
+  "owned_services_running_and_healthy": 17,
+  "telegram": "connected",
+  "guard_mode": "on",
+  "execution_holds": 0,
+  "fresh_synthetic_subscription_checks": {
+    "refresh": "passed",
+    "chat": "passed",
+    "literal_detector": "passed",
+    "transcription": "passed"
+  },
+  "active_synthetic_detector_cases": {
+    "ordinary_voice_phrase_unmasked": "passed",
+    "ordinary_marker_unmasked": "passed",
+    "explicit_password_detected": "passed"
+  },
+  "active_synthetic_citation_renderer": {
+    "bracketed_internal_citation_removed": "passed",
+    "bare_internal_event_identifier_removed": "passed"
+  },
+  "telegram_test_message_sent_by_this_check": false,
+  "destructive_reset_performed": false,
+  "reset_external_items_unclassified": 16,
+  "fresh_owner_voice_and_group_acceptance": "pending",
+  "fresh_group_latency_measurement": "pending",
+  "active_in_flight_send_recovery": "pending",
+  "post_reset_acceptance": "pending",
+  "post_reset_honcho_production_acceptance": "pending",
+  "mvp_release_acceptance": "not_established"
+}
