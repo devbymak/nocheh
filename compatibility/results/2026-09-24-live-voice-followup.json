@@ -1,0 +1,39 @@
+{
+  "format": "nocheh-live-voice-followup-v1",
+  "recorded_at_utc": "2026-09-24T13:38:01Z",
+  "environment": "active-local-compose-legacy-layout",
+  "active_bot_restarted_by_this_check": false,
+  "telegram_messages_sent_by_agent": false,
+  "new_owner_voice_note": {
+    "event_id": "d9c479243db498c4538cbf4a023118a0f3118fdb10c5f11bd79a48d95e1ce713",
+    "received_at_utc": "2026-09-24T13:32:50.025048Z",
+    "original_audio_ready": true,
+    "bytes": 12407,
+    "duration_seconds": 3.6265,
+    "mean_volume_db": -39.6,
+    "max_volume_db": -23.4,
+    "subscription_transcript_id": "474abde4c8048e5f01015909f541d2f28d9f6e42315770e9a384044cb1702add",
+    "transcription_attempts": 1,
+    "transcript_input_hash_matches_audio": true,
+    "guarded_transcript_ready": true,
+    "raw_mask_marker_present_in_guarded_copy": false,
+    "dispatch_state": "done",
+    "delivered_reply_id": "ec2674610e21d14877c98f250f994d303123e9008875797095ea2717c1e6eef0",
+    "delivered_at_utc": "2026-09-24T13:33:32.169807Z",
+    "owner_confirmed_different_spoken_words_from_release_phrase": true,
+    "exact_phrase_accuracy_assessment": "not_applicable"
+  },
+  "earlier_quiet_voice_note": {
+    "event_id": "900cc1ca731e5a47ae2ecbb0f2487b8486a62b21a074e20a117daf1212ae2b84",
+    "transcription_state": "failed_retry_scheduled",
+    "failed_attempts_observed": 5,
+    "error_code": "transcription_unavailable",
+    "dispatch_state": "pending"
+  },
+  "owner_exact_phrase_voice_gate_choice": "leave_pending",
+  "owner_reset_decision": "approved_current_exact_13_erase_3_preserve_proposal_conditional_on_voice_gate_pass",
+  "controlled_reset_performed": false,
+  "post_reset_acceptance": "pending",
+  "fresh_honcho_production_acceptance": "pending",
+  "mvp_release_acceptance": "not_established"
+}
