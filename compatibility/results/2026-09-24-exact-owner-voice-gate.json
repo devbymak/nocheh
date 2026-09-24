@@ -1,0 +1,42 @@
+{
+  "format": "nocheh-exact-owner-voice-gate-v1",
+  "recorded_at_utc": "2026-09-24T16:58:25Z",
+  "environment": "active-local-compose-legacy-layout",
+  "active_code_revision": "e092424b0e772cdbda15cb57a0c7981d05588545",
+  "owner_voice_event_id": "183461815926b3dab8229837bbd7ba51f3451691b8b64e48dc1e9dea0080d7bb",
+  "received_at_utc": "2026-09-24T16:54:42.122920Z",
+  "same_scope_as_confirmed_owner_dm": true,
+  "original_audio": {
+    "kind": "voice",
+    "ready": true,
+    "bytes": 13736,
+    "saved_file_size_matches_manifest": true,
+    "saved_file_sha256_matches_manifest": true,
+    "telegram_update_payload_saved": true,
+    "telegram_batch_wire_saved": true
+  },
+  "transcription": {
+    "state": "done",
+    "attempts": 1,
+    "provider": "nocheh-subscription",
+    "transcript_id": "f8d01f78db3cd1d65140e2db8c796e8ae013dbc168f4b1373c66d936f509431a",
+    "exact_release_sentence_matched": true,
+    "transcript_input_hash_matches_original_audio": true,
+    "guarded_transcript_ready": true,
+    "exact_sentence_preserved_in_guarded_copy": true
+  },
+  "assistant_reply": {
+    "dispatch_state": "done",
+    "telegram_workflow_state": "completed",
+    "send_message_receipt": "delivered",
+    "delivered_reply_event_id": "4b34f156abfc725c68b1209b91674423146b5cda9d6117785ef9e4df59dab9e9",
+    "delivered_at_utc": "2026-09-24T16:55:35.534586Z",
+    "linked_to_source_by_telegram_reply": true,
+    "confirmed_message_receipts": 1
+  },
+  "owner_exact_phrase_voice_check": "passed",
+  "older_quiet_voice_terminal_behavior": "pending_next_scheduled_retry",
+  "controlled_reset_performed": false,
+  "post_reset_voice_check": "pending",
+  "mvp_release_acceptance": "not_established"
+}
