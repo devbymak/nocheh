@@ -1,0 +1,24 @@
+{
+  "format": "nocheh-reset-post-shutdown-status-fix-v1",
+  "date": "2026-09-24",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "journal_steps": ["isolated_acceptance", "quiesced", "effects_settled"],
+  "settled_outbound_receipts": 65,
+  "unresolved_effects": 0,
+  "preservation_frozen": false,
+  "erasure_started": false,
+  "telegram_boundary_attempted": false,
+  "changed_preflight_targets": [
+    "data/local/hermes/gateway_state.json",
+    "data/local/hermes/scheduler-status.json"
+  ],
+  "cause": "Hermes replaced two reviewed native status files during its controlled shutdown, so their pre-shutdown inodes could not be used for the post-quiescence erasure manifest.",
+  "fix": "After verified quiescence, bind only these two regular files on the same device to their current inodes. The frozen manifest rejects later replacements, symlinks, other targets and unreviewed files.",
+  "verification": {
+    "focused_files_preservation_erasure_initialization_tests_passed": 32,
+    "focused_failures": 0,
+    "ast_graph_files": 538,
+    "ast_graph_model_calls": 0,
+    "live_preservation_retry": "pending"
+  }
+}
