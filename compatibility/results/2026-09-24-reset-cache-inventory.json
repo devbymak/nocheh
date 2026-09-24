@@ -1,0 +1,39 @@
+{
+  "format": "nocheh-reset-cache-inventory-followup-v1",
+  "date": "2026-09-24",
+  "environment": "active-local-compose-legacy-layout",
+  "initial_read_only_preflight": {
+    "classified_paths": 56,
+    "blockers": ["unclassified_state_path:admin/downloads"],
+    "new_path_origin": "dashboard_artifact_download_cache",
+    "cache_entry_count_observed": 1,
+    "cached_source_kind": "owner_voice_attachment"
+  },
+  "change": {
+    "cache_action": "erase_installation_content_and_receipts",
+    "unknown_admin_paths_still_block": true,
+    "focused_reset_inventory_files_ownership_tests": "22_passed",
+    "graphify_ast_update": "pending_graphify_python_package_unavailable"
+  },
+  "refreshed_read_only_preflight": {
+    "sha256": "d7b9b64d3dbbd061a269aa5b60c1f6a138d59e252902c61fa4d1adf62f48267b",
+    "owned_containers": 17,
+    "volumes": 3,
+    "classified_paths": 57,
+    "ownership_blockers": 0,
+    "executable": false,
+    "external_immediate_items": 16,
+    "proposed_erase_installation_owned": 13,
+    "proposed_preserve_unrelated": 3,
+    "exact_proposal_validated": true,
+    "owner_approval": "pending"
+  },
+  "owner_voice_clarification": {
+    "event_id": "4c6c2d34e86867678657f67ae0e77b5db8e2d1fac02599b75683a150370ffab5",
+    "spoken_words_differed_from_requested_exact_phrase": true,
+    "exact_phrase_accuracy_assessment_from_this_note": "not_applicable"
+  },
+  "destructive_reset_performed": false,
+  "post_reset_acceptance": "pending",
+  "mvp_release_acceptance": "not_established"
+}
