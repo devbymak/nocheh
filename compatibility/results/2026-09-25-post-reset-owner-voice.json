@@ -1,0 +1,50 @@
+{
+  "format": "nocheh-post-reset-owner-voice-v1",
+  "date": "2026-09-25",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "telegram_boundary_confirmed_at": "2026-09-24T21:04:20.329441+00:00",
+  "owner_voice_event_id": "fc4b923b9690a4f6c78b188ff733abd0abf3590cb9ec9a3dec56b244e95d3b82",
+  "received_at_utc": "2026-09-25T09:49:39.587621Z",
+  "original_audio": {
+    "kind": "voice",
+    "artifact_id": "f60aced22252b23b1df8b18c30708b71931ab5dfec828fd8b554209889c709b1",
+    "bytes": 12524,
+    "saved_file_size_matches_manifest": true,
+    "saved_file_sha256_matches_manifest": true,
+    "telegram_update_payload_saved": true
+  },
+  "transcription": {
+    "state": "done",
+    "attempts": 1,
+    "provider": "nocheh-subscription",
+    "transcript_id": "d6c845bb9c01f6cc8c0fabc7a456ab5fd26e79a007e1289ae541864b887d7c5f",
+    "exact_release_sentence_matched": true,
+    "transcript_bound_to_original_audio": true,
+    "guarded_transcript_ready": true,
+    "exact_sentence_preserved_in_guarded_copy": true,
+    "transcript_selected_for_preparation": true
+  },
+  "assistant_reply": {
+    "linked_delivered_replies": 1,
+    "delivered_reply_event_id": "194087a3531e6682ee57cc90c1ae4cb780e03df43d898c23deaded3b3e6571a1",
+    "delivered_at_utc": "2026-09-25T09:53:24.432050Z",
+    "capture_to_delivery_seconds": 224.844,
+    "owner_inspected_reply_quality": "pending"
+  },
+  "event_bound_processing_trace": {
+    "runtime_context_records": 239,
+    "guard_result_records": 232,
+    "runtime_result_records": 7,
+    "latency_cause_established": false
+  },
+  "honcho_after_voice": {
+    "connection_attached": false,
+    "connection_verified": false,
+    "ready_generations": 0,
+    "ingestion_receipts": 0,
+    "context_snapshots": 0
+  },
+  "post_reset_exact_voice_gate": "passed",
+  "fresh_acceptance": false,
+  "mvp_release_acceptance": false
+}
