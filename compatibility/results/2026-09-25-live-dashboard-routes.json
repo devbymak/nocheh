@@ -1,0 +1,23 @@
+{
+  "format": "nocheh-live-dashboard-route-fix-v1",
+  "date": "2026-09-25",
+  "running_installation": {
+    "archive_retirement_ui": "unavailable: management knowledge allowlist rejected the storage route",
+    "retirement_backend_get": "passed",
+    "runtime_status_from_management": "unavailable: storage /v1/runtime returned 404",
+    "storage_health": "ready",
+    "native_telegram_polling": "connected",
+    "runtime_images_replaced": false
+  },
+  "candidate_changes": [
+    "allow the exact owner source-retirement route through the management knowledge proxy",
+    "restore the owner-only storage runtime status endpoint used by Monitoring"
+  ],
+  "isolated_checks": {
+    "build": "passed",
+    "management_and_runtime_status_tests": "3 passed",
+    "knowledge_route_test": "1 passed",
+    "graphify_ast": "540 files, 3671 nodes, 13653 edges, 0 model calls"
+  },
+  "live_activation": "pending; the running reset-acceptance containers retain their recorded identities"
+}
