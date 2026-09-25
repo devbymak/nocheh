@@ -1,0 +1,43 @@
+{
+  "format": "nocheh-reset-rebuilt-acceptance-mode-v1",
+  "date": "2026-09-25",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "owner_direction": "Remove old archive and memory data, rebuild the app, retain auth and settings",
+  "fresh_empty_baseline_preceded_boundary": true,
+  "runtime_image_build": {
+    "targeted_service_images": 6,
+    "passed": true,
+    "fresh_database_images_rebuilt": false
+  },
+  "telegram_boundary": {
+    "state": "confirmed",
+    "one_reset_only_discard_confirmed": true,
+    "subsequent_activation_retry_reused_confirmation": true
+  },
+  "acceptance_mode": {
+    "stage": "acceptance_running",
+    "first_startup_attempt": "stopped_before_acceptance_running_when_a_required_service_was_not_running",
+    "same_container_identity_retry": "passed",
+    "services": 17,
+    "running": 17,
+    "healthy": 17,
+    "restart_policy_no": 17,
+    "inactive_fences_remaining": 0,
+    "fresh_acceptance_passed": false,
+    "resumed": false
+  },
+  "post_start_read_only_snapshot": {
+    "archive_events": 0,
+    "derived_artifacts": 8,
+    "derived_artifact_kinds": {
+      "outbound_intent": 4,
+      "outbound_result": 4
+    },
+    "derived_artifact_method": "deleteWebhook",
+    "derived_event_bound_artifacts": 0,
+    "auth_and_settings_present": true,
+    "native_preference_profiles_restored": 2
+  },
+  "honcho_production_acceptance": false,
+  "mvp_release_acceptance": false
+}
