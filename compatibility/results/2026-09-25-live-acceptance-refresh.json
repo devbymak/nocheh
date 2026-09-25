@@ -87,8 +87,18 @@
       "native_delivery_stage_entered": false,
       "linked_delivered_reply_count_before_fix": 0,
       "isolated_recovery_fixture": "passed for three interruption codes with complete pre-delivery journals; post-delivery uncertainty remained quarantined",
-      "code_refresh_helper": "focused fail-closed tests passed; live use pending",
-      "live_recovery": "pending candidate activation and delivery verification"
+      "code_refresh_helper": "focused fail-closed tests passed; one-app prepare/finish completed against the existing reset journal",
+      "recovery_app_image_sha256": "dfc374537fa231d382ca573153f0ed85e7e6ebfe71309754b07055a86ee39f6b",
+      "recovery_app_container_id": "e28dc11754b0626dce1fbe315cd4261ce4f1490c43bb9d3d9d9f560fd84a6a9b",
+      "recovery_refresh_stage": "complete",
+      "recovery_dispatch_attempts": 4,
+      "recovery_attempt_outcomes": ["assistant_runtime_unavailable", "assistant_runtime_unavailable", "unexpected_profile_tool", "done"],
+      "recovery_final_native_journal_stages": ["admission", "assistant", "delivery", "delivery"],
+      "recovery_workflow_id": "c77369f8c8d28605bffef8117e991d6890ae7b38fd2774653e2e1828bbe8c008",
+      "recovery_workflow_state": "completed",
+      "linked_delivered_reply_count_after_fix": 1,
+      "owner_visible_single_delivery": "pending owner confirmation",
+      "live_recovery": "one linked delivery confirmed in stores after journal-gated reopening and retries; owner-visible count pending"
     }
   },
   "fresh_acceptance_and_honcho_activation": "pending",
