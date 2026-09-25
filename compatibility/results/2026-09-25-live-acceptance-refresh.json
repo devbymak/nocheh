@@ -112,8 +112,9 @@
       "recovery_workflow_id": "c77369f8c8d28605bffef8117e991d6890ae7b38fd2774653e2e1828bbe8c008",
       "recovery_workflow_state": "completed",
       "linked_delivered_reply_count_after_fix": 1,
-      "owner_visible_single_delivery": "pending owner confirmation",
-      "live_recovery": "one linked delivery confirmed in stores after journal-gated reopening and retries; owner-visible count pending"
+      "owner_visible_single_delivery": true,
+      "owner_screenshot_observation": "one reply at 18:28 local to the 17:17 restart-check message; no duplicate visible through the 19:33 local capture",
+      "live_recovery": "passed: one linked delivery confirmed in stores and one visible reply after journal-gated reopening and retries"
     }
   },
   "fresh_acceptance_and_honcho_activation": "pending",
