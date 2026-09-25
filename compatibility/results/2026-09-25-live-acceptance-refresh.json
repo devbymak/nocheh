@@ -99,7 +99,29 @@
       "dispatch_state": "done",
       "linked_delivered_reply_count": 1,
       "delivered_at_utc": "2026-09-25T15:40:41Z",
-      "result": "failed retire-before-reply timing; Archive confirmation state pending owner review; no follow-up question sent"
+      "retirement_saved_after_reply": true,
+      "retirement_revision_after_reply": 1,
+      "result": "failed retire-before-reply timing; owner completed Archive confirmation after delivery"
+    },
+    "adjacent_message_follow_up_after_late_retirement": {
+      "owner_source_event_id": "3ebf11b56ea95e4790c639f132c5e6fb9c85e199a14c5156be1537edaff65389",
+      "received_at_utc": "2026-09-25T17:00:50.910518Z",
+      "expected_owner_scope_and_text_match": true,
+      "prior_source_retirement_revision": 1,
+      "prior_source_remains_retired": true,
+      "preparation_workflow": "queued at admission",
+      "telegram_workflow": "queued at admission",
+      "outbox_published": true,
+      "delivered_reply_count_at_check": 0,
+      "answer_assessment": "pending delivery; late retirement of prior source does not establish retire-before-reply"
+    },
+    "archive_retirement_ui_clarity": {
+      "owner_reported_confusion": true,
+      "candidate_change": "single explicit retirement action, persistent saved active or retired state, inline failure feedback, and Undo",
+      "dashboard_build": "passed",
+      "dashboard_tests": "24 passed",
+      "isolated_synthetic_visual_preview": "passed: one click showed Retired from Nocheh and Undo; Undo restored Available to Nocheh",
+      "active_installation": "not yet refreshed"
     },
     "in_flight_restart": {
       "owner_source_event_id": "677f4865adfd894014d81c6592627fd9a6f0bb304e4e3c695300180e58f4221b",
