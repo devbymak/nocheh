@@ -29,7 +29,8 @@
     "delivered_reply_event_id": "194087a3531e6682ee57cc90c1ae4cb780e03df43d898c23deaded3b3e6571a1",
     "delivered_at_utc": "2026-09-25T09:53:24.432050Z",
     "capture_to_delivery_seconds": 224.844,
-    "owner_inspected_reply_quality": "pending"
+    "owner_inspected_reply_quality": "passed",
+    "owner_confirmed_single_clear_reply": true
   },
   "event_bound_processing_trace": {
     "runtime_context_records": 239,
