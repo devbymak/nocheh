@@ -121,6 +121,7 @@
       "dashboard_build": "passed",
       "dashboard_tests": "24 passed",
       "isolated_synthetic_visual_preview": "passed: one click showed Retired from Nocheh and Undo; Undo restored Available to Nocheh",
+      "dashboard_code_refresh_helper": "dashboard-only reset-journal rebinding; seven focused fail-closed tests passed",
       "active_installation": "not yet refreshed"
     },
     "in_flight_restart": {
