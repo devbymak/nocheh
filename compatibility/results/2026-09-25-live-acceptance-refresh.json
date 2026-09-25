@@ -73,7 +73,22 @@
       "target_and_events_in_selected_group": true,
       "current_per_actor_state": [],
       "new_bot_reply_from_reaction_updates": false,
-      "result": "individual change and removal passed; stale-meaning and topic-isolation checks pending"
+      "target_topic_state": "none",
+      "raw_reaction_topic_state": "unknown until target resolution",
+      "live_current_state_row_after_removal": [],
+      "live_learned_entry_count": 0,
+      "result": "individual change and removal passed; no live stale inference exists; forum-topic isolation remains unobserved"
+    },
+    "adjacent_message_answer_fix": {
+      "change": "Hermes guidance distinguishes latest accessible history from a verified immediate predecessor",
+      "focused_refresh_helper_tests": "5 passed",
+      "hermes_image_sha256": "1c0645dcadd39c53d26c6d006e4f8417f39c9d4febfebbb2f275265ec0a09c23",
+      "hermes_container_id": "4b6485720ecb70d2928f4e6343910cf7862f8addad41c26e6cb3534cdcf5b231",
+      "restart_policy": "no",
+      "journal_refresh_stage": "complete",
+      "acceptance_mode_stage": "acceptance_running",
+      "planned_services_bound": 17,
+      "live_rerun": "pending fresh owner message and retirement"
     },
     "in_flight_restart": {
       "owner_source_event_id": "677f4865adfd894014d81c6592627fd9a6f0bb304e4e3c695300180e58f4221b",
@@ -102,5 +117,5 @@
     }
   },
   "fresh_acceptance_and_honcho_activation": "pending",
-  "remote_push": "failed: GitHub HTTPS username unavailable"
+  "remote_push": "pending: GitHub HTTPS username unavailable; later push request rejected by automatic approval review because origin was treated as unverified for acceptance metadata"
 }
