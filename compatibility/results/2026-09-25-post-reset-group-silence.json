@@ -1,0 +1,28 @@
+{
+  "format": "nocheh-post-reset-group-silence-v1",
+  "date": "2026-09-25",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "owner_group_event_id": "de8a0b6003e48a630bfc883bcfad3d52153365f572db1112ec2ad0eeb42a5146",
+  "received_at_utc": "2026-09-25T11:04:59.572520Z",
+  "source": {
+    "configured_group": true,
+    "owner_sender": true,
+    "telegram_update_payload_saved": true,
+    "capture_intake_ready": true,
+    "requested_sentence_similarity": 0.991,
+    "requested_sentence_missing_initial_character": true
+  },
+  "decision": {
+    "dispatch_state": "suppressed",
+    "error_code": "intentional_silence",
+    "attempts": 1,
+    "workflow_state": "skipped",
+    "completed_at_utc": "2026-09-25T11:05:37.451350Z",
+    "delivered_group_messages_since_source": 0,
+    "linked_reply_messages": 0,
+    "no_delivery_observed_through_utc": "2026-09-25T11:09:47Z"
+  },
+  "post_reset_intentional_silence_gate": "passed",
+  "fresh_acceptance": false,
+  "mvp_release_acceptance": false
+}
