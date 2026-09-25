@@ -88,7 +88,18 @@
       "journal_refresh_stage": "complete",
       "acceptance_mode_stage": "acceptance_running",
       "planned_services_bound": 17,
-      "live_rerun": "pending fresh owner message and retirement"
+      "live_rerun": "pending a fresh owner message retired before its reply; first new attempt delivered before a retirement action was saved"
+    },
+    "adjacent_message_rerun_attempt_1": {
+      "owner_source_event_id": "af5619c39b8883e1a2c04f2a9df24503998b219f2ba83a0941ef0493561a7358",
+      "received_at_utc": "2026-09-25T15:34:52Z",
+      "expected_owner_scope_and_text_match": true,
+      "owner_reported_archive_retirement": true,
+      "saved_retirement_action_count_before_reply": 0,
+      "dispatch_state": "done",
+      "linked_delivered_reply_count": 1,
+      "delivered_at_utc": "2026-09-25T15:40:41Z",
+      "result": "failed retire-before-reply timing; Archive confirmation state pending owner review; no follow-up question sent"
     },
     "in_flight_restart": {
       "owner_source_event_id": "677f4865adfd894014d81c6592627fd9a6f0bb304e4e3c695300180e58f4221b",
