@@ -87,6 +87,7 @@
       "native_delivery_stage_entered": false,
       "linked_delivered_reply_count_before_fix": 0,
       "isolated_recovery_fixture": "passed for three interruption codes with complete pre-delivery journals; post-delivery uncertainty remained quarantined",
+      "code_refresh_helper": "focused fail-closed tests passed; live use pending",
       "live_recovery": "pending candidate activation and delivery verification"
     }
   },
