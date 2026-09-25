@@ -1,0 +1,76 @@
+{
+  "format": "nocheh-live-telegram-checks-v1",
+  "date": "2026-09-25",
+  "reset_id": "81c7cfd3-ab28-4ded-9dfa-37a6a6ff21f9",
+  "boundary_utc": "2026-09-24T21:04:20Z",
+  "checks": {
+    "private_group_isolation": {
+      "private_event_id": "a8fac5b2b1e7b0dce0a2d6e75f8be1127ec46acb61c04012dadb80df3275c4f4",
+      "private_received_at_utc": "2026-09-25T11:33:40.219Z",
+      "group_event_id": "d58942c4767f17d442c398ff885839063052708c83529a8396806ce1919abf44",
+      "group_received_at_utc": "2026-09-25T11:35:37.027Z",
+      "group_reply_event_id": "08ecbf3f4a2939dd3a82f69c33cbb269f5e031ecb6f6943e80f2e3aea8d9e242",
+      "group_context_contains_private_test_phrase": false,
+      "active_sharing_release_count": 0,
+      "owner_confirmed_private_phrase_absent_from_visible_answer": true,
+      "result": "passed"
+    },
+    "exact_owner_approval": {
+      "request_event_id": "f5a2787be12c80bb850b172321940605f679ee235dc7056a942b7902e8ca3d22",
+      "received_at_utc": "2026-09-25T11:41:36Z",
+      "action_id": "94d3ca67df3a72aecab11d6beffbcf8de1cdb613e42c5cc27fe2fe7736bb2613",
+      "owner_approved_at_utc": "2026-09-25T11:44:54Z",
+      "delivered_event_id": "0f6e218a1ea021a3dfe9dcb42ce47d46dc6fe6183efe1715638e59ac0ac3a29a",
+      "delivered_at_utc": "2026-09-25T11:44:56.670Z",
+      "delivered_capture_receipt_id": "f3f67fe952bc0f66b915bfb166cece2618f6de4599987984233ab22d4e6465f6",
+      "confirmed_delivery_count": 1,
+      "owner_confirmed_visible_count": 1,
+      "result": "passed"
+    },
+    "non_owner_group_reply": {
+      "human_event_id": "8891b44040970269b58eb09ecd0a1615f2a3be20974286eb8cf831eed7dcbab7",
+      "received_at_utc": "2026-09-25T11:46:39.523Z",
+      "captured_from_selected_group": true,
+      "captured_from_non_owner_human": true,
+      "dispatch_state": "suppressed",
+      "dispatch_error_code": "conversation_not_selected",
+      "saved_non_owner_grant_count": 0,
+      "result": "failed: selected-group access policy did not permit a human reply"
+    },
+    "owner_retirement": {
+      "source_event_id": "fc4b923b9690a4f6c78b188ff733abd0abf3590cb9ec9a3dec56b244e95d3b82",
+      "backend_retire_and_revision_checked_undo": "passed",
+      "final_retired_state": false,
+      "final_revision": 2,
+      "original_audio_bytes": 12524,
+      "original_transcript_and_confirmed_reply_preserved": true,
+      "active_archive_ui": "blocked by missing management route; isolated fix passed tests",
+      "result": "backend passed; owner UI pending controlled activation"
+    },
+    "restart_recovery": {
+      "request_event_id": "14625d88d74588137ca5354667866c1d8e1aa479e51b58d19e7a5ebc56df9b9d",
+      "received_at_utc": "2026-09-25T11:56:35.695Z",
+      "delivered_before_container_restart": true,
+      "container_restarted_at_utc": "2026-09-25T11:58:18.802Z",
+      "container_identity_preserved": true,
+      "container_healthy_after_restart": true,
+      "dispatch_state": "done",
+      "dispatch_attempts": 1,
+      "delivered_event_id": "c62537bd35a832824a50860756183abcccbae1793709511e4bbc4988290940c5",
+      "delivered_received_at_utc": "2026-09-25T11:57:32.394Z",
+      "durable_capture_receipt_id": "1964c3552706c17e9e03cc900989418f99fc1687d2967cd692cddb3e4fcd90d6",
+      "receipt_state": "delivered",
+      "receipt_source_count": 1,
+      "observed_delivery_count": 1,
+      "owner_confirmed_visible_count": 1,
+      "result": "post-delivery restart preserved the durable single reply; in-flight recovery remains untested"
+    },
+    "old_reaction_change_removal": {
+      "bot_group_role": "member",
+      "required_group_role": "administrator",
+      "result": "pending: Telegram individual reaction updates require bot administrator status"
+    }
+  },
+  "installation_replaced_for_candidate_route_fixes": false,
+  "fresh_acceptance_and_honcho_activation": "pending"
+}
