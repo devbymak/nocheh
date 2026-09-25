@@ -50,12 +50,15 @@
       "future_recall_reply_at_utc": "2026-09-25T12:51:43.593Z",
       "future_recall_reply_mentions_retired_phrase": false,
       "future_recall_reply_referenced_older_active_source": true,
-      "owner_confirmed_visible_recall_exclusion": "pending",
+      "owner_screenshot_shows_no_retired_question_reply": true,
+      "owner_screenshot_shows_later_answer_omitted_retired_question": true,
+      "later_answer_claimed_older_active_message_was_immediately_previous": true,
+      "later_answer_temporal_accuracy": "failed: it did not acknowledge that it could not verify the immediately previous message",
       "undo_revision": 2,
       "undone_at_utc": "2026-09-25T13:09:51.385Z",
       "final_retired_state": false,
       "cancelled_dispatch_remained_cancelled_after_undo": true,
-      "result": "retire-before-delivery and revision-checked undo passed; live recall output omitted retired phrase but context exclusion and owner confirmation pending; native tool errors observed"
+      "result": "retire-before-delivery and revision-checked undo passed; retired phrase omitted from later answer; later answer accuracy failed and native tool errors observed"
     },
     "individual_reaction_updates": {
       "bot_group_role": "administrator",
@@ -71,6 +74,20 @@
       "current_per_actor_state": [],
       "new_bot_reply_from_reaction_updates": false,
       "result": "individual change and removal passed; stale-meaning and topic-isolation checks pending"
+    },
+    "in_flight_restart": {
+      "owner_source_event_id": "677f4865adfd894014d81c6592627fd9a6f0bb304e4e3c695300180e58f4221b",
+      "received_at_utc": "2026-09-25T13:17:57Z",
+      "observed_before_restart": "running: attempt 1, assistant stage",
+      "hermes_restart_at_utc": "2026-09-25T13:20:25Z",
+      "same_supervised_container_id_after_restart": true,
+      "native_attempt_1_result": "ambiguous: runtime_restart_during_dispatch",
+      "control_error_code": "runtime_execution_interrupted",
+      "native_journal_stages": ["admission", "assistant", "assistant"],
+      "native_delivery_stage_entered": false,
+      "linked_delivered_reply_count_before_fix": 0,
+      "isolated_recovery_fixture": "passed for three interruption codes with complete pre-delivery journals; post-delivery uncertainty remained quarantined",
+      "live_recovery": "pending candidate activation and delivery verification"
     }
   },
   "fresh_acceptance_and_honcho_activation": "pending",
