@@ -1,0 +1,22 @@
+{
+  "format": "nocheh-relations-dashboard-refresh-v1",
+  "observed_at": "2026-09-26T19:34:15Z",
+  "source_commit": "9c80e48e33a213a7a8cfb4ad61003da45038a53a",
+  "service": "nocheh-dashboard",
+  "previous_image": "sha256:5474480ea0a9f9b926c5befc446ef36c9d743977528a94fc9aec9348ac1ffa64",
+  "replacement_image": "sha256:77e51afa463b8224b53a031cdf46a7460c9d6a7ef734c75567d31e2b093a5957",
+  "previous_container": "36e106273ddfe412816af9f2c1ec7ed0b701d9d9426126f64d2c35138814b7ba",
+  "replacement_container": "f034593763ee2eeb5f84943f2e57c817f1ef4090bdcdb810ef6cdd4d3dc4dfd0",
+  "journal": "data/local/admin/reset/acceptance-dashboard-code-refresh-2.json",
+  "journal_stage": "complete",
+  "changed_services": ["nocheh-dashboard"],
+  "planned_services_healthy_with_restart_policy_no": 17,
+  "live_owner_view": {
+    "url": "http://127.0.0.1:8783/#memory?view=relations",
+    "map_loaded": true,
+    "requests_loaded": true,
+    "grants_loaded": true,
+    "knowledge_route_denied_visible": false
+  },
+  "release_acceptance": "pending"
+}
