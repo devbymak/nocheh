@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-27",
+  "request": "dont run two groupt of nocheh, just need have dev compose for develop to get changes live without need re run or re build.",
+  "development_project": "nocheh-dev-f773002760",
+  "operating_project": "nocheh",
+  "operating_project_action": "17 verified containers stopped gracefully; containers, networks, volumes, credentials, and state retained",
+  "running_compose_projects_after_switch": ["nocheh-dev-f773002760"],
+  "development_services": 13,
+  "development_healthy_services": 13,
+  "live_css_check": {
+    "source": "web/style.css",
+    "before_revision": "1790455652732",
+    "after_revision": "1790455771892",
+    "result": "new CSS selector appeared in the builder volume; test edit reverted; same dashboard and builder containers and images"
+  },
+  "live_python_check": {
+    "source": "integrations/hermes/runtime.py",
+    "child_pid_before": 2829320,
+    "child_pid_after": 2831856,
+    "container_id_prefix": "1b728001a088",
+    "result": "Hermes child restarted inside the same container; test edit reverted; no image rebuild"
+  },
+  "live_typescript_check": {
+    "source": "src/main.ts",
+    "child_pid_before": 2834693,
+    "child_pid_after": 2847075,
+    "container_id_prefix": "ffd7cb75df15",
+    "result": "generated main.js contained the temporary code; Node child restarted inside the same app container; test edit and generated output reverted; no image rebuild"
+  },
+  "restored_asset_revision": "1790455846660",
+  "safety": "Existing installation login was not copied; dev Telegram and Honcho disabled; another running Nocheh project is rejected before dev startup",
+  "pending": ["In-app browser visual inspection of this revision was blocked by browser URL policy", "External model and Honcho acceptance require separate development credentials", "Release acceptance remains separate"]
+}
