@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-27",
+  "scope": "one-time copy from stopped operating installation into nocheh-dev",
+  "source": {
+    "compose_project": "nocheh",
+    "state": "data/local",
+    "postgres_volume": "nocheh_postgres_data",
+    "honcho_volume": "nocheh-honcho-experiment_database",
+    "status_after_copy": "stopped; source files and volumes retained"
+  },
+  "destination": {
+    "compose_project": "nocheh-dev",
+    "state": "worktree data/dev",
+    "postgres_volume": "nocheh-dev_postgres_data",
+    "honcho_volume": "nocheh-dev_honcho_database",
+    "database_passwords": "rotated to existing dev credentials",
+    "owned_original_files_copied_and_hash_verified": 1,
+    "archive_events": 92,
+    "archive_artifacts": 2,
+    "projects": 0,
+    "memory_generations": 0,
+    "memory_connection_attached": false,
+    "memory_connection_verified": false,
+    "honcho_messages": 0,
+    "healthy_services": 17,
+    "telegram_enabled": false,
+    "provider_or_hermes_login_files_copied": 0,
+    "dev_embedding_key_empty": true
+  },
+  "rollback": {
+    "state": "worktree data/dev-before-operating-copy-20260927",
+    "postgres_volume": "nocheh-dev-before-operating-copy-20260927_postgres_data",
+    "honcho_volume": "nocheh-dev-before-operating-copy-20260927_honcho_database"
+  },
+  "note": "The first dev Honcho API start found a copied role password mismatch. The role was corrected over the dev database local socket and the same stack restarted with all 17 services healthy. Browser visual inspection was not repeated because the in-app browser URL policy blocked it in this session."
+}
