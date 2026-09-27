@@ -1,0 +1,52 @@
+{
+  "recorded_at_utc": "2026-09-27T17:15:57.180242+00:00",
+  "checkout_revision": "8a897f017603a2b487bf45ee83acbbfbfc7d3b04",
+  "compose_project": "nocheh",
+  "compose_files": [
+    "docker-compose.yml",
+    "deploy/original-only-compose.yml"
+  ],
+  "action": "targeted Honcho service recreation with existing local images, no app or Hermes recreation",
+  "recreated_services": [
+    {
+      "service": "honcho-provider-gateway",
+      "container": "nocheh-honcho-provider-gateway-1",
+      "image": "python:3.11.16-slim-bookworm@sha256:528257d48c1da0dcecc2e725d1ae34498d60c965f1241e39cd6a85a8859bdf84",
+      "state": "running",
+      "health": "healthy",
+      "source_mounts": {
+        "/nocheh/meter.py": "services/honcho/meter.py",
+        "/nocheh/embedding_config.py": "tools/operations/provider/embedding_config.py"
+      }
+    },
+    {
+      "service": "honcho-api",
+      "container": "nocheh-honcho-api-1",
+      "image": "nocheh-honcho:be543555",
+      "state": "running",
+      "health": "healthy",
+      "source_mounts": {
+        "/nocheh": "services/honcho"
+      }
+    },
+    {
+      "service": "honcho-deriver",
+      "container": "nocheh-honcho-deriver-1",
+      "image": "nocheh-honcho:be543555",
+      "state": "running",
+      "health": "healthy",
+      "source_mounts": {
+        "/nocheh": "services/honcho"
+      }
+    }
+  ],
+  "stack_running_services": 17,
+  "stack_unhealthy_services": [],
+  "obsolete_directories_absent": [
+    "integrations",
+    "web",
+    "scripts",
+    "admin"
+  ],
+  "credentials_recorded": false
+}
