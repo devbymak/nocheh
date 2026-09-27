@@ -46,9 +46,9 @@
   "runtime_incidents": {
     "postgres_backend_code_2": ["2026-09-15T19:20:12Z", "2026-09-15T19:22:54Z"],
     "root_cause": "unresolved",
-    "coopr_temporary_stop": "Owner approved; Docker reported missing exit events and one zombie process.",
-    "coopr_original_containers_restored": 17,
-    "coopr_restoration_verified_at": "2026-09-15T19:40:14Z",
+    "unrelated_project_temporary_stop": "Owner approved; Docker reported missing exit events and one zombie process.",
+    "unrelated_project_original_containers_restored": 17,
+    "unrelated_project_restoration_verified_at": "2026-09-15T19:40:14Z",
     "orbctl_list": "start VM: timed out waiting for VM to start",
     "final_postgres_connection_check": "failed",
     "graceful_engine_restart": "approval requested; not executed",

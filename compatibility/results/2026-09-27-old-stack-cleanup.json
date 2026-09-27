@@ -35,7 +35,7 @@
     "post_cleanup_make_dev_status": "17 healthy services",
     "compose_projects": [
       "nocheh-dev running",
-      "unrelated coopr exited"
+      "unrelated Compose project exited"
     ],
     "telegram_enabled_in_dev": false,
     "provider_and_hermes_logins_in_dev": false

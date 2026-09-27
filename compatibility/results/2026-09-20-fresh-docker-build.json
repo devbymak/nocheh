@@ -13,7 +13,7 @@
     "remaining_nocheh_volumes": 0,
     "remaining_nocheh_networks": 0,
     "unrelated_compose_projects_preserved": [
-      "coopr"
+      "unrelated Compose project"
     ]
   },
   "build": {
