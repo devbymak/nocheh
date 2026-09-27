@@ -12,7 +12,8 @@
     "projection_revision_1": "done",
     "projection_revision_3": "done in one attempt; exact learned revision 3 receipt",
     "projection_receipt_id": "5d5e49df34a82989ec0e2284b8f389907b6cf3cf79bfaac3cfca29a8eab54bea",
-    "active_recall": {"event_id": "fdf749df5118b26d20a0aa3aa43b3186348d701595de553394f252a6cff1fab6", "received_at": "2026-09-27T16:27:16.725016Z", "prompt": "ordinary owner DM", "telegram_workflow": "done in one attempt", "linked_replies": 1, "meaning_result": "failed: used superseded wording", "runtime_memory_result": "contained corrected meaning first and earlier conflicting wording"}
+    "active_recall": {"event_id": "fdf749df5118b26d20a0aa3aa43b3186348d701595de553394f252a6cff1fab6", "received_at": "2026-09-27T16:27:16.725016Z", "prompt": "ordinary owner DM", "telegram_workflow": "done in one attempt", "linked_replies": 1, "meaning_result": "failed: used superseded wording", "runtime_memory_result": "contained corrected meaning first and earlier conflicting wording"},
+    "active_recall_repeat": {"event_id": "4fb67c43f6a68773d9ed5fed9571b3d28557be72cb230fb71c901aae09bd7008", "received_at": "2026-09-27T17:22:04.342Z", "prompt": "ordinary owner DM after repair", "telegram_workflow": "done in one attempt", "linked_replies": 1, "corrected_meaning_present": true, "superseded_meaning_present": false, "answer_quality": "sensible corrected meaning", "memory_input_saved": true, "memory_result_saved": false}
   },
   "forum_reaction": {
     "event_id": "f14989ea27c4eb4bbef5a76f001eab7c78d0a5bb760360a3b31dfe49da38f333",
@@ -22,7 +23,8 @@
     "state": "failed",
     "last_error_code": "honcho_upstream_rejected",
     "derived_meaning": "pending; fresh guard-epoch job bda036f5173ec5422886ef5858dfda6371f96a600d187a7df99c6efe9d069df8 failed unavailable_interpretation_evidence after the model cited a learned-entry ID as if it were an original observation",
-    "reaction_repair_candidate": "focused tests passed; saved failed result normalized to one valid trigger-citing interpretation without changing the saved model output; not yet activated or retried",
+    "reaction_repair_candidate": "trigger-only strict evidence repair active at local app revision bad8f6f; a fresh job then failed convention_quote_required because its saved model result cited a duplicate learned rule ID and omitted a quote",
+    "duplicate_rules": "two active participant conventions in the same topic have the same done/completed meaning with minor grammar differences, but the existing exact-text comparison marks them as conflicting; a conservative convention-only lexical equivalence candidate passed focused tests and resolved these exact two entries in read-only replay",
     "topic_recall": {"first_event_id": "d0476b0c3b23259d9208a318de235acf0655bf143de1f943460b4205ad7eed0a", "first_received_at": "2026-09-27T16:27:27.023975Z", "first_location": "forum group General chat; no topic ID, so it cannot pass same-topic recall", "correct_topic_event_id": "34b662fe584033de499d971676956c1006c9844b7207e9ff8a24f8b7ce2058bb", "correct_topic_received_at": "2026-09-27T16:36:04.803184Z", "correct_topic_matches_convention_source": true, "dispatch": "done in one attempt", "linked_replies": 1, "answer": "correctly stated that the older item was done", "derived_reaction_meaning": "still pending"}
   },
   "workflow_recovery": {
@@ -36,7 +38,8 @@
     "app": "exact-revision local rollout healthy",
     "hermes": "pinned image rebuilt and running with correction guidance",
     "stack": "17 of 17 services healthy; workflows connected",
-    "fresh_owner_recall": "owner prompt requested; event and reply pending"
+    "fresh_owner_recall": "one linked corrected reply delivered on first dispatch attempt",
+    "reaction_repair": "trigger-only repair active; duplicate-rule equivalence candidate not yet active"
   },
-  "pending": ["Fresh ordinary owner-DM recall using the correction after a scoped recall repair", "Human-reaction derived meaning", "Reset-specific validator gates"]
+  "pending": ["Human-reaction derived meaning after duplicate-rule repair and fresh reasoning", "Reset-specific validator gates"]
 }
