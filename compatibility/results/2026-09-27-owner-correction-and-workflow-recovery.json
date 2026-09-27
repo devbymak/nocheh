@@ -1,0 +1,33 @@
+{
+  "format": "nocheh-mvp-live-increment-v1",
+  "date": "2026-09-27",
+  "status": "pending",
+  "owner_correction": {
+    "entry_id": "d2be5ec6ca3912baa95475be7a52fab7221b0518236e57e9c5dff4a3ccf6b873",
+    "active_revision": 3,
+    "author": "owner",
+    "saved_meaning": "In this private chat, a cobalt star means needs a second review.",
+    "revision_2": "superseded owner save that repeated the original meaning",
+    "source_event_id": "95e92e42af35a2f524a9ff512174ca690e78570bec875f8f07230de1b182f33d",
+    "projection_revision_1": "done",
+    "projection_revision_3": "workflow reached waiting/receipt_pending; exact completed receipt pending",
+    "active_recall": {"event_id": "fdf749df5118b26d20a0aa3aa43b3186348d701595de553394f252a6cff1fab6", "received_at": "2026-09-27T16:27:16.725016Z", "prompt": "ordinary owner DM", "telegram_workflow": "queued", "linked_reply": "pending"}
+  },
+  "forum_reaction": {
+    "event_id": "f14989ea27c4eb4bbef5a76f001eab7c78d0a5bb760360a3b31dfe49da38f333",
+    "interpretation_job_id": "eb01f7247d718a1a5fe380fc1f2b66b32c9a4252964f3f5acfc7ad7cbefb1ea9",
+    "guard_epoch": 31,
+    "attempts": 2,
+    "state": "failed",
+    "last_error_code": "honcho_upstream_rejected",
+    "derived_meaning": "pending",
+    "topic_recall": {"first_event_id": "d0476b0c3b23259d9208a318de235acf0655bf143de1f943460b4205ad7eed0a", "first_received_at": "2026-09-27T16:27:27.023975Z", "first_location": "forum group General chat; no topic ID, so it cannot pass same-topic recall", "correct_topic_repost": "requested from owner; capture and linked reply pending"}
+  },
+  "workflow_recovery": {
+    "symptom": "Inngest had no healthy worker connection after the earlier pause; the app health endpoint reported workflows reconnecting and corrected projection generations stayed queued.",
+    "action": "Restarted the persisted Inngest service, waited for health, then restarted only the app service.",
+    "result": "App health reported workflows connected; all 17 Nocheh services healthy; queued projection outbox published.",
+    "projection_run": "not yet observed after publication"
+  },
+  "pending": ["Completed Honcho projection receipt for owner revision 3", "Ordinary owner-DM recall and one linked reply using the correction", "Human-reaction derived meaning and same-topic recall", "Reset-specific validator gates"]
+}
