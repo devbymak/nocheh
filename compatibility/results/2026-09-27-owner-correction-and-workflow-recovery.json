@@ -10,8 +10,9 @@
     "revision_2": "superseded owner save that repeated the original meaning",
     "source_event_id": "95e92e42af35a2f524a9ff512174ca690e78570bec875f8f07230de1b182f33d",
     "projection_revision_1": "done",
-    "projection_revision_3": "workflow reached waiting/receipt_pending; exact completed receipt pending",
-    "active_recall": {"event_id": "fdf749df5118b26d20a0aa3aa43b3186348d701595de553394f252a6cff1fab6", "received_at": "2026-09-27T16:27:16.725016Z", "prompt": "ordinary owner DM", "telegram_workflow": "queued", "linked_reply": "pending"}
+    "projection_revision_3": "done in one attempt; exact learned revision 3 receipt",
+    "projection_receipt_id": "5d5e49df34a82989ec0e2284b8f389907b6cf3cf79bfaac3cfca29a8eab54bea",
+    "active_recall": {"event_id": "fdf749df5118b26d20a0aa3aa43b3186348d701595de553394f252a6cff1fab6", "received_at": "2026-09-27T16:27:16.725016Z", "prompt": "ordinary owner DM", "telegram_workflow": "done in one attempt", "linked_replies": 1, "meaning_result": "failed: used superseded wording", "runtime_memory_result": "contained corrected meaning first and earlier conflicting wording"}
   },
   "forum_reaction": {
     "event_id": "f14989ea27c4eb4bbef5a76f001eab7c78d0a5bb760360a3b31dfe49da38f333",
@@ -21,13 +22,13 @@
     "state": "failed",
     "last_error_code": "honcho_upstream_rejected",
     "derived_meaning": "pending",
-    "topic_recall": {"first_event_id": "d0476b0c3b23259d9208a318de235acf0655bf143de1f943460b4205ad7eed0a", "first_received_at": "2026-09-27T16:27:27.023975Z", "first_location": "forum group General chat; no topic ID, so it cannot pass same-topic recall", "correct_topic_repost": "requested from owner; capture and linked reply pending"}
+    "topic_recall": {"first_event_id": "d0476b0c3b23259d9208a318de235acf0655bf143de1f943460b4205ad7eed0a", "first_received_at": "2026-09-27T16:27:27.023975Z", "first_location": "forum group General chat; no topic ID, so it cannot pass same-topic recall", "correct_topic_event_id": "34b662fe584033de499d971676956c1006c9844b7207e9ff8a24f8b7ce2058bb", "correct_topic_received_at": "2026-09-27T16:36:04.803184Z", "correct_topic_matches_convention_source": true, "dispatch": "done in one attempt", "linked_replies": 1, "answer": "correctly stated that the older item was done", "derived_reaction_meaning": "still pending"}
   },
   "workflow_recovery": {
     "symptom": "Inngest had no healthy worker connection after the earlier pause; the app health endpoint reported workflows reconnecting and corrected projection generations stayed queued.",
     "action": "Restarted the persisted Inngest service, waited for health, then restarted only the app service.",
     "result": "App health reported workflows connected; all 17 Nocheh services healthy; queued projection outbox published.",
-    "projection_run": "not yet observed after publication"
+    "projection_run": "revision 3 completed in one attempt"
   },
-  "pending": ["Completed Honcho projection receipt for owner revision 3", "Ordinary owner-DM recall and one linked reply using the correction", "Human-reaction derived meaning and same-topic recall", "Reset-specific validator gates"]
+  "pending": ["Fresh ordinary owner-DM recall using the correction after a scoped recall repair", "Human-reaction derived meaning", "Reset-specific validator gates"]
 }
