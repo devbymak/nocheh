@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-09-27T13:15:12.044Z",
+  "environment": "local-compose-operating",
+  "app_revision": "a14ca40ca9fd6d56c2e36c05f022f7e120e5f65b",
+  "synthetic_only": true,
+  "acceptance_workspace_sha256": "cc1538adec9a813dde491e389341395a5f2a38a5820c760a00c1ef1eae5058a6",
+  "guard_generation": "e5db0cb5-970d-4dc0-bc93-b0876a9078df",
+  "guard_epoch": 29,
+  "checks": {
+    "subscription_reasoning": "passed: guarded gateway chat returned HTTP 200 with one choice; ledger call 4",
+    "embedding_guarded": "passed: labeled synthetic password value absent from prepared request; embedding returned HTTP 200 with one 1536-dimension vector; ledger call 3",
+    "ingestion": "passed: synthetic workspace, peer, session and one message created with HTTP 201; queue reported zero pending and in-progress work units",
+    "retrieval": "passed: message list returned one item; synthetic chat returned HTTP 200 and recovered the expected day",
+    "restart": "passed: Honcho API and deriver restarted; all operating services returned healthy; the same message ID and expected chat answer survived",
+    "provider_failure": "passed: gateway-only external network removal produced HTTP 502 and ledger call 18; restoring the network produced HTTP 200 and ledger call 19"
+  },
+  "message_id": "-M4hlNw2iJGWjks5xJIo1",
+  "session_closed": true,
+  "closed_session_probe": {"http_status": 403, "new_ledger_calls": 0},
+  "ledger": {"limit_usd": 5, "mode": "pilot", "reserved_usd": 0.64, "last_call_id": 19},
+  "connection_after_verification": {"verified": true, "attached": false, "generations": 0, "receipts": 0, "limited_memory": true},
+  "connection_after_attachment": {"verified": true, "attached": true, "include_history": false, "revision": 1, "generations": 0, "limited_memory": true},
+  "limits": [
+    "The first unlabeled synthetic word was not masked by the detector; the labeled password canary was masked before paid egress.",
+    "The peer representation had no conclusions; message retrieval and chat recall returned the expected synthetic fact.",
+    "This establishes the six provider preflight checks, not active owner memory, learned correction, reaction meaning or reset validation.",
+    "The $0.64 is a conservative ledger reservation including the pre-existing $0.52 carryover, not a provider invoice."
+  ]
+}
