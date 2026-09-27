@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-09-27T12:54:15Z",
+  "target": "operating local Docker Compose installation",
+  "revision": "508494b846cfadca1f326a92265e566a27a1897f",
+  "app_image": "sha256:557779826a418c0aa96df23ce6db1a2a295ed327051d18a854d511d67a3a7c85",
+  "app_started_at": "2026-09-27T12:53:33.456899393Z",
+  "checks": {
+    "exact_revision_preflight": "passed",
+    "app_build_and_health_wait": "passed",
+    "compose_containers_healthy": 17,
+    "admin_trace_latest": "passed",
+    "selected_event_id": "0758add6bc500fa233fed0d6f73fc0e26bf851bd9feb6d5cddecc01ceee29f14",
+    "selected_event_received_at": "2026-09-27T12:37:07.261Z",
+    "linked_reply_count": 1,
+    "event_filtered_workflow_count": 5,
+    "workflow_event_filter_matches": true
+  },
+  "pending": [
+    "fresh owner live acceptance for remaining release gates",
+    "database-backed workflow test on an isolated PostgreSQL fixture",
+    "VPS rollout requires a supplied host and checkout path",
+    "GitHub push requires HTTPS authentication"
+  ]
+}
