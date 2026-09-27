@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-09-27",
+  "environment": "dedicated-task-worktree-and-local-compose-observation",
+  "observed_backlog": {"waiting_source_reviews": 586, "prerequisite_waits": 482, "distinct_sources_in_prerequisite_waits": 63, "sources_with_multiple_waiting_generations": 61, "maximum_waiting_generations_for_one_source": 22, "idle_superseded_source_reviews_matching_exact_candidate_filter": 550},
+  "cause": "A newer source-review generation can arrive while its predecessor is running. The touch skips only idle predecessors; the running predecessor can later return to waiting and persist alongside the newer generation.",
+  "candidate": "At startup, retire bounded batches of only idle superseded source-review generations without started, done, or ambiguous effect receipts. On each source-review advance, skip an idle predecessor before execution and close a predecessor that becomes superseded while executing when it would otherwise remain open.",
+  "checks": {"typescript_build": "passed", "focused_node_test": "one passed, database-backed cases skipped because the synthetic fixture cannot run alongside the operating Compose stack", "rollback_only_temporary_table_sql": "passed: one idle predecessor skipped; current and receipt-protected rows preserved", "ast_graph_refresh": "passed: 572 files, 4548 nodes, 16271 edges, zero model calls"},
+  "pending": ["Isolated PostgreSQL fixture test", "Operating rollout", "Fresh queue and owner acceptance observation"]
+}
