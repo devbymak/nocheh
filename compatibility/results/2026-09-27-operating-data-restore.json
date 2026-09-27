@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-27",
+  "scope": "owner-authorized restore of the retained dev copy into a new local operating stack",
+  "source": {
+    "compose_project": "nocheh-dev",
+    "postgres_volume": "nocheh-dev_postgres_data",
+    "honcho_volume": "nocheh-dev_honcho_database",
+    "owned_originals": "worktree data/dev/files",
+    "preserved": true
+  },
+  "destination": {
+    "compose_project": "nocheh",
+    "postgres_volume": "nocheh_postgres_data",
+    "honcho_volume": "nocheh-honcho-experiment_database",
+    "owned_originals": "data/local/files",
+    "postgres_admin_credential_rotated": true,
+    "honcho_database_credential_rotated": true,
+    "owned_original_files_copied_and_hash_verified": 1,
+    "archive_events": 92,
+    "archive_artifacts": 2,
+    "honcho_messages": 0,
+    "healthy_services": 17,
+    "telegram_enabled": false,
+    "provider_login_present": false,
+    "provider_or_hermes_login_files_copied": 0
+  },
+  "acceptance": "Data and stack health verified. Telegram, provider, memory, and the remaining live release gates are pending. Previous live passes require a separate equivalence check before carryforward."
+}
