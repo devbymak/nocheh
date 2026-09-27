@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-09-27",
+  "environment": "dedicated-task-worktree-and-local-compose-read-only-observation",
+  "observed_backlog": {"eligible_idle_superseded_honcho_source_workflows": 441},
+  "cause": "A newer Honcho source generation can arrive while its predecessor is running. The running predecessor can later return to waiting and persist beside the current generation.",
+  "candidate": "Extend bounded idle source supersession to memory_review and honcho source workflows. Preserve active leases and started, done, or ambiguous effect receipts. Skip a stale idle generation before its operation and close a running predecessor after its operation when a newer generation exists.",
+  "checks": {"typescript_build": "passed", "focused_node_test": "one passed, two database-backed cases skipped because the fixture cannot run beside the operating Compose stack", "live_control_sql_explain": "passed read-only parse of exact candidate update; 441 eligible Honcho rows before rollout", "ast_graph_refresh": "passed: 559 files, 4549 nodes, 16118 edges, zero model calls"},
+  "pending": ["Isolated PostgreSQL fixture test", "Exact-revision local rollout", "Fresh queue and owner learning observation"]
+}
